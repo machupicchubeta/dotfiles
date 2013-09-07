@@ -1,0 +1,73 @@
+[alias]
+#	c = commit -am
+	ca = commit -am
+	c = commit
+#	up = pull
+	pl = pull
+#	p = push
+	ps = push
+	pt = push --tags
+	ss = status -s
+	s = status
+	df = diff --color --color-words --abbrev
+	pr = pull --rebase
+	prr = pull --rebase --prune
+	a = add
+	aa = add -A
+	b = branch
+	ch = checkout
+	chb = checkout -b
+	fc = fetch
+	ft = fetch --tags
+	t = tag
+	changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...master --oneline | grep 'Merge pull request' | awk '{ print $1 }' | xargs git show; }; f;"
+	dc = diff --cached
+#	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
+	ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
+	cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+	ui = always
+[apply]
+	whitespace = fix
+[core]
+	excludesfile = .project
+	attributesfile = ~/.gitattributes
+	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[merge]
+	log = true
+	ff = false
+[url "git@github.com:"]
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+	insteadOf = "github:"
+[url "git@gist.github.com:"]
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+	insteadOf = "gist:"
+[user]
+	name = machupicchubeta
+	email = machupicchubeta@gmail.com
+#[pull]
+#	rebase = true
+[push]
+	default = simple
