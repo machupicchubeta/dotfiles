@@ -68,8 +68,6 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 [user]
-#	name = Akshay Aurora
-#	email = akshayaurora@yahoo.com
 	name = machupicchubeta
 	email = machupicchubeta@gmail.com
 #[pull]
