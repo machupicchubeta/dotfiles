@@ -17,9 +17,12 @@
 	b = branch
 	ch = checkout
 	chb = checkout -b
+	crp = cherry-pick
 	fc = fetch
 	ft = fetch --tags
 	t = tag
+	rb = rebase
+	sh = show
 	changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...master --oneline | grep 'Merge pull request' | awk '{ print $1 }' | xargs git show; }; f;"
 	dc = diff --cached
 #	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
@@ -65,6 +68,8 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 [user]
+#	name = Akshay Aurora
+#	email = akshayaurora@yahoo.com
 	name = machupicchubeta
 	email = machupicchubeta@gmail.com
 #[pull]
