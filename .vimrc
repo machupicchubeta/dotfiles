@@ -30,6 +30,8 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -67,6 +69,7 @@ set pastetoggle=<C-E>
 set expandtab
 colorscheme molokai
 set autoindent
+set smartindent
 " cancel highlights by twice press Esc
 nmap <ESC><ESC> ;nohlsearch<CR><ESC>
 
