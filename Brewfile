@@ -8,6 +8,7 @@ install git
 install rbenv
 install ruby-build
 install hub
+install wget
 
 install brew-cask
 tap caskroom/versions
