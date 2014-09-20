@@ -21,6 +21,7 @@ cask install vagrant
 cask install virtualbox
 cask install google-chrome-dev
 cask install firefox-beta
+cask install flash
 
 linkapps
 
