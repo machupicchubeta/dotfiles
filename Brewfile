@@ -6,6 +6,8 @@ tap phinze/homebrew-cask
 
 install git
 install rbenv
+install ruby-build
+install hub
 
 install brew-cask
 tap caskroom/versions
