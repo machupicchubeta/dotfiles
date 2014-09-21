@@ -220,3 +220,5 @@ endfunction
 "set background=dark
 "colorscheme solarized
 
+set clipboard+=unnamed
+
