@@ -9,7 +9,9 @@
 	pt = push --tags
 	ss = status -s
 	s = status
+	d = diff
 	df = diff --color --color-words --abbrev
+	dc = diff --cached
 	pr = pull --rebase
 	prr = pull --rebase --prune
 	a = add
@@ -24,7 +26,6 @@
 	rb = rebase
 	sh = show
 	changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...master --oneline | grep 'Merge pull request' | awk '{ print $1 }' | xargs git show; }; f;"
-	dc = diff --cached
 #	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
 	ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
