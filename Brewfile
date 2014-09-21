@@ -14,6 +14,9 @@ install node
 install sqlite
 install z
 install zsh
+install terminal-notifier
+install source-highlight
+install vim --with-lua --with-luajit
 
 # for ruby
 install openssl
