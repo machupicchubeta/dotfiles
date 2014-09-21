@@ -146,7 +146,7 @@ NeoBundle 'Shougo/vimfiler.git'
 NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vinarise.git'
 NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'altercation/vim-colors-solarized'
+"NeoBundle 'altercation/vim-colors-solarized'
 
 filetype plugin on
 filetype indent on
@@ -216,7 +216,7 @@ function! MyMode()
 endfunction
 
 " solarized
-"yntax enable
+"syntax enable
 "set background=dark
 "colorscheme solarized
 
