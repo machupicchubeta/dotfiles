@@ -1,2 +1,13 @@
 temp
 dist
+
+.lesshst
+.vim/.netrwhist
+.vim/.bundle/*
+.vim/backups/*
+.vim/bundle/neobundle.vim/*
+.vim/bundle/*
+.vim/colors/*
+.vim/swaps/*
+.vim/undo/*
+
