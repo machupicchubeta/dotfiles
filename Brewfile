@@ -46,6 +46,7 @@ cask install slack
 cask install skitch
 cask install geektool
 cask install wireshark
+cask install xquartz
 
 linkapps
 
