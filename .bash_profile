@@ -9,7 +9,7 @@ unset file
 shopt -s nocaseglob
 
 # init z   https://github.com/rupa/z
-. ~/.dotfiles/libs/z/z.sh
+#. ~/.dotfiles/libs/z/z.sh
 
 # include proxy.sh
 #. libs/proxy.sh
