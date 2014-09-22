@@ -15,11 +15,14 @@ install node
 install sqlite
 install z
 install zsh
+install zsh-completions
 install terminal-notifier
 install source-highlight
 install vim --with-lua --with-luajit
 install imagemagick
 link imagemagick
+install bash-completion
+
 
 # for ruby
 install openssl
