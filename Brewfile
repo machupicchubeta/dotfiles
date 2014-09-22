@@ -10,6 +10,7 @@ install wget
 install curl
 install mysql
 install redis
+install memcached
 install node
 install sqlite
 install z
@@ -17,6 +18,8 @@ install zsh
 install terminal-notifier
 install source-highlight
 install vim --with-lua --with-luajit
+install imagemagick
+link imagemagick
 
 # for ruby
 install openssl
