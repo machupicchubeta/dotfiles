@@ -27,7 +27,7 @@ install ruby-build
 # for nokogiri
 install libxml2
 install libxslt
-link libxml2 libxslt
+link libxml2 libxslt libiconv --force
 
 # cask
 tap phinze/homebrew-cask
