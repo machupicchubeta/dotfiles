@@ -23,6 +23,7 @@ install bash-completion
 install imagemagick
 link imagemagick
 install phantomjs
+install sl
 
 
 # for ruby
