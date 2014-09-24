@@ -19,9 +19,10 @@ install zsh-completions
 install terminal-notifier
 install source-highlight
 install vim --with-lua --with-luajit
+install bash-completion
 install imagemagick
 link imagemagick
-install bash-completion
+install phantomjs
 
 
 # for ruby
@@ -56,6 +57,7 @@ cask install skitch
 cask install geektool
 cask install wireshark
 cask install xquartz
+cask install java
 
 linkapps
 
