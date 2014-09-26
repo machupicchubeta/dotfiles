@@ -24,6 +24,7 @@ install imagemagick
 link imagemagick
 install phantomjs
 install sl
+install bash
 
 # for ruby
 install openssl
