@@ -25,7 +25,6 @@ link imagemagick
 install phantomjs
 install sl
 
-
 # for ruby
 install openssl
 install readline
@@ -33,8 +32,10 @@ install rbenv
 install ruby-build
 
 # for nokogiri
+tap homebrew/dupes
 install libxml2
 install libxslt
+install libiconv
 link libxml2 libxslt libiconv --force
 
 # cask
