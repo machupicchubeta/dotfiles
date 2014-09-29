@@ -5,6 +5,7 @@ tap homebrew/binary
 tap homebrew/versions
 
 install git
+install tig
 install hub
 install wget
 install curl
