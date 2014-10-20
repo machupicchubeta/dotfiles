@@ -28,6 +28,7 @@ brew link imagemagick
 brew install phantomjs
 brew install sl
 brew install bash
+brew install heroku-toolbelt
 
 # for ruby
 brew install openssl

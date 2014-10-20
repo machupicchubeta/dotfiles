@@ -28,6 +28,7 @@ link imagemagick
 install phantomjs
 install sl
 install bash
+install heroku-toolbelt
 
 # for ruby
 install openssl
