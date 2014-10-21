@@ -44,7 +44,7 @@ install libiconv
 link libxml2 libxslt libiconv --force
 
 # cask
-tap phinze/homebrew-cask
+tap caskroom/cask/brew-cask
 tap caskroom/versions
 install brew-cask
 
