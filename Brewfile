@@ -29,6 +29,8 @@ install phantomjs
 install sl
 install bash
 install heroku-toolbelt
+install docker
+install boot2docker
 
 # for ruby
 install openssl

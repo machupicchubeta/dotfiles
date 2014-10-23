@@ -29,6 +29,8 @@ brew install phantomjs
 brew install sl
 brew install bash
 brew install heroku-toolbelt
+brew install docker
+brew install boot2docker
 
 # for ruby
 brew install openssl
