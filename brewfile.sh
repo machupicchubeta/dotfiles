@@ -68,6 +68,7 @@ brew cask install wireshark
 brew cask install xquartz
 brew cask install java
 brew cask install sourcetree
+brew cask install skype
 
 brew linkapps
 

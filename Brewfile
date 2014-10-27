@@ -68,6 +68,7 @@ cask install wireshark
 cask install xquartz
 cask install java
 cask install sourcetree
+cask install skype
 
 linkapps
 
