@@ -31,6 +31,8 @@ install bash
 install heroku-toolbelt
 install docker
 install boot2docker
+install python
+install jq
 
 # for ruby
 install openssl
