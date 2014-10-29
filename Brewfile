@@ -33,6 +33,8 @@ install docker
 install boot2docker
 install python
 install jq
+install awscli
+install ansible
 
 # for ruby
 install openssl

@@ -33,6 +33,8 @@ brew install docker
 brew install boot2docker
 brew install python
 brew install jq
+brew install awscli
+brew install ansible
 
 # for ruby
 brew install openssl
