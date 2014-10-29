@@ -63,3 +63,4 @@ eval "$(hub alias -s)"
 export export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
+complete -C aws_completer aws
