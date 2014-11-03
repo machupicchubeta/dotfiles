@@ -130,29 +130,30 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
 
   call neobundle#begin(expand('~/.vim/.bundle'))
+
+  " Let NeoBundle manage NeoBundle
+  NeoBundleFetch 'Shougo/neobundle.vim'
+
+  " add plugins
+  "NeoBundle 'Shougo/clang_complete.git'
+  NeoBundle 'Shougo/echodoc.git'
+  NeoBundle 'Shougo/neocomplcache.git'
+  "NeoBundle 'Shougo/neobundle.vim.git'
+  NeoBundle 'Shougo/unite.vim.git'
+  NeoBundle 'Shougo/vim-vcs.git'
+  NeoBundle 'Shougo/vimfiler.git'
+  NeoBundle 'Shougo/vimshell.git'
+  NeoBundle 'Shougo/vinarise.git'
+  NeoBundle 'itchyny/lightline.vim'
+  "NeoBundle 'altercation/vim-colors-solarized'
+
+  NeoBundleCheck
+
   call neobundle#end()
 endif
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" add plugins
-"NeoBundle 'Shougo/clang_complete.git'
-NeoBundle 'Shougo/echodoc.git'
-NeoBundle 'Shougo/neocomplcache.git'
-"NeoBundle 'Shougo/neobundle.vim.git'
-NeoBundle 'Shougo/unite.vim.git'
-NeoBundle 'Shougo/vim-vcs.git'
-NeoBundle 'Shougo/vimfiler.git'
-NeoBundle 'Shougo/vimshell.git'
-NeoBundle 'Shougo/vinarise.git'
-NeoBundle 'itchyny/lightline.vim'
-"NeoBundle 'altercation/vim-colors-solarized'
-
 filetype plugin on
 filetype indent on
-
-NeoBundleCheck
 
 " lightline
 let g:lightline = {
