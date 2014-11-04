@@ -36,6 +36,7 @@ brew install jq
 brew install awscli
 brew install ansible
 brew install watch
+brew install osquery
 
 # for ruby
 brew install openssl
