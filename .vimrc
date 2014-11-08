@@ -146,11 +146,18 @@ if has('vim_starting')
   NeoBundle 'Shougo/vinarise.git'
   NeoBundle 'itchyny/lightline.vim'
   "NeoBundle 'altercation/vim-colors-solarized'
+  NeoBundle 'Townk/vim-autoclose'
+  NeoBundle 'mattn/emmet-vim'
+  NeoBundle 'thinca/vim-quickrun'
+  NeoBundle 'grep.vim'
+  NeoBundle 'scrooloose/syntastic'
 
   NeoBundleCheck
 
   call neobundle#end()
 endif
+
+silent! nmap <unique> <Space>r <Plug>(quickrun)
 
 filetype plugin on
 filetype indent on
