@@ -35,6 +35,7 @@ install python
 install jq
 install awscli
 install ansible
+install watch
 
 # for ruby
 install openssl

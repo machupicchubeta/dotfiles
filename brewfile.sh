@@ -35,6 +35,7 @@ brew install python
 brew install jq
 brew install awscli
 brew install ansible
+brew install watch
 
 # for ruby
 brew install openssl
