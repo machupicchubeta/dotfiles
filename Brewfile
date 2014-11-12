@@ -65,6 +65,7 @@ cask install vagrant
 cask install virtualbox
 cask install google-chrome-dev
 cask install firefox-beta
+cask install firefoxdeveloperedition
 cask install flash
 cask install evernote
 cask install slack
