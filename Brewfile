@@ -49,7 +49,8 @@ tap homebrew/dupes
 install libxml2
 install libxslt
 install libiconv
-link libxml2 libxslt libiconv --force
+#link libxml2 libxslt libiconv --force
+unlink libxml2 libxslt libiconv --force
 
 # cask
 tap caskroom/cask/brew-cask
