@@ -37,6 +37,7 @@ brew install awscli
 brew install ansible
 brew install watch
 brew install osquery
+brew install direnv
 
 # for ruby
 brew install openssl

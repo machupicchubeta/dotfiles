@@ -37,6 +37,7 @@ install awscli
 install ansible
 install watch
 install osquery
+install direnv
 
 # for ruby
 install openssl
