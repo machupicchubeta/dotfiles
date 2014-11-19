@@ -41,9 +41,13 @@ brew install direnv
 
 # for ruby
 brew install openssl
+brew link openssl --force
 brew install readline
 brew install rbenv
 brew install ruby-build
+
+brew tap raggi/ale
+brew install openssl-osx-ca
 
 # for nokogiri
 brew tap homebrew/dupes
