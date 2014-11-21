@@ -120,6 +120,7 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # bundler
+alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
 alias ber='bundle exec rails'
