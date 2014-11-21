@@ -83,6 +83,7 @@ brew cask install java
 brew cask install sourcetree
 brew cask install skype
 brew cask install knock
+brew cask install licecap
 
 brew linkapps
 

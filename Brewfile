@@ -83,6 +83,7 @@ cask install java
 cask install sourcetree
 cask install skype
 cask install knock
+cask install licecap
 
 linkapps
 
