@@ -69,6 +69,7 @@ set scrolloff=3
 set pastetoggle=<C-E>
 set expandtab
 colorscheme molokai
+" colorscheme railscasts
 set autoindent
 set smartindent
 " cancel highlights by twice press Esc
@@ -151,11 +152,89 @@ if has('vim_starting')
   NeoBundle 'thinca/vim-quickrun'
   NeoBundle 'grep.vim'
   NeoBundle 'scrooloose/syntastic'
+  NeoBundle 'tpope/vim-rails'
+  NeoBundle 'tpope/vim-bundler'
+
+  NeoBundle 'altercation/vim-colors-solarized'
+  NeoBundle 'croaker/mustang-vim'
+  NeoBundle 'nanotech/jellybeans.vim'
+  NeoBundle 'tomasr/molokai'
+
+  NeoBundle 'ujihisa/unite-colorscheme'
+
+  NeoBundle 'Shougo/vimproc', {
+        \ 'build' : {
+        \     'mac' : 'make -f make_mac.mak',
+        \     'unix' : 'make -f make_unix.mak',
+        \    },
+        \ }
+
+  if has("lua")
+    NeoBundleLazy 'Shougo/neocomplete', { 'autoload' : {
+          \   'insert' : 1,
+          \ }}
+  endif
+
+  NeoBundleLazy 'Shougo/neosnippet', {
+        \ 'autoload' : {
+        \   'commands' : ['NeoSnippetEdit', 'NeoSnippetSource'],
+        \   'filetypes' : 'snippet',
+        \   'insert' : 1,
+        \   'unite_sources' : ['snippet', 'neosnippet/user', 'neosnippet/runtime'],
+        \ }}
+
+"  NeoBundle 'tpope/vim-rails', { 'autoload' : {
+"        \ 'filetypes' : ['haml', 'ruby', 'eruby'] }}
+
+  NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
+        \ 'autoload' : {
+        \   'insert' : 1,
+        \ }}
+
+  NeoBundleLazy 'edsono/vim-matchit', { 'autoload' : {
+        \ 'filetypes': 'ruby',
+        \ 'mappings' : ['nx', '%'] }}
+
+  NeoBundleLazy 'basyura/unite-rails', {
+        \ 'depends' : 'Shougo/unite.vim',
+        \ 'autoload' : {
+        \   'unite_sources' : [
+        \     'rails/bundle', 'rails/bundled_gem', 'rails/config',
+        \     'rails/controller', 'rails/db', 'rails/destroy', 'rails/features',
+        \     'rails/gem', 'rails/gemfile', 'rails/generate', 'rails/git', 'rails/helper',
+        \     'rails/heroku', 'rails/initializer', 'rails/javascript', 'rails/lib', 'rails/log',
+        \     'rails/mailer', 'rails/model', 'rails/rake', 'rails/route', 'rails/schema', 'rails/spec',
+        \     'rails/stylesheet', 'rails/view'
+        \   ]
+        \ }}
+
+"  NeoBundleLazy 'taka84u9/vim-ref-ri', {
+"        \ 'depends': ['Shougo/unite.vim', 'thinca/vim-ref'],
+"        \ 'autoload': { 'filetypes': g:my.ft.ruby_files } }
+
+  NeoBundleLazy 'alpaca-tc/neorspec.vim', {
+        \ 'depends' : ['alpaca-tc/vim-rails', 'tpope/vim-dispatch'],
+        \ 'autoload' : {
+        \   'commands' : ['RSpec', 'RSpecAll', 'RSpecCurrent', 'RSpecNearest', 'RSpecRetry']
+        \ }}
+
+  NeoBundleLazy 'alpaca-tc/alpaca_tags', {
+        \ 'depends': 'Shougo/vimproc',
+        \ 'autoload' : {
+        \   'commands': ['TagsUpdate', 'TagsSet', 'TagsBundle']
+        \ }}
+
+  NeoBundleLazy 'tsukkee/unite-tag', {
+        \ 'depends' : ['Shougo/unite.vim'],
+        \ 'autoload' : {
+        \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
+        \ }}
 
   NeoBundleCheck
 
   call neobundle#end()
 endif
+
 
 silent! nmap <unique> <Space>r <Plug>(quickrun)
 
@@ -231,3 +310,56 @@ endfunction
 
 set clipboard+=unnamed
 
+let g:rails_gem_projections = {
+            \ "factory_girl": {
+            \   "spec/factories/*.rb": {
+            \     "command": "factory",
+            \     "template": "FactoryGirl.define do\n  factory :%s do\n  end\nend",
+            \     "alternate": "app/models/%s.rb",
+            \     "related": "db/schema.rb#%p",
+            \     "affinity": "model"
+            \   }
+            \ },
+            \ "carrierwave": {
+            \   "app/uploaders/*_uploader.rb": {
+            \     "command": "uploader",
+            \     "template": "module %SUploader < CarrierWave::Uploader::Base\nend",
+            \     "affinity": "model",
+            \     "test": "spec/uploaders/%s_uploader_spec.rb"
+            \   }
+            \ },
+            \ "active_decorator": {
+            \   "app/decorators/*_decorator.rb": {
+            \     "command": "decorator",
+            \     "template": "module %SDecorator\nend",
+            \     "related": "app/models/%s.rb",
+            \     "affinity": "model",
+            \     "test": "spec/decorators/%s_decorator_spec.rb"
+            \   }
+            \ },
+            \ "sidekiq": {
+            \   "app/workers/*_worker.rb": {
+            \     "command": "worker",
+            \     "template": "class %SWorker\n  include Sidekiq::Worker\n\n  def perform()\n  end\nend",
+            \     "related": "app/models/%s.rb",
+            \     "affinity": "model",
+            \     "test": "spec/decorators/%s_decorator_spec.rb"
+            \   }
+            \ }}
+
+let g:rails_projections = {
+            \ "app/batches/*.rb": {
+            \   "command": "batch",
+            \   "template": "class %S\nend",
+            \   "test": "spec/batches/%s_spec.rb"
+            \ },
+            \ "app/controllers/concerns/*.rb": {
+            \   "command": "cconcern",
+            \   "template": "module %S\nend",
+            \   "test": "spec/controllers/concerns/%s_spec.rb"
+            \ },
+            \ "app/models/concerns/*.rb": {
+            \   "command": "mconcern",
+            \   "template": "module %S\nend",
+            \   "test": "spec/models/concerns/%s_spec.rb"
+            \ }}
