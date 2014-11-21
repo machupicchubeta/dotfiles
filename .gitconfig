@@ -6,6 +6,7 @@
 	pl = pull
 #	p = push
 	ps = push
+	psf = push --force-with-lease
 	pt = push --tags
 	ss = status -s
 	s = status
