@@ -338,7 +338,7 @@ set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:solarized_visibility = "high"
-let g:solarized_contrast = "high""
+let g:solarized_contrast = "high"
 colorscheme solarized
 "if &term =~ "xterm-256color" || "screen-256color"
 "  set t_Co=256
@@ -356,8 +356,7 @@ colorscheme solarized
 "else
 "  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=gray ctermbg=0
 "  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=0
-"endif
-
+"endif 
 " vim-hier
 "highlight qf_error_ucurl gui=undercurl guisp=red ctermfg=none cterm=undercurl
 "highlight qf_warning_ucurl gui=undercurl guisp=blue ctermfg=none cterm=undercurl
