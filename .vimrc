@@ -4,7 +4,7 @@ set nocompatible
 set wildmenu
 " Allow cursor keys in insert mode
 set esckeys
-" Optimize for fast terminal connections
+": Optimize for fast terminal connections
 set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
@@ -28,6 +28,7 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+"set cursorcolumn
 " Make tabs as wide as two spaces
 set tabstop=2
 set shiftwidth=2
@@ -68,10 +69,10 @@ set scrolloff=3
 
 set pastetoggle=<C-E>
 set expandtab
-colorscheme molokai
-let g:molokai_original = 1
-let g:rehash256 = 1
-set background=dark
+"colorscheme molokai
+"let g:molokai_original = 1
+"let g:rehash256 = 1
+"set background=dark
 set autoindent
 set smartindent
 " cancel highlights by twice press Esc
@@ -154,12 +155,19 @@ if has('vim_starting')
   NeoBundle 'scrooloose/syntastic'
   NeoBundle 'tpope/vim-bundler'
 
-  NeoBundle 'altercation/vim-colors-solarized'
-  NeoBundle 'croaker/mustang-vim'
-  NeoBundle 'nanotech/jellybeans.vim'
-  NeoBundle 'tomasr/molokai'
+  " colorschemes
+"  NeoBundle 'altercation/vim-colors-solarized'
+"  NeoBundle 'croaker/mustang-vim'
+"  NeoBundle 'nanotech/jellybeans.vim'
+"  NeoBundle 'tomasr/molokai'
+"  NeoBundle 'jeffreyiacono/vim-colors-wombat'
+"  NeoBundle 'vim-scripts/Lucius'
+"  NeoBundle 'vim-scripts/Zenburn'
+"  NeoBundle 'mrkn/mrkn256.vim'
+"  NeoBundle 'jpo/vim-railscasts-theme'
+"  NeoBundle 'therubymug/vim-pyte'
 
-  NeoBundle 'ujihisa/unite-colorscheme'
+"  NeoBundle 'ujihisa/unite-colorscheme'
 
   NeoBundle 'Shougo/vimproc', {
         \ 'build' : {
@@ -263,7 +271,7 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 " lightline
 let g:lightline = {
-        \ 'colorscheme': 'powerline',
+        \ 'colorscheme': 'solarized',
         \ 'mode_map': {'c': 'NORMAL'},
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
@@ -323,11 +331,45 @@ function! MyMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
-" solarized
-"syntax enable
-"set background=dark
-"colorscheme solarized
 
+" solarized
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high""
+colorscheme solarized
+"if &term =~ "xterm-256color" || "screen-256color"
+"  set t_Co=256
+"  set t_Sf=[3%dm
+"  set t_Sb=[4%dm
+"elseif &term =~ "xterm-color"
+"  set t_Co=8
+"  set t_Sf=[3%dm
+"  set t_Sb=[4%dm
+"endif
+" indent-guides.vim
+"if 'dark' == &background
+"  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=gray ctermbg=0
+"  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=236
+"else
+"  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=gray ctermbg=0
+"  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=0
+"endif
+
+" vim-hier
+"highlight qf_error_ucurl gui=undercurl guisp=red ctermfg=none cterm=undercurl
+"highlight qf_warning_ucurl gui=undercurl guisp=blue ctermfg=none cterm=undercurl
+
+" Showmarks
+"highlight ShowMarksHLl cterm=NONE ctermfg=blue ctermbg=black gui=NONE guifg=blue guibg=black
+"highlight ShowMarksHLu cterm=NONE ctermfg=blue ctermbg=lightyellow gui=NONE guifg=blue guibg=black
+"highlight ShowMarksHLo cterm=NONE ctermfg=blue ctermbg=black gui=NONE guifg=blue guibg=black
+"highlight ShowMarksHLm cterm=bold ctermfg=blue ctermbg=black gui=NONE gui=bold guifg=blue guibg=black
+
+syntax enable
+"hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
 set clipboard+=unnamed
 
 let g:rails_gem_projections = {
