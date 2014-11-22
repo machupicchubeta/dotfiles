@@ -69,7 +69,6 @@ set scrolloff=3
 set pastetoggle=<C-E>
 set expandtab
 colorscheme molokai
-" colorscheme railscasts
 set autoindent
 set smartindent
 " cancel highlights by twice press Esc
@@ -150,7 +149,6 @@ if has('vim_starting')
   NeoBundle 'thinca/vim-quickrun'
   NeoBundle 'grep.vim'
   NeoBundle 'scrooloose/syntastic'
-  NeoBundle 'tpope/vim-rails'
   NeoBundle 'tpope/vim-bundler'
 
   NeoBundle 'altercation/vim-colors-solarized'
@@ -181,8 +179,10 @@ if has('vim_starting')
         \   'unite_sources' : ['snippet', 'neosnippet/user', 'neosnippet/runtime'],
         \ }}
 
-"  NeoBundle 'tpope/vim-rails', { 'autoload' : {
-"        \ 'filetypes' : ['haml', 'ruby', 'eruby'] }}
+  NeoBundle 'Shougo/neosnippet-snippets'
+
+  NeoBundle 'tpope/vim-rails', { 'autoload' : {
+        \ 'filetypes' : ['haml', 'ruby', 'eruby'] }}
 
   NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
         \ 'autoload' : {
@@ -205,10 +205,6 @@ if has('vim_starting')
         \     'rails/stylesheet', 'rails/view'
         \   ]
         \ }}
-
-"  NeoBundleLazy 'taka84u9/vim-ref-ri', {
-"        \ 'depends': ['Shougo/unite.vim', 'thinca/vim-ref'],
-"        \ 'autoload': { 'filetypes': g:my.ft.ruby_files } }
 
   NeoBundleLazy 'alpaca-tc/neorspec.vim', {
         \ 'depends' : ['alpaca-tc/vim-rails', 'tpope/vim-dispatch'],
@@ -233,11 +229,34 @@ if has('vim_starting')
   call neobundle#end()
 endif
 
-
 silent! nmap <unique> <Space>r <Plug>(quickrun)
 
 filetype plugin on
 filetype indent on
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+ 
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+ 
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+"
+" " Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 " lightline
 let g:lightline = {
@@ -361,3 +380,4 @@ let g:rails_projections = {
             \   "template": "module %S\nend",
             \   "test": "spec/models/concerns/%s_spec.rb"
             \ }}
+
