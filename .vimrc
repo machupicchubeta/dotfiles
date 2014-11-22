@@ -156,7 +156,7 @@ if has('vim_starting')
   NeoBundle 'tpope/vim-bundler'
 
   " colorschemes
-"  NeoBundle 'altercation/vim-colors-solarized'
+  NeoBundle 'altercation/vim-colors-solarized'
 "  NeoBundle 'croaker/mustang-vim'
 "  NeoBundle 'nanotech/jellybeans.vim'
 "  NeoBundle 'tomasr/molokai'
@@ -167,7 +167,7 @@ if has('vim_starting')
 "  NeoBundle 'jpo/vim-railscasts-theme'
 "  NeoBundle 'therubymug/vim-pyte'
 
-"  NeoBundle 'ujihisa/unite-colorscheme'
+  NeoBundle 'ujihisa/unite-colorscheme'
 
   NeoBundle 'Shougo/vimproc', {
         \ 'build' : {
