@@ -38,6 +38,7 @@ install ansible
 install watch
 install osquery
 install direnv
+install coreutils
 
 # for ruby
 install openssl

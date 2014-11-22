@@ -67,3 +67,5 @@ complete -C aws_completer aws
 
 eval "$(direnv hook $0)"
 
+eval $(gdircolors ~/Tools/seebi/dircolors-solarized)
+
