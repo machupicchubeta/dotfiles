@@ -85,6 +85,8 @@ brew cask install sourcetree
 brew cask install skype
 brew cask install knock
 brew cask install licecap
+brew cask install sublime-text3
+brew cask install atom
 
 brew linkapps
 

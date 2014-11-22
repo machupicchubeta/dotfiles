@@ -85,6 +85,8 @@ cask install sourcetree
 cask install skype
 cask install knock
 cask install licecap
+cask install sublime-text3
+cask install atom
 
 linkapps
 
