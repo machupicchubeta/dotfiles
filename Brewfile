@@ -39,6 +39,7 @@ install watch
 install osquery
 install direnv
 install coreutils
+install gnu-sed
 
 # for ruby
 install openssl

@@ -39,6 +39,7 @@ brew install watch
 brew install osquery
 brew install direnv
 brew install coreutils
+brew install gnu-sed
 
 # for ruby
 brew install openssl
