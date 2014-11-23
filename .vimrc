@@ -415,6 +415,9 @@ let g:toggle_pairs = {
 \}
 " }}}
 
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
 " solarized
 syntax enable
 set background=dark
