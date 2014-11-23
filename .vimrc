@@ -160,6 +160,7 @@ if has('vim_starting')
   NeoBundle 'scrooloose/syntastic'
   NeoBundle 'tpope/vim-bundler'
   NeoBundle 'ShowMarks'
+  NeoBundle 'EasyMotion'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
