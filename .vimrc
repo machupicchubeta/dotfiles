@@ -65,7 +65,7 @@ set showmode
 " Show the filename in the window titlebar
 set title
 "if exists("&relativenumber")
-  " Use relative line numbers
+"  Use relative line numbers
 "  set relativenumber
 "  au BufReadPost * set relativenumber
 "endif
@@ -248,6 +248,8 @@ if has('vim_starting')
         \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
         \ }}
 
+  NeoBundle 'scrooloose/syntastic'
+
   NeoBundleCheck
 
   call neobundle#end()
@@ -287,6 +289,11 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 let b:match_ignorecase = 1
 let b:match_words = &matchpairs .'\<begin\>:\<end\>,(:),{:},[:],\<if\>:\<endif\>,\<augroup\>:\<augroup END\>'
+
+" syntastic
+let g:syntastic_mode_map = { 'mode': 'passive',
+            \ 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
 
 " lightline
 let g:lightline = {
