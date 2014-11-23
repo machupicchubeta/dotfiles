@@ -39,7 +39,8 @@ complete -W "NSGlobalDomain" defaults
 ### Added by the Heroku Toolbelt
 #export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH=~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
