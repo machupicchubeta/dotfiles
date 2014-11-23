@@ -5,8 +5,7 @@ dist
 .vim/.netrwhist
 .vim/.bundle/*
 .vim/backups/*
-.vim/bundle/neobundle.vim/*
-.vim/bundle/*
+.vim/bundle/neobundle.vim
 .vim/colors/*
 .vim/swaps/*
 .vim/undo/*
