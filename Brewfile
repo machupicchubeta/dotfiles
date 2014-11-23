@@ -40,6 +40,7 @@ install osquery
 install direnv
 install coreutils
 install gnu-sed
+install rbenv-default-gems
 
 # for ruby
 install openssl
