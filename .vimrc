@@ -207,7 +207,7 @@ if has('vim_starting')
         \   'insert' : 1,
         \ }}
 
-  NeoBundleLazy 'edsono/vim-matchit', { 'autoload' : {
+  NeoBundle 'edsono/vim-matchit', { 'autoload' : {
         \ 'filetypes': 'ruby',
         \ 'mappings' : ['nx', '%'] }}
 
@@ -274,9 +274,12 @@ let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
-"
-" " Tell Neosnippet about the other snippets
+
+" Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+let b:match_ignorecase = 1
+let b:match_words = &matchpairs .'\<begin\>:\<end\>,(:),{:},[:],\<if\>:\<endif\>,\<augroup\>:\<augroup END\>'
 
 " lightline
 let g:lightline = {
