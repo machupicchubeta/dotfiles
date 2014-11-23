@@ -33,7 +33,7 @@
   l1 = log --oneline
   fixup = commit --amend -C HEAD
   gsub = git-gsub
-  topic = git-tb
+  topic-branch = git-topic-branch
 [color]
   ui = always
 [apply]
