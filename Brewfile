@@ -41,6 +41,7 @@ install direnv
 install coreutils
 install gnu-sed
 install rbenv-default-gems
+install ttyrec
 
 # for ruby
 install openssl

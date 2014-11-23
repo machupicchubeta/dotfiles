@@ -41,6 +41,7 @@ brew install direnv
 brew install coreutils
 brew install gnu-sed
 brew install rbenv-default-gems
+brew install ttyrec
 
 # for ruby
 brew install openssl
