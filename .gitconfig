@@ -40,6 +40,8 @@
 [apply]
   whitespace = fix
 [core]
+  pager        = less
+  editor       = vim
   excludesfile = .project
   attributesfile = ~/.gitattributes
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
@@ -74,7 +76,7 @@
 [user]
   name = machupicchubeta
   email = machupicchubeta@gmail.com
-#[pull]
+[pull]
   rebase = true
 [push]
   default = simple
