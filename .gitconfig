@@ -1,10 +1,7 @@
 [alias]
-#  c = commit -am
   ca = commit -am
   c = commit
-#  up = pull
   pl = pull
-#  p = push
   ps = push
   psf = push --force-with-lease
   pt = push --tags
@@ -12,7 +9,7 @@
   s = status
   d = diff
   df = diff --color --color-words --abbrev
-  dc = diff --cached
+  dfc = diff --cached
   pr = pull --rebase
   prr = pull --rebase --prune
   a = add
