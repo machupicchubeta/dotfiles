@@ -284,6 +284,7 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
+" showmarks
 let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 " Enable snipMate compatibility feature.
@@ -300,7 +301,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
             \ 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
-" lightline
+" lightline {{{
 let g:lightline = {
         \ 'colorscheme': 'solarized',
         \ 'mode_map': {'c': 'NORMAL'},
@@ -361,6 +362,7 @@ endfunction
 function! MyMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+" }}}
 
 " smartchr {{{
 function! s:EnableSmartchrBasic()
