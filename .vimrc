@@ -159,6 +159,7 @@ if has('vim_starting')
   NeoBundle 'grep.vim'
   NeoBundle 'scrooloose/syntastic'
   NeoBundle 'tpope/vim-bundler'
+  NeoBundle 'ShowMarks'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -267,6 +268,8 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
+
+let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
