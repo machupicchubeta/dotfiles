@@ -248,6 +248,7 @@ if has('vim_starting')
   call neobundle#end()
 endif
 
+" quickrun key-mapping
 silent! nmap <unique> <Space>r <Plug>(quickrun)
 
 filetype plugin on
