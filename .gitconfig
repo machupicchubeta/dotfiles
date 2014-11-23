@@ -81,3 +81,7 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
+[tig "bind"]
+	generic = g move-first-line
+	generic = G move-last-line
+
