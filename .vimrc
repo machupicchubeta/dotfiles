@@ -163,6 +163,7 @@ if has('vim_starting')
   NeoBundle 'EasyMotion'
   NeoBundle 'tomtom/tcomment_vim'
   NeoBundle 'kana/vim-smartchr'
+  NeoBundle 'taku-o/vim-toggle'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -384,6 +385,35 @@ autocmd FileType haml call s:EnableSmartchrHaml()
 autocmd FileType coffee call s:EnableSmartchrCoffeeFunction()
 " }}}
 
+" toggle.vim {{{
+imap <silent><C-C> <Plug>ToggleI
+nmap <silent><C-C> <Plug>ToggleN
+vmap <silent><C-C> <Plug>ToggleV
+
+let g:toggle_pairs = {
+  \'and':'or',
+  \'or':'and',
+  \'if':'unless',
+  \'unless':'if',
+  \'elsif':'else',
+  \'else':'elsif',
+  \'it':'specify',
+  \'specify':'it',
+  \'describe':"context",
+  \'context':"describe",
+  \'true':'false',
+  \'false':'true',
+  \'yes':'no',
+  \'no':'yes',
+  \'on':'off',
+  \'off':'on',
+  \'public':'protected',
+  \'protected':'private',
+  \'private':'public',
+  \'&&':'||',
+  \'||':'&&'
+\}
+" }}}
 
 " solarized
 syntax enable
