@@ -165,6 +165,9 @@ if has('vim_starting')
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
+" NeoBundle 'w0ng/vim-hybrid'
+" NeoBundle 'baskerville/bubblegum'
+" NeoBundle 'vim-scripts/twilight'
 "  NeoBundle 'croaker/mustang-vim'
 "  NeoBundle 'nanotech/jellybeans.vim'
 "  NeoBundle 'tomasr/molokai'
