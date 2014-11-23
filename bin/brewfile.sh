@@ -43,6 +43,7 @@ brew install gnu-sed
 brew install rbenv-default-gems
 brew install ttyrec
 brew install dnsmasq
+brew install ag
 
 # for ruby
 brew install openssl

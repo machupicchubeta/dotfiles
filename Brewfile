@@ -43,6 +43,7 @@ install gnu-sed
 install rbenv-default-gems
 install ttyrec
 install dnsmasq
+install ag
 
 # for ruby
 install openssl
