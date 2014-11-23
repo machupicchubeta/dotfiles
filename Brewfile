@@ -42,6 +42,7 @@ install coreutils
 install gnu-sed
 install rbenv-default-gems
 install ttyrec
+install dnsmasq
 
 # for ruby
 install openssl
