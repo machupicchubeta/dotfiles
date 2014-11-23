@@ -161,6 +161,7 @@ if has('vim_starting')
   NeoBundle 'tpope/vim-bundler'
   NeoBundle 'ShowMarks'
   NeoBundle 'EasyMotion'
+  NeoBundle 'tomtom/tcomment_vim'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
