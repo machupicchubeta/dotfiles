@@ -44,6 +44,10 @@ brew install rbenv-default-gems
 brew install ttyrec
 brew install dnsmasq
 brew install ag
+brew install jq
+brew install gnupg
+brew install grc
+brew install packer
 
 # for ruby
 brew install openssl
@@ -92,6 +96,9 @@ brew cask install knock
 brew cask install licecap
 brew cask install sublime-text3
 brew cask install atom
+brew cask install colors
+brew cask install witch
+brew cask install spectacle
 
 brew linkapps
 

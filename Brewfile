@@ -44,6 +44,10 @@ install rbenv-default-gems
 install ttyrec
 install dnsmasq
 install ag
+install jq
+install gnupg
+install grc
+install packer
 
 # for ruby
 install openssl
@@ -92,6 +96,9 @@ cask install knock
 cask install licecap
 cask install sublime-text3
 cask install atom
+cask install colors
+cask install witch
+cask install spectacle
 
 linkapps
 
