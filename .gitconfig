@@ -35,6 +35,7 @@
   lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   l1 = log --oneline
   fixup = commit --amend -C HEAD
+  gsub = git-gsub
 [color]
   ui = always
 [apply]
