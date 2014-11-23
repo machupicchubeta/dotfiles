@@ -1,5 +1,6 @@
 [alias]
   cam = commit -am
+  cm = commit -m
   c = commit
   pl = pull
   ps = push
