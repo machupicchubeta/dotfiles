@@ -21,7 +21,10 @@ set directory=~/.vim/swaps
 if exists("&undodir")
   set undodir=~/.vim/undo
 endif
-
+" Enable delete characters by backspace always
+set backspace=start,eol,indent
+" Enable moving by cursor straddling each lines
+set whichwrap=b,,[,,,~
 " Enable line numbers
 set number
 " Enable syntax highlighting
@@ -29,6 +32,8 @@ syntax on
 " Highlight current line
 set cursorline
 "set cursorcolumn
+" Enable menu completion
+set wildmenu wildmode=list:full
 " Make tabs as wide as two spaces
 set tabstop=2
 set shiftwidth=2
@@ -460,7 +465,6 @@ colorscheme solarized
 "highlight ShowMarksHLo cterm=NONE ctermfg=blue ctermbg=black gui=NONE guifg=blue guibg=black
 "highlight ShowMarksHLm cterm=bold ctermfg=blue ctermbg=black gui=NONE gui=bold guifg=blue guibg=black
 
-syntax enable
 "hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
 set clipboard+=unnamed
 
