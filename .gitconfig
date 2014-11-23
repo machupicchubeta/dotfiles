@@ -1,5 +1,5 @@
 [alias]
-  ca = commit -am
+  cam = commit -am
   c = commit
   pl = pull
   ps = push
