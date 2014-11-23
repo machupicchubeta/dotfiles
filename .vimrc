@@ -31,7 +31,7 @@ set number
 syntax on
 " Highlight current line
 set cursorline
-"set cursorcolumn
+set cursorcolumn
 " Enable menu completion
 set wildmenu wildmode=list:full
 " Make tabs as wide as two spaces
