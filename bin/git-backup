@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+
+current_branch_name  = `git branch | grep '*' | awk '{ print $2 }'`
+
+`git topic-branch && git checkout #{current_branch_name}`
