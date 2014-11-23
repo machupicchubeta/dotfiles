@@ -81,7 +81,7 @@ set expandtab
 set autoindent
 set smartindent
 " cancel highlights by twice press Esc
-nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
 
 " move between tabs key map
 nnoremap s <Nop>
