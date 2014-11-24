@@ -97,7 +97,7 @@ cask install licecap
 cask install sublime-text3
 cask install atom
 cask install colors
-cask install witch
+# cask install witch
 cask install spectacle
 cask install slate
 
