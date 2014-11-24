@@ -1,5 +1,6 @@
 [alias]
-  ca = commit -am
+  cam = commit -am
+  cm = commit -m
   c = commit
   pl = pull
   ps = push
@@ -33,7 +34,8 @@
   l1 = log --oneline
   fixup = commit --amend -C HEAD
   gsub = git-gsub
-  topic = git-tb
+  topic-branch = git-topic-branch
+  backup = git-backup
 [color]
   ui = always
 [apply]

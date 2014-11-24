@@ -21,14 +21,19 @@ set directory=~/.vim/swaps
 if exists("&undodir")
   set undodir=~/.vim/undo
 endif
-
+" Enable delete characters by backspace always
+set backspace=start,eol,indent
+" Enable moving by cursor straddling each lines
+set whichwrap=b,,[,,,~
 " Enable line numbers
 set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
 set cursorline
-"set cursorcolumn
+set cursorcolumn
+" Enable menu completion
+set wildmenu wildmode=list:full
 " Make tabs as wide as two spaces
 set tabstop=2
 set shiftwidth=2
@@ -279,6 +284,7 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
+" showmarks
 let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 " Enable snipMate compatibility feature.
@@ -295,7 +301,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
             \ 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
-" lightline
+" lightline {{{
 let g:lightline = {
         \ 'colorscheme': 'solarized',
         \ 'mode_map': {'c': 'NORMAL'},
@@ -356,6 +362,7 @@ endfunction
 function! MyMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+" }}}
 
 " smartchr {{{
 function! s:EnableSmartchrBasic()
@@ -425,6 +432,25 @@ let g:toggle_pairs = {
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
+" the silver searcher with Unite {{{
+let g:unite_enable_start_insert = 1
+
+let g:unite_enable_ignore_case = 1
+let g:unite_enable_smart_case = 1
+
+nnoremap <silent> ,g  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+
+nnoremap <silent> ,cg :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+
+nnoremap <silent> ,r  :<C-u>UniteResume search-buffer<CR>
+
+if executable('ag')
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+  let g:unite_source_grep_recursive_opt = ''
+endif
+" }}}
+
 " solarized
 syntax enable
 set background=dark
@@ -460,7 +486,6 @@ colorscheme solarized
 "highlight ShowMarksHLo cterm=NONE ctermfg=blue ctermbg=black gui=NONE guifg=blue guibg=black
 "highlight ShowMarksHLm cterm=bold ctermfg=blue ctermbg=black gui=NONE gui=bold guifg=blue guibg=black
 
-syntax enable
 "hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
 set clipboard+=unnamed
 
