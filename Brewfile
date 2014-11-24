@@ -68,9 +68,8 @@ install libiconv
 unlink libxml2 libxslt libiconv
 
 # cask
-tap caskroom/cask/brew-cask
 tap caskroom/versions
-install brew-cask
+install caskroom/cask/brew-cask
 
 cask install dropbox
 cask install github
