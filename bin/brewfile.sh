@@ -99,6 +99,7 @@ brew cask install atom
 brew cask install colors
 brew cask install witch
 brew cask install spectacle
+brew cask install slate
 
 brew linkapps
 

@@ -99,6 +99,7 @@ cask install atom
 cask install colors
 cask install witch
 cask install spectacle
+cask install slate
 
 linkapps
 
