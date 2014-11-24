@@ -45,9 +45,9 @@ brew install ttyrec
 brew install dnsmasq
 brew install ag
 brew install jq
-brew install gnupg
-brew install grc
-brew install packer
+# install gnupg
+# install grc
+# install packer
 
 # for ruby
 brew install openssl
@@ -96,10 +96,10 @@ brew cask install knock
 brew cask install licecap
 brew cask install sublime-text3
 brew cask install atom
-brew cask install colors
+# cask install colors
 # cask install witch
-brew cask install spectacle
-brew cask install slate
+# cask install spectacle
+# cask install slate
 
 brew linkapps
 
