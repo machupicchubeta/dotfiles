@@ -469,24 +469,7 @@ colorscheme solarized
 "  set t_Sb=[4%dm
 "endif
 " indent-guides.vim
-"if 'dark' == &background
-"  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=gray ctermbg=0
-"  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=236
-"else
-"  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=gray ctermbg=0
-"  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=0
-"endif 
-" vim-hier
-"highlight qf_error_ucurl gui=undercurl guisp=red ctermfg=none cterm=undercurl
-"highlight qf_warning_ucurl gui=undercurl guisp=blue ctermfg=none cterm=undercurl
 
-" Showmarks
-"highlight ShowMarksHLl cterm=NONE ctermfg=blue ctermbg=black gui=NONE guifg=blue guibg=black
-"highlight ShowMarksHLu cterm=NONE ctermfg=blue ctermbg=lightyellow gui=NONE guifg=blue guibg=black
-"highlight ShowMarksHLo cterm=NONE ctermfg=blue ctermbg=black gui=NONE guifg=blue guibg=black
-"highlight ShowMarksHLm cterm=bold ctermfg=blue ctermbg=black gui=NONE gui=bold guifg=blue guibg=black
-
-"hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
 set clipboard+=unnamed
 
 let g:rails_gem_projections = {
