@@ -79,13 +79,14 @@ alias c="tr -d '\n' | pbcopy"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias p="cd ~/Projects"
+alias drop="cd ~/Dropbox"
+alias doc="cd ~/Documents"
+alias dev="cd ~/Develop"
 alias g="git"
 alias oppai="git"
 alias o="git"
 alias v="vim"
-alias m="mate ."
+# alias m="mate ."
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -132,6 +133,11 @@ alias berr='bundle exec rails runner'
 alias berg='bundle exec rails generate'
 alias berc='bundle exec rails console'
 alias berd='bundle exec rails destroy'
+
+# rake
+alias rk='rake'
+alias rks='rake spec'
+alias rs='rake spec'
 
 # c#
 #alias cs='csharp'
