@@ -43,7 +43,7 @@
 [core]
   pager        = less
   editor       = vim
-  excludesfile = .project
+  excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 [color "branch"]
@@ -88,4 +88,12 @@
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
-
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[rerere]
+  autoupdated = 1
+  enabled = 1
