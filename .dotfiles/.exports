@@ -9,8 +9,9 @@ export LANG=en_US.UTF-8
 export PATH=~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
-# Larger bash history (allow 32³ entries; default is 500)
-export HISTSIZE=32768
+# Larger bash history (allow 2^10^2 entries; default is 500)
+export HISTSIZE=1048576
+export SAVEHIST=1048576
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
