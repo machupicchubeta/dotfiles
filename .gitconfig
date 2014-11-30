@@ -1,5 +1,6 @@
 [alias]
   cam = commit -am
+  ca = commit --amend
   cm = commit -m
   c = commit
   pl = pull
