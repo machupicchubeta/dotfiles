@@ -34,30 +34,16 @@ alias lsd='ls -l | grep "^d"'
         # ;;
 # esac
 
-# alias rm='rm -i'
-# alias cp='cp -i'
-# alias mv='mv -i'
+alias rm='rm -i'
+alias rr='rm -rfi'
+alias cp='cp -i'
+alias mv='mv -i'
 
 alias pd='popd'
 
 alias mkdir='mkdir -p'
 
 alias sudo='sudo '
-
-alias -g L='| less'
-alias -g G='| grep'
-
-# mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
-if which pbcopy >/dev/null 2>&1 ; then
-    # Mac
-    alias -g C='| pbcopy'
-elif which xsel >/dev/null 2>&1 ; then
-    # Linux
-    alias -g C='| xsel --input --clipboard'
-elif which putclip >/dev/null 2>&1 ; then
-    # Cygwin
-    alias -g C='| putclip'
-fi
 
 # Always use color output for `ls`
 # if [[ "$OSTYPE" =~ ^darwin ]]; then
