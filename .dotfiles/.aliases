@@ -4,10 +4,6 @@ alias ...="cd ../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# ssh!
-
-# programs
-
 # include YoutTube Downloader Python Script
 alias yt='python ~/.dotfiles/libs/yt.py'
 
@@ -26,17 +22,53 @@ alias lh="ls -lh"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
+# case ${OSTYPE} in
+    # darwin*)
+        # for Mac
+        # export CLICOLOR=1
+        # alias ls='ls -G -F'
+        # ;;
+    # linux*)
+        # for Linux
+        # alias ls='ls -F --color=auto'
+        # ;;
+# esac
+
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+
+alias pd='popd'
+
+alias mkdir='mkdir -p'
+
+alias sudo='sudo '
+
+alias -g L='| less'
+alias -g G='| grep'
+
+# mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
+if which pbcopy >/dev/null 2>&1 ; then
+    # Mac
+    alias -g C='| pbcopy'
+elif which xsel >/dev/null 2>&1 ; then
+    # Linux
+    alias -g C='| xsel --input --clipboard'
+elif which putclip >/dev/null 2>&1 ; then
+    # Cygwin
+    alias -g C='| putclip'
+fi
+
 # Always use color output for `ls`
 # if [[ "$OSTYPE" =~ ^darwin ]]; then
-	# alias ls="command ls -G"
+    # alias ls="command ls -G"
 # else
-	# alias ls="command ls --color"
-	# export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
+    # alias ls="command ls --color"
+    # export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
 # fi
 
-
 # `cat` with beautiful colors. requires Pygments installed.
-# 							   sudo easy_install Pygments
+# sudo easy_install Pygments
 #alias c='pygmentize -O style=monokai -f console256 -g'
 
 # GIT STUFF
@@ -46,7 +78,6 @@ alias undopush="git push -f origin HEAD^:master"
 
 # hub override.
 # alias git=hub  # not crazy about this..
-
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
@@ -119,7 +150,7 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
+    alias "$method"="lwp-request -m '$method'"
 done
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
