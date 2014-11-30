@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z brew tmux osx vagrant ruby rvm npm gem tmuxinator)
+plugins=(git z brew tmux osx vagrant ruby rvm npm gem tmuxinator history)
 
 # User configuration
 
@@ -58,7 +58,7 @@ export PATH="/Users/machupicchubeta/perl5/perlbrew/bin:/Users/machupicchubeta/pe
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -68,7 +68,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+ export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -85,4 +85,8 @@ source $ZSH/oh-my-zsh.sh
 for file in ~/.dotfiles/.{extra,exports,aliases,functions}; do
   [ -r "$file" ] && source "$file"
 done
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+eval "$(direnv hook $0)"
 
