@@ -17,7 +17,7 @@ brew install memcached
 brew install node
 brew install sqlite
 brew install z
-brew install zsh
+brew install zsh --disable-etcdir
 brew install zsh-completions
 brew install terminal-notifier
 brew install source-highlight
@@ -45,6 +45,7 @@ brew install ttyrec
 brew install dnsmasq
 brew install ag
 brew install jq
+brew install tmux
 # install gnupg
 # install grc
 # install packer

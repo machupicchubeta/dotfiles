@@ -17,7 +17,7 @@ install memcached
 install node
 install sqlite
 install z
-install zsh
+install zsh --disable-etcdir
 install zsh-completions
 install terminal-notifier
 install source-highlight
@@ -45,6 +45,7 @@ install ttyrec
 install dnsmasq
 install ag
 install jq
+install tmux
 # install gnupg
 # install grc
 # install packer
