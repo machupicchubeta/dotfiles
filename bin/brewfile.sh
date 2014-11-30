@@ -45,6 +45,7 @@ brew install ttyrec
 brew install dnsmasq
 brew install ag
 brew install jq
+brew install spark
 brew install tmux
 # install gnupg
 # install grc

@@ -45,6 +45,7 @@ install ttyrec
 install dnsmasq
 install ag
 install jq
+install spark
 install tmux
 # install gnupg
 # install grc
