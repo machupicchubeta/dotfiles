@@ -1,5 +1,5 @@
 [alias]
-  cam = commit -am
+  acm = commit -am
   ca = commit --amend
   cm = commit -m
   c = commit
