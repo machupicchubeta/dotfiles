@@ -85,6 +85,8 @@ set expandtab
 "set background=dark
 set autoindent
 set smartindent
+set indentkeys=!^F,o,O,0<Bar>,0=where
+
 " cancel highlights by twice press Esc
 nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
 
@@ -255,6 +257,8 @@ if has('vim_starting')
 
   NeoBundle 'scrooloose/syntastic'
 
+  NeoBundle 'thoughtbot/vim-rspec'
+
   NeoBundleCheck
 
   call neobundle#end()
@@ -283,6 +287,13 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
+
+" vim-rspec {{{
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+" }}}
 
 " showmarks
 let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -468,7 +479,6 @@ colorscheme solarized
 "  set t_Sf=[3%dm
 "  set t_Sb=[4%dm
 "endif
-" indent-guides.vim
 
 set clipboard+=unnamed
 
