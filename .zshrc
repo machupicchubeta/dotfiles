@@ -52,7 +52,7 @@ plugins=(git z brew tmux osx vagrant ruby rvm npm gem tmuxinator history)
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
-export PATH="/Users/machupicchubeta/perl5/perlbrew/bin:/Users/machupicchubeta/perl5/perlbrew/perls/perl-5.21.6/bin:/Users/machupicchubeta/.rbenv/shims:/Users/machupicchubeta/bin:/Users/machupicchubeta/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="~/perl5/perlbrew/bin:~/perl5/perlbrew/perls/perl-5.21.6/bin:~/.rbenv/shims:~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
