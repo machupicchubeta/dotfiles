@@ -97,6 +97,7 @@ brew cask install knock
 brew cask install licecap
 brew cask install sublime-text3
 brew cask install atom
+# cask install karabiner
 # cask install colors
 # cask install witch
 # cask install spectacle
