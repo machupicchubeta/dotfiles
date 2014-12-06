@@ -46,6 +46,9 @@ alias mkdir='mkdir -p'
 
 alias sudo='sudo '
 
+alias -g L='| less'
+alias -g G='| grep'
+
 # Always use color output for `ls`
 # if [[ "$OSTYPE" =~ ^darwin ]]; then
     # alias ls="command ls -G"
