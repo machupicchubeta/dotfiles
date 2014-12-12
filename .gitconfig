@@ -98,3 +98,5 @@
 [rerere]
   autoupdated = 1
   enabled = 1
+[rebase]
+  autosquash = true
