@@ -103,6 +103,7 @@ cask install cloak
 # cask install witch
 # cask install spectacle
 # cask install slate
+cask install google-hangouts
 
 linkapps
 
