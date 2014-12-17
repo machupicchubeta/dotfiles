@@ -171,6 +171,7 @@ if has('vim_starting')
   NeoBundle 'tomtom/tcomment_vim'
   NeoBundle 'kana/vim-smartchr'
   NeoBundle 'taku-o/vim-toggle'
+  NeoBundle 'slim-template/vim-slim'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
