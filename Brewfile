@@ -104,6 +104,7 @@ cask install cloak
 # cask install spectacle
 # cask install slate
 cask install google-hangouts
+cask install dash
 
 linkapps
 
