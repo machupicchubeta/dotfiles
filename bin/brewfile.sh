@@ -80,7 +80,8 @@ brew cask install kobito
 brew cask install skype
 brew cask install vagrant
 brew cask install virtualbox
-brew cask install google-chrome-dev
+# cask install google-chrome-dev
+brew cask install google-chrome-beta
 brew cask install firefox-beta
 brew cask install firefoxdeveloperedition
 brew cask install flash
