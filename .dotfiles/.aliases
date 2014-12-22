@@ -155,16 +155,10 @@ alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
 alias ber='bundle exec rails'
-alias bers='bundle exec rails server'
-alias berr='bundle exec rails runner'
-alias berg='bundle exec rails generate'
-alias berc='bundle exec rails console'
-alias berd='bundle exec rails destroy'
 
 # rake
 alias rk='rake'
 alias rks='rake spec'
-alias rs='rake spec'
 
 # c#
 #alias cs='csharp'
