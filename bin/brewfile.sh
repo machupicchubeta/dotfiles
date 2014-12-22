@@ -106,6 +106,7 @@ brew cask install cloak
 # cask install slate
 brew cask install google-hangouts
 brew cask install dash
+brew cask install reflector
 
 brew linkapps
 
