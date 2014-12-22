@@ -107,6 +107,7 @@ brew cask install cloak
 brew cask install google-hangouts
 brew cask install dash
 brew cask install reflector
+brew cask install disk-inventory-x
 
 brew linkapps
 

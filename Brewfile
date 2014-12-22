@@ -107,6 +107,7 @@ cask install cloak
 cask install google-hangouts
 cask install dash
 cask install reflector
+cask install disk-inventory-x
 
 linkapps
 
