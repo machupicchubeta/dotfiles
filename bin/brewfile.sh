@@ -50,6 +50,7 @@ brew install tmux
 # install gnupg
 # install grc
 # install packer
+brew install rmtrash
 
 # for ruby
 brew install openssl
@@ -109,6 +110,7 @@ brew cask install dash
 brew cask install reflector
 brew cask install disk-inventory-x
 # cask install google-plus-auto-backup
+brew cask install itrash
 
 brew linkapps
 

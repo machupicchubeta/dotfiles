@@ -50,6 +50,7 @@ install tmux
 # install gnupg
 # install grc
 # install packer
+install rmtrash
 
 # for ruby
 install openssl
@@ -109,6 +110,7 @@ cask install dash
 cask install reflector
 cask install disk-inventory-x
 # cask install google-plus-auto-backup
+cask install itrash
 
 linkapps
 
