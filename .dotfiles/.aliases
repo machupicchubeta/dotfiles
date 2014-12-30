@@ -35,8 +35,8 @@ alias lsd='ls -l | grep "^d"'
 # esac
 
 alias rrf='rm -rf'
-alias rm='rm -i'
 alias rr='rm -rfi'
+alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
