@@ -108,6 +108,7 @@ brew cask install google-hangouts
 brew cask install dash
 brew cask install reflector
 brew cask install disk-inventory-x
+# cask install google-plus-auto-backup
 
 brew linkapps
 

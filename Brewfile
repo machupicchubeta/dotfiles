@@ -108,6 +108,7 @@ cask install google-hangouts
 cask install dash
 cask install reflector
 cask install disk-inventory-x
+# cask install google-plus-auto-backup
 
 linkapps
 
