@@ -51,6 +51,7 @@ install tmux
 # install grc
 # install packer
 install rmtrash
+install tor
 
 # for ruby
 install openssl

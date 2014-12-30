@@ -51,6 +51,7 @@ brew install tmux
 # install grc
 # install packer
 brew install rmtrash
+brew install tor
 
 # for ruby
 brew install openssl
