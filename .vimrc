@@ -257,8 +257,8 @@ if has('vim_starting')
         \ }}
 
   NeoBundle 'scrooloose/syntastic'
-
   NeoBundle 'thoughtbot/vim-rspec'
+  NeoBundle 'vim-ruby/vim-ruby'
 
   NeoBundleCheck
 
@@ -536,4 +536,8 @@ let g:rails_projections = {
             \   "template": "module %S\nend",
             \   "test": "spec/models/concerns/%s_spec.rb"
             \ }}
+augroup quickfixopen
+  autocmd!
+  autocmd QuickfixCmdPost make cw
+augroup END
 
