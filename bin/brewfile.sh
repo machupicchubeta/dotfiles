@@ -52,6 +52,7 @@ brew install tmux
 # install packer
 brew install rmtrash
 brew install tor
+brew install nkf
 
 # for ruby
 brew install openssl

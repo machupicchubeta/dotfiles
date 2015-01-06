@@ -52,6 +52,7 @@ install tmux
 # install packer
 install rmtrash
 install tor
+install nkf
 
 # for ruby
 install openssl
