@@ -115,6 +115,7 @@ brew cask install disk-inventory-x
 brew cask install itrash
 brew cask install minitube
 brew cask install cyberduck
+brew cask install inssider
 
 brew linkapps
 

@@ -115,6 +115,7 @@ cask install disk-inventory-x
 cask install itrash
 cask install minitube
 cask install cyberduck
+cask install inssider
 
 linkapps
 
