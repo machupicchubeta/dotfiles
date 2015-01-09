@@ -84,17 +84,17 @@
   default = simple
 [filter "media"]
   required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
+        clean = git media clean %f
+        smudge = git media smudge %f
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
 [mergetool "sourcetree"]
-  cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+        cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
 [rerere]
   autoupdated = 1
   enabled = 1
