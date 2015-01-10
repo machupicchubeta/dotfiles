@@ -54,6 +54,12 @@ brew install reattach-to-user-namespace
 brew install rmtrash
 brew install tor
 brew install nkf
+brew install automake
+brew install fontforge
+
+# font
+# tap sanemat/font
+# install --powerline --vim-powerline ricty
 
 # for ruby
 brew install openssl

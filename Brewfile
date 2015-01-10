@@ -54,6 +54,12 @@ install reattach-to-user-namespace
 install rmtrash
 install tor
 install nkf
+install automake
+install fontforge
+
+# font
+# tap sanemat/font
+# install --powerline --vim-powerline ricty
 
 # for ruby
 install openssl
