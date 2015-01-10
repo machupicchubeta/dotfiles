@@ -47,6 +47,7 @@ install ag
 install jq
 install spark
 install tmux
+install reattach-to-user-namespace
 # install gnupg
 # install grc
 # install packer
