@@ -58,8 +58,7 @@ install automake
 install fontforge
 
 # font
-# tap sanemat/font
-# install --powerline --vim-powerline ricty
+# tap caskroom/fonts
 
 # for ruby
 install openssl

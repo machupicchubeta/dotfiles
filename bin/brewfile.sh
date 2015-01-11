@@ -58,8 +58,7 @@ brew install automake
 brew install fontforge
 
 # font
-# tap sanemat/font
-# install --powerline --vim-powerline ricty
+# tap caskroom/fonts
 
 # for ruby
 brew install openssl
