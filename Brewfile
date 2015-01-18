@@ -119,7 +119,7 @@ cask install reflector
 cask install disk-inventory-x
 # cask install google-plus-auto-backup
 cask install itrash
-cask install minitube
+# cask install minitube
 cask install cyberduck
 cask install inssider
 
