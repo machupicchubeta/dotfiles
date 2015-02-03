@@ -56,6 +56,7 @@ brew install tor
 brew install nkf
 brew install automake
 brew install fontforge
+brew install phantomjs182
 
 # font
 # tap caskroom/fonts

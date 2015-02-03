@@ -56,6 +56,7 @@ install tor
 install nkf
 install automake
 install fontforge
+install phantomjs182
 
 # font
 # tap caskroom/fonts
