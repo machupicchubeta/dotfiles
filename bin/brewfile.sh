@@ -25,7 +25,8 @@ brew install vim --with-lua --with-luajit
 brew install bash-completion
 brew install imagemagick
 brew link imagemagick
-brew install phantomjs
+# install phantomjs
+brew install phantomjs182
 brew install sl
 brew install bash
 brew install heroku-toolbelt
@@ -56,7 +57,6 @@ brew install tor
 brew install nkf
 brew install automake
 brew install fontforge
-brew install phantomjs182
 
 # font
 # tap caskroom/fonts

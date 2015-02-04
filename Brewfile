@@ -25,7 +25,8 @@ install vim --with-lua --with-luajit
 install bash-completion
 install imagemagick
 link imagemagick
-install phantomjs
+# install phantomjs
+install phantomjs182
 install sl
 install bash
 install heroku-toolbelt
@@ -56,7 +57,6 @@ install tor
 install nkf
 install automake
 install fontforge
-install phantomjs182
 
 # font
 # tap caskroom/fonts
