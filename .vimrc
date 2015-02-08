@@ -1,4 +1,4 @@
-" Make vim more useful
+  " Make vim more useful
 set nocompatible
 " Enhance command-line completion
 set wildmenu
@@ -90,43 +90,6 @@ set indentkeys=!^F,o,O,0<Bar>,0=where
 " cancel highlights by twice press Esc
 nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
 
-" move between tabs key map
-nnoremap s <Nop>
-nnoremap sj <C-w>j
-nnoremap sk <C-w>k
-nnoremap sl <C-w>l
-nnoremap sh <C-w>h
-nnoremap sJ <C-w>J
-nnoremap sK <C-w>K
-nnoremap sL <C-w>L
-nnoremap sH <C-w>H
-nnoremap sn gt
-nnoremap sp gT
-nnoremap sr <C-w>r
-nnoremap s= <C-w>=
-nnoremap sw <C-w>w
-nnoremap so <C-w>_<C-w>|
-nnoremap sO <C-w>=
-nnoremap sN :<C-u>bn<CR>
-nnoremap sP :<C-u>bp<CR>
-nnoremap st :<C-u>tabnew<CR>
-nnoremap sT :<C-u>Unite tab<CR>
-nnoremap ss :<C-u>sp<CR>
-nnoremap sv :<C-u>vs<CR>
-nnoremap sq :<C-u>q<CR>
-nnoremap sQ :<C-u>bd<CR>
-nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
-nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
-
-"call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
-"call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
-"call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
-"call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
-"call submode#map('bufmove', 'n', '', '>', '<C-w>>')
-"call submode#map('bufmove', 'n', '', '<', '<C-w><')
-"call submode#map('bufmove', 'n', '', '+', '<C-w>+')
-"call submode#map('bufmove', 'n', '', '-', '<C-w>-')
-
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
 	let save_cursor = getpos(".")
@@ -172,6 +135,7 @@ if has('vim_starting')
   NeoBundle 'kana/vim-smartchr'
   NeoBundle 'taku-o/vim-toggle'
   NeoBundle 'slim-template/vim-slim'
+  NeoBundle 'kana/vim-submode'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -295,6 +259,44 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 " }}}
+
+" move between tabs key map
+nnoremap s <Nop>
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap sJ <C-w>J
+nnoremap sK <C-w>K
+nnoremap sL <C-w>L
+nnoremap sH <C-w>H
+nnoremap sn gt
+nnoremap sp gT
+nnoremap sr <C-w>r
+nnoremap s= <C-w>=
+nnoremap sw <C-w>w
+nnoremap so <C-w>_<C-w>|
+nnoremap sO <C-w>=
+nnoremap sN :<C-u>bn<CR>
+nnoremap sP :<C-u>bp<CR>
+nnoremap st :<C-u>tabnew<CR>
+nnoremap sT :<C-u>Unite tab<CR>
+nnoremap ss :<C-u>sp<CR>
+nnoremap sv :<C-u>vs<CR>
+nnoremap sq :<C-u>q<CR>
+nnoremap sQ :<C-u>bd<CR>
+nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
+nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
+
+" vim-submode
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
 " showmarks
 let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
