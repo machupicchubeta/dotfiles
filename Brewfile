@@ -123,6 +123,7 @@ cask install itrash
 # cask install minitube
 cask install cyberduck
 cask install inssider
+cask install mou
 
 linkapps
 

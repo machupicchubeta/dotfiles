@@ -123,6 +123,7 @@ brew cask install itrash
 # cask install minitube
 brew cask install cyberduck
 brew cask install inssider
+brew cask install mou
 
 brew linkapps
 
