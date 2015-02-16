@@ -45,7 +45,7 @@ set list
 augroup highlightIdeographicSpace
   autocmd!
   autocmd ColorScheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
-  autocmd VimEnter,WinEnter *  match IdeographicSpace /　/
+  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
 augroup END
 " Highlight searches
 set hlsearch
@@ -70,7 +70,7 @@ set showmode
 " Show the filename in the window titlebar
 set title
 if exists("&relativenumber")
-"  Use relative line numbers
+" Use relative line numbers
  set relativenumber
  au BufReadPost * set relativenumber
 endif
