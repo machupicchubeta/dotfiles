@@ -2,6 +2,7 @@
   acm = commit -am
   ca = commit --amend
   cm = commit -m
+  cfu = commit --fixup
   c = commit
   pl = pull
   ps = push
