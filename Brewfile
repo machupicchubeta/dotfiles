@@ -57,6 +57,7 @@ install tor
 install nkf
 install automake
 install fontforge
+install lastpass-cli
 
 # font
 # tap caskroom/fonts
@@ -124,6 +125,7 @@ cask install itrash
 cask install cyberduck
 cask install inssider
 cask install mou
+cask install lastpass
 
 linkapps
 

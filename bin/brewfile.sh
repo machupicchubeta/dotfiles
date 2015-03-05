@@ -57,6 +57,7 @@ brew install tor
 brew install nkf
 brew install automake
 brew install fontforge
+brew install lastpass-cli
 
 # font
 # tap caskroom/fonts
@@ -124,6 +125,7 @@ brew cask install itrash
 brew cask install cyberduck
 brew cask install inssider
 brew cask install mou
+brew cask install lastpass
 
 brew linkapps
 
