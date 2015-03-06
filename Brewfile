@@ -58,6 +58,7 @@ install nkf
 install automake
 install fontforge
 install lastpass-cli
+install p7zip
 
 # font
 # tap caskroom/fonts
