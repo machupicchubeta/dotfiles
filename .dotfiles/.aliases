@@ -162,6 +162,9 @@ alias ber='bundle exec rails'
 # rake
 alias rk='rake'
 alias rks='rake spec'
+alias rkspc='DISABLE_SPRING=1 rake parallel:create'
+alias rkspp='DISABLE_SPRING=1 rake parallel:prepare'
+alias rksp='DISABLE_SPRING=1 rake parallel:spec'
 
 # c#
 #alias cs='csharp'
