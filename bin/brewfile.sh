@@ -5,6 +5,7 @@ brew upgrade
 
 brew tap homebrew/binary
 brew tap homebrew/versions
+brew tap thoughtbot/formulae
 
 brew install git
 brew install tig
@@ -59,6 +60,7 @@ brew install automake
 brew install fontforge
 brew install lastpass-cli
 brew install p7zip
+brew install pick
 
 # font
 # tap caskroom/fonts
