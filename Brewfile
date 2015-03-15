@@ -129,6 +129,7 @@ cask install cyberduck
 cask install inssider
 cask install mou
 cask install lastpass
+cask install rubymine
 
 linkapps
 
