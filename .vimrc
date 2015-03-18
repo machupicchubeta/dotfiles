@@ -136,6 +136,9 @@ if has('vim_starting')
   NeoBundle 'taku-o/vim-toggle'
   NeoBundle 'slim-template/vim-slim'
   NeoBundle 'kana/vim-submode'
+  NeoBundle 'szw/vim-tags'
+  NeoBundle 'thinca/vim-ref'
+  NeoBundle 'yuku-t/vim-ref-ri'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
