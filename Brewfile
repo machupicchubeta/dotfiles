@@ -61,6 +61,7 @@ install fontforge
 install lastpass-cli
 install p7zip
 install pick
+install ctags
 
 # font
 # tap caskroom/fonts
