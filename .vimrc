@@ -139,6 +139,7 @@ if has('vim_starting')
   NeoBundle 'szw/vim-tags'
   NeoBundle 'thinca/vim-ref'
   NeoBundle 'yuku-t/vim-ref-ri'
+  NeoBundle 'scrooloose/nerdtree'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -546,3 +547,5 @@ augroup quickfixopen
   autocmd QuickfixCmdPost make cw
 augroup END
 
+" NERDTree
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
