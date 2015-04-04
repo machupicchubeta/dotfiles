@@ -131,6 +131,7 @@ brew cask install inssider
 brew cask install mou
 brew cask install lastpass
 brew cask install rubymine
+brew cask install flashlight
 
 brew linkapps
 

@@ -131,6 +131,7 @@ cask install inssider
 cask install mou
 cask install lastpass
 cask install rubymine
+cask install flashlight
 
 linkapps
 
