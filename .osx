@@ -163,3 +163,9 @@ unset file
 
 # Kill affected applications
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
+
+# qlcolorcode
+defaults write org.n8gray.QLColorCode extraHLFlags '-l -W'
+defaults write org.n8gray.QLColorCode fontSizePoints 10
+defaults write org.n8gray.QLColorCode hlTheme solarized-dark
+defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
