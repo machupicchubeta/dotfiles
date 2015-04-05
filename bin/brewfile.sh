@@ -132,6 +132,14 @@ brew cask install mou
 brew cask install lastpass
 brew cask install rubymine
 brew cask install flashlight
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install quicklook-csv
+brew cask install betterzipql
+brew cask install suspicious-package
+brew cask install packages
+brew cask install qlcolorcode
 
 brew linkapps
 
