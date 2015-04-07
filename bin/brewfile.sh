@@ -140,6 +140,7 @@ brew cask install betterzipql
 brew cask install suspicious-package
 brew cask install packages
 brew cask install qlcolorcode
+brew cask install iterm2
 
 brew linkapps
 

@@ -140,6 +140,7 @@ cask install betterzipql
 cask install suspicious-package
 cask install packages
 cask install qlcolorcode
+cask install iterm2
 
 linkapps
 
