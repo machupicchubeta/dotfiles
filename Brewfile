@@ -62,6 +62,7 @@ install lastpass-cli
 install p7zip
 install pick
 install ctags
+install tree
 
 # font
 # tap caskroom/fonts

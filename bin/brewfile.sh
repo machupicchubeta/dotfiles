@@ -62,6 +62,7 @@ brew install lastpass-cli
 brew install p7zip
 brew install pick
 brew install ctags
+brew install tree
 
 # font
 # tap caskroom/fonts
