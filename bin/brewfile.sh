@@ -73,6 +73,7 @@ brew link openssl --force
 brew install readline
 brew install rbenv
 brew install ruby-build
+# install rbenv-bundler
 
 brew tap raggi/ale
 brew install openssl-osx-ca

@@ -73,6 +73,7 @@ link openssl --force
 install readline
 install rbenv
 install ruby-build
+# install rbenv-bundler
 
 tap raggi/ale
 install openssl-osx-ca
