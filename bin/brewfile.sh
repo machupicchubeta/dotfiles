@@ -116,7 +116,7 @@ brew cask install licecap
 brew cask install sublime-text3
 brew cask install atom
 brew cask install cloak
-# cask install karabiner
+brew cask install karabiner
 # cask install colors
 # cask install witch
 # cask install spectacle
