@@ -63,6 +63,7 @@ brew install p7zip
 brew install pick
 brew install ctags
 brew install tree
+brew install chromedriver
 
 # font
 # tap caskroom/fonts

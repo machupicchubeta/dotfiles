@@ -63,6 +63,7 @@ install p7zip
 install pick
 install ctags
 install tree
+install chromedriver
 
 # font
 # tap caskroom/fonts
