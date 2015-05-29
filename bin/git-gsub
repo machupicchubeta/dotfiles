@@ -5,5 +5,9 @@ require 'shellwords'
 from, to, path, = ARGV
 
 target_files = (`git grep -l #{from} #{path}`).each_line.map(&:chomp).join ' '
+if target_files.empty?
+  p 'There is no file to gsub.'
+  exit 0
+end
 
 system %|gsed -i s/#{Shellwords.escape from}/#{Shellwords.escape to}/g #{target_files}|
