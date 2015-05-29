@@ -37,7 +37,7 @@
   g = grep
   fixup = commit --amend -C HEAD
   gsub = "!f() { git-gsub }; f"
-  topic-branch = git-topic-branch
+  topic-branch = "!f() { git-topic-branch }"
   backup = git-backup
 [color]
   ui = always
