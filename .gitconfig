@@ -38,7 +38,7 @@
   fixup = commit --amend -C HEAD
   gsub = "!f() { git-gsub }; f"
   topic-branch = "!f() { git-topic-branch }"
-  backup = git-backup
+  backup = "!f() { git-backup }"
 [color]
   ui = always
 [apply]
