@@ -39,6 +39,7 @@
   gsub = "!f() { git-gsub }; f"
   topic-branch = "!f() { git-topic-branch }"
   backup = "!f() { git-backup }"
+  pullrequest = browse-remote --pr
 [color]
   ui = always
 [apply]
