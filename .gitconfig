@@ -31,6 +31,7 @@
   fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
   ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
   cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
+  sweep = "!f() { git branch --no-color --merged | grep -v master | xargs -n 1 git branch -D; }; f"
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   l1 = log --oneline
