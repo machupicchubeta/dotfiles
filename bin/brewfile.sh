@@ -26,8 +26,7 @@ brew install vim --with-lua --with-luajit
 brew install bash-completion
 brew install imagemagick
 brew link imagemagick
-# install phantomjs
-brew install phantomjs182
+brew install phantomjs198
 brew install sl
 brew install bash
 brew install heroku-toolbelt

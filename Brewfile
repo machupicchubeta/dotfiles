@@ -26,8 +26,7 @@ install vim --with-lua --with-luajit
 install bash-completion
 install imagemagick
 link imagemagick
-# install phantomjs
-install phantomjs182
+install phantomjs198
 install sl
 install bash
 install heroku-toolbelt
