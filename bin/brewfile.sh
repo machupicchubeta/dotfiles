@@ -145,6 +145,7 @@ brew cask install qlcolorcode
 brew cask install qlimagesize
 brew cask install hetimazipql
 brew cask install iterm2
+brew cask install gyazo
 
 brew linkapps
 

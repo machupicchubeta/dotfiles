@@ -145,6 +145,7 @@ cask install qlcolorcode
 cask install qlimagesize
 cask install hetimazipql
 cask install iterm2
+cask install gyazo
 
 linkapps
 
