@@ -146,6 +146,7 @@ cask install qlimagesize
 cask install hetimazipql
 cask install iterm2
 cask install gyazo
+cask install 0xed
 
 linkapps
 
