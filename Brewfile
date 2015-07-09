@@ -89,6 +89,7 @@ unlink libxml2 libxslt libiconv
 # cask
 tap caskroom/versions
 install caskroom/cask/brew-cask
+upgrade brew-cask
 
 cask install dropbox
 cask install github
@@ -151,3 +152,5 @@ cask install 0xed
 linkapps
 
 cleanup
+cask cleanup
+
