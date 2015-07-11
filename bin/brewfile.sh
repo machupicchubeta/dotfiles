@@ -63,6 +63,7 @@ brew install pick
 brew install ctags
 brew install tree
 brew install chromedriver
+brew install packer
 
 # font
 # tap caskroom/fonts
@@ -148,6 +149,7 @@ brew cask install hetimazipql
 brew cask install iterm2
 brew cask install gyazo
 brew cask install 0xed
+brew cask install packer
 
 brew linkapps
 

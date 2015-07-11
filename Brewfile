@@ -63,6 +63,7 @@ install pick
 install ctags
 install tree
 install chromedriver
+install packer
 
 # font
 # tap caskroom/fonts
@@ -148,6 +149,7 @@ cask install hetimazipql
 cask install iterm2
 cask install gyazo
 cask install 0xed
+cask install packer
 
 linkapps
 
