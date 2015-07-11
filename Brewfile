@@ -58,7 +58,7 @@ install tor
 install nkf
 install automake
 install fontforge
-install lastpass-cli
+install lastpass-cli --with-pinentry --with-doc
 install p7zip
 install pick
 install ctags
