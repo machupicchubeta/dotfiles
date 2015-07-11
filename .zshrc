@@ -90,3 +90,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 eval "$(direnv hook $0)"
 
+plugins+=(zsh-completions)
+autoload -U compinit && compinit
+
