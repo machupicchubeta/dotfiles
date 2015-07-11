@@ -50,6 +50,8 @@ alias sudo='sudo '
 
 alias -g L='| less'
 alias -g G='| grep'
+alias -g X='| xargs'
+alias -g P='| pick'
 
 # Always use color output for `ls`
 # if [[ "$OSTYPE" =~ ^darwin ]]; then
