@@ -94,7 +94,7 @@ alias flush="dscacheutil -flushcache"
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
-if [[ $0 == 'bash' ]]; then
+if ps -p $_PPID | grep -qs bash ; then
   # Canonical hex dump; some systems have this symlinked
   type -t hd > /dev/null || alias hd="hexdump -C"
 

@@ -1,6 +1,11 @@
+_PID=$$; _PPID=$(ps -o ppid -p $_PID | tail -n 1)
+
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-if [[ $0 == 'bash' ]]; then
-  [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
+if ps -p $_PPID | grep -qs bash ; then
+    [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
+
+    complete -C aws_completer aws
+    eval "$(direnv hook $0)"
 fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -11,11 +16,6 @@ eval "$(hub alias -s)"
 
 export export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-
-if [[ $0 == 'bash' ]]; then
-    complete -C aws_completer aws
-    eval "$(direnv hook $0)"
-fi
 
 eval $(gdircolors ~/Tools/seebi/dircolors-solarized)
 
