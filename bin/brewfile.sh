@@ -152,6 +152,7 @@ brew cask install iterm2
 brew cask install gyazo
 brew cask install 0xed
 brew cask install packer
+brew cask install alfred
 
 brew linkapps
 

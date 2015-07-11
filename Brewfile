@@ -152,6 +152,7 @@ cask install iterm2
 cask install gyazo
 cask install 0xed
 cask install packer
+cask install alfred
 
 linkapps
 
