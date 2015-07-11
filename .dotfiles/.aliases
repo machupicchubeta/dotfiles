@@ -48,10 +48,13 @@ alias mkdir='mkdir -p'
 
 alias sudo='sudo '
 
-alias -g L='| less'
-alias -g G='| grep'
-alias -g X='| xargs'
-alias -g P='| pick'
+_PID=$$; _PPID=$(ps -o ppid -p $_PID | tail -n 1)
+if ps -p $_PPID | grep -qs zsh ; then
+    alias -g L='| less'
+    alias -g G='| grep'
+    alias -g X='| xargs'
+    alias -g P='| pick'
+fi
 
 # Always use color output for `ls`
 # if [[ "$OSTYPE" =~ ^darwin ]]; then
