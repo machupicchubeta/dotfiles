@@ -6,6 +6,7 @@ upgrade
 tap homebrew/binary
 tap homebrew/versions
 tap thoughtbot/formulae
+tap homebrew/completions
 
 install git
 install tig
@@ -64,6 +65,7 @@ install ctags
 install tree
 install chromedriver
 install packer
+install packer-completion
 
 # font
 # tap caskroom/fonts

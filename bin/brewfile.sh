@@ -6,6 +6,7 @@ brew upgrade
 brew tap homebrew/binary
 brew tap homebrew/versions
 brew tap thoughtbot/formulae
+brew tap homebrew/completions
 
 brew install git
 brew install tig
@@ -64,6 +65,7 @@ brew install ctags
 brew install tree
 brew install chromedriver
 brew install packer
+brew install packer-completion
 
 # font
 # tap caskroom/fonts
