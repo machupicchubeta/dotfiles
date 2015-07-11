@@ -137,7 +137,7 @@ cask install inssider
 cask install mou
 cask install lastpass
 cask install rubymine
-cask install flashlight
+# cask install flashlight
 cask install qlstephen
 cask install qlmarkdown
 cask install quicklook-json
