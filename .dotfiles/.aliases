@@ -121,6 +121,7 @@ alias g="git"
 alias oppai="git"
 alias o="git"
 alias v="vim"
+alias master="git checkout master"
 # alias m="mate ."
 
 # File size
