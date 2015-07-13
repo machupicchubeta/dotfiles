@@ -59,14 +59,10 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source ~/perl5/perlbrew/etc/bashrc
 
-eval "$(hub alias -s)"
-
 export export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 complete -C aws_completer aws
 
 eval "$(direnv hook $0)"
-
-eval $(gdircolors ~/Tools/seebi/dircolors-solarized)
 
