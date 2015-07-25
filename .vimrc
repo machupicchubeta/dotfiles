@@ -42,11 +42,16 @@ set softtabstop=2
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set listchars=tab:▸\ ,trail:·,nbsp:_,precedes:<
 set list
-augroup highlightIdeographicSpace
+" Highlight IdeographicSpace
+function! IdeographicSpace()
+  highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
+endfunction
+augroup IdeographicSpace
   autocmd!
-  autocmd ColorScheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
-  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
+  autocmd ColorScheme * call IdeographicSpace()
+  autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('IdeographicSpace', '　')
 augroup END
+call IdeographicSpace()
 " Highlight searches
 set hlsearch
 " Ignore case of searches
