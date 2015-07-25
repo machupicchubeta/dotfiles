@@ -140,6 +140,11 @@ if has('vim_starting')
   NeoBundle 'thinca/vim-ref'
   NeoBundle 'yuku-t/vim-ref-ri'
   NeoBundle 'scrooloose/nerdtree'
+  NeoBundle 'bronson/vim-trailing-whitespace'
+  NeoBundle 'tpope/vim-surround'
+  NeoBundle 'nathanaelkane/vim-indent-guides'
+  NeoBundle 'vim-scripts/AnsiEsc.vim'
+  NeoBundle 'tpope/vim-fugitive'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -549,3 +554,11 @@ augroup END
 
 " NERDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+
+" vim-fugitive
+autocmd QuickFixCmdPost *grep* cwindow
+set statusline+=%{fugitive#statusline()}
+
