@@ -147,7 +147,8 @@ if has('vim_starting')
   NeoBundle 'scrooloose/nerdtree'
   NeoBundle 'bronson/vim-trailing-whitespace'
   NeoBundle 'tpope/vim-surround'
-  NeoBundle 'nathanaelkane/vim-indent-guides'
+  " NeoBundle 'nathanaelkane/vim-indent-guides'
+  NeoBundle 'Yggdroot/indentLine'
   NeoBundle 'vim-scripts/AnsiEsc.vim'
   NeoBundle 'tpope/vim-fugitive'
   NeoBundle 'junegunn/vim-easy-align'
@@ -562,7 +563,11 @@ augroup END
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 " vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_enable_on_vim_startup = 1
+
+" indentLine
+let g:indentLine_faster = 1
+nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 " vim-fugitive
 autocmd QuickFixCmdPost *grep* cwindow
