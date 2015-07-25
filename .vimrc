@@ -150,6 +150,7 @@ if has('vim_starting')
   NeoBundle 'nathanaelkane/vim-indent-guides'
   NeoBundle 'vim-scripts/AnsiEsc.vim'
   NeoBundle 'tpope/vim-fugitive'
+  NeoBundle 'junegunn/vim-easy-align'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -566,4 +567,10 @@ let g:indent_guides_enable_on_vim_startup = 1
 " vim-fugitive
 autocmd QuickFixCmdPost *grep* cwindow
 set statusline+=%{fugitive#statusline()}
+
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
