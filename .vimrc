@@ -1,4 +1,4 @@
-  " Make vim more useful
+" Make vim more useful
 set nocompatible
 " Enhance command-line completion
 set wildmenu
