@@ -66,6 +66,7 @@ brew install tree
 brew install chromedriver
 brew install packer
 brew install packer-completion
+brew install rsense
 
 # font
 # tap caskroom/fonts

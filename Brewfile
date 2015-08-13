@@ -66,6 +66,7 @@ install tree
 install chromedriver
 install packer
 install packer-completion
+install rsense
 
 # font
 # tap caskroom/fonts
