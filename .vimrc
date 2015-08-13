@@ -238,7 +238,6 @@ if has('vim_starting')
         \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
         \ }}
 
-  NeoBundle 'scrooloose/syntastic'
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'vim-ruby/vim-ruby'
   NeoBundle 'marcus/rsense'
@@ -331,8 +330,7 @@ let b:match_ignorecase = 1
 let b:match_words = &matchpairs .'\<begin\>:\<end\>,(:),{:},[:],\<if\>:\<endif\>,\<augroup\>:\<augroup END\>'
 
 " syntastic
-let g:syntastic_mode_map = { 'mode': 'passive',
-            \ 'active_filetypes': ['ruby'] }
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
 " lightline {{{
@@ -601,10 +599,4 @@ if !exists('g:neocomplete#force_omni_input_patterns')
   let g:neocomplete#force_omni_input_patterns = {}
 endif
 let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
-
-" rubocop
-" syntastic_mode_mapをactiveにするとバッファ保存時にsyntasticが走る
-" active_filetypesに、保存時にsyntasticを走らせるファイルタイプを指定する
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
-let g:syntastic_ruby_checkers = ['rubocop']
 
