@@ -558,10 +558,12 @@ let g:rails_projections = {
             \   "template": "module %S\nend",
             \   "test": "spec/models/concerns/%s_spec.rb"
             \ }}
-augroup quickfixopen
-  autocmd!
-  autocmd QuickfixCmdPost make cw
-augroup END
+
+" ruby syntax check
+" augroup quickfixopen
+"   autocmd!
+"   autocmd QuickfixCmdPost make cw
+" augroup END
 
 " NERDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
