@@ -154,6 +154,7 @@ cask install gyazo
 cask install 0xed
 cask install packer
 cask install alfred
+cask install dockertoolbox
 
 linkapps
 

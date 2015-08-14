@@ -154,6 +154,7 @@ brew cask install gyazo
 brew cask install 0xed
 brew cask install packer
 brew cask install alfred
+brew cask install dockertoolbox
 
 brew linkapps
 
