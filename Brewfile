@@ -155,6 +155,8 @@ cask install 0xed
 cask install packer
 cask install alfred
 cask install dockertoolbox
+cask install githubpulse
+cask install github-desktop
 
 linkapps
 
