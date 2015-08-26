@@ -11,6 +11,7 @@ brew tap homebrew/completions
 brew install git
 brew install tig
 brew install hub
+brew install git-lfs
 brew install wget
 brew install curl
 brew install mysql

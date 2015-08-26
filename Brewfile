@@ -11,6 +11,7 @@ tap homebrew/completions
 install git
 install tig
 install hub
+install git-lfs
 install wget
 install curl
 install mysql
