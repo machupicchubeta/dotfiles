@@ -126,7 +126,7 @@ brew cask install karabiner
 # cask install colors
 # cask install witch
 # cask install spectacle
-# cask install slate
+brew cask install slate
 brew cask install google-hangouts
 brew cask install dash
 brew cask install reflector

@@ -1,0 +1,50 @@
+# Config
+config windowHintsFontSize 100
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config windowHintsTopLeftX (windowSizeX/2)-(windowHintsWidth/2)
+config windowHintsTopLeftY (windowSizeY/2)-(windowHintsHeight/2)
+config windowHintsIgnoreHiddenWindows false
+
+# General aliases
+alias sox screenOriginX
+alias soy screenOriginY
+alias ssx screenSizeX
+alias ssy screenSizeY
+
+# Position aliases
+alias centered ${sox}+${ssx}/8;${soy}+${ssy}/8 ${ssx}/8*6;${ssy}/8*6
+alias fullscreen ${sox};${soy} ${ssx};${ssy}
+alias leftHalf ${sox};${soy} ${ssx}/2;${ssy}
+alias bottomHalf ${sox};${soy}+${ssy}/2 ${ssx};${ssy}/2
+alias topHalf ${sox};${soy} ${ssx};${ssy}/2
+alias rightHalf ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}
+alias topLeftQuarter ${sox};${soy} ${ssx}/2;${ssy}/2
+alias topRightQuarter ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}/2
+alias bottomLeftQuarter ${sox};${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
+alias bottomRightQuarter ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
+
+# Bindings
+bind g:ctrl;cmd move ${centered}
+bind o:ctrl;cmd move ${fullscreen}
+bind h:ctrl;cmd move ${leftHalf}
+bind j:ctrl;cmd move ${bottomHalf}
+bind k:ctrl;cmd move ${topHalf}
+bind l:ctrl;cmd move ${rightHalf}
+bind u:ctrl;cmd move ${topLeftQuarter}
+bind i:ctrl;cmd move ${topRightQuarter}
+bind n:ctrl;cmd move ${bottomLeftQuarter}
+bind m:ctrl;cmd move ${bottomRightQuarter}
+
+bind ;:ctrl;cmd throw previous
+bind /:ctrl;cmd hint ASDFJKLGHWERTYUIO
+
+bind right:ctrl;cmd resize +10% +0
+bind left:ctrl;cmd  resize -10% +0
+bind up:ctrl;cmd    resize +0 -10%
+bind down:ctrl;cmd  resize +0 +10%
+
+bind right:ctrl;cmd nudge +10% +0
+bind left:ctrl;cmd  nudge -10% +0
+bind up:ctrl;cmd    nudge +0 -10%
+bind down:ctrl;cmd  nudge +0 +10%
