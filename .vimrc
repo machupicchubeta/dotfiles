@@ -179,11 +179,11 @@ if has('vim_starting')
         \    },
         \ }
 
-  if has("lua")
-    NeoBundleLazy 'Shougo/neocomplete', { 'autoload' : {
-          \   'insert' : 1,
-          \ }}
-  endif
+  " if has("lua")
+  "   NeoBundleLazy 'Shougo/neocomplete', { 'autoload' : {
+  "         \   'insert' : 1,
+  "         \ }}
+  " endif
 
   NeoBundleLazy 'Shougo/neosnippet', {
         \ 'autoload' : {
