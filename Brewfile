@@ -158,6 +158,7 @@ cask install alfred
 cask install dockertoolbox
 cask install githubpulse
 cask install github-desktop
+cask install paparazzi
 
 linkapps
 

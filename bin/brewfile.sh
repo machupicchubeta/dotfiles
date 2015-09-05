@@ -158,6 +158,7 @@ brew cask install alfred
 brew cask install dockertoolbox
 brew cask install githubpulse
 brew cask install github-desktop
+brew cask install paparazzi
 
 brew linkapps
 
