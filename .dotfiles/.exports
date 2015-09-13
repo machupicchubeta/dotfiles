@@ -23,3 +23,5 @@ export TERM=xterm-256color
 export DOCKER_HOST=
 export DOCKER_CERT_PATH=
 export DOCKER_TLS_VERIFY=
+
+HOMEBREW_GITHUB_API_TOKEN=
