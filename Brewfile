@@ -159,6 +159,7 @@ cask install dockertoolbox
 cask install githubpulse
 cask install github-desktop
 cask install paparazzi
+cask install simplecap
 
 linkapps
 
