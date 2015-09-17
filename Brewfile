@@ -160,6 +160,7 @@ cask install githubpulse
 cask install github-desktop
 cask install paparazzi
 cask install simplecap
+cask install sophos-anti-virus-home-edition
 
 linkapps
 

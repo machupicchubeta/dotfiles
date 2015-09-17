@@ -160,6 +160,7 @@ brew cask install githubpulse
 brew cask install github-desktop
 brew cask install paparazzi
 brew cask install simplecap
+brew cask install sophos-anti-virus-home-edition
 
 brew linkapps
 
