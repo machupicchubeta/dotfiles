@@ -93,3 +93,5 @@ eval "$(direnv hook $0)"
 plugins+=(zsh-completions)
 autoload -U compinit && compinit
 
+source /usr/local/share/zsh/site-functions/_aws
+
