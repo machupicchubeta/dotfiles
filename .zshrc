@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-for file in ~/.dotfiles/.{extra,exports,aliases,functions,private}; do
+for file in ~/.dotfiles/.{exports,extra,aliases,functions,private}; do
   [ -r "$file" ] && source "$file"
 done
 
