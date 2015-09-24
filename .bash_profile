@@ -1,6 +1,3 @@
-export PATH=~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
-
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
@@ -16,12 +13,6 @@ shopt -s nocaseglob
 
 # include proxy.sh
 #. libs/proxy.sh
-
-# Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
-#export LC_ALL="ja_JP.UTF-8"
-#export LANG="ja_JP.UTF-8"
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh

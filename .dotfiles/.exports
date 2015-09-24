@@ -3,11 +3,12 @@ export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
+# Prefer US English and use UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH=~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+export PATH="~/perl5/perlbrew/bin:~/perl5/perlbrew/perls/perl-5.21.6/bin:~/.rbenv/shims:~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/man:$MANPATH"
 
 # Larger bash history (allow 2^10^2 entries; default is 500)
 export HISTSIZE=1048576

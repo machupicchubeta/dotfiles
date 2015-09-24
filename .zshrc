@@ -52,13 +52,7 @@ plugins=(git z brew tmux osx vagrant ruby npm gem tmuxinator history docker rake
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
-export PATH="~/perl5/perlbrew/bin:~/perl5/perlbrew/perls/perl-5.21.6/bin:~/.rbenv/shims:~/bin:~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
- export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
