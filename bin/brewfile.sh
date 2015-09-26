@@ -97,7 +97,6 @@ brew install caskroom/cask/brew-cask
 brew upgrade brew-cask
 
 brew cask install dropbox
-brew cask install github
 brew cask install google-japanese-ime
 brew cask install kobito
 brew cask install skype
