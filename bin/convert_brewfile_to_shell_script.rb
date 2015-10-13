@@ -1,14 +1,14 @@
 #!/usr/local/bin/ruby
-File::open( ARGV[0] ) {|brewfile|
-  puts "#!/bin/sh"
+
+File.open ARGV[0] do |brewfile|
+  puts '#!/bin/sh'
   puts 'sudo chown -R $(whoami):admin /usr/local/'
 
-  brewfile.each_line {|line|
-    if line[0] == "#"|| line.size == 1 then
+  brewfile.each_line do |line|
+    if line.start_with?('#') || line.chomp.empty?
       print line
     else
-      print "brew " + line
+      print "brew #{line}"
     end
-  }
-}
-
+  end
+end
