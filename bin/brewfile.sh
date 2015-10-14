@@ -100,7 +100,6 @@ brew upgrade brew-cask
 brew cask install dropbox
 brew cask install google-japanese-ime
 brew cask install kobito
-brew cask install skype
 brew cask install vagrant
 brew cask install virtualbox
 # cask install google-chrome-dev
