@@ -39,7 +39,6 @@
   l1 = log --oneline
   g = grep
   fixup = commit --amend -C HEAD
-  gsub = "!f() { git-gsub }; f"
   topic-branch = "!f() { git-topic-branch }"
   backup = "!f() { git-backup }"
   pull-request = browse-remote --pr
