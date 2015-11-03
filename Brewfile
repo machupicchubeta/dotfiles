@@ -160,6 +160,7 @@ cask install paparazzi
 cask install simplecap
 cask install sophos-anti-virus-home-edition
 cask install box-sync
+cask install google-chrome-canary
 
 linkapps
 

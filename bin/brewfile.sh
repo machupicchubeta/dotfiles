@@ -162,6 +162,7 @@ brew cask install paparazzi
 brew cask install simplecap
 brew cask install sophos-anti-virus-home-edition
 brew cask install box-sync
+brew cask install google-chrome-canary
 
 brew linkapps
 
