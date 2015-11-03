@@ -69,6 +69,7 @@ brew install chromedriver
 brew install packer
 brew install packer-completion
 brew install rsense
+brew install chrome-cli
 
 # font
 # tap caskroom/fonts

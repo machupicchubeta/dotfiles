@@ -67,6 +67,7 @@ install chromedriver
 install packer
 install packer-completion
 install rsense
+install chrome-cli
 
 # font
 # tap caskroom/fonts
