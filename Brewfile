@@ -102,7 +102,8 @@ cask install kobito
 cask install vagrant
 cask install virtualbox
 # cask install google-chrome-dev
-cask install google-chrome-beta
+# cask install google-chrome-beta
+cask install google-chrome
 cask install firefox-beta
 cask install firefoxdeveloperedition
 cask install flash
