@@ -165,6 +165,7 @@ brew cask install simplecap
 brew cask install sophos-anti-virus-home-edition
 brew cask install box-sync
 brew cask install google-chrome-canary
+brew cask install macvim --with-lua --with-luajit
 
 brew linkapps
 
