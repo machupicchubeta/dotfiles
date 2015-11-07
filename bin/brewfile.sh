@@ -70,6 +70,7 @@ brew install packer
 brew install packer-completion
 brew install rsense
 brew install chrome-cli
+brew install cscope
 
 # font
 # tap caskroom/fonts
