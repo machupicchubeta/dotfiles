@@ -107,7 +107,8 @@ brew cask install virtualbox
 # cask install google-chrome-dev
 # cask install google-chrome-beta
 brew cask install google-chrome
-brew cask install firefox-beta
+# cask install firefox-beta
+brew cask install firefox
 brew cask install firefoxdeveloperedition
 brew cask install flash
 brew cask install evernote
