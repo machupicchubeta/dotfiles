@@ -122,7 +122,6 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
 
   " add plugins
-  "NeoBundle 'Shougo/clang_complete.git'
   NeoBundle 'Shougo/echodoc.git'
   NeoBundle 'Shougo/unite.vim.git'
   NeoBundle 'Shougo/vim-vcs.git'
