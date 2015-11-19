@@ -234,9 +234,9 @@ if has('vim_starting')
 
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'vim-ruby/vim-ruby'
-  " NeoBundle 'marcus/rsense'
+  NeoBundle 'marcus/rsense'
   NeoBundle 'Shougo/neocomplete.vim'
-  " NeoBundle 'supermomonga/neocomplete-rsense.vim'
+  NeoBundle 'supermomonga/neocomplete-rsense.vim'
 
   NeoBundleCheck
 
@@ -580,8 +580,8 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Rsense
-" let g:rsenseHome = '/usr/local/bin/rsense'
-" let g:rsenseUseOmniFunc = 1
+let g:rsenseHome = '/usr/local/bin/rsense'
+let g:rsenseUseOmniFunc = 1
 
 " neocomplete.vim {{{
 " Disable AutoComplPop.
