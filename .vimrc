@@ -124,7 +124,7 @@ if has('vim_starting')
   " add plugins
   "NeoBundle 'Shougo/clang_complete.git'
   NeoBundle 'Shougo/echodoc.git'
-  NeoBundle 'Shougo/neocomplcache.git'
+  " NeoBundle 'Shougo/neocomplcache.git'
   NeoBundle 'Shougo/unite.vim.git'
   NeoBundle 'Shougo/vim-vcs.git'
   NeoBundle 'Shougo/vimfiler.git'
@@ -186,13 +186,14 @@ if has('vim_starting')
   "         \ }}
   " endif
 
-  NeoBundleLazy 'Shougo/neosnippet', {
-        \ 'autoload' : {
-        \   'commands' : ['NeoSnippetEdit', 'NeoSnippetSource'],
-        \   'filetypes' : 'snippet',
-        \   'insert' : 1,
-        \   'unite_sources' : ['snippet', 'neosnippet/user', 'neosnippet/runtime'],
-        \ }}
+  " NeoBundle 'Shougo/neosnippet'
+  " NeoBundleLazy 'Shougo/neosnippet', {
+  "       \ 'autoload' : {
+  "       \   'commands' : ['NeoSnippetEdit', 'NeoSnippetSource'],
+  "       \   'filetypes' : 'snippet',
+  "       \   'insert' : 1,
+  "       \   'unite_sources' : ['snippet', 'neosnippet/user', 'neosnippet/runtime'],
+  "       \ }}
 
   NeoBundle 'Shougo/neosnippet-snippets'
 
@@ -241,8 +242,9 @@ if has('vim_starting')
 
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'vim-ruby/vim-ruby'
-  NeoBundle 'marcus/rsense'
-  NeoBundle 'supermomonga/neocomplete-rsense.vim'
+  " NeoBundle 'marcus/rsense'
+  " NeoBundle 'Shougo/neocomplete.vim'
+  " NeoBundle 'supermomonga/neocomplete-rsense.vim'
 
   NeoBundleCheck
 
@@ -256,22 +258,22 @@ filetype plugin on
 filetype indent on
 
 " Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+" imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+" smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+" xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
+" imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+" \ "\<Plug>(neosnippet_expand_or_jump)"
+" \: pumvisible() ? "\<C-n>" : "\<TAB>"
+" smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+" \ "\<Plug>(neosnippet_expand_or_jump)"
+" \: "\<TAB>"
 
 " For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
+" if has('conceal')
+"   set conceallevel=2 concealcursor=i
+" endif
 
 " vim-rspec {{{
 map <Leader>t :call RunCurrentSpecFile()<CR>
@@ -322,13 +324,13 @@ call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 let g:showmarks_include='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 " Enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
+" let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+" let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
-let b:match_ignorecase = 1
-let b:match_words = &matchpairs .'\<begin\>:\<end\>,(:),{:},[:],\<if\>:\<endif\>,\<augroup\>:\<augroup END\>'
+" let b:match_ignorecase = 1
+" let b:match_words = &matchpairs .'\<begin\>:\<end\>,(:),{:},[:],\<if\>:\<endif\>,\<augroup\>:\<augroup END\>'
 
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
@@ -463,7 +465,7 @@ let g:toggle_pairs = {
 " }}}
 
 " neocomplcache
-let g:neocomplcache_enable_at_startup = 1
+" let g:neocomplcache_enable_at_startup = 1
 
 " the silver searcher with Unite {{{
 let g:unite_enable_start_insert = 1
@@ -589,15 +591,15 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Rsense
-let g:rsenseHome = '/usr/local/bin/rsense'
-let g:rsenseUseOmniFunc = 1
+" let g:rsenseHome = '/usr/local/bin/rsense'
+" let g:rsenseUseOmniFunc = 1
 
 " neocomplete.vim
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-endif
-let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
+" let g:acp_enableAtStartup = 0
+" let g:neocomplete#enable_at_startup = 1
+" let g:neocomplete#enable_smart_case = 1
+" if !exists('g:neocomplete#force_omni_input_patterns')
+"   let g:neocomplete#force_omni_input_patterns = {}
+" endif
+" let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
 
