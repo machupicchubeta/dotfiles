@@ -124,7 +124,6 @@ if has('vim_starting')
   " add plugins
   "NeoBundle 'Shougo/clang_complete.git'
   NeoBundle 'Shougo/echodoc.git'
-  " NeoBundle 'Shougo/neocomplcache.git'
   NeoBundle 'Shougo/unite.vim.git'
   NeoBundle 'Shougo/vim-vcs.git'
   NeoBundle 'Shougo/vimfiler.git'
@@ -463,9 +462,6 @@ let g:toggle_pairs = {
   \'||':'&&'
 \}
 " }}}
-
-" neocomplcache
-" let g:neocomplcache_enable_at_startup = 1
 
 " the silver searcher with Unite {{{
 let g:unite_enable_start_insert = 1
