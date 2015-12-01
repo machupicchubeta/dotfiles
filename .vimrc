@@ -129,7 +129,6 @@ if has('vim_starting')
   NeoBundle 'Shougo/vimshell.git'
   NeoBundle 'Shougo/vinarise.git'
   NeoBundle 'itchyny/lightline.vim'
-  NeoBundle 'Townk/vim-autoclose'
   NeoBundle 'mattn/emmet-vim'
   NeoBundle 'thinca/vim-quickrun'
   NeoBundle 'grep.vim'
@@ -153,6 +152,7 @@ if has('vim_starting')
   NeoBundle 'vim-scripts/AnsiEsc.vim'
   NeoBundle 'tpope/vim-fugitive'
   NeoBundle 'junegunn/vim-easy-align'
+  NeoBundle 'Raimondi/delimitMate'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
