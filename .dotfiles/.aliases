@@ -166,8 +166,8 @@ alias bi='bundle install'
 alias ber='bundle exec rails'
 
 # rake
-alias rk='rake'
-alias rks='rake spec'
+alias rk='DISABLE_SPRING=1 rake'
+alias rks='DISABLE_SPRING=1 rake spec'
 alias rkspc='DISABLE_SPRING=1 rake parallel:create'
 alias rkspp='DISABLE_SPRING=1 rake parallel:prepare'
 alias rksp='DISABLE_SPRING=1 rake parallel:spec'
