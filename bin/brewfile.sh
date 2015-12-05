@@ -71,6 +71,7 @@ brew install packer-completion
 brew install rsense
 brew install chrome-cli
 brew install cscope
+brew install postgresql
 
 # font
 # tap caskroom/fonts

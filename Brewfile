@@ -69,6 +69,7 @@ install packer-completion
 install rsense
 install chrome-cli
 install cscope
+install postgresql
 
 # font
 # tap caskroom/fonts
