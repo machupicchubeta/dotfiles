@@ -55,3 +55,7 @@ complete -C aws_completer aws
 
 eval "$(direnv hook $0)"
 
+# enhancd
+if [ -f "~/.enhancd/bash/enhancd.bash" ]; then
+    source "~/.enhancd/bash/enhancd.bash"
+fi

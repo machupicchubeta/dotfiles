@@ -89,3 +89,7 @@ autoload -U compinit && compinit
 
 source /usr/local/share/zsh/site-functions/_aws
 
+# enhancd
+if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
+    source "~/.enhancd/zsh/enhancd.zsh"
+fi
