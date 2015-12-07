@@ -184,7 +184,7 @@ alias sidekiq_daemon='DISABLE_SPRING=1 bundle exec sidekiq -C config/sidekiq.yml
 # rspec
 alias all_test='DISABLE_SPRING=1 RAILS_ENV=test rk db:reset db:migrate db:seed spec'
 alias feature_test='DISABLE_SPRING=1 RAILS_ENV=test rk db:reset db:migrate db:seed spec:features'
-alias test='spring stop && RAILS_ENV=test rk db:reset db:migrate db:seed spec:controllers spec:decorators spec:helpers spec:lib spec:models'
+alias test='DISABLE_SPRING=1 RAILS_ENV=test rk db:reset db:migrate db:seed spec:controllers spec:decorators spec:helpers spec:lib spec:models'
 alias retest='DISABLE_SPRING=1 rspec --only-failures'
 alias next_failure='DISABLE_SPRING=1 rspec --next-failure'
 
