@@ -72,6 +72,7 @@ brew install rsense
 brew install chrome-cli
 brew install cscope
 brew install postgresql
+brew install diff-pdf
 
 # font
 # tap caskroom/fonts

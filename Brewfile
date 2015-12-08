@@ -70,6 +70,7 @@ install rsense
 install chrome-cli
 install cscope
 install postgresql
+install diff-pdf
 
 # font
 # tap caskroom/fonts
