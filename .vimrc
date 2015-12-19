@@ -171,12 +171,15 @@ if has('vim_starting')
 
   NeoBundle 'ujihisa/unite-colorscheme'
 
-  NeoBundle 'Shougo/vimproc', {
-        \ 'build' : {
-        \     'mac' : 'make -f make_mac.mak',
-        \     'unix' : 'make -f make_unix.mak',
-        \    },
-        \ }
+  NeoBundle 'Shougo/vimproc.vim', {
+  \ 'build' : {
+  \     'windows' : 'tools\\update-dll-mingw',
+  \     'cygwin' : 'make -f make_cygwin.mak',
+  \     'mac' : 'make',
+  \     'linux' : 'make',
+  \     'unix' : 'gmake',
+  \    },
+  \ }
 
   " NeoBundle 'Shougo/neosnippet'
   " NeoBundleLazy 'Shougo/neosnippet', {
