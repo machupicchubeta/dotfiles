@@ -99,8 +99,6 @@ brew unlink libxml2 libxslt libiconv
 
 # cask
 brew tap caskroom/versions
-brew install caskroom/cask/brew-cask
-brew upgrade brew-cask
 
 brew cask install dropbox
 brew cask install google-japanese-ime
