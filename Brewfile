@@ -71,6 +71,7 @@ install chrome-cli
 install cscope
 install postgresql
 install diff-pdf
+install parallel
 
 # font
 # tap caskroom/fonts

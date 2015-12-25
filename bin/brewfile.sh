@@ -73,6 +73,7 @@ brew install chrome-cli
 brew install cscope
 brew install postgresql
 brew install diff-pdf
+brew install parallel
 
 # font
 # tap caskroom/fonts
