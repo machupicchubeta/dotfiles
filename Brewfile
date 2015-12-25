@@ -80,7 +80,7 @@ install openssl
 link openssl --force
 install readline
 install rbenv
-install ruby-build
+install ruby-build --HEAD
 # install rbenv-bundler
 
 tap raggi/ale

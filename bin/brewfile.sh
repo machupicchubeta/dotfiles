@@ -82,7 +82,7 @@ brew install openssl
 brew link openssl --force
 brew install readline
 brew install rbenv
-brew install ruby-build
+brew install ruby-build --HEAD
 # install rbenv-bundler
 
 brew tap raggi/ale
