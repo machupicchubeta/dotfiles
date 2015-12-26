@@ -104,7 +104,7 @@ brew install openssl-osx-ca
 brew install libxml2
 brew install libxslt
 brew install libiconv
-#link libxml2 libxslt libiconv --force
+# link libxml2 libxslt libiconv --force
 brew unlink libxml2 libxslt libiconv
 
 # cask
