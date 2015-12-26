@@ -1,14 +1,27 @@
 #!/bin/sh
 sudo chown -R $(whoami):admin /usr/local/
 
-brew update
-brew upgrade
+brew untap homebrew/binary
+brew untap homebrew/versions
+brew untap thoughtbot/formulae
+brew untap homebrew/completions
+brew untap homebrew/dupes
+brew untap raggi/ale
+brew untap caskroom/versions
+
+brew prune
 
 brew tap homebrew/binary
 brew tap homebrew/versions
 brew tap thoughtbot/formulae
 brew tap homebrew/completions
 brew tap homebrew/dupes
+brew tap raggi/ale
+brew tap caskroom/versions
+# tap caskroom/fonts
+
+brew update
+brew upgrade
 
 brew install git
 brew install tig
@@ -76,9 +89,6 @@ brew install postgresql
 brew install diff-pdf
 brew install parallel
 
-# font
-# tap caskroom/fonts
-
 # for ruby
 brew install openssl
 brew link openssl --force
@@ -87,11 +97,9 @@ brew install rbenv
 brew install ruby-build --HEAD
 # install rbenv-bundler
 
-brew tap raggi/ale
 brew install openssl-osx-ca
 
 # for nokogiri
-brew tap homebrew/dupes
 brew install libxml2
 brew install libxslt
 brew install libiconv
@@ -99,8 +107,6 @@ brew install libiconv
 brew unlink libxml2 libxslt libiconv
 
 # cask
-brew tap caskroom/versions
-
 brew cask install dropbox
 brew cask install google-japanese-ime
 brew cask install kobito

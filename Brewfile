@@ -1,12 +1,25 @@
 
-update
-upgrade
+untap homebrew/binary
+untap homebrew/versions
+untap thoughtbot/formulae
+untap homebrew/completions
+untap homebrew/dupes
+untap raggi/ale
+untap caskroom/versions
+
+prune
 
 tap homebrew/binary
 tap homebrew/versions
 tap thoughtbot/formulae
 tap homebrew/completions
 tap homebrew/dupes
+tap raggi/ale
+tap caskroom/versions
+# tap caskroom/fonts
+
+update
+upgrade
 
 install git
 install tig
@@ -74,9 +87,6 @@ install postgresql
 install diff-pdf
 install parallel
 
-# font
-# tap caskroom/fonts
-
 # for ruby
 install openssl
 link openssl --force
@@ -85,11 +95,9 @@ install rbenv
 install ruby-build --HEAD
 # install rbenv-bundler
 
-tap raggi/ale
 install openssl-osx-ca
 
 # for nokogiri
-tap homebrew/dupes
 install libxml2
 install libxslt
 install libiconv
@@ -97,8 +105,6 @@ install libiconv
 unlink libxml2 libxslt libiconv
 
 # cask
-tap caskroom/versions
-
 cask install dropbox
 cask install google-japanese-ime
 cask install kobito
