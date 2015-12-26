@@ -8,6 +8,7 @@ brew tap homebrew/binary
 brew tap homebrew/versions
 brew tap thoughtbot/formulae
 brew tap homebrew/completions
+brew tap homebrew/dupes
 
 brew install git
 brew install tig

@@ -6,6 +6,7 @@ tap homebrew/binary
 tap homebrew/versions
 tap thoughtbot/formulae
 tap homebrew/completions
+tap homebrew/dupes
 
 install git
 install tig
