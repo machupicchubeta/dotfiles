@@ -97,7 +97,6 @@ brew link openssl --force
 brew install readline
 brew install rbenv
 brew install ruby-build --HEAD
-# install rbenv-bundler
 
 brew install openssl-osx-ca
 
@@ -135,17 +134,12 @@ brew cask install sublime-text3
 brew cask install atom
 brew cask install cloak
 brew cask install karabiner
-# cask install colors
-# cask install witch
-# cask install spectacle
 brew cask install slate
 brew cask install google-hangouts
 brew cask install dash
 brew cask install reflector
 brew cask install disk-inventory-x
-# cask install google-plus-auto-backup
 brew cask install itrash
-# cask install minitube
 brew cask install cyberduck
 brew cask install inssider
 brew cask install mou

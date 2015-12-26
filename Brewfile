@@ -95,7 +95,6 @@ link openssl --force
 install readline
 install rbenv
 install ruby-build --HEAD
-# install rbenv-bundler
 
 install openssl-osx-ca
 
@@ -133,17 +132,12 @@ cask install sublime-text3
 cask install atom
 cask install cloak
 cask install karabiner
-# cask install colors
-# cask install witch
-# cask install spectacle
 cask install slate
 cask install google-hangouts
 cask install dash
 cask install reflector
 cask install disk-inventory-x
-# cask install google-plus-auto-backup
 cask install itrash
-# cask install minitube
 cask install cyberduck
 cask install inssider
 cask install mou
