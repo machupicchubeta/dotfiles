@@ -40,6 +40,7 @@ install source-highlight
 install vim --with-lua --with-luajit
 install bash-completion
 install imagemagick
+unlink imagemagick
 link imagemagick
 install phantomjs198
 install sl
@@ -89,6 +90,7 @@ install parallel
 
 # for ruby
 install openssl
+unlink openssl
 link openssl --force
 install readline
 install rbenv

@@ -42,6 +42,7 @@ brew install source-highlight
 brew install vim --with-lua --with-luajit
 brew install bash-completion
 brew install imagemagick
+brew unlink imagemagick
 brew link imagemagick
 brew install phantomjs198
 brew install sl
@@ -91,6 +92,7 @@ brew install parallel
 
 # for ruby
 brew install openssl
+brew unlink openssl
 brew link openssl --force
 brew install readline
 brew install rbenv
