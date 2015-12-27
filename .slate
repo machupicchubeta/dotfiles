@@ -50,3 +50,8 @@ bind right:ctrl;cmd nudge +10% +0
 bind left:ctrl;cmd  nudge -10% +0
 bind up:ctrl;cmd    nudge +0 -10%
 bind down:ctrl;cmd  nudge +0 +10%
+
+bind right:ctrl;cmd;shift push right
+bind left:ctrl;cmd;shift  push left
+bind up:ctrl;cmd;shift    push up
+bind down:ctrl;cmd;shift  push down
