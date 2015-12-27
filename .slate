@@ -38,6 +38,8 @@ bind m:ctrl;cmd move ${bottomRightQuarter}
 
 bind ;:ctrl;cmd throw previous
 bind /:ctrl;cmd hint ASDFJKLGHWERTYUIO
+bind 1:ctrl;cmd throw 0
+bind 2:ctrl;cmd throw 1
 
 bind right:ctrl;cmd resize +10% +0
 bind left:ctrl;cmd  resize -10% +0
