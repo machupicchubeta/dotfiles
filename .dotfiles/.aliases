@@ -54,6 +54,7 @@ if ps -p $_PPID | grep -qs zsh ; then
     alias -g G='| grep'
     alias -g X='| xargs'
     alias -g P='| pick'
+    alias -g C='| pbcopy'
 fi
 
 # Always use color output for `ls`
