@@ -2,6 +2,7 @@ bundler
 tmuxinator
 git-browse-remote
 refe2
-rubocop
+parser --pre
+rubocop --pre
 git-gsub
 
