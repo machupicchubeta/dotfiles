@@ -89,6 +89,7 @@ brew install cscope
 brew install postgresql
 brew install diff-pdf
 brew install parallel
+brew install nmap
 
 # for ruby
 brew install openssl

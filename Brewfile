@@ -87,6 +87,7 @@ install cscope
 install postgresql
 install diff-pdf
 install parallel
+install nmap
 
 # for ruby
 install openssl
