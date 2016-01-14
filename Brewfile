@@ -109,7 +109,6 @@ unlink libxml2 libxslt libiconv
 # cask
 cask install dropbox
 cask install google-japanese-ime
-cask install kobito
 cask install vagrant
 cask install virtualbox
 # cask install google-chrome-dev

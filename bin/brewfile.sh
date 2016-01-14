@@ -111,7 +111,6 @@ brew unlink libxml2 libxslt libiconv
 # cask
 brew cask install dropbox
 brew cask install google-japanese-ime
-brew cask install kobito
 brew cask install vagrant
 brew cask install virtualbox
 # cask install google-chrome-dev
