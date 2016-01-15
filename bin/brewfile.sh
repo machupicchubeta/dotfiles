@@ -90,6 +90,7 @@ brew install postgresql
 brew install diff-pdf
 brew install parallel
 brew install nmap
+brew install go
 brew install slackcat
 
 # for ruby

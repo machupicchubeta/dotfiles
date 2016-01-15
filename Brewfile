@@ -88,6 +88,7 @@ install postgresql
 install diff-pdf
 install parallel
 install nmap
+install go
 install slackcat
 
 # for ruby
