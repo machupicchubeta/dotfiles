@@ -40,6 +40,7 @@ brew install zsh-completions
 brew install terminal-notifier
 brew install source-highlight
 brew install vim --with-lua --with-luajit
+brew install macvim --with-lua --with-luajit
 brew install bash-completion
 brew install imagemagick
 brew unlink imagemagick
@@ -171,7 +172,6 @@ brew cask install simplecap
 brew cask install sophos-anti-virus-home-edition
 brew cask install box-sync
 brew cask install google-chrome-canary
-brew cask install macvim --with-lua --with-luajit
 
 brew linkapps
 

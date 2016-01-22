@@ -38,6 +38,7 @@ install zsh-completions
 install terminal-notifier
 install source-highlight
 install vim --with-lua --with-luajit
+install macvim --with-lua --with-luajit
 install bash-completion
 install imagemagick
 unlink imagemagick
@@ -169,7 +170,6 @@ cask install simplecap
 cask install sophos-anti-virus-home-edition
 cask install box-sync
 cask install google-chrome-canary
-cask install macvim --with-lua --with-luajit
 
 linkapps
 
