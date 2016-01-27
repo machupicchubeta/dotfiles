@@ -91,6 +91,7 @@ install parallel
 install nmap
 install go
 install slackcat
+install lame
 
 # for ruby
 install openssl

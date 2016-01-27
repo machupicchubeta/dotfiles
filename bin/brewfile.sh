@@ -93,6 +93,7 @@ brew install parallel
 brew install nmap
 brew install go
 brew install slackcat
+brew install lame
 
 # for ruby
 brew install openssl
