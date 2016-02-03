@@ -45,7 +45,7 @@ brew install bash-completion
 brew install imagemagick
 brew unlink imagemagick
 brew link imagemagick
-brew install phantomjs198
+brew install phantomjs192
 brew install sl
 brew install bash
 brew install heroku-toolbelt

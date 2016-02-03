@@ -43,7 +43,7 @@ install bash-completion
 install imagemagick
 unlink imagemagick
 link imagemagick
-install phantomjs198
+install phantomjs192
 install sl
 install bash
 install heroku-toolbelt
