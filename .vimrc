@@ -144,7 +144,6 @@ if has('vim_starting')
   NeoBundle 'szw/vim-tags'
   NeoBundle 'thinca/vim-ref'
   NeoBundle 'yuku-t/vim-ref-ri'
-  NeoBundle 'scrooloose/nerdtree'
   NeoBundle 'bronson/vim-trailing-whitespace'
   NeoBundle 'tpope/vim-surround'
   NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -153,6 +152,7 @@ if has('vim_starting')
   NeoBundle 'tpope/vim-fugitive'
   NeoBundle 'junegunn/vim-easy-align'
   NeoBundle 'Raimondi/delimitMate'
+  NeoBundle 'ctrlpvim/ctrlp.vim'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
@@ -520,15 +520,12 @@ let g:rails_projections = {
 "   autocmd QuickfixCmdPost make cw
 " augroup END
 
-" NERDTree
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
-
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'tagbar', 'unite']
+let g:indent_guides_exclude_filetypes = ['help', 'tagbar', 'unite']
 
 " indentLine
 " let g:indentLine_faster = 1
