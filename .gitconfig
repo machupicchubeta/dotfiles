@@ -41,7 +41,7 @@
   fixup = commit --amend -C HEAD
   topic-branch = "!f() { git-topic-branch }; f"
   backup = "!f() { git-backup }; f"
-  pull-request = browse-remote --pr
+  pull--request = browse-remote --pr
 [color]
   ui = always
 [apply]
