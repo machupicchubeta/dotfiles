@@ -1,6 +1,7 @@
 bundler
 tmuxinator
 git-browse-remote
+gem-browse
 refe2
 parser --pre
 rubocop --pre
