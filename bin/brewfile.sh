@@ -50,6 +50,7 @@ brew install sl
 brew install bash
 brew install heroku-toolbelt
 brew install docker
+brew install docker-cloud
 brew install boot2docker
 brew install python
 brew install jq

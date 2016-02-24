@@ -48,6 +48,7 @@ install sl
 install bash
 install heroku-toolbelt
 install docker
+install docker-cloud
 install boot2docker
 install python
 install jq
