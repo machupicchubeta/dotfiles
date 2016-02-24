@@ -69,7 +69,6 @@ install tmux
 install reattach-to-user-namespace
 # install gnupg
 # install grc
-# install packer
 install rmtrash
 install tor
 install nkf
@@ -162,7 +161,6 @@ cask install hetimazipql
 cask install iterm2
 cask install gyazo
 cask install 0xed
-cask install packer
 cask install alfred
 cask install dockertoolbox
 cask install githubpulse

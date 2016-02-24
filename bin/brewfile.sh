@@ -71,7 +71,6 @@ brew install tmux
 brew install reattach-to-user-namespace
 # install gnupg
 # install grc
-# install packer
 brew install rmtrash
 brew install tor
 brew install nkf
@@ -164,7 +163,6 @@ brew cask install hetimazipql
 brew cask install iterm2
 brew cask install gyazo
 brew cask install 0xed
-brew cask install packer
 brew cask install alfred
 brew cask install dockertoolbox
 brew cask install githubpulse
