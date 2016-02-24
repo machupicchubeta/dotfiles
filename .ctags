@@ -1,0 +1,6 @@
+--recurse=yes
+--exclude=.*
+--exclude=log
+--exclude=vendor
+--append=yes
+--languages=ruby,javascript
