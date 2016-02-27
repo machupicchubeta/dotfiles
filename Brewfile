@@ -92,6 +92,7 @@ install nmap
 install go
 install slackcat
 install lame
+install vault
 
 # for ruby
 install openssl

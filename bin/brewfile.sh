@@ -94,6 +94,7 @@ brew install nmap
 brew install go
 brew install slackcat
 brew install lame
+brew install vault
 
 # for ruby
 brew install openssl
