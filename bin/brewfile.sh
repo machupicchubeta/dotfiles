@@ -174,6 +174,7 @@ brew cask install sophos-anti-virus-home-edition
 brew cask install box-sync
 brew cask install google-chrome-canary
 brew cask install soundflower
+brew cask install vlc
 
 brew linkapps
 

@@ -172,6 +172,7 @@ cask install sophos-anti-virus-home-edition
 cask install box-sync
 cask install google-chrome-canary
 cask install soundflower
+cask install vlc
 
 linkapps
 
