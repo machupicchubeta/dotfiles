@@ -168,7 +168,7 @@ cask install githubpulse
 cask install github-desktop
 cask install paparazzi
 cask install simplecap
-cask install sophos-anti-virus-home-edition
+
 cask install box-sync
 cask install google-chrome-canary
 cask install soundflower
