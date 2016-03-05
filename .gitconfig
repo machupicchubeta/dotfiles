@@ -42,6 +42,7 @@
   topic-branch = "!f() { git-topic-branch }; f"
   backup = "!f() { git-backup }; f"
   pull--request = browse-remote --pr
+  release-branch = !git checkout -b release_$(date +%Y%m%d_%H%M)
   release-tag = !git tag RELEASE_$(date +%Y%m%d_%H%M)
 [color]
   ui = always
