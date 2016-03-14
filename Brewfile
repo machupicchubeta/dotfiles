@@ -93,6 +93,8 @@ install go
 install slackcat
 install lame
 install vault
+install googler
+install translate-shell
 
 # for ruby
 install openssl

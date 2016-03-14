@@ -95,6 +95,8 @@ brew install go
 brew install slackcat
 brew install lame
 brew install vault
+brew install googler
+brew install translate-shell
 
 # for ruby
 brew install openssl
