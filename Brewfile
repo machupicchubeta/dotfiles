@@ -95,6 +95,7 @@ install lame
 install vault
 install googler
 install translate-shell
+install yank
 
 # for ruby
 install openssl

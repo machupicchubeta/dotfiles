@@ -97,6 +97,7 @@ brew install lame
 brew install vault
 brew install googler
 brew install translate-shell
+brew install yank
 
 # for ruby
 brew install openssl
