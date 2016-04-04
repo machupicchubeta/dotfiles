@@ -175,6 +175,7 @@ cask install box-sync
 cask install google-chrome-canary
 cask install soundflower
 cask install vlc
+cask install chrome-remote-desktop-host
 
 linkapps
 
