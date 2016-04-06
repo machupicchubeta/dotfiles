@@ -98,6 +98,7 @@ brew install vault
 brew install googler
 brew install translate-shell
 brew install yank
+brew install sshrc
 
 # for ruby
 brew install openssl

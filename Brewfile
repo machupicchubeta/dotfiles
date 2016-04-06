@@ -96,6 +96,7 @@ install vault
 install googler
 install translate-shell
 install yank
+install sshrc
 
 # for ruby
 install openssl
