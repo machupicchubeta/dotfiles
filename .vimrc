@@ -504,12 +504,12 @@ let g:rails_projections = {
             \   "test": "spec/batches/%s_spec.rb"
             \ },
             \ "app/controllers/concerns/*.rb": {
-            \   "command": "cconcern",
+            \   "command": "controllerconcern",
             \   "template": "module %S\nend",
             \   "test": "spec/controllers/concerns/%s_spec.rb"
             \ },
             \ "app/models/concerns/*.rb": {
-            \   "command": "mconcern",
+            \   "command": "modelconcern",
             \   "template": "module %S\nend",
             \   "test": "spec/models/concerns/%s_spec.rb"
             \ }}
