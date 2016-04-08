@@ -179,6 +179,7 @@ brew cask install google-chrome-canary
 brew cask install soundflower
 brew cask install vlc
 brew cask install chrome-remote-desktop-host
+brew cask install near-lock
 
 brew linkapps
 
