@@ -97,6 +97,7 @@ install googler
 install translate-shell
 install yank
 install sshrc
+install v8
 
 # for ruby
 install openssl

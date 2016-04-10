@@ -99,6 +99,7 @@ brew install googler
 brew install translate-shell
 brew install yank
 brew install sshrc
+brew install v8
 
 # for ruby
 brew install openssl
