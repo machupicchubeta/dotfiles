@@ -42,7 +42,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 " Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set listchars=tab:>\ ,trail:-,nbsp:_,precedes:<
 set list
 " Highlight IdeographicSpace
