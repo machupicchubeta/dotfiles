@@ -101,6 +101,7 @@ brew install yank
 brew install sshrc
 brew install v8
 brew install git-secrets
+brew install sslscan
 
 # for ruby
 brew install openssl

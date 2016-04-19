@@ -99,6 +99,7 @@ install yank
 install sshrc
 install v8
 install git-secrets
+install sslscan
 
 # for ruby
 install openssl
