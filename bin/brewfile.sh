@@ -100,6 +100,7 @@ brew install translate-shell
 brew install yank
 brew install sshrc
 brew install v8
+brew install git-secrets
 
 # for ruby
 brew install openssl

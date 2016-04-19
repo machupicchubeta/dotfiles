@@ -98,6 +98,7 @@ install translate-shell
 install yank
 install sshrc
 install v8
+install git-secrets
 
 # for ruby
 install openssl
