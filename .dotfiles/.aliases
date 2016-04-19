@@ -191,3 +191,10 @@ alias next_failure='rspec --next-failure'
 
 # c#
 #alias cs='csharp'
+
+# translate-shell
+alias t='trans'
+
+# googler
+alias ggr='googler'
+alias ggrks='googler'
