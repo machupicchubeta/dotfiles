@@ -100,6 +100,7 @@ install sshrc
 install v8
 install git-secrets
 install sslscan
+install diff-so-fancy
 
 # for ruby
 install openssl
