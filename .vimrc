@@ -136,7 +136,8 @@ if has('vim_starting')
   NeoBundle 'taku-o/vim-toggle'
   NeoBundle 'slim-template/vim-slim'
   NeoBundle 'kana/vim-submode'
-  NeoBundle 'szw/vim-tags'
+  NeoBundle 'xolox/vim-easytags'
+  NeoBundle 'xolox/vim-misc'
   NeoBundle 'thinca/vim-ref'
   NeoBundle 'yuku-t/vim-ref-ri'
   NeoBundle 'bronson/vim-trailing-whitespace'
@@ -192,12 +193,6 @@ if has('vim_starting')
         \ 'depends' : ['alpaca-tc/vim-rails', 'tpope/vim-dispatch'],
         \ 'autoload' : {
         \   'commands' : ['RSpec', 'RSpecAll', 'RSpecCurrent', 'RSpecNearest', 'RSpecRetry']
-        \ }}
-
-  NeoBundleLazy 'alpaca-tc/alpaca_tags', {
-        \ 'depends': 'Shougo/vimproc',
-        \ 'autoload' : {
-        \   'commands': ['TagsUpdate', 'TagsSet', 'TagsBundle']
         \ }}
 
   NeoBundleLazy 'tsukkee/unite-tag', {
@@ -368,7 +363,6 @@ endfunction
 " autocmd FileType c,cpp,php,python,javascript,ruby,coffee,vim call s:EnableSmartchrBasic()
 autocmd FileType python,ruby,coffee,vim call s:EnableSmartchrRegExp()
 autocmd FileType ruby call s:EnableSmartchrRubyHash()
-autocmd FileType ruby,eruby setlocal tags+=~/rtags
 autocmd FileType haml call s:EnableSmartchrHaml()
 autocmd FileType coffee call s:EnableSmartchrCoffeeFunction()
 " }}}
@@ -596,3 +590,5 @@ endif
 let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 " }}}
 
+" easytags
+let g:easytags_async = 1
