@@ -2,5 +2,6 @@
 --exclude=.*
 --exclude=log
 --exclude=vendor
+--exclude=tmp
 --append=yes
 --languages=ruby,javascript
