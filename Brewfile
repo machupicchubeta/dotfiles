@@ -5,6 +5,7 @@ untap thoughtbot/formulae
 untap homebrew/completions
 untap homebrew/dupes
 untap raggi/ale
+untap neovim/homebrew-neovim
 untap caskroom/versions
 
 prune
@@ -15,6 +16,7 @@ tap thoughtbot/formulae
 tap homebrew/completions
 tap homebrew/dupes
 tap raggi/ale
+tap neovim/homebrew-neovim
 tap caskroom/versions
 # tap caskroom/fonts
 
@@ -39,6 +41,7 @@ install terminal-notifier
 install source-highlight
 install vim --with-lua --with-luajit
 install macvim --with-lua --with-luajit
+install neovim --HEAD
 install bash-completion
 install imagemagick
 unlink imagemagick

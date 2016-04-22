@@ -7,6 +7,7 @@ brew untap thoughtbot/formulae
 brew untap homebrew/completions
 brew untap homebrew/dupes
 brew untap raggi/ale
+brew untap neovim/homebrew-neovim
 brew untap caskroom/versions
 
 brew prune
@@ -17,6 +18,7 @@ brew tap thoughtbot/formulae
 brew tap homebrew/completions
 brew tap homebrew/dupes
 brew tap raggi/ale
+brew tap neovim/homebrew-neovim
 brew tap caskroom/versions
 # tap caskroom/fonts
 
@@ -41,6 +43,7 @@ brew install terminal-notifier
 brew install source-highlight
 brew install vim --with-lua --with-luajit
 brew install macvim --with-lua --with-luajit
+brew install neovim --HEAD
 brew install bash-completion
 brew install imagemagick
 brew unlink imagemagick
