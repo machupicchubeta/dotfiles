@@ -86,10 +86,6 @@ set scrolloff=3
 
 set pastetoggle=<C-E>
 set expandtab
-"colorscheme molokai
-"let g:molokai_original = 1
-"let g:rehash256 = 1
-"set background=dark
 set autoindent
 set smartindent
 set indentkeys=!^F,o,O,0<Bar>,0=where
@@ -154,18 +150,6 @@ if has('vim_starting')
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
-" NeoBundle 'w0ng/vim-hybrid'
-" NeoBundle 'baskerville/bubblegum'
-" NeoBundle 'vim-scripts/twilight'
-"  NeoBundle 'croaker/mustang-vim'
-"  NeoBundle 'nanotech/jellybeans.vim'
-"  NeoBundle 'tomasr/molokai'
-"  NeoBundle 'jeffreyiacono/vim-colors-wombat'
-"  NeoBundle 'vim-scripts/Lucius'
-"  NeoBundle 'vim-scripts/Zenburn'
-"  NeoBundle 'mrkn/mrkn256.vim'
-"  NeoBundle 'jpo/vim-railscasts-theme'
-"  NeoBundle 'therubymug/vim-pyte'
 
   NeoBundle 'ujihisa/unite-colorscheme'
 
