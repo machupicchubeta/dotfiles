@@ -146,7 +146,6 @@ if has('vim_starting')
   NeoBundle 'bronson/vim-trailing-whitespace'
   NeoBundle 'tpope/vim-surround'
   NeoBundle 'nathanaelkane/vim-indent-guides'
-  " NeoBundle 'Yggdroot/indentLine'
   NeoBundle 'vim-scripts/AnsiEsc.vim'
   NeoBundle 'tpope/vim-fugitive'
   NeoBundle 'junegunn/vim-easy-align'
@@ -525,10 +524,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_exclude_filetypes = ['help', 'tagbar', 'unite']
-
-" indentLine
-" let g:indentLine_faster = 1
-" nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 " vim-fugitive
 autocmd QuickFixCmdPost *grep* cwindow
