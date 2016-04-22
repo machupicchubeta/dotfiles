@@ -488,12 +488,6 @@ let g:rails_projections = {
             \   "test": "spec/models/concerns/%s_spec.rb"
             \ }}
 
-" ruby syntax check
-" augroup quickfixopen
-"   autocmd!
-"   autocmd QuickfixCmdPost make cw
-" augroup END
-
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_enable_on_vim_startup = 1
