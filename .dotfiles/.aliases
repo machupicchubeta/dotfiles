@@ -4,9 +4,6 @@ alias ...="cd ../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# include YoutTube Downloader Python Script
-alias yt='python ~/.dotfiles/libs/yt.py'
-
 #proxy switching
 alias proxy='sudo ~/.dotfiles/libs/proxy.sh'
 
