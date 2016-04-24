@@ -10,5 +10,4 @@ dist
 .vim/swaps/*
 .vim/undo/*
 
-.dotfiles/libs/z/*
 .dotfiles/.private

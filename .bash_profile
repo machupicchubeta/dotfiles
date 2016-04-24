@@ -6,9 +6,6 @@ unset file
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
-# init z   https://github.com/rupa/z
-#. ~/.dotfiles/libs/z/z.sh
-
 # include proxy.sh
 #. libs/proxy.sh
 
