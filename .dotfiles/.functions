@@ -3,11 +3,11 @@ function mkd() {
   mkdir -p "$@" && cd "$@"
 }
 
-
 # find shorthand
 function f() {
-    find . -name "$1"
+  find . -name "$1"
 }
+
 function tunnel(){
 if ps x | grep ssh | grep cctv; then
   echo "Tunnel already Running"
@@ -21,9 +21,9 @@ fi
 
 # lets toss an image onto my server and pbcopy that bitch.
 function scpp() {
-    scp "$1" aurgasm@aurgasm.us:~/paulirish.com/i;
-    echo "http://paulirish.com/i/$1" | pbcopy;
-    echo "Copied to clipboard: http://paulirish.com/i/$1"
+  scp "$1" aurgasm@aurgasm.us:~/paulirish.com/i;
+  echo "http://paulirish.com/i/$1" | pbcopy;
+  echo "Copied to clipboard: http://paulirish.com/i/$1"
 }
 
 # Start an HTTP server from a directory, optionally specifying the port
@@ -41,13 +41,12 @@ function gf() {
   [[ "$remote" ]] || return
   local user_repo="$(echo "$remote" | perl -pe 's/.*://;s/\.git$//')"
   git log $* --name-status --color | awk "$(cat <<AWK
-    /^.*commit [0-9a-f]{40}/ {sha=substr(\$2,1,7)}
-    /^[MA]\t/ {printf "%s\thttps://github.com/$user_repo/blob/%s/%s\n", \$1, sha, \$2; next}
-    /.*/ {print \$0}
+  /^.*commit [0-9a-f]{40}/ {sha=substr(\$2,1,7)}
+  /^[MA]\t/ {printf "%s\thttps://github.com/$user_repo/blob/%s/%s\n", \$1, sha, \$2; next}
+  /.*/ {print \$0}
 AWK
   )" | less -F
 }
-
 
 # Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
 # Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
@@ -58,14 +57,13 @@ function httpcompression() {
 # Syntax-highlight JSON strings or files
 function json() {
   if [ -p /dev/stdin ]; then
-    # piping, e.g. `echo '{"foo":42}' | json`
-    python -mjson.tool | pygmentize -l javascript
+  # piping, e.g. `echo '{"foo":42}' | json`
+  python -mjson.tool | pygmentize -l javascript
   else
-    # e.g. `json '{"foo":42}'`
-    python -mjson.tool <<< "$*" | pygmentize -l javascript
+  # e.g. `json '{"foo":42}'`
+  python -mjson.tool <<< "$*" | pygmentize -l javascript
   fi
 }
-
 
 # take this repo and copy it to somewhere else minus the .git stuff.
 function gitexport(){
@@ -73,11 +71,9 @@ function gitexport(){
   git archive master | tar -x -C "$1"
 }
 
-
-
 # get gzipped size
 function gz() {
-  echo "orig size    (bytes): "
+  echo "orig size  (bytes): "
   cat "$1" | wc -c
   echo "gzipped size (bytes): "
   gzip -c "$1" | wc -c
