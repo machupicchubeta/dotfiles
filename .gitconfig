@@ -11,7 +11,9 @@
   ss = status -s
   s = status
   d = diff
-  df = diff --color --color-words --abbrev
+  df = diff
+  # df = diff --color --color-words --abbrev
+  dc = diff --cached
   dfc = diff --cached
   pr = pull --rebase
   prr = pull --rebase --prune
