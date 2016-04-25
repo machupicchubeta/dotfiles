@@ -53,7 +53,7 @@ install heroku-toolbelt
 install docker
 install docker-cloud
 install boot2docker
-install python
+install python3
 install jq
 install awscli
 install ansible
