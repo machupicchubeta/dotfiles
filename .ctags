@@ -3,5 +3,5 @@
 --exclude=log
 --exclude=vendor
 --exclude=tmp
---append=yes
+--append=no
 --languages=ruby,javascript
