@@ -9,6 +9,7 @@ brew untap homebrew/dupes
 brew untap raggi/ale
 brew untap neovim/homebrew-neovim
 brew untap caskroom/versions
+brew untap homebrew/services
 
 brew prune
 
@@ -20,6 +21,7 @@ brew tap homebrew/dupes
 brew tap raggi/ale
 brew tap neovim/homebrew-neovim
 brew tap caskroom/versions
+brew tap homebrew/services
 # tap caskroom/fonts
 
 brew update
