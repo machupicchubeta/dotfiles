@@ -190,6 +190,7 @@ brew cask install vlc
 brew cask install chrome-remote-desktop-host
 brew cask install near-lock
 brew cask install vivaldi
+brew cask install lacona
 
 brew linkapps
 

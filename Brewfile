@@ -188,6 +188,7 @@ cask install vlc
 cask install chrome-remote-desktop-host
 cask install near-lock
 cask install vivaldi
+cask install lacona
 
 linkapps
 
