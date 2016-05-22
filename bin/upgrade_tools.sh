@@ -6,7 +6,7 @@ pip install --upgrade
 pip install aws-shell
 
 # gem
-gem update --sytem
+gem update --system
 gem update
 gem cleanup
 
