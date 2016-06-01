@@ -158,11 +158,9 @@ alias rkspp='rake parallel:prepare'
 alias rksp='rake parallel:spec'
 
 # rails
-alias rs='rails server'
+alias rs='rails server -b lvh.me'
 alias rc='rails console'
 alias rr='rails runner'
-alias unicorn_daemon='sudo bundle exec unicorn_rails --port 80 -D'
-alias unicorn='sudo bundle exec unicorn_rails --port 80'
 alias sidekiq='bundle exec sidekiq -C config/sidekiq.yml'
 alias sidekiq_daemon='bundle exec sidekiq -C config/sidekiq.yml -d'
 
