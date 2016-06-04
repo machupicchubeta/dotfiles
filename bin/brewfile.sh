@@ -108,6 +108,7 @@ brew install v8
 brew install git-secrets
 brew install sslscan
 brew install diff-so-fancy
+brew install mas
 
 # for ruby
 brew install openssl

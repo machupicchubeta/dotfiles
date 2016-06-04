@@ -106,6 +106,7 @@ install v8
 install git-secrets
 install sslscan
 install diff-so-fancy
+install mas
 
 # for ruby
 install openssl
