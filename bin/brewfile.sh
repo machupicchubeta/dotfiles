@@ -109,6 +109,7 @@ brew install git-secrets
 brew install sslscan
 brew install diff-so-fancy
 brew install mas
+brew install wireshark
 
 # for ruby
 brew install openssl
@@ -143,7 +144,6 @@ brew cask install evernote
 brew cask install slack
 brew cask install skitch
 brew cask install geektool
-brew cask install wireshark
 brew cask install xquartz
 brew cask install java
 brew cask install skype

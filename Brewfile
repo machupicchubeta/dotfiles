@@ -107,6 +107,7 @@ install git-secrets
 install sslscan
 install diff-so-fancy
 install mas
+install wireshark
 
 # for ruby
 install openssl
@@ -141,7 +142,6 @@ cask install evernote
 cask install slack
 cask install skitch
 cask install geektool
-cask install wireshark
 cask install xquartz
 cask install java
 cask install skype
