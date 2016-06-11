@@ -189,6 +189,7 @@ cask install chrome-remote-desktop-host
 cask install near-lock
 cask install vivaldi
 cask install lacona
+cask install wireshark-chmodbpf
 
 linkapps
 
