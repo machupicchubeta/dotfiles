@@ -133,10 +133,7 @@ brew cask install dropbox
 brew cask install google-japanese-ime
 brew cask install vagrant
 brew cask install virtualbox
-# cask install google-chrome-dev
-# cask install google-chrome-beta
 brew cask install google-chrome
-# cask install firefox-beta
 brew cask install firefox
 brew cask install firefoxdeveloperedition
 brew cask install flash
