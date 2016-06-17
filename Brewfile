@@ -187,6 +187,8 @@ cask install near-lock
 cask install vivaldi
 cask install lacona
 cask install wireshark-chmodbpf
+cask install sketch
+cask install flinto
 
 linkapps
 

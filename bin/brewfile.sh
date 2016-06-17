@@ -189,6 +189,8 @@ brew cask install near-lock
 brew cask install vivaldi
 brew cask install lacona
 brew cask install wireshark-chmodbpf
+brew cask install sketch
+brew cask install flinto
 
 brew linkapps
 
