@@ -7,8 +7,6 @@ File.open ARGV[0] do |brewfile|
       print line
     else
       print "brew #{line}"
-
-      print "brew #{line.chop} --force\n" if line =~ /cask install/
     end
   end
 end
