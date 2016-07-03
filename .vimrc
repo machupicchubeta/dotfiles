@@ -201,13 +201,15 @@ if has('vim_starting')
 
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'vim-ruby/vim-ruby'
-  NeoBundle 'marcus/rsense'
+  " NeoBundle 'marcus/rsense'
+  NeoBundle 'osyo-manga/vim-monster'
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
   else
     NeoBundle 'Shougo/neocomplete.vim'
-    NeoBundle 'supermomonga/neocomplete-rsense.vim'
+    " NeoBundle 'supermomonga/neocomplete-rsense.vim'
+    let g:neocomplete#sources#omni#input_patterns = { "ruby" : '[^. *\t]\.\w*\|\h\w*::' }
    endif
 
   NeoBundleCheck
@@ -512,7 +514,7 @@ nmap ga <Plug>(EasyAlign)
 
 if !has('nvim')
   " Rsense
-  let g:neocomplete#sources#rsense#home_directory = '/usr/local/bin/rsense'
+  " let g:neocomplete#sources#rsense#home_directory = '/usr/local/bin/rsense'
 
   " neocomplete.vim {{{
   " Disable AutoComplPop.

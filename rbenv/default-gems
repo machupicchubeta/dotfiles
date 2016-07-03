@@ -7,3 +7,5 @@ parser --pre
 rubocop --pre
 git-gsub
 gem-ctags
+rcodetools
+fastri
