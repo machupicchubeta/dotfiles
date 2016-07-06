@@ -146,6 +146,7 @@ if has('vim_starting')
   NeoBundle 'junegunn/vim-easy-align'
   NeoBundle 'Raimondi/delimitMate'
   NeoBundle 'ctrlpvim/ctrlp.vim'
+  NeoBundle 'moro/vim-review'
 
   " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
