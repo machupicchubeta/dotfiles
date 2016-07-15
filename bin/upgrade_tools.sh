@@ -2,7 +2,7 @@
 
 # pip
 pip install --upgrade pip setuptools
-pip install --upgrade
+pip list --outdated | awk '{print $1}' | xargs pip install -U
 pip install aws-shell
 pip install neovim
 
