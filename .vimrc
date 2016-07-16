@@ -207,10 +207,15 @@ if has('vim_starting')
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
+    let g:deoplete#sources#omni#input_patterns = {
+          \   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
+          \}
   else
     NeoBundle 'Shougo/neocomplete.vim'
     " NeoBundle 'supermomonga/neocomplete-rsense.vim'
-    let g:neocomplete#sources#omni#input_patterns = { "ruby" : '[^. *\t]\.\w*\|\h\w*::' }
+    let g:neocomplete#sources#omni#input_patterns = {
+          \   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
+          \}
    endif
 
   NeoBundleCheck
