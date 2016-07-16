@@ -518,6 +518,9 @@ vmap <Enter> <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+" vim-monster
+let g:monster#completion#rcodetools#backend = "async_rct_complete"
+
 if !has('nvim')
   " Rsense
   " let g:neocomplete#sources#rsense#home_directory = '/usr/local/bin/rsense'
