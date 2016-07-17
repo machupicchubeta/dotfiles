@@ -35,6 +35,7 @@ augroup END
 " }}}
 
 call s:source_rc('encoding.rc.vim')
+call s:source_rc('edit.rc.vim')
 
 " Allow cursor keys in insert mode
 set esckeys
@@ -44,16 +45,9 @@ set ttyfast
 set gdefault
 " Change mapleader
 let mapleader=","
-" Don’t add empty newlines at the end of files
-set nofixeol
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
-if exists("&undodir")
-  set undodir=~/.vim/undo
-endif
-" Enable delete characters by backspace always
-set backspace=start,eol,indent
 " Enable moving by cursor straddling each lines
 set whichwrap=b,,[,,,~
 " Enable line numbers
@@ -65,10 +59,6 @@ set cursorline
 set cursorcolumn
 " Enable menu completion
 set wildmenu wildmode=list:full
-" Make tabs as wide as two spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
 " Show “invisible” characters
 set listchars=tab:>\ ,trail:-,nbsp:_,precedes:<
 set list
@@ -113,10 +103,6 @@ endif
 set scrolloff=3
 
 set pastetoggle=<C-E>
-set expandtab
-set autoindent
-set smartindent
-set indentkeys=!^F,o,O,0<Bar>,0=where
 
 " cancel highlights by twice press Esc
 nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
@@ -474,8 +460,6 @@ colorscheme solarized
 "  set t_Sf=[3%dm
 "  set t_Sb=[4%dm
 "endif
-
-set clipboard+=unnamed
 
 let g:rails_gem_projections = {
             \ "factory_girl": {
