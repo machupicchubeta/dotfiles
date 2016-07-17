@@ -1,5 +1,8 @@
 " Make vim more useful
-set nocompatible
+if &compatible
+  set nocompatible
+endif
+
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
