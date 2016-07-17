@@ -86,6 +86,7 @@ augroup IdeographicSpace
 augroup END
 call IdeographicSpace()
 
+" search {{{
 " Highlight searches
 set hlsearch
 
@@ -100,6 +101,7 @@ set incsearch
 
 " Searches wrap around the end of the file.
 set wrapscan
+" }}}
 
 " Enable mouse in all modes
 set mouse=a
