@@ -28,6 +28,12 @@ function! s:source_rc(path, ...) abort
 endfunction
 " }}}
 
+" Define augroup {{{
+augroup MyAutoCmd
+  autocmd!
+augroup END
+" }}}
+
 " Allow cursor keys in insert mode
 set esckeys
 ": Optimize for fast terminal connections
