@@ -35,20 +35,27 @@ augroup END
 " }}}
 
 call s:source_rc('encoding.rc.vim')
+
 call s:source_rc('edit.rc.vim')
+
 call s:source_rc('view.rc.vim')
 
 " Allow cursor keys in insert mode
 set esckeys
+
 " Add the g flag to search/replace by default
 set gdefault
+
 " Change mapleader
 let mapleader=","
+
 " Enable syntax highlighting
 syntax on
+
 " Highlight current line
 set cursorline
 set cursorcolumn
+
 " Highlight IdeographicSpace
 function! IdeographicSpace()
   highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
@@ -59,23 +66,31 @@ augroup IdeographicSpace
   autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('IdeographicSpace', '　')
 augroup END
 call IdeographicSpace()
+
 " Highlight searches
 set hlsearch
+
 " Ignore case of searches
 set ignorecase
+
 " Highlight dynamically as pattern is typed
 set incsearch
+
 " Enable mouse in all modes
 set mouse=a
+
 " Show the cursor position
 set ruler
+
 " Show the current mode
 set showmode
 if exists("&relativenumber")
+
 " Use relative line numbers
  set relativenumber
  au BufReadPost * set relativenumber
 endif
+
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
