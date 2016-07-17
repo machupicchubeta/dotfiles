@@ -69,6 +69,10 @@ call s:my_on_filetype()
 
 call s:source_rc('mappings.rc.vim')
 
+if has('nvim')
+  call s:source_rc('neovim.rc.vim')
+endif
+
 " Allow cursor keys in insert mode
 set esckeys
 
