@@ -73,6 +73,10 @@ if has('nvim')
   call s:source_rc('neovim.rc.vim')
 endif
 
+if IsMac()
+  call s:source_rc('unix.rc.vim')
+end
+
 " Allow cursor keys in insert mode
 set esckeys
 
