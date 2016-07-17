@@ -111,9 +111,9 @@ set ruler
 
 " Show the current mode
 set showmode
-if exists("&relativenumber")
 
 " Use relative line numbers
+if exists("&relativenumber")
  set relativenumber
  au BufReadPost * set relativenumber
 endif
