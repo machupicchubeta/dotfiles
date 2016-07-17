@@ -44,6 +44,8 @@ call s:source_rc('edit.rc.vim')
 
 call s:source_rc('view.rc.vim')
 
+" call s:source_rc('filetype.rc.vim')
+
 " filetype {{{
 autocmd MyAutoCmd FileType,Syntax,BufNewFile,BufNew,BufRead
       \ * call s:my_on_filetype()
@@ -250,6 +252,9 @@ if has('vim_starting')
         \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
         \ }}
 
+  filetype plugin on
+  filetype indent on
+
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'vim-ruby/vim-ruby'
   " NeoBundle 'marcus/rsense'
@@ -275,9 +280,6 @@ endif
 
 " quickrun key-mapping
 silent! nmap <unique> <Space>r <Plug>(quickrun)
-
-filetype plugin on
-filetype indent on
 
 " vim-rspec {{{
 map <Leader>t :call RunCurrentSpecFile()<CR>
