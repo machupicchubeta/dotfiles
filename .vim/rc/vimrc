@@ -147,6 +147,11 @@ command! -nargs=0 Undiff setlocal nodiff noscrollbind wrapscan
 " Use English help file
 set helplang& helplang=en,ja
 
+" Default home directory
+let t:cwd = getcwd()
+
+set secure
+
 " NeoBundle
 set nocompatible
 filetype off
