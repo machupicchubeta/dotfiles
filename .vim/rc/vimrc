@@ -34,6 +34,10 @@ augroup MyAutoCmd
 augroup END
 " }}}
 
+if has('vim_starting')
+  call s:source_rc('init.rc.vim')
+endif
+
 call s:source_rc('encoding.rc.vim')
 
 call s:source_rc('edit.rc.vim')
@@ -45,9 +49,6 @@ set esckeys
 
 " Add the g flag to search/replace by default
 set gdefault
-
-" Change mapleader
-let mapleader=","
 
 " Enable syntax highlighting
 syntax on
