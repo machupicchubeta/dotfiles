@@ -34,16 +34,14 @@ augroup MyAutoCmd
 augroup END
 " }}}
 
+call s:source_rc('encoding.rc.vim')
+
 " Allow cursor keys in insert mode
 set esckeys
 ": Optimize for fast terminal connections
 set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-" Enable each line feed code
-" set fileformats = unix, dos, mac
 " Change mapleader
 let mapleader=","
 " Don’t add empty newlines at the end of files
