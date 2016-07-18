@@ -163,19 +163,19 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
 
   " add plugins
-  NeoBundle 'Shougo/echodoc.git'
-  NeoBundle 'Shougo/unite.vim.git'
-  NeoBundle 'Shougo/vimfiler.git'
-  NeoBundle 'Shougo/vimshell.git'
-  NeoBundle 'Shougo/vinarise.git'
+  NeoBundle 'Shougo/echodoc.vim'
+  NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'Shougo/vimfiler.vim'
+  NeoBundle 'Shougo/vimshell.vim'
+  NeoBundle 'Shougo/vinarise.vim'
   NeoBundle 'itchyny/lightline.vim'
   NeoBundle 'mattn/emmet-vim'
   NeoBundle 'thinca/vim-quickrun'
-  NeoBundle 'grep.vim'
+  NeoBundle 'vim-scripts/grep.vim'
   NeoBundle 'scrooloose/syntastic'
   NeoBundle 'tpope/vim-bundler'
-  NeoBundle 'ShowMarks'
-  NeoBundle 'EasyMotion'
+  NeoBundle 'vim-scripts/ShowMarks'
+  NeoBundle 'easymotion/vim-easymotion'
   NeoBundle 'tomtom/tcomment_vim'
   NeoBundle 'kana/vim-smartchr'
   NeoBundle 'taku-o/vim-toggle'
@@ -213,7 +213,7 @@ if has('vim_starting')
   NeoBundle 'tpope/vim-rails', { 'autoload' : {
         \ 'filetypes' : ['haml', 'ruby', 'eruby'] }}
 
-  NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
+  NeoBundleLazy 'tpope/vim-endwise', {
         \ 'autoload' : {
         \   'insert' : 1,
         \ }}
