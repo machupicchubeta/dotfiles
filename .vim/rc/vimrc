@@ -165,7 +165,6 @@ if has('vim_starting')
   " add plugins
   NeoBundle 'Shougo/echodoc.git'
   NeoBundle 'Shougo/unite.vim.git'
-  NeoBundle 'Shougo/vim-vcs.git'
   NeoBundle 'Shougo/vimfiler.git'
   NeoBundle 'Shougo/vimshell.git'
   NeoBundle 'Shougo/vinarise.git'
