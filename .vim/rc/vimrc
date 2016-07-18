@@ -159,10 +159,8 @@ if has('vim_starting')
 
   call neobundle#begin(expand('~/.vim/.bundle'))
 
-  " Let NeoBundle manage NeoBundle
   NeoBundleFetch 'Shougo/neobundle.vim'
 
-  " add plugins
   NeoBundle 'Shougo/echodoc.vim'
   NeoBundle 'Shougo/unite.vim'
   NeoBundle 'Shougo/vimfiler.vim'
@@ -194,12 +192,8 @@ if has('vim_starting')
   NeoBundle 'Raimondi/delimitMate'
   NeoBundle 'ctrlpvim/ctrlp.vim'
   NeoBundle 'moro/vim-review'
-
-  " colorschemes
   NeoBundle 'altercation/vim-colors-solarized'
-
   NeoBundle 'ujihisa/unite-colorscheme'
-
   NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
   \     'windows' : 'tools\\update-dll-mingw',
@@ -209,19 +203,15 @@ if has('vim_starting')
   \     'unix' : 'gmake',
   \    },
   \ }
-
   NeoBundle 'tpope/vim-rails', { 'autoload' : {
         \ 'filetypes' : ['haml', 'ruby', 'eruby'] }}
-
   NeoBundleLazy 'tpope/vim-endwise', {
         \ 'autoload' : {
         \   'insert' : 1,
         \ }}
-
   NeoBundle 'edsono/vim-matchit', { 'autoload' : {
         \ 'filetypes': 'ruby',
         \ 'mappings' : ['nx', '%'] }}
-
   NeoBundleLazy 'basyura/unite-rails', {
         \ 'depends' : 'Shougo/unite.vim',
         \ 'autoload' : {
@@ -234,22 +224,16 @@ if has('vim_starting')
         \     'rails/stylesheet', 'rails/view'
         \   ]
         \ }}
-
   NeoBundleLazy 'alpaca-tc/neorspec.vim', {
         \ 'depends' : ['alpaca-tc/vim-rails', 'tpope/vim-dispatch'],
         \ 'autoload' : {
         \   'commands' : ['RSpec', 'RSpecAll', 'RSpecCurrent', 'RSpecNearest', 'RSpecRetry']
         \ }}
-
   NeoBundleLazy 'tsukkee/unite-tag', {
         \ 'depends' : ['Shougo/unite.vim'],
         \ 'autoload' : {
         \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
         \ }}
-
-  filetype plugin on
-  filetype indent on
-
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'vim-ruby/vim-ruby'
   " NeoBundle 'marcus/rsense'
@@ -268,9 +252,11 @@ if has('vim_starting')
           \}
    endif
 
-  NeoBundleCheck
-
   call neobundle#end()
+
+  filetype plugin indent on
+
+  NeoBundleCheck
 endif
 
 " quickrun key-mapping
