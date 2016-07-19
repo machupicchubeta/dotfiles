@@ -207,8 +207,6 @@ if has('vim_starting')
   \     'unix' : 'gmake',
   \    },
   \ }
-  NeoBundle 'tpope/vim-rails', { 'autoload' : {
-        \ 'filetypes' : ['haml', 'slim', 'ruby', 'eruby'] }}
   NeoBundle 'vim-scripts/ruby-matchit'
 
   if has('nvim')
@@ -224,6 +222,10 @@ if has('vim_starting')
           \}
    endif
 
+  NeoBundleLazy 'tpope/vim-rails', {
+        \ 'autoload' : {
+        \   'filetypes' : ['haml', 'slim', 'ruby', 'eruby']
+        \ }}
   NeoBundleLazy 'tpope/vim-endwise', {
         \ 'autoload' : {
         \   'insert' : 1,
