@@ -194,6 +194,10 @@ if has('vim_starting')
   NeoBundle 'moro/vim-review'
   NeoBundle 'altercation/vim-colors-solarized'
   NeoBundle 'ujihisa/unite-colorscheme'
+  NeoBundle 'thoughtbot/vim-rspec'
+  NeoBundle 'vim-ruby/vim-ruby'
+  " NeoBundle 'marcus/rsense'
+  NeoBundle 'osyo-manga/vim-monster'
   NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
   \     'windows' : 'tools\\update-dll-mingw',
@@ -205,13 +209,27 @@ if has('vim_starting')
   \ }
   NeoBundle 'tpope/vim-rails', { 'autoload' : {
         \ 'filetypes' : ['haml', 'slim', 'ruby', 'eruby'] }}
+  NeoBundle 'edsono/vim-matchit', { 'autoload' : {
+        \ 'filetypes': 'ruby',
+        \ 'mappings' : ['nx', '%'] }}
+
+  if has('nvim')
+    NeoBundle 'Shougo/deoplete.nvim'
+    let g:deoplete#omni#input_patterns = {}
+    let g:deoplete#omni#input_patterns.ruby =
+          \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
+  else
+    NeoBundle 'Shougo/neocomplete.vim'
+    " NeoBundle 'supermomonga/neocomplete-rsense.vim'
+    let g:neocomplete#sources#omni#input_patterns = {
+          \   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
+          \}
+   endif
+
   NeoBundleLazy 'tpope/vim-endwise', {
         \ 'autoload' : {
         \   'insert' : 1,
         \ }}
-  NeoBundle 'edsono/vim-matchit', { 'autoload' : {
-        \ 'filetypes': 'ruby',
-        \ 'mappings' : ['nx', '%'] }}
   NeoBundleLazy 'basyura/unite-rails', {
         \ 'depends' : 'Shougo/unite.vim',
         \ 'autoload' : {
@@ -234,23 +252,6 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
         \ }}
-  NeoBundle 'thoughtbot/vim-rspec'
-  NeoBundle 'vim-ruby/vim-ruby'
-  " NeoBundle 'marcus/rsense'
-  NeoBundle 'osyo-manga/vim-monster'
-
-  if has('nvim')
-    NeoBundle 'Shougo/deoplete.nvim'
-    let g:deoplete#omni#input_patterns = {}
-    let g:deoplete#omni#input_patterns.ruby =
-          \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
-  else
-    NeoBundle 'Shougo/neocomplete.vim'
-    " NeoBundle 'supermomonga/neocomplete-rsense.vim'
-    let g:neocomplete#sources#omni#input_patterns = {
-          \   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
-          \}
-   endif
 
   call neobundle#end()
 
