@@ -191,9 +191,6 @@ if has('vim_starting')
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
-    let g:deoplete#omni#input_patterns = {}
-    let g:deoplete#omni#input_patterns.ruby =
-          \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
   else
     NeoBundle 'Shougo/neocomplete.vim', {
           \ 'depends' : 'context_filetype.vim'
@@ -574,8 +571,9 @@ let g:easytags_async = 1
 " deoplete
 if has('nvim')
   let g:deoplete#enable_at_startup = 1
-  let g:deoplete#omni_patterns = {}
-  let g:deoplete#omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+  let g:deoplete#omni#input_patterns = {}
+  let g:deoplete#omni#input_patterns.ruby =
+        \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
 endif
 
 " indent-guides {{{
