@@ -292,6 +292,10 @@ if has('vim_starting')
         \   'on_ft' : 'ruby'
         \ }}
   NeoBundleLazy 'Shougo/context_filetype.vim'
+  NeoBundleLazy 'Shougo/neoyank.vim', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim'
+        \ }}
 
   call neobundle#end()
 
