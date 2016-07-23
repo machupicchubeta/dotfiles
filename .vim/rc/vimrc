@@ -198,6 +198,10 @@ if has('vim_starting')
   NeoBundle 'rhysd/vim-operator-surround', {
         \ 'depends' : 'vim-operator-user'
         \ }
+  NeoBundle 'kana/vim-textobj-user'
+  NeoBundle 'osyo-manga/vim-textobj-multiblock', {
+        \ 'depends' : 'vim-textobj-user'
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
