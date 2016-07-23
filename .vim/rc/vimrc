@@ -307,6 +307,7 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_source' : 'unite.vim'
         \ }}
+  NeoBundle 'tyru/open-browser.vim'
 
   call neobundle#end()
 
@@ -674,6 +675,12 @@ endif
 " indent-guides {{{
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 2
+" }}}
+
+" open-browser {{{
+nmap bo <Plug>(openbrowser-open)
+vmap bo <Plug>(openbrowser-open)
+nmap sss <Plug>(openbrowser-search)
 " }}}
 
 " matchit
