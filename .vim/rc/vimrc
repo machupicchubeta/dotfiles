@@ -224,6 +224,7 @@ if has('vim_starting')
   NeoBundle 'vim-ruby/vim-ruby', {
         \ 'on_ft' : 'ruby'
         \ }
+  NeoBundle 'vim-jp/syntax-vim-ex'
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
