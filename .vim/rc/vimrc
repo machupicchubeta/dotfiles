@@ -317,6 +317,10 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_source' : 'unite.vim'
         \ }}
+  NeoBundleLazy 'hewes/unite-gtags', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim'
+        \ }}
   NeoBundleLazy 'kana/vim-tabpagecd'
   NeoBundleLazy 'todesking/ruby_hl_lvar.vim', {
         \ 'autoload' : {
