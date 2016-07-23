@@ -306,6 +306,7 @@ if has('vim_starting')
         \   'on_source' : 'unite.vim'
         \ }}
   NeoBundle 'tyru/open-browser.vim'
+  NeoBundleLazy 'kana/vim-tabpagecd'
 
   call neobundle#end()
 
