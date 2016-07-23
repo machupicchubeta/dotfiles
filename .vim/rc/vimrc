@@ -657,5 +657,10 @@ if has('nvim')
   let g:deoplete#omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 endif
 
+" indent-guides {{{
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 2
+" }}}
+
 " matchit
 source $VIMRUNTIME/macros/matchit.vim
