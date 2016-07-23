@@ -354,6 +354,10 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_ft' : 'vimshell'
         \ }}
+  NeoBundleLazy 'Shougo/unite-help', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim'
+        \ }}
 
   call neobundle#end()
 
