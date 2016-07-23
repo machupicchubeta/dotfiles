@@ -297,6 +297,11 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_source' : 'unite.vim'
         \ }}
+  NeoBundleLazy 'Shougo/junkfile.vim', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim',
+        \   'on_cmd' : 'JunkfileOpen'
+        \ }}
 
   call neobundle#end()
 
