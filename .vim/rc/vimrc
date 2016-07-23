@@ -190,6 +190,7 @@ if has('vim_starting')
   \ }
   NeoBundle 'vim-scripts/ruby-matchit'
   NeoBundle 'kana/vim-niceblock'
+  NeoBundle 'tyru/open-browser.vim'
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
@@ -305,7 +306,6 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_source' : 'unite.vim'
         \ }}
-  NeoBundle 'tyru/open-browser.vim'
   NeoBundleLazy 'kana/vim-tabpagecd'
 
   call neobundle#end()
