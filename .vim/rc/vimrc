@@ -328,6 +328,14 @@ if has('vim_starting')
         \   'on_ft' : 'ruby'
         \ }}
   NeoBundleLazy 'chikatoike/concealedyank.vim'
+  NeoBundleLazy 'thinca/vim-unite-history', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim'
+        \ }}
+  NeoBundleLazy 'osyo-manga/unite-filetype', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim'
+        \ }}
 
   call neobundle#end()
 
