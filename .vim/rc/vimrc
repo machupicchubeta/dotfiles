@@ -191,6 +191,13 @@ if has('vim_starting')
   NeoBundle 'vim-scripts/ruby-matchit'
   NeoBundle 'kana/vim-niceblock'
   NeoBundle 'tyru/open-browser.vim'
+  NeoBundle 'vim-operator-user'
+  NeoBundle 'kana/vim-operator-replace', {
+        \ 'depends' : 'vim-operator-user'
+        \ }
+  NeoBundle 'rhysd/vim-operator-surround', {
+        \ 'depends' : 'vim-operator-user'
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
@@ -685,6 +692,15 @@ nmap bo <Plug>(openbrowser-open)
 vmap bo <Plug>(openbrowser-open)
 nmap sss <Plug>(openbrowser-search)
 " }}}
+
+" operator-replace
+xmap p <Plug>(operator-replace)
+
+" operator-surround
+nmap <silent>sa <Plug>(operator-surround-append)a
+nmap <silent>sd <Plug>(operator-surround-delete)a
+nmap <silent>sr <Plug>(operator-surround-replace)a
+nmap <silent>sc <Plug>(operator-surround-replace)a
 
 " matchit
 source $VIMRUNTIME/macros/matchit.vim
