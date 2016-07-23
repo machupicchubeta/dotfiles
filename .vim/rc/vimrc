@@ -209,6 +209,9 @@ if has('vim_starting')
   NeoBundle 'jiangmiao/simple-javascript-indenter', {
         \ 'on_ft' : 'javascript'
         \ }
+  NeoBundle 'jelera/vim-javascript-syntax', {
+        \ 'on_ft' : 'javascript'
+        \ }
   NeoBundle 'cespare/vim-toml', {
         \ 'on_ft' : 'toml'
         \ }
