@@ -307,6 +307,10 @@ if has('vim_starting')
         \   'on_source' : 'unite.vim'
         \ }}
   NeoBundleLazy 'kana/vim-tabpagecd'
+  NeoBundleLazy 'todesking/ruby_hl_lvar.vim', {
+        \ 'autoload' : {
+        \   'on_ft' : 'ruby'
+        \ }}
 
   call neobundle#end()
 
