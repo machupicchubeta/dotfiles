@@ -197,6 +197,7 @@ if has('vim_starting')
           \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
   else
     NeoBundleLazy 'Shougo/neocomplete.vim', {
+          \ 'depends' : 'context_filetype.vim',
           \ 'autoload' : {
           \   'on_i' : 1
           \ }}
