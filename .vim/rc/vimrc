@@ -318,6 +318,7 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_ft' : 'ruby'
         \ }}
+  NeoBundleLazy 'chikatoike/concealedyank.vim'
 
   call neobundle#end()
 
