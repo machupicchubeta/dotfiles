@@ -202,6 +202,7 @@ if has('vim_starting')
   NeoBundle 'osyo-manga/vim-textobj-multiblock', {
         \ 'depends' : 'vim-textobj-user'
         \ }
+  NeoBundle 'hail2u/vim-css3-syntax'
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
