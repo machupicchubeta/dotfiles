@@ -291,6 +291,7 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_ft' : 'ruby'
         \ }}
+  NeoBundleLazy 'Shougo/context_filetype.vim'
 
   call neobundle#end()
 
