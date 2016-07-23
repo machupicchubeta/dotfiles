@@ -218,6 +218,9 @@ if has('vim_starting')
   NeoBundle 'rcmdnk/vim-markdown', {
         \ 'on_ft' : ['markdown', 'mkd', 'md']
         \ }
+  NeoBundle 'vim-ruby/vim-ruby', {
+        \ 'on_ft' : 'ruby'
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
@@ -307,10 +310,6 @@ if has('vim_starting')
   NeoBundleLazy 'tpope/vim-fugitive'
   NeoBundleLazy 'moro/vim-review'
   NeoBundleLazy 'ctrlpvim/ctrlp.vim'
-  NeoBundleLazy 'vim-ruby/vim-ruby', {
-        \ 'autoload' : {
-        \   'on_ft' : 'ruby'
-        \ }}
   NeoBundleLazy 'thoughtbot/vim-rspec', {
         \ 'autoload' : {
         \   'on_ft' : 'ruby'
