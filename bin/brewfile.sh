@@ -129,68 +129,68 @@ brew install libiconv
 brew unlink libxml2 libxslt libiconv
 
 # cask
-brew cask install dropbox
-brew cask install google-japanese-ime
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install google-chrome
-brew cask install firefox
-brew cask install firefoxdeveloperedition
-brew cask install flash
-brew cask install evernote
-brew cask install slack
-brew cask install skitch
-brew cask install geektool
-brew cask install xquartz
-brew cask install java
-brew cask install skype
-brew cask install knock
-brew cask install licecap
-brew cask install sublime-text3
-brew cask install atom
-brew cask install cloak
-brew cask install karabiner
-brew cask install slate
-brew cask install google-hangouts
-brew cask install dash
-brew cask install reflector
-brew cask install disk-inventory-x
-brew cask install itrash
-brew cask install cyberduck
-brew cask install inssider
-brew cask install mou
-brew cask install lastpass
-brew cask install rubymine
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install quicklook-csv
-brew cask install betterzipql
-brew cask install suspicious-package
-brew cask install packages
-brew cask install qlcolorcode
-brew cask install qlimagesize
-brew cask install hetimazipql
-brew cask install iterm2
-brew cask install gyazo
-brew cask install 0xed
-brew cask install alfred
-brew cask install dockertoolbox
-brew cask install githubpulse
-brew cask install github-desktop
-brew cask install paparazzi
-brew cask install simplecap
-brew cask install box-sync
-brew cask install google-chrome-canary
-brew cask install soundflower
-brew cask install vlc
-brew cask install chrome-remote-desktop-host
-brew cask install near-lock
-brew cask install vivaldi
-brew cask install lacona
-brew cask install wireshark-chmodbpf
-brew cask install sketch
-brew cask install flinto
+brew  cask install dropbox --force
+brew  cask install google-japanese-ime --force
+brew  cask install vagrant --force
+brew  cask install virtualbox --force
+brew  cask install google-chrome --force
+brew  cask install firefox --force
+brew  cask install firefoxdeveloperedition --force
+brew  cask install flash --force
+brew  cask install evernote --force
+brew  cask install slack --force
+brew  cask install skitch --force
+brew  cask install geektool --force
+brew  cask install xquartz --force
+brew  cask install java --force
+brew  cask install skype --force
+brew  cask install knock --force
+brew  cask install licecap --force
+brew  cask install sublime-text3 --force
+brew  cask install atom --force
+brew  cask install cloak --force
+brew  cask install karabiner --force
+brew  cask install slate --force
+brew  cask install google-hangouts --force
+brew  cask install dash --force
+brew  cask install reflector --force
+brew  cask install disk-inventory-x --force
+brew  cask install itrash --force
+brew  cask install cyberduck --force
+brew  cask install inssider --force
+brew  cask install mou --force
+brew  cask install lastpass --force
+brew  cask install rubymine --force
+brew  cask install qlstephen --force
+brew  cask install qlmarkdown --force
+brew  cask install quicklook-json --force
+brew  cask install quicklook-csv --force
+brew  cask install betterzipql --force
+brew  cask install suspicious-package --force
+brew  cask install packages --force
+brew  cask install qlcolorcode --force
+brew  cask install qlimagesize --force
+brew  cask install hetimazipql --force
+brew  cask install iterm2 --force
+brew  cask install gyazo --force
+brew  cask install 0xed --force
+brew  cask install alfred --force
+brew  cask install dockertoolbox --force
+brew  cask install githubpulse --force
+brew  cask install github-desktop --force
+brew  cask install paparazzi --force
+brew  cask install simplecap --force
+brew  cask install box-sync --force
+brew  cask install google-chrome-canary --force
+brew  cask install soundflower --force
+brew  cask install vlc --force
+brew  cask install chrome-remote-desktop-host --force
+brew  cask install near-lock --force
+brew  cask install vivaldi --force
+brew  cask install lacona --force
+brew  cask install wireshark-chmodbpf --force
+brew  cask install sketch --force
+brew  cask install flinto --force
 
 brew linkapps
 
