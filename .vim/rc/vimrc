@@ -166,7 +166,7 @@ if has('vim_starting')
   NeoBundle 'scrooloose/syntastic'
   NeoBundle 'vim-scripts/ShowMarks'
   NeoBundle 'easymotion/vim-easymotion'
-  NeoBundle 'tomtom/tcomment_vim'
+  NeoBundle 'tyru/caw.vim'
   NeoBundle 'taku-o/vim-toggle'
   NeoBundle 'kana/vim-submode'
   NeoBundle 'xolox/vim-easytags'
