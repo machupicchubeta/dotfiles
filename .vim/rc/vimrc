@@ -209,6 +209,15 @@ if has('vim_starting')
   NeoBundle 'jiangmiao/simple-javascript-indenter', {
         \ 'on_ft' : 'javascript'
         \ }
+  NeoBundle 'cespare/vim-toml', {
+        \ 'on_ft' : 'toml'
+        \ }
+  NeoBundle 'elzr/vim-json', {
+        \ 'on_ft' : 'json'
+        \ }
+  NeoBundle 'rcmdnk/vim-markdown', {
+        \ 'on_ft' : ['markdown', 'mkd', 'md']
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
