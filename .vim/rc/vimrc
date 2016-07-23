@@ -197,11 +197,9 @@ if has('vim_starting')
     let g:deoplete#omni#input_patterns.ruby =
           \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
   else
-    NeoBundleLazy 'Shougo/neocomplete.vim', {
-          \ 'depends' : 'context_filetype.vim',
-          \ 'autoload' : {
-          \   'on_i' : 1
-          \ }}
+    NeoBundle 'Shougo/neocomplete.vim', {
+          \ 'depends' : 'context_filetype.vim'
+          \ }
    endif
 
   NeoBundleLazy 'tpope/vim-rails', {
