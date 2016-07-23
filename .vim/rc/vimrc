@@ -302,6 +302,10 @@ if has('vim_starting')
         \   'on_source' : 'unite.vim',
         \   'on_cmd' : 'JunkfileOpen'
         \ }}
+  NeoBundleLazy 'Shougo/unite-outline', {
+        \ 'autoload' : {
+        \   'on_source' : 'unite.vim'
+        \ }}
 
   call neobundle#end()
 
