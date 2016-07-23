@@ -203,6 +203,12 @@ if has('vim_starting')
         \ 'depends' : 'vim-textobj-user'
         \ }
   NeoBundle 'hail2u/vim-css3-syntax'
+  NeoBundle 'mxw/vim-jsx', {
+        \ 'on_ft' : 'javascript'
+        \ }
+  NeoBundle 'jiangmiao/simple-javascript-indenter', {
+        \ 'on_ft' : 'javascript'
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
