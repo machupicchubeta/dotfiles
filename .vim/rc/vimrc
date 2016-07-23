@@ -172,10 +172,8 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
 
   NeoBundle 'itchyny/lightline.vim'
-  NeoBundle 'vim-scripts/grep.vim'
   NeoBundle 'scrooloose/syntastic'
   NeoBundle 'vim-scripts/ShowMarks'
-  NeoBundle 'easymotion/vim-easymotion'
   NeoBundle 'tyru/caw.vim'
   NeoBundle 'taku-o/vim-toggle'
   NeoBundle 'kana/vim-submode'
@@ -188,53 +186,8 @@ if has('vim_starting')
   NeoBundle 'junegunn/vim-easy-align'
   NeoBundle 'Raimondi/delimitMate'
   NeoBundle 'altercation/vim-colors-solarized'
-  NeoBundle 'ujihisa/unite-colorscheme'
-  NeoBundle 'Shougo/vimproc.vim', {
-  \ 'build' : {
-  \     'windows' : 'tools\\update-dll-mingw',
-  \     'cygwin' : 'make -f make_cygwin.mak',
-  \     'mac' : 'make',
-  \     'linux' : 'make',
-  \     'unix' : 'gmake',
-  \    },
-  \ }
   NeoBundle 'vim-scripts/ruby-matchit'
-  NeoBundle 'kana/vim-niceblock'
   NeoBundle 'tyru/open-browser.vim'
-  NeoBundle 'vim-operator-user'
-  NeoBundle 'kana/vim-operator-replace', {
-        \ 'depends' : 'vim-operator-user'
-        \ }
-  NeoBundle 'rhysd/vim-operator-surround', {
-        \ 'depends' : 'vim-operator-user'
-        \ }
-  NeoBundle 'kana/vim-textobj-user'
-  NeoBundle 'osyo-manga/vim-textobj-multiblock', {
-        \ 'depends' : 'vim-textobj-user'
-        \ }
-  NeoBundle 'hail2u/vim-css3-syntax'
-  NeoBundle 'mxw/vim-jsx', {
-        \ 'on_ft' : 'javascript'
-        \ }
-  NeoBundle 'jiangmiao/simple-javascript-indenter', {
-        \ 'on_ft' : 'javascript'
-        \ }
-  NeoBundle 'jelera/vim-javascript-syntax', {
-        \ 'on_ft' : 'javascript'
-        \ }
-  NeoBundle 'cespare/vim-toml', {
-        \ 'on_ft' : 'toml'
-        \ }
-  NeoBundle 'elzr/vim-json', {
-        \ 'on_ft' : 'json'
-        \ }
-  NeoBundle 'rcmdnk/vim-markdown', {
-        \ 'on_ft' : ['markdown', 'mkd', 'md']
-        \ }
-  NeoBundle 'vim-ruby/vim-ruby', {
-        \ 'on_ft' : 'ruby'
-        \ }
-  NeoBundle 'vim-jp/syntax-vim-ex'
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
@@ -255,123 +208,12 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'insert' : 1,
         \ }}
-  NeoBundleLazy 'basyura/unite-rails', {
-        \ 'depends' : 'Shougo/unite.vim',
-        \ 'autoload' : {
-        \   'unite_sources' : [
-        \     'rails/bundle', 'rails/bundled_gem', 'rails/config',
-        \     'rails/controller', 'rails/db', 'rails/destroy', 'rails/features',
-        \     'rails/gem', 'rails/gemfile', 'rails/generate', 'rails/git', 'rails/helper',
-        \     'rails/heroku', 'rails/initializer', 'rails/javascript', 'rails/lib', 'rails/log',
-        \     'rails/mailer', 'rails/model', 'rails/rake', 'rails/route', 'rails/schema', 'rails/spec',
-        \     'rails/stylesheet', 'rails/view'
-        \   ]
-        \ }}
   NeoBundleLazy 'alpaca-tc/neorspec.vim', {
         \ 'depends' : ['alpaca-tc/vim-rails', 'tpope/vim-dispatch'],
         \ 'autoload' : {
         \   'commands' : ['RSpec', 'RSpecAll', 'RSpecCurrent', 'RSpecNearest', 'RSpecRetry']
         \ }}
-  NeoBundleLazy 'tsukkee/unite-tag', {
-        \ 'depends' : ['Shougo/unite.vim'],
-        \ 'autoload' : {
-        \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
-        \ }}
-  NeoBundleLazy 'Shougo/echodoc.vim', {
-        \ 'autoload' : {
-        \   'on_i' : 1
-        \ }}
-  NeoBundleLazy 'Shougo/unite.vim', {
-        \ 'autoload' : {
-        \   'on_cmd' : 'Unite'
-        \ }}
-  NeoBundleLazy 'Shougo/vimfiler.vim', {
-        \ 'depends' : 'Unite.vim',
-        \ 'autoload' : {
-        \   'commands' : ['VimFilerTab', 'VimFiler', 'VimFilerExplorer']
-        \ }}
-  NeoBundleLazy 'Shougo/vimshell.vim', {
-        \ 'depends' : 'vimproc.vim',
-        \ 'autoload' : {
-        \   'on_cmd' : 'VimShell'
-        \ }}
-  NeoBundleLazy 'Shougo/vinarise.vim', {
-        \ 'autoload' : {
-        \   'on_cmd' : 'Vinarise'
-        \ }}
-  NeoBundleLazy 'mattn/emmet-vim'
-  NeoBundleLazy 'thinca/vim-quickrun', {
-        \ 'autoload' : {
-        \   'on_cmd' : 'QuickRun'
-        \ }}
-  NeoBundleLazy 'tpope/vim-bundler', {
-        \ 'autoload' : {
-        \   'on_cmd' : ['Bundle', 'Bopen']
-        \ }}
-  NeoBundleLazy 'kana/vim-smartchr', {
-        \ 'autoload' : {
-        \   'on_i' : 1
-        \ }}
-  NeoBundleLazy 'slim-template/vim-slim', {
-        \ 'autoload' : {
-        \   'on_ft' : 'slim'
-        \ }}
-  NeoBundleLazy 'thinca/vim-ref'
-  NeoBundleLazy 'yuku-t/vim-ref-ri', {
-        \ 'autoload' : {
-        \   'on_ft' : 'ruby'
-        \ }}
-  NeoBundleLazy 'tpope/vim-fugitive'
-  NeoBundleLazy 'moro/vim-review'
-  NeoBundleLazy 'ctrlpvim/ctrlp.vim'
-  NeoBundleLazy 'thoughtbot/vim-rspec', {
-        \ 'autoload' : {
-        \   'on_ft' : 'ruby'
-        \ }}
-  NeoBundleLazy 'osyo-manga/vim-monster', {
-        \ 'autoload' : {
-        \   'on_ft' : 'ruby'
-        \ }}
   NeoBundleLazy 'Shougo/context_filetype.vim'
-  NeoBundleLazy 'Shougo/neoyank.vim', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim'
-        \ }}
-  NeoBundleLazy 'Shougo/junkfile.vim', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim',
-        \   'on_cmd' : 'JunkfileOpen'
-        \ }}
-  NeoBundleLazy 'Shougo/unite-outline', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim'
-        \ }}
-  NeoBundleLazy 'hewes/unite-gtags', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim'
-        \ }}
-  NeoBundleLazy 'kana/vim-tabpagecd'
-  NeoBundleLazy 'todesking/ruby_hl_lvar.vim', {
-        \ 'autoload' : {
-        \   'on_ft' : 'ruby'
-        \ }}
-  NeoBundleLazy 'chikatoike/concealedyank.vim'
-  NeoBundleLazy 'thinca/vim-unite-history', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim'
-        \ }}
-  NeoBundleLazy 'osyo-manga/unite-filetype', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim'
-        \ }}
-  NeoBundleLazy 'yomi322/vim-gitcomplete', {
-        \ 'autoload' : {
-        \   'on_ft' : 'vimshell'
-        \ }}
-  NeoBundleLazy 'Shougo/unite-help', {
-        \ 'autoload' : {
-        \   'on_source' : 'unite.vim'
-        \ }}
 
   call neobundle#end()
 
