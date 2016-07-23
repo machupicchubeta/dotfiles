@@ -342,6 +342,10 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'on_source' : 'unite.vim'
         \ }}
+  NeoBundleLazy 'yomi322/vim-gitcomplete', {
+        \ 'autoload' : {
+        \   'on_ft' : 'vimshell'
+        \ }}
 
   call neobundle#end()
 
