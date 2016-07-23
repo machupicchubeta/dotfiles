@@ -11,10 +11,6 @@ on_map = '<Plug>'
 on_ft = 'ruby'
 
 [[plugins]]
-repo = 'cespare/vim-toml'
-on_ft = 'toml'
-
-[[plugins]]
 repo = 'elzr/vim-json'
 on_ft = 'json'
 

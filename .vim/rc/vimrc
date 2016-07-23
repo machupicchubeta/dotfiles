@@ -113,6 +113,9 @@ if has('vim_starting')
   NeoBundle 'altercation/vim-colors-solarized'
   NeoBundle 'vim-scripts/ruby-matchit'
   NeoBundle 'tyru/open-browser.vim'
+  NeoBundle 'cespare/vim-toml', {
+        \ 'on_ft' : 'toml'
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
