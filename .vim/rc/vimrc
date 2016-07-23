@@ -161,43 +161,25 @@ if has('vim_starting')
 
   NeoBundleFetch 'Shougo/neobundle.vim'
 
-  NeoBundle 'Shougo/echodoc.vim'
-  NeoBundle 'Shougo/unite.vim'
-  NeoBundle 'Shougo/vimfiler.vim'
-  NeoBundle 'Shougo/vimshell.vim'
-  NeoBundle 'Shougo/vinarise.vim'
   NeoBundle 'itchyny/lightline.vim'
-  NeoBundle 'mattn/emmet-vim'
-  NeoBundle 'thinca/vim-quickrun'
   NeoBundle 'vim-scripts/grep.vim'
   NeoBundle 'scrooloose/syntastic'
-  NeoBundle 'tpope/vim-bundler'
   NeoBundle 'vim-scripts/ShowMarks'
   NeoBundle 'easymotion/vim-easymotion'
   NeoBundle 'tomtom/tcomment_vim'
-  NeoBundle 'kana/vim-smartchr'
   NeoBundle 'taku-o/vim-toggle'
-  NeoBundle 'slim-template/vim-slim'
   NeoBundle 'kana/vim-submode'
   NeoBundle 'xolox/vim-easytags'
   NeoBundle 'xolox/vim-misc'
-  NeoBundle 'thinca/vim-ref'
-  NeoBundle 'yuku-t/vim-ref-ri'
   NeoBundle 'bronson/vim-trailing-whitespace'
   NeoBundle 'tpope/vim-surround'
   NeoBundle 'nathanaelkane/vim-indent-guides'
   NeoBundle 'vim-scripts/AnsiEsc.vim'
-  NeoBundle 'tpope/vim-fugitive'
   NeoBundle 'junegunn/vim-easy-align'
   NeoBundle 'Raimondi/delimitMate'
-  NeoBundle 'ctrlpvim/ctrlp.vim'
-  NeoBundle 'moro/vim-review'
   NeoBundle 'altercation/vim-colors-solarized'
   NeoBundle 'ujihisa/unite-colorscheme'
-  NeoBundle 'thoughtbot/vim-rspec'
-  NeoBundle 'vim-ruby/vim-ruby'
   " NeoBundle 'marcus/rsense'
-  NeoBundle 'osyo-manga/vim-monster'
   NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
   \     'windows' : 'tools\\update-dll-mingw',
@@ -215,7 +197,10 @@ if has('vim_starting')
     let g:deoplete#omni#input_patterns.ruby =
           \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
   else
-    NeoBundle 'Shougo/neocomplete.vim'
+    NeoBundleLazy 'Shougo/neocomplete.vim', {
+          \ 'autoload' : {
+          \   'on_i' : 1
+          \ }}
     " NeoBundle 'supermomonga/neocomplete-rsense.vim'
     let g:neocomplete#sources#omni#input_patterns = {
           \   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
@@ -252,6 +237,65 @@ if has('vim_starting')
         \ 'autoload' : {
         \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
         \ }}
+  NeoBundleLazy 'Shougo/echodoc.vim', {
+        \ 'autoload' : {
+        \   'on_i' : 1
+        \ }}
+  NeoBundleLazy 'Shougo/unite.vim', {
+        \ 'autoload' : {
+        \   'on_cmd' : 'Unite'
+        \ }}
+  NeoBundleLazy 'Shougo/vimfiler.vim', {
+        \ 'depends' : 'Unite.vim',
+        \ 'autoload' : {
+        \   'commands' : ['VimFilerTab', 'VimFiler', 'VimFilerExplorer']
+        \ }}
+  NeoBundleLazy 'Shougo/vimshell.vim', {
+        \ 'depends' : 'vimproc.vim',
+        \ 'autoload' : {
+        \   'on_cmd' : 'VimShell'
+        \ }}
+  NeoBundleLazy 'Shougo/vinarise.vim', {
+        \ 'autoload' : {
+        \   'on_cmd' : 'Vinarise'
+        \ }}
+  NeoBundleLazy 'mattn/emmet-vim'
+  NeoBundleLazy 'thinca/vim-quickrun', {
+        \ 'autoload' : {
+        \   'on_cmd' : 'QuickRun'
+        \ }}
+  NeoBundleLazy 'tpope/vim-bundler', {
+        \ 'autoload' : {
+        \   'on_cmd' : ['Bundle', 'Bopen']
+        \ }}
+  NeoBundleLazy 'kana/vim-smartchr', {
+        \ 'autoload' : {
+        \   'on_i' : 1
+        \ }}
+  NeoBundleLazy 'slim-template/vim-slim', {
+        \ 'autoload' : {
+        \   'on_ft' : 'slim'
+        \ }}
+  NeoBundleLazy 'thinca/vim-ref'
+  NeoBundleLazy 'yuku-t/vim-ref-ri', {
+        \ 'autoload' : {
+        \   'on_ft' : 'ruby'
+        \ }}
+  NeoBundleLazy 'tpope/vim-fugitive'
+  NeoBundleLazy 'moro/vim-review'
+  NeoBundleLazy 'ctrlpvim/ctrlp.vim'
+  NeoBundleLazy 'vim-ruby/vim-ruby', {
+        \ 'autoload' : {
+        \   'on_ft' : 'ruby'
+        \ }}
+  NeoBundleLazy 'thoughtbot/vim-rspec', {
+        \ 'autoload' : {
+        \   'on_ft' : 'ruby'
+        \ }}
+  NeoBundleLazy 'osyo-manga/vim-monster', {
+        \ 'autoload' : {
+        \   'on_ft' : 'ruby'
+        \ }}
 
   call neobundle#end()
 
@@ -259,6 +303,11 @@ if has('vim_starting')
 
   NeoBundleCheck
 endif
+
+" emmet {{{
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+" }}}
 
 " quickrun key-mapping
 silent! nmap <unique> <Space>r <Plug>(quickrun)
