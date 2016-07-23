@@ -195,7 +195,7 @@ if has('vim_starting')
     NeoBundle 'Shougo/neocomplete.vim', {
           \ 'depends' : 'context_filetype.vim'
           \ }
-   endif
+  endif
 
   NeoBundleLazy 'tpope/vim-rails', {
         \ 'autoload' : {
