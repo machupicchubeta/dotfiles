@@ -436,7 +436,7 @@ let g:rails_gem_projections = {
             \     "test": "spec/uploaders/%s_uploader_spec.rb"
             \   }
             \ },
-            \ "active_decorator": {
+            \ "decorator": {
             \   "app/decorators/*_decorator.rb": {
             \     "command": "decorator",
             \     "template": "module %SDecorator\nend",
