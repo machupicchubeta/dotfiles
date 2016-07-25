@@ -156,7 +156,6 @@ cask install disk-inventory-x
 cask install itrash
 cask install cyberduck
 cask install inssider
-cask install mou
 cask install lastpass
 cask install rubymine
 cask install qlstephen
