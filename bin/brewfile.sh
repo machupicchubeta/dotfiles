@@ -146,7 +146,7 @@ brew  cask install java --force
 brew  cask install skype --force
 brew  cask install knock --force
 brew  cask install licecap --force
-brew  cask install sublime-text3 --force
+brew  cask install sublime-text --force
 brew  cask install atom --force
 brew  cask install cloak --force
 brew  cask install karabiner --force

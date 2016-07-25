@@ -144,7 +144,7 @@ cask install java
 cask install skype
 cask install knock
 cask install licecap
-cask install sublime-text3
+cask install sublime-text
 cask install atom
 cask install cloak
 cask install karabiner
