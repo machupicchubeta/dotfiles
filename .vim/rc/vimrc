@@ -116,6 +116,9 @@ if has('vim_starting')
   NeoBundle 'cespare/vim-toml', {
         \ 'on_ft' : 'toml'
         \ }
+  NeoBundle 'slim-template/vim-slim', {
+        \ 'on_ft' : 'slim'
+        \ }
 
   if has('nvim')
     NeoBundle 'Shougo/deoplete.nvim'
