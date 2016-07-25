@@ -187,6 +187,7 @@ cask install lacona
 cask install wireshark-chmodbpf
 cask install sketch
 cask install flinto
+cask install blisk
 
 linkapps
 

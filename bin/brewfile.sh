@@ -189,6 +189,7 @@ brew  cask install lacona --force
 brew  cask install wireshark-chmodbpf --force
 brew  cask install sketch --force
 brew  cask install flinto --force
+brew  cask install blisk --force
 
 brew linkapps
 
