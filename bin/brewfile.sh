@@ -178,7 +178,6 @@ brew  cask install dockertoolbox --force
 brew  cask install githubpulse --force
 brew  cask install github-desktop --force
 brew  cask install paparazzi --force
-brew  cask install simplecap --force
 brew  cask install box-sync --force
 brew  cask install google-chrome-canary --force
 brew  cask install soundflower --force
