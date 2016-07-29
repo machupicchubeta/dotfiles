@@ -54,6 +54,7 @@ install bash
 install heroku-toolbelt
 install docker
 install docker-cloud
+install docker-swarm
 install boot2docker
 install python3
 install jq
