@@ -176,7 +176,7 @@ brew cask uninstall iterm2 --force && brew  cask install iterm2
 brew cask uninstall gyazo --force && brew  cask install gyazo
 brew cask uninstall 0xed --force && brew  cask install 0xed
 brew cask uninstall alfred --force && brew  cask install alfred
-brew cask uninstall dockertoolbox --force && brew  cask install dockertoolbox
+brew cask uninstall docker-toolbox --force && brew  cask install docker-toolbox
 brew cask uninstall githubpulse --force && brew  cask install githubpulse
 brew cask uninstall github-desktop --force && brew  cask install github-desktop
 brew cask uninstall paparazzi --force && brew  cask install paparazzi

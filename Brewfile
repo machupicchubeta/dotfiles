@@ -174,7 +174,7 @@ cask install iterm2
 cask install gyazo
 cask install 0xed
 cask install alfred
-cask install dockertoolbox
+cask install docker-toolbox
 cask install githubpulse
 cask install github-desktop
 cask install paparazzi
