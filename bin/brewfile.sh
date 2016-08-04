@@ -111,6 +111,7 @@ brew install sslscan
 brew install diff-so-fancy
 brew install mas
 brew install wireshark
+brew install git-when-merged
 
 # for ruby
 brew install openssl

@@ -109,6 +109,7 @@ install sslscan
 install diff-so-fancy
 install mas
 install wireshark
+install git-when-merged
 
 # for ruby
 install openssl
