@@ -190,6 +190,7 @@ cask install wireshark-chmodbpf
 cask install sketch
 cask install flinto
 cask install blisk
+cask install gitter
 
 linkapps
 

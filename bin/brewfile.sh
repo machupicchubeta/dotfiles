@@ -192,6 +192,7 @@ brew cask uninstall wireshark-chmodbpf --force && brew  cask install wireshark-c
 brew cask uninstall sketch --force && brew  cask install sketch
 brew cask uninstall flinto --force && brew  cask install flinto
 brew cask uninstall blisk --force && brew  cask install blisk
+brew cask uninstall gitter --force && brew  cask install gitter
 
 brew linkapps
 
