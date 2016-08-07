@@ -194,41 +194,41 @@ xnoremap s :s//g<Left><Left>
 
 " Sticky shift in English keyboard."{{{
 " Sticky key.
-inoremap <expr> ;  <SID>sticky_func()
-cnoremap <expr> ;  <SID>sticky_func()
-snoremap <expr> ;  <SID>sticky_func()
-
-function! s:sticky_func() abort
-  let sticky_table = {
-        \',' : '<', '.' : '>', '/' : '?',
-        \'1' : '!', '2' : '@', '3' : '#', '4' : '$', '5' : '%',
-        \'6' : '^', '7' : '&', '8' : '*', '9' : '(', '0' : ')',
-        \ '-' : '_', '=' : '+',
-        \';' : ':', '[' : '{', ']' : '}', '`' : '~', "'" : "\"", '\' : '|',
-        \}
-  let special_table = {
-        \"\<ESC>" : "\<ESC>", "\<Space>" : ';', "\<CR>" : ";\<CR>"
-        \}
-
-  if mode() !~# '^c'
-    echo 'Input sticky key: '
-  endif
-  let char = ''
-
-  while char == ''
-    let char = nr2char(getchar())
-  endwhile
-
-  if char =~ '\l'
-    return toupper(char)
-  elseif has_key(sticky_table, char)
-    return sticky_table[char]
-  elseif has_key(special_table, char)
-    return special_table[char]
-  else
-    return ''
-  endif
-endfunction
+" inoremap <expr> ;  <SID>sticky_func()
+" cnoremap <expr> ;  <SID>sticky_func()
+" snoremap <expr> ;  <SID>sticky_func()
+"
+" function! s:sticky_func() abort
+"   let sticky_table = {
+"         \',' : '<', '.' : '>', '/' : '?',
+"         \'1' : '!', '2' : '@', '3' : '#', '4' : '$', '5' : '%',
+"         \'6' : '^', '7' : '&', '8' : '*', '9' : '(', '0' : ')',
+"         \ '-' : '_', '=' : '+',
+"         \';' : ':', '[' : '{', ']' : '}', '`' : '~', "'" : "\"", '\' : '|',
+"         \}
+"   let special_table = {
+"         \"\<ESC>" : "\<ESC>", "\<Space>" : ';', "\<CR>" : ";\<CR>"
+"         \}
+"
+"   if mode() !~# '^c'
+"     echo 'Input sticky key: '
+"   endif
+"   let char = ''
+"
+"   while char == ''
+"     let char = nr2char(getchar())
+"   endwhile
+"
+"   if char =~ '\l'
+"     return toupper(char)
+"   elseif has_key(sticky_table, char)
+"     return sticky_table[char]
+"   elseif has_key(special_table, char)
+"     return special_table[char]
+"   else
+"     return ''
+"   endif
+" endfunction
 "}}}
 
 " Easy escape."{{{
