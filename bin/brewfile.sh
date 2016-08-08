@@ -112,6 +112,11 @@ brew install diff-so-fancy
 brew install mas
 brew install wireshark
 brew install git-when-merged
+brew install fortune
+brew install cowsay
+brew install figlet
+brew install asciiquarium
+brew install cmatrix
 
 # for ruby
 brew install openssl

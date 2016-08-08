@@ -110,6 +110,11 @@ install diff-so-fancy
 install mas
 install wireshark
 install git-when-merged
+install fortune
+install cowsay
+install figlet
+install asciiquarium
+install cmatrix
 
 # for ruby
 install openssl
