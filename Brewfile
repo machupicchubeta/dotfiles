@@ -88,7 +88,6 @@ install tree
 install chromedriver
 install packer
 install packer-completion
-install rsense
 install chrome-cli
 install cscope
 install postgresql
