@@ -505,6 +505,13 @@ if !has('nvim')
     let g:neocomplete#force_omni_input_patterns = {}
   endif
   let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+
+  " Disable completion in gitcommit
+  if !exists('g:neocomplete#text_mode_filetypes')
+    let g:neocomplete#tags_filter_patterns = {}
+    let g:neocomplete#text_mode_filetypes = {}
+  endif
+  let g:neocomplete#text_mode_filetypes.gitcommit = 0
   " }}}
 endif
 
