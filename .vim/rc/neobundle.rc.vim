@@ -73,7 +73,8 @@ if has('vim_starting')
     NeoBundle 'Shougo/deoplete.nvim'
   else
     NeoBundle 'Shougo/neocomplete.vim', {
-          \ 'depends' : 'context_filetype.vim'
+          \ 'depends' : 'context_filetype.vim',
+          \ 'on_ft' : 'ruby'
           \ }
   endif
 
