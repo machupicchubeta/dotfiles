@@ -195,6 +195,7 @@ cask install sketch
 cask install flinto
 cask install blisk
 cask install gitter
+cask install flux
 
 linkapps
 
