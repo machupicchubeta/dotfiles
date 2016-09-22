@@ -114,6 +114,7 @@ install cowsay
 install figlet
 install asciiquarium
 install cmatrix
+install pow
 
 # for ruby
 install openssl

@@ -116,6 +116,7 @@ brew install cowsay
 brew install figlet
 brew install asciiquarium
 brew install cmatrix
+brew install pow
 
 # for ruby
 brew install openssl
