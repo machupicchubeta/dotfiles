@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo chown -R $(whoami):admin /usr/local/
+sudo chown -R $(whoami):admin $(brew --prefix)
 cd $(brew --repository) && git checkout master
 cd -
 
