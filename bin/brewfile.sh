@@ -1,5 +1,7 @@
 #!/bin/sh
 sudo chown -R $(whoami):admin /usr/local/
+cd $(brew --repository) && git checkout master
+cd -
 
 brew untap homebrew/binary
 brew untap homebrew/versions

@@ -1,6 +1,8 @@
 File.open ARGV[0] do |brewfile|
   puts '#!/bin/sh'
   puts 'sudo chown -R $(whoami):admin /usr/local/'
+  puts 'cd $(brew --repository) && git checkout master'
+  puts 'cd -'
 
   brewfile.each_line do |line|
     if line.start_with?('#') || line.chomp.empty?
