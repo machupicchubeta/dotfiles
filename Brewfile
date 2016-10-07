@@ -8,6 +8,7 @@ untap raggi/ale
 untap neovim/homebrew-neovim
 untap caskroom/versions
 untap homebrew/services
+untap homebrew/bundle
 
 prune
 
@@ -20,6 +21,7 @@ tap raggi/ale
 tap neovim/homebrew-neovim
 tap caskroom/versions
 tap homebrew/services
+tap homebrew/bundle
 # tap caskroom/fonts
 
 update
