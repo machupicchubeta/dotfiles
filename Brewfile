@@ -25,7 +25,7 @@ tap homebrew/bundle
 # tap caskroom/fonts
 
 update
-upgrade
+upgrade --fetch-HEAD
 
 install git
 install tig

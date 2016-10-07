@@ -29,7 +29,7 @@ brew tap homebrew/bundle
 # tap caskroom/fonts
 
 brew update
-brew upgrade
+brew upgrade --fetch-HEAD
 
 brew install git
 brew install tig
