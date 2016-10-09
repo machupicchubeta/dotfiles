@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z brew tmux osx vagrant ruby npm gem tmuxinator history docker rake-fast redis-cli)
+plugins=(git z brew tmux osx vagrant ruby npm gem tmuxinator history docker redis-cli)
 
 # User configuration
 
