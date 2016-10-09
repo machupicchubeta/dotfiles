@@ -150,12 +150,12 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias ber='bundle exec rails'
 
+# parallel_spec
+alias test_in_parallel='bundle && rake parallel:rake\[db:migrate:reset\] parallel:seed parallel:rake\[db:seed_fu\] parallel:spec'
+
 # rake
 alias rk='rake'
 alias rks='rake spec'
-alias rkspc='rake parallel:create'
-alias rkspp='rake parallel:prepare'
-alias rksp='rake parallel:spec'
 
 # rails
 alias rs='rails server -b lvh.me'
@@ -165,9 +165,7 @@ alias sidekiq='bundle exec sidekiq -C config/sidekiq.yml'
 alias sidekiq_daemon='bundle exec sidekiq -C config/sidekiq.yml -d'
 
 # rspec
-alias all_test='RAILS_ENV=test rk db:reset db:migrate db:seed spec'
-alias feature_test='RAILS_ENV=test rk db:reset db:migrate db:seed spec:features'
-alias test='RAILS_ENV=test rk db:reset db:migrate db:seed spec:controllers spec:decorators spec:helpers spec:lib spec:models'
+alias test_in_serial='RAILS_ENV=test rake db:migrate:reset db:seed db:seed_fu spec'
 alias retest='rspec --only-failures'
 alias next_failure='rspec --next-failure'
 
