@@ -147,8 +147,6 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 # bundler
 alias b='bundle'
 alias be='bundle exec'
-alias bi='bundle install'
-alias ber='bundle exec rails'
 
 # parallel_spec
 alias test_in_parallel='bundle && rake parallel:rake\[db:migrate:reset\] parallel:seed parallel:rake\[db:seed_fu\] parallel:spec'
