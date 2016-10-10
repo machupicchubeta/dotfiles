@@ -157,6 +157,7 @@ cask install sublime-text
 cask install atom
 cask install cloak
 cask install karabiner
+cask install karabiner-elements
 cask install slate
 cask install google-hangouts
 cask install dash
