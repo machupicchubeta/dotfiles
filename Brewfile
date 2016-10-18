@@ -143,7 +143,7 @@ cask install virtualbox
 cask install google-chrome
 cask install firefox
 cask install firefoxdeveloperedition
-cask install flash
+cask install flash-npapi
 cask install evernote
 cask install slack
 cask install skitch
