@@ -532,9 +532,9 @@ let g:indent_guides_guide_size = 2
 " }}}
 
 " open-browser {{{
-nmap bo <Plug>(openbrowser-open)
-vmap bo <Plug>(openbrowser-open)
-nmap bs <Plug>(openbrowser-search)
+  nmap ;o <Plug>(openbrowser-open)
+  vmap ;o <Plug>(openbrowser-open)
+  nmap ;s <Plug>(openbrowser-search)
 " }}}
 
 " operator-replace
