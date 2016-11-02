@@ -167,7 +167,6 @@ cask install itrash
 cask install cyberduck
 cask install inssider
 cask install lastpass
-cask install rubymine
 cask install qlstephen
 cask install qlmarkdown
 cask install quicklook-json
