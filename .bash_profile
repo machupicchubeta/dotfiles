@@ -22,8 +22,6 @@ export ARCHFLAGS="-arch x86_64"
 
 source ~/.git-completion.bash
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 source ~/perl5/perlbrew/etc/bashrc
 
 export export LESS='-R'
