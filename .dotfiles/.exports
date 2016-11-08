@@ -21,10 +21,6 @@ export HISTIGNORE="history:cd:pwd:exit:date:* --help"
 
 export TERM=xterm-256color
 
-export DOCKER_HOST=
-export DOCKER_CERT_PATH=
-export DOCKER_TLS_VERIFY=
-
 export HOMEBREW_GITHUB_API_TOKEN=
 
 export DISABLE_SPRING=1

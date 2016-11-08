@@ -54,10 +54,6 @@ install phantomjs
 install sl
 install bash
 install heroku-toolbelt
-install docker
-install docker-cloud
-install docker-swarm
-install boot2docker
 install python3
 install jq
 install awscli
@@ -181,7 +177,6 @@ cask install iterm2
 cask install gyazo
 cask install 0xed
 cask install alfred
-cask install docker-toolbox
 cask install githubpulse
 cask install github-desktop
 cask install paparazzi
@@ -199,6 +194,7 @@ cask install flinto
 cask install blisk
 cask install gitter
 cask install flux
+cask install docker
 
 linkapps
 
