@@ -104,9 +104,10 @@
 [rebase]
   autosquash = true
 [filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
 [pager]
   diff = diff-so-fancy | less --tabs=2 -RFX
   show = diff-so-fancy | less --tabs=2 -RFX
