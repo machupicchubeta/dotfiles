@@ -113,6 +113,7 @@ install figlet
 install asciiquarium
 install cmatrix
 install pow
+install yarn
 
 # for ruby
 install openssl
