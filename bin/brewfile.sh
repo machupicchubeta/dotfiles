@@ -118,6 +118,9 @@ brew install asciiquarium
 brew install cmatrix
 brew install pow
 brew install yarn
+brew install nss
+brew install cheat
+brew install ripgrep
 
 # for ruby
 brew install openssl

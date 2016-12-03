@@ -114,6 +114,9 @@ install asciiquarium
 install cmatrix
 install pow
 install yarn
+install nss
+install cheat
+install ripgrep
 
 # for ruby
 install openssl
