@@ -149,7 +149,7 @@ alias b='bundle'
 alias be='bundle exec'
 
 # parallel_spec
-alias test_in_parallel='bundle && rails db:environment:set RAILS_ENV=test; rails parallel:load_schema parallel:rake\[db:seed_fu\] parallel:spec'
+alias test_in_parallel='bundle && rails db:environment:set RAILS_ENV=test; rails parallel:load_schema parallel:rake\[db:migrate\] parallel:rake\[db:seed_fu\] parallel:spec'
 
 # rake
 alias rk='rake'
@@ -163,7 +163,7 @@ alias sidekiq='bundle exec sidekiq -C config/sidekiq.yml'
 alias sidekiq_daemon='bundle exec sidekiq -C config/sidekiq.yml -d'
 
 # rspec
-alias test_in_serial='bundle && rails db:environment:set RAILS_ENV=test; rails db:reset db:seed db:seed_fu spec'
+alias test_in_serial='bundle && rails db:environment:set RAILS_ENV=test; rails db:reset db:migrate db:seed db:seed_fu spec'
 alias retest='rspec --only-failures'
 alias next_failure='rspec --next-failure'
 
