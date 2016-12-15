@@ -117,6 +117,7 @@ install yarn
 install nss
 install cheat
 install ripgrep
+install ios-sim
 
 # for ruby
 install openssl
