@@ -118,6 +118,7 @@ install nss
 install cheat
 install ripgrep
 install ios-sim
+install terraform
 
 # for ruby
 install openssl

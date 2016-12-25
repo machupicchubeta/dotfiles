@@ -122,6 +122,7 @@ brew install nss
 brew install cheat
 brew install ripgrep
 brew install ios-sim
+brew install terraform
 
 # for ruby
 brew install openssl
