@@ -7,7 +7,10 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
 
   NeoBundle 'itchyny/lightline.vim'
-  NeoBundle 'scrooloose/syntastic'
+  NeoBundle "thinca/vim-quickrun"
+  NeoBundle "osyo-manga/shabadou.vim"
+  NeoBundle "osyo-manga/vim-watchdogs"
+  NeoBundle "jceb/vim-hier"
   NeoBundle 'vim-scripts/ShowMarks'
   NeoBundle 'tyru/caw.vim'
   NeoBundle 'taku-o/vim-toggle'
@@ -140,10 +143,6 @@ if has('vim_starting')
         \ }
   NeoBundle 'Shougo/vinarise.vim', {
         \ 'on_cmd' : 'Vinarise'
-        \ }
-  NeoBundle 'thinca/vim-quickrun', {
-        \ 'on_map' : '<Plug>',
-        \ 'on_cmd' : 'QuickRun'
         \ }
   NeoBundle 'tpope/vim-bundler', {
         \ 'on_cmd' : ['Bundle', 'BOpen']
