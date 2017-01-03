@@ -123,6 +123,7 @@ brew install cheat
 brew install ripgrep
 brew install ios-sim
 brew install terraform
+brew install x265
 
 # for ruby
 brew install openssl
