@@ -9,6 +9,7 @@ untap neovim/homebrew-neovim
 untap caskroom/versions
 untap homebrew/services
 untap homebrew/bundle
+untap puma/puma
 
 prune
 
@@ -22,6 +23,7 @@ tap neovim/homebrew-neovim
 tap caskroom/versions
 tap homebrew/services
 tap homebrew/bundle
+tap puma/puma
 # tap caskroom/fonts
 
 update
@@ -120,6 +122,7 @@ install ripgrep
 install ios-sim
 install terraform
 install x265
+install puma-dev
 
 # for ruby
 install openssl

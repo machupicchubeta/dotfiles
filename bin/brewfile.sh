@@ -13,6 +13,7 @@ brew untap neovim/homebrew-neovim
 brew untap caskroom/versions
 brew untap homebrew/services
 brew untap homebrew/bundle
+brew untap puma/puma
 
 brew prune
 
@@ -26,6 +27,7 @@ brew tap neovim/homebrew-neovim
 brew tap caskroom/versions
 brew tap homebrew/services
 brew tap homebrew/bundle
+brew tap puma/puma
 # tap caskroom/fonts
 
 brew update
@@ -124,6 +126,7 @@ brew install ripgrep
 brew install ios-sim
 brew install terraform
 brew install x265
+brew install puma-dev
 
 # for ruby
 brew install openssl
