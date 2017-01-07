@@ -124,6 +124,8 @@ install ios-sim
 install terraform
 install x265
 install puma-dev
+install stunnel
+install sqlmap
 
 # for ruby
 install openssl

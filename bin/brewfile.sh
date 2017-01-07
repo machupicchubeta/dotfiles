@@ -128,6 +128,8 @@ brew install ios-sim
 brew install terraform
 brew install x265
 brew install puma-dev
+brew install stunnel
+brew install sqlmap
 
 # for ruby
 brew install openssl
