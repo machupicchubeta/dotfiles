@@ -12,6 +12,7 @@ if has('vim_starting')
   NeoBundle "dannyob/quickfixstatus"
   NeoBundle "osyo-manga/vim-watchdogs"
   NeoBundle "jceb/vim-hier"
+  NeoBundle "rainerborene/vim-reek"
   NeoBundle 'vim-scripts/ShowMarks'
   NeoBundle 'tyru/caw.vim'
   NeoBundle 'taku-o/vim-toggle'
