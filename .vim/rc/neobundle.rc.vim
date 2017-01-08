@@ -9,6 +9,7 @@ if has('vim_starting')
   NeoBundle 'itchyny/lightline.vim'
   NeoBundle "thinca/vim-quickrun"
   NeoBundle "osyo-manga/shabadou.vim"
+  NeoBundle "dannyob/quickfixstatus"
   NeoBundle "osyo-manga/vim-watchdogs"
   NeoBundle "jceb/vim-hier"
   NeoBundle 'vim-scripts/ShowMarks'
