@@ -39,7 +39,8 @@ install mysql
 install redis
 install memcached
 install node
-install node-build
+install node-build --HEAD
+install nodenv --HEAD
 install sqlite
 install z
 install zsh --disable-etcdir

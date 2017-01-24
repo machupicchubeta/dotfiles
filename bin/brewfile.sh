@@ -43,7 +43,8 @@ brew install mysql
 brew install redis
 brew install memcached
 brew install node
-brew install node-build
+brew install node-build --HEAD
+brew install nodenv --HEAD
 brew install sqlite
 brew install z
 brew install zsh --disable-etcdir
