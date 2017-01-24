@@ -1,13 +1,6 @@
 _PID=$$; _PPID=$(ps -o ppid -p $_PID | tail -n 1)
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-source ~/perl5/perlbrew/etc/bashrc
-
 eval "$(hub alias -s)"
-
-export export LESS='-R'
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 eval $(gdircolors ~/Tools/seebi/dircolors-solarized)
 

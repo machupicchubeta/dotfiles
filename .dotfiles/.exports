@@ -3,11 +3,14 @@ export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
+export LESS='-R'
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+
 # Prefer US English and use UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:$HOME/.nodenv/shims:$HOME/perl5/perlbrew/bin:$HOME/.rbenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:$HOME/.nodenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/man:$MANPATH"
 
 # Larger bash history (allow 2^10^2 entries; default is 500)
@@ -26,3 +29,9 @@ export HOMEBREW_GITHUB_API_TOKEN=
 export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME=~/.config
+
+# export rbenv PATH
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# export perlbrew PATTH
+source ~/perl5/perlbrew/etc/bashrc
