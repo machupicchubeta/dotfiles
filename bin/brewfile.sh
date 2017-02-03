@@ -38,14 +38,14 @@ brew install tig
 brew install hub
 brew install git-lfs
 brew install wget
-brew install curl
+brew install curl --force
 brew install mysql
 brew install redis
 brew install memcached
 brew install node
 brew install node-build --HEAD
 brew install nodenv --HEAD
-brew install sqlite
+brew install sqlite --force
 brew install z
 brew install zsh --disable-etcdir
 brew install zsh-completions
@@ -122,7 +122,7 @@ brew install asciiquarium
 brew install cmatrix
 brew install pow
 brew install yarn
-brew install nss
+brew install nss --force
 brew install cheat
 brew install ripgrep
 brew install ios-sim
@@ -133,19 +133,19 @@ brew install stunnel
 brew install sqlmap
 
 # for ruby
-brew install openssl
+brew install openssl --force
 brew unlink openssl
 brew link openssl --force
-brew install readline
+brew install readline --force
 brew install rbenv
 brew install ruby-build --HEAD
 
 brew install openssl-osx-ca
 
 # for nokogiri
-brew install libxml2
-brew install libxslt
-brew install libiconv
+brew install libxml2 --force
+brew install libxslt --force
+brew install libiconv --force
 # link libxml2 libxslt libiconv --force
 brew unlink libxml2 libxslt libiconv
 

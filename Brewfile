@@ -34,14 +34,14 @@ install tig
 install hub
 install git-lfs
 install wget
-install curl
+install curl --force
 install mysql
 install redis
 install memcached
 install node
 install node-build --HEAD
 install nodenv --HEAD
-install sqlite
+install sqlite --force
 install z
 install zsh --disable-etcdir
 install zsh-completions
@@ -118,7 +118,7 @@ install asciiquarium
 install cmatrix
 install pow
 install yarn
-install nss
+install nss --force
 install cheat
 install ripgrep
 install ios-sim
@@ -129,19 +129,19 @@ install stunnel
 install sqlmap
 
 # for ruby
-install openssl
+install openssl --force
 unlink openssl
 link openssl --force
-install readline
+install readline --force
 install rbenv
 install ruby-build --HEAD
 
 install openssl-osx-ca
 
 # for nokogiri
-install libxml2
-install libxslt
-install libiconv
+install libxml2 --force
+install libxslt --force
+install libiconv --force
 # link libxml2 libxslt libiconv --force
 unlink libxml2 libxslt libiconv
 
