@@ -127,6 +127,7 @@ install x265
 install puma-dev
 install stunnel
 install sqlmap
+install rust
 
 # for ruby
 install openssl --force

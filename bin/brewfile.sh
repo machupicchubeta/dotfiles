@@ -131,6 +131,7 @@ brew install x265
 brew install puma-dev
 brew install stunnel
 brew install sqlmap
+brew install rust
 
 # for ruby
 brew install openssl --force
