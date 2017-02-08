@@ -188,7 +188,7 @@ cask install packages
 cask install qlcolorcode
 cask install qlimagesize
 cask install hetimazipql
-cask install iterm2
+cask install iterm2-nightly
 cask install gyazo
 cask install 0xed
 cask install alfred
