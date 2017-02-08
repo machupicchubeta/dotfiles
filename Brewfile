@@ -10,6 +10,7 @@ untap caskroom/versions
 untap homebrew/services
 untap homebrew/bundle
 untap puma/puma
+untap caskroom/fonts
 
 prune
 
@@ -24,7 +25,7 @@ tap caskroom/versions
 tap homebrew/services
 tap homebrew/bundle
 tap puma/puma
-# tap caskroom/fonts
+tap caskroom/fonts
 
 update
 upgrade --fetch-HEAD
@@ -211,6 +212,10 @@ cask install flux
 cask install docker
 
 linkapps
+
+# fonts
+cask install font-fira-code
+cask install font-firacode-nerd-font
 
 cleanup
 cask cleanup

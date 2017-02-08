@@ -14,6 +14,7 @@ brew untap caskroom/versions
 brew untap homebrew/services
 brew untap homebrew/bundle
 brew untap puma/puma
+brew untap caskroom/fonts
 
 brew prune
 
@@ -28,7 +29,7 @@ brew tap caskroom/versions
 brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma
-# tap caskroom/fonts
+brew tap caskroom/fonts
 
 brew update
 brew upgrade --fetch-HEAD
@@ -215,6 +216,10 @@ if [[ $(brew cask info flux | grep 'Not installed') || $(brew cask info flux | g
 if [[ $(brew cask info docker | grep 'Not installed') || $(brew cask info docker | grep '/usr/local/Caskroom/docker' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep docker) ]]; then brew cask uninstall docker --force && brew cask install docker; else brew cask install docker; fi; elif [[ $(brew cask info docker | grep 'docker: [_a-z0-9\.,\-]*' | perl -pe 's/docker: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info docker | grep '/usr/local/Caskroom/docker/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/docker\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall docker --force && brew cask install docker; else echo 'docker is currently the newest version available'; fi
 
 brew linkapps
+
+# fonts
+if [[ $(brew cask info font-fira-code | grep 'Not installed') || $(brew cask info font-fira-code | grep '/usr/local/Caskroom/font-fira-code' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep font-fira-code) ]]; then brew cask uninstall font-fira-code --force && brew cask install font-fira-code; else brew cask install font-fira-code; fi; elif [[ $(brew cask info font-fira-code | grep 'font-fira-code: [_a-z0-9\.,\-]*' | perl -pe 's/font-fira-code: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info font-fira-code | grep '/usr/local/Caskroom/font-fira-code/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/font-fira-code\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall font-fira-code --force && brew cask install font-fira-code; else echo 'font-fira-code is currently the newest version available'; fi
+if [[ $(brew cask info font-firacode-nerd-font | grep 'Not installed') || $(brew cask info font-firacode-nerd-font | grep '/usr/local/Caskroom/font-firacode-nerd-font' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep font-firacode-nerd-font) ]]; then brew cask uninstall font-firacode-nerd-font --force && brew cask install font-firacode-nerd-font; else brew cask install font-firacode-nerd-font; fi; elif [[ $(brew cask info font-firacode-nerd-font | grep 'font-firacode-nerd-font: [_a-z0-9\.,\-]*' | perl -pe 's/font-firacode-nerd-font: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info font-firacode-nerd-font | grep '/usr/local/Caskroom/font-firacode-nerd-font/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/font-firacode-nerd-font\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall font-firacode-nerd-font --force && brew cask install font-firacode-nerd-font; else echo 'font-firacode-nerd-font is currently the newest version available'; fi
 
 brew cleanup
 brew cask cleanup
