@@ -59,7 +59,7 @@ install phantomjs
 install sl
 install bash
 install heroku-toolbelt
-install python3
+install pyenv --HEAD
 install jq
 install awscli
 install ansible

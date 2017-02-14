@@ -63,7 +63,7 @@ brew install phantomjs
 brew install sl
 brew install bash
 brew install heroku-toolbelt
-brew install python3
+brew install pyenv --HEAD
 brew install jq
 brew install awscli
 brew install ansible
