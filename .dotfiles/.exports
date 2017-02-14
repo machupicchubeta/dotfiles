@@ -33,7 +33,7 @@ export XDG_CONFIG_HOME=~/.config
 # export rbenv PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# export perlbrew PATTH
+# export perlbrew PATH
 source ~/perl5/perlbrew/etc/bashrc
 
 # export pyenv PATH
