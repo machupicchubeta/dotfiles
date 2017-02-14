@@ -50,6 +50,7 @@ brew install sqlite --force
 brew install z
 brew install zsh --disable-etcdir
 brew install zsh-completions
+brew install zsh-navigation-tools
 brew install terminal-notifier
 brew install source-highlight
 brew install vim --with-lua --with-luajit

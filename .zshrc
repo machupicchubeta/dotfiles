@@ -93,3 +93,5 @@ source /usr/local/share/zsh/site-functions/_aws
 if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
     source "~/.enhancd/zsh/enhancd.zsh"
 fi
+
+source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh

@@ -46,6 +46,7 @@ install sqlite --force
 install z
 install zsh --disable-etcdir
 install zsh-completions
+install zsh-navigation-tools
 install terminal-notifier
 install source-highlight
 install vim --with-lua --with-luajit
