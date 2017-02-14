@@ -136,6 +136,7 @@ brew install sqlmap
 brew install rust
 brew install plenv
 brew install perl-build
+brew install shyaml
 
 # for ruby
 brew install openssl --force

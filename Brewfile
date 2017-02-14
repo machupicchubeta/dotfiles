@@ -132,6 +132,7 @@ install sqlmap
 install rust
 install plenv
 install perl-build
+install shyaml
 
 # for ruby
 install openssl --force
