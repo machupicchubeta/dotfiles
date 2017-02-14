@@ -133,6 +133,8 @@ brew install puma-dev
 brew install stunnel
 brew install sqlmap
 brew install rust
+brew install plenv
+brew install perl-build
 
 # for ruby
 brew install openssl --force

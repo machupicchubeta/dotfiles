@@ -129,6 +129,8 @@ install puma-dev
 install stunnel
 install sqlmap
 install rust
+install plenv
+install perl-build
 
 # for ruby
 install openssl --force

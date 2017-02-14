@@ -22,8 +22,6 @@ export ARCHFLAGS="-arch x86_64"
 
 source ~/.git-completion.bash
 
-source ~/perl5/perlbrew/etc/bashrc
-
 export export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
