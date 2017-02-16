@@ -67,6 +67,7 @@ brew install heroku-toolbelt
 brew install pyenv --HEAD
 brew install jq
 brew install awscli
+brew install aws-shell
 brew install ansible
 brew install watch
 brew install osquery

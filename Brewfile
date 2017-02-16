@@ -63,6 +63,7 @@ install heroku-toolbelt
 install pyenv --HEAD
 install jq
 install awscli
+install aws-shell
 install ansible
 install watch
 install osquery
