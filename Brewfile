@@ -215,6 +215,7 @@ cask install blisk
 cask install gitter
 cask install flux
 cask install docker
+cask install 1password
 
 linkapps
 
