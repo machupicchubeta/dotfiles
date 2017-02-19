@@ -7,10 +7,6 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
 
   NeoBundle 'itchyny/lightline.vim'
-  NeoBundle "thinca/vim-quickrun"
-  NeoBundle "osyo-manga/shabadou.vim"
-  NeoBundle "dannyob/quickfixstatus"
-  NeoBundle "osyo-manga/vim-watchdogs"
   NeoBundle "jceb/vim-hier"
   NeoBundle "rainerborene/vim-reek"
   NeoBundle 'vim-scripts/ShowMarks'
@@ -184,6 +180,7 @@ if has('vim_starting')
   NeoBundle 'kana/vim-niceblock', {
         \ 'on_map' : '<Plug>'
         \ }
+  NeoBundle 'w0rp/ale'
 
   call neobundle#end()
 

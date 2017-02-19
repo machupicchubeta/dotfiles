@@ -195,7 +195,7 @@ let g:lightline = {
         \ 'colorscheme': 'solarized',
         \ 'mode_map': {'c': 'NORMAL'},
         \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], [ 'ale' ] ]
         \ },
         \ 'component_function': {
         \   'modified': 'LightlineModified',
@@ -205,7 +205,8 @@ let g:lightline = {
         \   'fileformat': 'LightlineFileformat',
         \   'filetype': 'LightlineFiletype',
         \   'fileencoding': 'LightlineFileencoding',
-        \   'mode': 'LightlineMode'
+        \   'mode': 'LightlineMode',
+        \   'ale': 'LightLineALEStatus'
         \ }
         \ }
 
@@ -250,6 +251,10 @@ endfunction
 
 function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
+endfunction
+
+function! LightLineALEStatus()
+  return ALEGetStatusLine()
 endfunction
 " }}}
 
@@ -545,17 +550,16 @@ nmap <silent>sc <Plug>(operator-surround-replace)a
 " matchit
 source $VIMRUNTIME/macros/matchit.vim
 
-" watchdogs
-let g:quickrun_config = {
-\ "watchdogs_checker/_" : {
-\   "hook/close_quickfix/enable_exit" : 1,
-\ },
-\ "ruby/watchdogs_checker" : {
-\   "type" : "watchdogs_checker/rubocop",
-\ },}
-let g:watchdogs_check_BufWritePost_enable = 1
-let g:watchdogs_check_CursorHold_enable = 1
-call watchdogs#setup(g:quickrun_config)
-
 " reek.vim
 let g:reek_always_show = 0
+
+" ale
+let g:ale_sign_column_always = 1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+" let g:ale_open_list = 1
+" let g:ale_keep_list_window_open = 1
+let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_statusline_format = ['ALE ± %d', 'ALE ✭ %d', 'ALE ♥']
