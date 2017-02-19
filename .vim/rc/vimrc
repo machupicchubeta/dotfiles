@@ -551,7 +551,9 @@ nmap <silent>sc <Plug>(operator-surround-replace)a
 source $VIMRUNTIME/macros/matchit.vim
 
 " reek.vim
-let g:reek_always_show = 0
+let g:reek_on_loading = 1
+let g:reek_always_show = 1
+let g:reek_line_limit = 1000
 
 " ale
 let g:ale_sign_column_always = 1
