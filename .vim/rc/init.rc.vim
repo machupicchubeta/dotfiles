@@ -57,6 +57,17 @@ if s:dein_dir != '' || &runtimepath !~ '/dein.vim'
         \ fnamemodify(s:dein_dir, ':p') , '/$', '', '')
 endif
 
+" Load vim-plug
+if has('nvim')
+  let s:plug_path = '~/.local/share/nvim/site/autoload/plug.vim'
+else
+  let s:plug_path = '~/.vim/autoload/plug.vim'
+endif
+let s:plug_url = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+if empty(glob(s:plug_path))
+  execute "!curl -fLo " . expand(s:plug_path) . " --create-dirs " . expand(s:plug_url)
+endif
+
 " Disable default plugins {{{
 
 " Disable menu.vim

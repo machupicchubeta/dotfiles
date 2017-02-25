@@ -77,7 +77,7 @@ if IsMac()
   call s:source_rc('unix.rc.vim')
 end
 
-call s:source_rc('neobundle.rc.vim')
+call s:source_rc('plug.rc.vim')
 
 " Allow cursor keys in insert mode
 set esckeys
