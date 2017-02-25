@@ -10,7 +10,7 @@ export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:/usr/local/opt/sqlite/bin:$HOME/.nodenv/shims:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:/usr/local/opt/sqlite/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/man:$MANPATH"
 
 # Larger bash history (allow 2^10^2 entries; default is 500)
@@ -38,3 +38,6 @@ if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 
 # export pyenv PATH
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# export nodenv PATH
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
