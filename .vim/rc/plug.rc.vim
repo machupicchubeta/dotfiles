@@ -88,7 +88,7 @@ if has('vim_starting')
 
   call plug#end()
 
-  autocmd VimEnter * PlugInstall --sync
-  autocmd VimEnter * PlugUpdate | PlugUpgrade
+  " autocmd VimEnter * PlugInstall --sync
+  " autocmd VimEnter * PlugUpdate | PlugUpgrade
 endif
 
