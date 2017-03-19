@@ -134,6 +134,7 @@ install rust
 install plenv
 install perl-build
 install shyaml
+install gpg
 
 # for ruby
 install openssl --force
@@ -216,6 +217,7 @@ cask install gitter
 cask install flux
 cask install docker
 cask install 1password
+cask install gpgtools
 
 linkapps
 
