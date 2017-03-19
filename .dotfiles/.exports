@@ -10,7 +10,7 @@ export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/nss/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:/usr/local/opt/curl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/nss/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/man:$MANPATH"
 
 # Larger bash history (allow 2^10^2 entries; default is 500)
