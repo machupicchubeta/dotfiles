@@ -49,8 +49,8 @@ install zsh-completions
 install zsh-navigation-tools
 install terminal-notifier
 install source-highlight
-install vim --with-lua --with-luajit
-install macvim --with-lua --with-luajit
+install vim --with-lua --with-luajit --with-python3
+install macvim --with-lua --with-luajit --with-python3
 install neovim --HEAD
 install bash-completion
 install imagemagick

@@ -53,8 +53,8 @@ brew install zsh-completions
 brew install zsh-navigation-tools
 brew install terminal-notifier
 brew install source-highlight
-brew install vim --with-lua --with-luajit
-brew install macvim --with-lua --with-luajit
+brew install vim --with-lua --with-luajit --with-python3
+brew install macvim --with-lua --with-luajit --with-python3
 brew install neovim --HEAD
 brew install bash-completion
 brew install imagemagick
