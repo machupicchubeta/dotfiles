@@ -218,6 +218,8 @@ cask install flux
 cask install docker
 cask install 1password
 cask install gpgtools
+cask install fliqlo
+cask install aerial
 
 linkapps
 
