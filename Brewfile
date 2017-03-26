@@ -145,7 +145,7 @@ install openssl --force
 unlink openssl
 link openssl --force
 install readline --force
-install rbenv
+install rbenv --HEAD
 install ruby-build --HEAD
 
 install openssl-osx-ca

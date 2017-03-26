@@ -149,7 +149,7 @@ brew install openssl --force
 brew unlink openssl
 brew link openssl --force
 brew install readline --force
-brew install rbenv
+brew install rbenv --HEAD
 brew install ruby-build --HEAD
 
 brew install openssl-osx-ca
