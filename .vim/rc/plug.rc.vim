@@ -44,7 +44,7 @@ if has('vim_starting')
   Plug  'vim-jp/syntax-vim-ex'
 
   if has('nvim')
-    Plug 'Shougo/deoplete.nvim'
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   else
     Plug 'Shougo/neocomplete.vim', { 'for': 'ruby' }
   endif
