@@ -50,10 +50,10 @@ install zsh-navigation-tools
 install terminal-notifier
 install source-highlight
 unlink vim
-install vim --with-lua --with-luajit --with-python3 --HEAD
+install vim --with-lua --with-luajit --with-python3 --HEAD --with-override-system-vi
 link vim
 unlink macvim
-install macvim --with-lua --with-luajit --with-python3 --HEAD
+install macvim --with-lua --with-luajit --with-python3 --HEAD --with-override-system-vim
 link macvim
 install neovim --HEAD
 install bash-completion
