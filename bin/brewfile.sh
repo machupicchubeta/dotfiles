@@ -143,6 +143,7 @@ brew install plenv
 brew install perl-build
 brew install shyaml
 brew install gpg
+brew install shellcheck
 
 # for ruby
 brew install openssl --force

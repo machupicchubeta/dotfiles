@@ -139,6 +139,7 @@ install plenv
 install perl-build
 install shyaml
 install gpg
+install shellcheck
 
 # for ruby
 install openssl --force
