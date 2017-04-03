@@ -79,8 +79,10 @@ end
 
 call s:source_rc('plug.rc.vim')
 
-" Allow cursor keys in insert mode
-set esckeys
+if !has('nvim')
+  " Allow cursor keys in insert mode
+  set esckeys
+endif
 
 " Add the g flag to search/replace by default
 set gdefault
