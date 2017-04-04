@@ -140,6 +140,7 @@ install perl-build
 install shyaml
 install gpg
 install shellcheck
+install ghq --HEAD
 
 # for ruby
 install openssl --force

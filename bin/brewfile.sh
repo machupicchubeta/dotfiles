@@ -144,6 +144,7 @@ brew install perl-build
 brew install shyaml
 brew install gpg
 brew install shellcheck
+brew install ghq --HEAD
 
 # for ruby
 brew install openssl --force
