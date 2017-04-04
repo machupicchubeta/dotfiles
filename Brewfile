@@ -42,6 +42,7 @@ install memcached
 install node
 install node-build --HEAD
 install nodenv --HEAD
+install watchman
 install sqlite --force
 install z
 install zsh --disable-etcdir

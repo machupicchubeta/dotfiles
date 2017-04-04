@@ -46,6 +46,7 @@ brew install memcached
 brew install node
 brew install node-build --HEAD
 brew install nodenv --HEAD
+brew install watchman
 brew install sqlite --force
 brew install z
 brew install zsh --disable-etcdir
