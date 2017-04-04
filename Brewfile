@@ -141,6 +141,7 @@ install shyaml
 install gpg
 install shellcheck
 install ghq --HEAD
+install flow
 
 # for ruby
 install openssl --force
