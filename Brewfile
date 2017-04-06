@@ -82,6 +82,7 @@ install ag
 install jq
 install spark
 install tmux
+install screen
 install reattach-to-user-namespace
 # install gnupg
 # install grc

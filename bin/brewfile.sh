@@ -86,6 +86,7 @@ brew install ag
 brew install jq
 brew install spark
 brew install tmux
+brew install screen
 brew install reattach-to-user-namespace
 # install gnupg
 # install grc
