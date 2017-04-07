@@ -148,6 +148,8 @@ brew install gpg
 brew install shellcheck
 brew install ghq --HEAD
 brew install flow
+brew install ocaml --HEAD
+brew install ocamlbuild
 
 # for ruby
 brew install openssl --force

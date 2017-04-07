@@ -144,6 +144,8 @@ install gpg
 install shellcheck
 install ghq --HEAD
 install flow
+install ocaml --HEAD
+install ocamlbuild
 
 # for ruby
 install openssl --force
