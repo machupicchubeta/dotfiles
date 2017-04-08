@@ -110,6 +110,7 @@ brew install diff-pdf
 brew install parallel
 brew install nmap
 brew install go
+brew install goenv
 brew install slackcat
 brew install lame
 brew install vault

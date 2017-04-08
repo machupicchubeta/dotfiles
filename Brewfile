@@ -106,6 +106,7 @@ install diff-pdf
 install parallel
 install nmap
 install go
+install goenv
 install slackcat
 install lame
 install vault

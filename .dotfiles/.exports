@@ -43,3 +43,5 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # export nodenv PATH
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+if which goenv > /dev/null; then eval "$(goenv init -)"; fi
