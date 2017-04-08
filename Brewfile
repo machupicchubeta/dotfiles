@@ -147,6 +147,7 @@ install ghq --HEAD
 install flow
 install ocaml --HEAD
 install ocamlbuild
+install jenv
 
 # for ruby
 install openssl --force

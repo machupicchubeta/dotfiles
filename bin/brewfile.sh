@@ -151,6 +151,7 @@ brew install ghq --HEAD
 brew install flow
 brew install ocaml --HEAD
 brew install ocamlbuild
+brew install jenv
 
 # for ruby
 brew install openssl --force
