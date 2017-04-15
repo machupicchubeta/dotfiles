@@ -156,7 +156,7 @@ alias rk='rake'
 alias rks='rake spec'
 
 # rails
-alias rs='rails server -b lvh.me'
+alias rs='rails server -b lvh.me -p 3000'
 alias rc='rails console'
 alias rr='rails runner'
 alias sidekiq='bundle exec sidekiq -C config/sidekiq.yml'
