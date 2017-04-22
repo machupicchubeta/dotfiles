@@ -233,6 +233,9 @@ cask install 1password
 cask install gpgtools
 cask install fliqlo
 cask install aerial
+cask install google-earth
+cask install google-earth-pro
+cask install google-featured-photos
 
 linkapps
 
