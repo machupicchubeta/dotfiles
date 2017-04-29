@@ -152,6 +152,7 @@ brew install flow
 brew install ocaml --HEAD
 brew install ocamlbuild
 brew install jenv
+brew install kotlin
 
 # for ruby
 brew install openssl --force
