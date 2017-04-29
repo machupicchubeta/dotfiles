@@ -150,7 +150,6 @@ brew install shellcheck
 brew install ghq --HEAD
 brew install flow
 brew install ocaml --HEAD
-brew install ocamlbuild
 brew install jenv
 brew install kotlin
 
