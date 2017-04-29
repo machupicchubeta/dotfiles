@@ -20,8 +20,6 @@ fi
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
 
-source ~/.git-completion.bash
-
 export export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
