@@ -85,6 +85,7 @@ if has('vim_starting')
   Plug 'vim-scripts/grep.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'kana/vim-niceblock'
+  Plug 'pbrisbin/vim-mkdir'
 
   call plug#end()
 
