@@ -146,6 +146,7 @@ install flow
 install ocaml --HEAD
 install jenv
 install kotlin
+install rcm
 
 # for ruby
 install openssl --force
