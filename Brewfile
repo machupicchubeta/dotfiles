@@ -3,7 +3,6 @@ untap homebrew/binary
 untap homebrew/versions
 untap thoughtbot/formulae
 untap homebrew/completions
-untap homebrew/core
 untap raggi/ale
 untap neovim/homebrew-neovim
 untap caskroom/versions
@@ -18,7 +17,6 @@ tap homebrew/binary
 tap homebrew/versions
 tap thoughtbot/formulae
 tap homebrew/completions
-tap homebrew/core
 tap raggi/ale
 tap neovim/homebrew-neovim
 tap caskroom/versions
