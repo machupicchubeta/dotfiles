@@ -151,6 +151,7 @@ brew install ocaml --HEAD
 brew install jenv
 brew install kotlin
 brew install rcm
+brew install ansible-lint
 
 # for ruby
 brew install openssl --force

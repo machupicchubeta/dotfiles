@@ -147,6 +147,7 @@ install ocaml --HEAD
 install jenv
 install kotlin
 install rcm
+install ansible-lint
 
 # for ruby
 install openssl --force
