@@ -159,6 +159,10 @@ file=/Applications/Dropbox.app/Contents/Resources/check.icns
 [ -e "$file" ] && mv -f "$file" "$file.bak"
 unset file
 
+# Change Screenshots directory
+[ ! -e ~/Screenshots ] && mkdir ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots
+
 # Fix for the ancient UTF-8 bug in QuickLook (http://mths.be/bbo)
 # Commented out, as this is known to cause problems when saving files in Adobe Illustrator CS5 :(
 #echo "0x08000100:0" > ~/.CFUserTextEncoding
