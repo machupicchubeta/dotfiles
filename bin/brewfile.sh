@@ -152,6 +152,7 @@ brew install jenv
 brew install kotlin
 brew install rcm
 brew install ansible-lint
+brew install firebase-cli
 
 # for ruby
 brew install openssl --force

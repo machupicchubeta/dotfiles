@@ -148,6 +148,7 @@ install jenv
 install kotlin
 install rcm
 install ansible-lint
+install firebase-cli
 
 # for ruby
 install openssl --force
