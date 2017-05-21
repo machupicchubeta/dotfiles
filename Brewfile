@@ -149,6 +149,7 @@ install kotlin
 install rcm
 install ansible-lint
 install firebase-cli
+install logrotate
 
 # for ruby
 install openssl --force

@@ -153,6 +153,7 @@ brew install kotlin
 brew install rcm
 brew install ansible-lint
 brew install firebase-cli
+brew install logrotate
 
 # for ruby
 brew install openssl --force
