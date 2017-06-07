@@ -53,10 +53,10 @@ brew install zsh-navigation-tools
 brew install terminal-notifier
 brew install source-highlight
 brew unlink vim
-brew install vim --with-lua --with-luajit --with-python3 --HEAD --with-override-system-vi
+brew install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
 brew link vim
 brew unlink macvim
-brew install macvim --with-lua --with-luajit --with-python3 --HEAD --with-override-system-vim
+brew install macvim --with-luajit --with-python3 --HEAD --with-override-system-vim
 brew link macvim
 brew install neovim --HEAD
 brew install bash-completion
