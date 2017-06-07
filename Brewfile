@@ -152,6 +152,7 @@ install firebase-cli
 install logrotate
 install pre-commit
 install terragrunt
+install kibana
 
 # for ruby
 install openssl --force
