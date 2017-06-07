@@ -150,6 +150,7 @@ install rcm
 install ansible-lint
 install firebase-cli
 install logrotate
+install pre-commit
 
 # for ruby
 install openssl --force

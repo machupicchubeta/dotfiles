@@ -154,6 +154,7 @@ brew install rcm
 brew install ansible-lint
 brew install firebase-cli
 brew install logrotate
+brew install pre-commit
 
 # for ruby
 brew install openssl --force
