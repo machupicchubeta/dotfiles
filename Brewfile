@@ -151,6 +151,7 @@ install ansible-lint
 install firebase-cli
 install logrotate
 install pre-commit
+install terragrunt
 
 # for ruby
 install openssl --force

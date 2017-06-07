@@ -155,6 +155,7 @@ brew install ansible-lint
 brew install firebase-cli
 brew install logrotate
 brew install pre-commit
+brew install terragrunt
 
 # for ruby
 brew install openssl --force
