@@ -76,7 +76,6 @@ brew install osquery
 brew install direnv
 brew install coreutils
 brew install gnu-sed
-brew install rbenv-default-gems
 brew install ttyrec
 brew install dnsmasq
 brew install ag
@@ -161,8 +160,9 @@ brew install openssl --force
 if ! [[ $(brew info openssl | grep 'Not installed') ]]; then brew unlink openssl; fi
 brew link openssl --force
 brew install readline --force
-brew install rbenv --HEAD
 brew install ruby-build --HEAD
+brew install rbenv --HEAD
+brew install rbenv-default-gems
 
 brew install openssl-osx-ca
 

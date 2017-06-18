@@ -71,7 +71,6 @@ install osquery
 install direnv
 install coreutils
 install gnu-sed
-install rbenv-default-gems
 install ttyrec
 install dnsmasq
 install ag
@@ -156,8 +155,9 @@ install openssl --force
 unlink openssl
 link openssl --force
 install readline --force
-install rbenv --HEAD
 install ruby-build --HEAD
+install rbenv --HEAD
+install rbenv-default-gems
 
 install openssl-osx-ca
 
