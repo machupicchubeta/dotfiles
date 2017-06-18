@@ -55,7 +55,7 @@ if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
 brew link vim --force
 if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
-brew install macvim --with-luajit --with-python3 --HEAD --with-override-system-vim
+brew install macvim --with-luajit --with-python3 --HEAD
 brew link macvim --force
 brew install neovim --HEAD
 brew install bash-completion
