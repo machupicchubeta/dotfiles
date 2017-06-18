@@ -46,15 +46,15 @@ install terminal-notifier
 install source-highlight
 unlink vim
 install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
-link vim
+link vim --force
 unlink macvim
 install macvim --with-luajit --with-python3 --HEAD --with-override-system-vim
-link macvim
+link macvim --force
 install neovim --HEAD
 install bash-completion
 install imagemagick
 unlink imagemagick
-link imagemagick
+link imagemagick --force
 install phantomjs
 install sl
 install bash

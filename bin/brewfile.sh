@@ -51,15 +51,15 @@ brew install terminal-notifier
 brew install source-highlight
 if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
-brew link vim
+brew link vim --force
 if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
 brew install macvim --with-luajit --with-python3 --HEAD --with-override-system-vim
-brew link macvim
+brew link macvim --force
 brew install neovim --HEAD
 brew install bash-completion
 brew install imagemagick
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
-brew link imagemagick
+brew link imagemagick --force
 brew install phantomjs
 brew install sl
 brew install bash
