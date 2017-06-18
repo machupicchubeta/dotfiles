@@ -49,16 +49,16 @@ brew install zsh-completions
 brew install zsh-navigation-tools
 brew install terminal-notifier
 brew install source-highlight
-brew unlink vim
+if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
 brew link vim
-brew unlink macvim
+if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
 brew install macvim --with-luajit --with-python3 --HEAD --with-override-system-vim
 brew link macvim
 brew install neovim --HEAD
 brew install bash-completion
 brew install imagemagick
-brew unlink imagemagick
+if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
 brew link imagemagick
 brew install phantomjs
 brew install sl
@@ -157,7 +157,7 @@ brew install kibana
 
 # for ruby
 brew install openssl --force
-brew unlink openssl
+if ! [[ $(brew info openssl | grep 'Not installed') ]]; then brew unlink openssl; fi
 brew link openssl --force
 brew install readline --force
 brew install rbenv --HEAD
@@ -170,7 +170,9 @@ brew install libxml2 --force
 brew install libxslt --force
 brew install libiconv --force
 # link libxml2 libxslt libiconv --force
-brew unlink libxml2 libxslt libiconv
+if ! [[ $(brew info libxml2 | grep 'Not installed') ]]; then brew unlink libxml2; fi
+if ! [[ $(brew info libxslt | grep 'Not installed') ]]; then brew unlink libxslt; fi
+if ! [[ $(brew info libiconv | grep 'Not installed') ]]; then brew unlink libiconv; fi
 
 # cask
 if [[ $(brew cask info dropbox | grep 'Not installed') || $(brew cask info dropbox | grep '/usr/local/Caskroom/dropbox' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep dropbox) ]]; then brew cask uninstall dropbox --force && brew cask install dropbox --force; else brew cask install dropbox --force; fi; elif [[ $(brew cask info dropbox | grep 'dropbox: [_a-z0-9\.,\-]*' | perl -pe 's/dropbox: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info dropbox | grep '/usr/local/Caskroom/dropbox/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/dropbox\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall dropbox --force && brew cask install dropbox --force; else echo 'dropbox is currently the newest version available'; fi

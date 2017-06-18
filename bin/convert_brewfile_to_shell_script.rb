@@ -12,6 +12,10 @@ File.open ARGV[0] do |brewfile|
       repository = line.chomp.gsub('untap', '').strip
 
       puts "if [[ $(brew tap | grep #{repository}) ]]; then brew untap #{repository}; fi"
+    elsif line.start_with?('unlink')
+      keg = line.chomp.gsub('unlink', '').strip
+
+      puts "if ! [[ $(brew info #{keg} | grep 'Not installed') ]]; then brew unlink #{keg}; fi"
     elsif line.start_with?('cask install')
       app_name = line.chomp.gsub('cask install', '').strip
 

@@ -165,7 +165,9 @@ install libxml2 --force
 install libxslt --force
 install libiconv --force
 # link libxml2 libxslt libiconv --force
-unlink libxml2 libxslt libiconv
+unlink libxml2
+unlink libxslt
+unlink libiconv
 
 # cask
 cask install dropbox
