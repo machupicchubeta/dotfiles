@@ -98,7 +98,6 @@ install packer-completion
 install chrome-cli
 install cscope
 install postgresql
-install diff-pdf
 install parallel
 install nmap
 install go
@@ -246,6 +245,9 @@ linkapps
 # fonts
 cask install font-fira-code
 cask install font-firacode-nerd-font
+
+# xquartz required
+install diff-pdf
 
 cleanup
 cask cleanup

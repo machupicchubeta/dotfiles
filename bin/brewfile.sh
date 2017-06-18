@@ -103,7 +103,6 @@ brew install packer-completion
 brew install chrome-cli
 brew install cscope
 brew install postgresql
-brew install diff-pdf
 brew install parallel
 brew install nmap
 brew install go
@@ -251,6 +250,9 @@ brew linkapps
 # fonts
 if [[ $(brew cask info font-fira-code | grep 'Not installed') || $(brew cask info font-fira-code | grep '/usr/local/Caskroom/font-fira-code' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep font-fira-code) ]]; then brew cask uninstall font-fira-code --force && brew cask install font-fira-code --force; else brew cask install font-fira-code --force; fi; elif [[ $(brew cask info font-fira-code | grep 'font-fira-code: [_a-z0-9\.,\-]*' | perl -pe 's/font-fira-code: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info font-fira-code | grep '/usr/local/Caskroom/font-fira-code/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/font-fira-code\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall font-fira-code --force && brew cask install font-fira-code --force; else echo 'font-fira-code is currently the newest version available'; fi
 if [[ $(brew cask info font-firacode-nerd-font | grep 'Not installed') || $(brew cask info font-firacode-nerd-font | grep '/usr/local/Caskroom/font-firacode-nerd-font' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep font-firacode-nerd-font) ]]; then brew cask uninstall font-firacode-nerd-font --force && brew cask install font-firacode-nerd-font --force; else brew cask install font-firacode-nerd-font --force; fi; elif [[ $(brew cask info font-firacode-nerd-font | grep 'font-firacode-nerd-font: [_a-z0-9\.,\-]*' | perl -pe 's/font-firacode-nerd-font: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info font-firacode-nerd-font | grep '/usr/local/Caskroom/font-firacode-nerd-font/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/font-firacode-nerd-font\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall font-firacode-nerd-font --force && brew cask install font-firacode-nerd-font --force; else echo 'font-firacode-nerd-font is currently the newest version available'; fi
+
+# xquartz required
+brew install diff-pdf
 
 brew cleanup
 brew cask cleanup
