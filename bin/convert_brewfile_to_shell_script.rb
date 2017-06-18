@@ -1,5 +1,6 @@
 File.open ARGV[0] do |brewfile|
   puts '#!/bin/sh'
+  puts 'set -eu'
   puts 'sudo chown -R $(whoami):admin $(brew --prefix)'
   puts 'cd $(brew --repository) && git checkout master'
   puts 'cd -'
