@@ -1,5 +1,4 @@
 
-untap homebrew/versions
 untap thoughtbot/formulae
 untap homebrew/completions
 untap raggi/ale
@@ -12,7 +11,6 @@ untap caskroom/fonts
 
 prune
 
-tap homebrew/versions
 tap thoughtbot/formulae
 tap homebrew/completions
 tap raggi/ale
