@@ -35,6 +35,7 @@ brew install hub
 brew install git-lfs
 brew install wget
 brew install curl --force
+brew link curl --force
 brew install mysql
 brew install redis
 brew install memcached
@@ -43,6 +44,7 @@ brew install node-build --HEAD
 brew install nodenv --HEAD
 brew install watchman
 brew install sqlite --force
+brew link sqlite --force
 brew install z
 brew install zsh --disable-etcdir
 brew install zsh-completions

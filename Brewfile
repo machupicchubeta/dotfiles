@@ -30,6 +30,7 @@ install hub
 install git-lfs
 install wget
 install curl --force
+link curl --force
 install mysql
 install redis
 install memcached
@@ -38,6 +39,7 @@ install node-build --HEAD
 install nodenv --HEAD
 install watchman
 install sqlite --force
+link sqlite --force
 install z
 install zsh --disable-etcdir
 install zsh-completions
