@@ -1,6 +1,5 @@
 
 untap thoughtbot/formulae
-untap homebrew/completions
 untap raggi/ale
 untap neovim/homebrew-neovim
 untap caskroom/versions
@@ -12,7 +11,6 @@ untap caskroom/fonts
 prune
 
 tap thoughtbot/formulae
-tap homebrew/completions
 tap raggi/ale
 tap neovim/homebrew-neovim
 tap caskroom/versions

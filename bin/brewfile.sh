@@ -5,7 +5,6 @@ cd $(brew --repository) && git checkout master
 cd -
 
 if [[ $(brew tap | grep thoughtbot/formulae) ]]; then brew untap thoughtbot/formulae; fi
-if [[ $(brew tap | grep homebrew/completions) ]]; then brew untap homebrew/completions; fi
 if [[ $(brew tap | grep raggi/ale) ]]; then brew untap raggi/ale; fi
 if [[ $(brew tap | grep neovim/homebrew-neovim) ]]; then brew untap neovim/homebrew-neovim; fi
 if [[ $(brew tap | grep caskroom/versions) ]]; then brew untap caskroom/versions; fi
@@ -17,7 +16,6 @@ if [[ $(brew tap | grep caskroom/fonts) ]]; then brew untap caskroom/fonts; fi
 brew prune
 
 brew tap thoughtbot/formulae
-brew tap homebrew/completions
 brew tap raggi/ale
 brew tap neovim/homebrew-neovim
 brew tap caskroom/versions
