@@ -8,6 +8,10 @@ File.open ARGV[0] do |brewfile|
   brewfile.each_line do |line|
     if line.start_with?('#') || line.chomp.empty?
       print line
+    elsif line.start_with?('untap')
+      repository = line.chomp.gsub('untap', '').strip
+
+      puts "if [[ $(brew tap | grep #{repository}) ]]; then brew untap #{repository}; fi"
     elsif line.start_with?('cask install')
       app_name = line.chomp.gsub('cask install', '').strip
 

@@ -4,15 +4,15 @@ sudo chown -R $(whoami):admin $(brew --prefix)
 cd $(brew --repository) && git checkout master
 cd -
 
-brew untap thoughtbot/formulae
-brew untap homebrew/completions
-brew untap raggi/ale
-brew untap neovim/homebrew-neovim
-brew untap caskroom/versions
-brew untap homebrew/services
-brew untap homebrew/bundle
-brew untap puma/puma
-brew untap caskroom/fonts
+if [[ $(brew tap | grep thoughtbot/formulae) ]]; then brew untap thoughtbot/formulae; fi
+if [[ $(brew tap | grep homebrew/completions) ]]; then brew untap homebrew/completions; fi
+if [[ $(brew tap | grep raggi/ale) ]]; then brew untap raggi/ale; fi
+if [[ $(brew tap | grep neovim/homebrew-neovim) ]]; then brew untap neovim/homebrew-neovim; fi
+if [[ $(brew tap | grep caskroom/versions) ]]; then brew untap caskroom/versions; fi
+if [[ $(brew tap | grep homebrew/services) ]]; then brew untap homebrew/services; fi
+if [[ $(brew tap | grep homebrew/bundle) ]]; then brew untap homebrew/bundle; fi
+if [[ $(brew tap | grep puma/puma) ]]; then brew untap puma/puma; fi
+if [[ $(brew tap | grep caskroom/fonts) ]]; then brew untap caskroom/fonts; fi
 
 brew prune
 
