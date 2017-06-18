@@ -245,4 +245,3 @@ cask install font-firacode-nerd-font
 
 cleanup
 cask cleanup
-

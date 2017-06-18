@@ -249,4 +249,3 @@ if [[ $(brew cask info font-firacode-nerd-font | grep 'Not installed') || $(brew
 
 brew cleanup
 brew cask cleanup
-
