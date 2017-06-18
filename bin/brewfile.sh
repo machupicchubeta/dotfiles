@@ -3,7 +3,6 @@ sudo chown -R $(whoami):admin $(brew --prefix)
 cd $(brew --repository) && git checkout master
 cd -
 
-brew untap homebrew/binary
 brew untap homebrew/versions
 brew untap thoughtbot/formulae
 brew untap homebrew/completions
@@ -17,7 +16,6 @@ brew untap caskroom/fonts
 
 brew prune
 
-brew tap homebrew/binary
 brew tap homebrew/versions
 brew tap thoughtbot/formulae
 brew tap homebrew/completions

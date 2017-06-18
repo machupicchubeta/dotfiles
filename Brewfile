@@ -1,5 +1,4 @@
 
-untap homebrew/binary
 untap homebrew/versions
 untap thoughtbot/formulae
 untap homebrew/completions
@@ -13,7 +12,6 @@ untap caskroom/fonts
 
 prune
 
-tap homebrew/binary
 tap homebrew/versions
 tap thoughtbot/formulae
 tap homebrew/completions
