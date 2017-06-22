@@ -11,6 +11,7 @@ if [[ $(brew tap | grep caskroom/versions) ]]; then brew untap caskroom/versions
 if [[ $(brew tap | grep homebrew/services) ]]; then brew untap homebrew/services; fi
 if [[ $(brew tap | grep homebrew/bundle) ]]; then brew untap homebrew/bundle; fi
 if [[ $(brew tap | grep puma/puma) ]]; then brew untap puma/puma; fi
+if [[ $(brew tap | grep kylef/formulae) ]]; then brew untap kylef/formulae; fi
 if [[ $(brew tap | grep caskroom/fonts) ]]; then brew untap caskroom/fonts; fi
 
 brew prune
@@ -22,6 +23,7 @@ brew tap caskroom/versions
 brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma
+brew tap kylef/formulae
 brew tap caskroom/fonts
 
 brew update
@@ -129,6 +131,9 @@ brew install nss --force
 brew install cheat
 brew install ripgrep
 brew install ios-sim
+brew install swift
+brew install swiftenv
+brew install swiftlint
 brew install terraform
 brew install x265
 brew install puma-dev

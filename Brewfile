@@ -6,6 +6,7 @@ untap caskroom/versions
 untap homebrew/services
 untap homebrew/bundle
 untap puma/puma
+untap kylef/formulae
 untap caskroom/fonts
 
 prune
@@ -17,6 +18,7 @@ tap caskroom/versions
 tap homebrew/services
 tap homebrew/bundle
 tap puma/puma
+tap kylef/formulae
 tap caskroom/fonts
 
 update
@@ -124,6 +126,9 @@ install nss --force
 install cheat
 install ripgrep
 install ios-sim
+install swift
+install swiftenv
+install swiftlint
 install terraform
 install x265
 install puma-dev
