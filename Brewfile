@@ -152,6 +152,7 @@ install logrotate
 install pre-commit
 install terragrunt
 install kibana
+install protobuf
 
 # for ruby
 install openssl --force

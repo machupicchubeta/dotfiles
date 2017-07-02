@@ -157,6 +157,7 @@ brew install logrotate
 brew install pre-commit
 brew install terragrunt
 brew install kibana
+brew install protobuf
 
 # for ruby
 brew install openssl --force
