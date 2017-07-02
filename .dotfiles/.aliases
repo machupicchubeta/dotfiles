@@ -184,4 +184,4 @@ alias brew_convert='ruby bin/convert_brewfile_to_shell_script.rb Brewfile > bin/
 alias ctags_run='ctags --exclude=.git --exclude=.bundle --exclude=log --exclude=tmp --exclude=vendor -R .'
 
 # postgtres
-alias start_postgres='postgres -D /usr/local/var/postgres'
+alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
