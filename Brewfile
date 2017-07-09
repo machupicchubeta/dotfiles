@@ -143,7 +143,9 @@ install gpg
 install shellcheck
 install ghq --HEAD
 install flow
+unlink ocaml
 install ocaml --HEAD
+link ocaml --force
 install jenv
 install kotlin
 install rcm
