@@ -123,6 +123,7 @@ install cmatrix
 install pow
 install yarn
 install nss --force
+link nss --force
 install cheat
 install ripgrep
 install ios-sim

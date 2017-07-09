@@ -128,6 +128,7 @@ brew install cmatrix
 brew install pow
 brew install yarn
 brew install nss --force
+brew link nss --force
 brew install cheat
 brew install ripgrep
 brew install ios-sim
