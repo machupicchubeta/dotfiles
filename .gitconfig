@@ -47,7 +47,7 @@
   release-branch = !git checkout -b release_$(date +%Y%m%d_%H%M)
   release-tag = !git tag RELEASE_$(date +%Y%m%d_%H%M)
 [color]
-  ui = always
+  ui = true
 [apply]
   whitespace = fix
 [core]
@@ -61,10 +61,12 @@
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
+  meta = 227
   frag = magenta bold
   old = red bold
   new = green bold
+  commit = 227 bold
+  whitespace = red reverse
 [color "status"]
   added = yellow
   changed = green
@@ -111,3 +113,8 @@
 [pager]
   diff = diff-so-fancy | less --tabs=2 -RFX
   show = diff-so-fancy | less --tabs=2 -RFX
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
