@@ -93,3 +93,5 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
 fi
 
 source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
