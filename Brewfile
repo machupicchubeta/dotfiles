@@ -167,6 +167,8 @@ install rbenv --HEAD
 install rbenv-default-gems
 
 install openssl-osx-ca
+install openssh
+install libressl
 
 # for nokogiri
 install libxml2 --force
