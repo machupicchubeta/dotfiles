@@ -25,7 +25,7 @@ export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 complete -C aws_completer aws
 
-eval "$(direnv hook $0)"
+eval "$(direnv hook bash)"
 
 # enhancd
 if [ -f "~/.enhancd/bash/enhancd.bash" ]; then
