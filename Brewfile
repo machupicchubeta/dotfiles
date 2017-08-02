@@ -157,6 +157,7 @@ install terragrunt
 install kibana
 install protobuf
 install pv
+install ccze
 
 # for ruby
 install openssl --force

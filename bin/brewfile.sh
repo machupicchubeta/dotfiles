@@ -162,6 +162,7 @@ brew install terragrunt
 brew install kibana
 brew install protobuf
 brew install pv
+brew install ccze
 
 # for ruby
 brew install openssl --force
