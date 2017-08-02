@@ -161,6 +161,7 @@ brew install pre-commit
 brew install terragrunt
 brew install kibana
 brew install protobuf
+brew install pv
 
 # for ruby
 brew install openssl --force

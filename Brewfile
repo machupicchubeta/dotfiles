@@ -156,6 +156,7 @@ install pre-commit
 install terragrunt
 install kibana
 install protobuf
+install pv
 
 # for ruby
 install openssl --force
