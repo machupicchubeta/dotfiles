@@ -174,7 +174,6 @@ brew install rbenv --HEAD
 brew install rbenv-default-gems
 
 brew install openssl-osx-ca
-brew install openssh
 brew install libressl
 
 # for nokogiri
