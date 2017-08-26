@@ -146,7 +146,7 @@ brew install perl-build
 brew install shyaml
 brew install gpg
 brew install shellcheck
-brew install ghq --HEAD
+brew install ghq
 brew install flow
 if ! [[ $(brew info ocaml | grep 'Not installed') ]]; then brew unlink ocaml; fi
 brew install ocaml --HEAD
