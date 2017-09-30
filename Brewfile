@@ -204,7 +204,7 @@ cask install knock
 cask install licecap
 cask install sublime-text
 cask install atom
-cask install cloak
+cask install encryptme
 cask install karabiner-elements
 cask install slate
 cask install google-hangouts
