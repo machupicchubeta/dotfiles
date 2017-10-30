@@ -185,10 +185,6 @@ if ! [[ $(brew info libxml2 | grep 'Not installed') ]]; then brew unlink libxml2
 if ! [[ $(brew info libxslt | grep 'Not installed') ]]; then brew unlink libxslt; fi
 if ! [[ $(brew info libiconv | grep 'Not installed') ]]; then brew unlink libiconv; fi
 
-# for capybara-webkit
-brew install qt --with-qtwebkit
-brew install qt@5.5
-
 # cask
 if [[ $(brew cask info dropbox | grep 'Not installed') || $(brew cask info dropbox | grep '/usr/local/Caskroom/dropbox' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep dropbox) ]]; then brew cask uninstall dropbox --force && brew cask install dropbox --force; else brew cask install dropbox --force; fi; elif [[ $(brew cask info dropbox | grep 'dropbox: [_a-z0-9\.,\-]*' | perl -pe 's/dropbox: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info dropbox | grep '/usr/local/Caskroom/dropbox/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/dropbox\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall dropbox --force && brew cask install dropbox --force; else echo 'dropbox is currently the newest version available'; fi
 if [[ $(brew cask info google-japanese-ime | grep 'Not installed') || $(brew cask info google-japanese-ime | grep '/usr/local/Caskroom/google-japanese-ime' | grep -v '(binary)' | wc -l) > 1 ]]; then if [[ $(ls /usr/local/Caskroom | grep google-japanese-ime) ]]; then brew cask uninstall google-japanese-ime --force && brew cask install google-japanese-ime --force; else brew cask install google-japanese-ime --force; fi; elif [[ $(brew cask info google-japanese-ime | grep 'google-japanese-ime: [_a-z0-9\.,\-]*' | perl -pe 's/google-japanese-ime: ([_a-z0-9\.,\-]+|latest)/$1/') != $(brew cask info google-japanese-ime | grep '/usr/local/Caskroom/google-japanese-ime/[_a-z0-9\.,\-]* (.*)' | perl -pe 's/\/usr\/local\/Caskroom\/google-japanese-ime\/([_a-z0-9\.,\-]+|latest) \(.+\)/$1/') ]]; then brew cask uninstall google-japanese-ime --force && brew cask install google-japanese-ime --force; else echo 'google-japanese-ime is currently the newest version available'; fi

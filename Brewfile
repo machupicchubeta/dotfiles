@@ -180,10 +180,6 @@ unlink libxml2
 unlink libxslt
 unlink libiconv
 
-# for capybara-webkit
-install qt --with-qtwebkit
-install qt@5.5
-
 # cask
 cask install dropbox
 cask install google-japanese-ime
