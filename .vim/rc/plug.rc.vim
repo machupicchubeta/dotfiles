@@ -39,6 +39,9 @@ if has('vim_starting')
   Plug 'osyo-manga/vim-textobj-multiblock'
   Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'sass', 'less', 'sacs' ] }
   Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+  Plug 'othree/yajs.vim', { 'for': ['javascript', 'javascript.jsx'] }
+  Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
+  Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
   Plug 'mxw/vim-jsx', { 'for': 'javascript' }
   Plug 'jiangmiao/simple-javascript-indenter', { 'for': 'javascript' }
   Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
