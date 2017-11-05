@@ -46,6 +46,7 @@ if has('vim_starting')
   Plug 'jiangmiao/simple-javascript-indenter', { 'for': 'javascript' }
   Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
   Plug  'vim-jp/syntax-vim-ex'
+  Plug 'othree/html5.vim'
 
   if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
