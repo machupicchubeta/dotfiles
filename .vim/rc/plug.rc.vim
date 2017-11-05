@@ -45,7 +45,7 @@ if has('vim_starting')
   Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'javascript.jsx'] }
   Plug 'jiangmiao/simple-javascript-indenter', { 'for': 'javascript' }
   Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
-  Plug  'vim-jp/syntax-vim-ex'
+  Plug 'vim-jp/syntax-vim-ex'
   Plug 'othree/html5.vim'
 
   if has('nvim')
