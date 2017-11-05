@@ -1,0 +1,22 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "browser",
+    "ecma5",
+    "ecma6",
+    "ecma7"
+  ],
+  "loadEagerly": [
+    "node_modules/react-dom/**/*.js",
+    "node_modules/react/**/*.js",
+    "node_modules/whatwg-fetch/fetch.js"
+  ],
+  "plugins": {
+    "es_modules": {},
+    "node": {},
+    "doc_comment": {
+      "fullDocs": true,
+      "strong": true
+    }
+  }
+}

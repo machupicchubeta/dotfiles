@@ -45,6 +45,7 @@ if has('vim_starting')
   Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'javascript.jsx'] }
   Plug 'vim-jp/syntax-vim-ex'
   Plug 'othree/html5.vim'
+  Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
 
   if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
