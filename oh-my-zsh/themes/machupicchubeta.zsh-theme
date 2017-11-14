@@ -13,5 +13,5 @@ PROMPT="┌─ ➜ %{$FG[040]%}%n%{$reset_color%} %{$FG[239]%}at%{$reset_color%}
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[239]%}on%{$reset_color%} %{$fg_bold[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} ±"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%} ♥"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} 🍎 "
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%} 🍏 "
