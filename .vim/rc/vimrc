@@ -408,7 +408,7 @@ let g:rails_projections = {
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
+let g:indent_guides_guide_size = 2
 let g:indent_guides_exclude_filetypes = ['help', 'tagbar', 'unite']
 
 " vim-fugitive
@@ -518,11 +518,6 @@ if has('nvim')
   let g:deoplete#omni#input_patterns.ruby =
         \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
 endif
-
-" indent-guides {{{
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 2
-" }}}
 
 " open-browser {{{
   nmap ;o <Plug>(openbrowser-open)
