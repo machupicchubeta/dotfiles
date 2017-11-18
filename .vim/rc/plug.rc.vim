@@ -82,7 +82,6 @@ if has('vim_starting')
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'osyo-manga/vim-monster', { 'for': 'ruby' }
   Plug 'kana/vim-tabpagecd', { 'on': 'Unite' }
-  Plug 'todesking/ruby_hl_lvar.vim', { 'for': 'ruby' }
   Plug 'chikatoike/concealedyank.vim', { 'on': '<Plug>(operator-concealedyank)' }
   Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
   Plug 'mattn/emmet-vim'
