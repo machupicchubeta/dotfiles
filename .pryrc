@@ -10,11 +10,10 @@ Pry::Commands.command /^$/, "repeat last command" do
   _pry_.run_command Pry.history.to_a.last
 end
 
-unless defined?(FACTORY_GIRL_PRY_EXTENSION)
-  if defined?(FactoryGirl)
-    include FactoryGirl::Syntax::Methods
+unless defined?(FACTORY_BOT_PRY_EXTENSION)
+  if defined?(FactoryBot)
+    include FactoryBot::Syntax::Methods
   end
 
-  FACTORY_GIRL_PRY_EXTENSION = 1
+  FACTORY_BOT_PRY_EXTENSION = 1
 end
-
