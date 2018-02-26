@@ -158,6 +158,7 @@ install kibana
 install protobuf
 install pv
 install ccze
+install git-secrets
 
 # for ruby
 install openssl --force

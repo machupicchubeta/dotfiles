@@ -163,6 +163,7 @@ brew install kibana
 brew install protobuf
 brew install pv
 brew install ccze
+brew install git-secrets
 
 # for ruby
 brew install openssl --force
