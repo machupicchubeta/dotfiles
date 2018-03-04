@@ -188,7 +188,7 @@ cask install vagrant
 cask install virtualbox
 cask install google-chrome
 cask install firefox
-cask install firefoxdeveloperedition
+cask install firefox-developer-edition
 cask install flash-npapi
 cask install evernote
 cask install slack
