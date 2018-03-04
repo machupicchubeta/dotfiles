@@ -41,7 +41,7 @@ install watchman
 install sqlite --force
 link sqlite --force
 install z
-install zsh --disable-etcdir
+install zsh
 install zsh-completions
 install zsh-navigation-tools
 install terminal-notifier

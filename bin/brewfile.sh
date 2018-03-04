@@ -46,7 +46,7 @@ brew install watchman
 brew install sqlite --force
 brew link sqlite --force
 brew install z
-brew install zsh --disable-etcdir
+brew install zsh
 brew install zsh-completions
 brew install zsh-navigation-tools
 brew install terminal-notifier
