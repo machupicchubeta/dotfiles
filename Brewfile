@@ -248,7 +248,7 @@ cask install 1password
 cask install gpg-suite
 cask install fliqlo
 cask install aerial
-cask install google-earth
+cask install google-earth-web-plugin
 cask install google-earth-pro
 cask install zoomus
 
