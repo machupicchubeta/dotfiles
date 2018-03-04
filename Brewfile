@@ -227,7 +227,7 @@ cask install gyazo
 cask install 0xed
 cask install alfred
 cask install githubpulse
-cask install github-desktop
+cask install github
 cask install paparazzi
 cask install box-sync
 cask install google-chrome-canary
