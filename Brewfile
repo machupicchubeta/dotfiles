@@ -216,7 +216,7 @@ cask install qlstephen
 cask install qlmarkdown
 cask install quicklook-json
 cask install quicklook-csv
-cask install betterzipql
+cask install betterzip
 cask install suspicious-package
 cask install packages
 cask install qlcolorcode
