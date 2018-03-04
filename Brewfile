@@ -245,7 +245,7 @@ cask install gitter
 cask install flux
 cask install docker
 cask install 1password
-cask install gpgtools
+cask install gpg-suite
 cask install fliqlo
 cask install aerial
 cask install google-earth
