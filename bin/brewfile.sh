@@ -149,8 +149,8 @@ brew install shellcheck
 brew install ghq
 brew install flow
 if ! [[ $(brew info ocaml | grep 'Not installed') ]]; then brew unlink ocaml; fi
-brew install ocaml --HEAD
-brew link ocaml --force
+brew install ocaml
+brew link ocaml
 brew install jenv
 brew install kotlin
 brew install rcm
