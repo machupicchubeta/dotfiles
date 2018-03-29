@@ -50,7 +50,7 @@ unlink vim
 install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
 link vim --force
 unlink macvim
-install macvim --with-luajit --with-python3 --HEAD
+install macvim --with-luajit --HEAD
 link macvim --force
 install neovim --HEAD
 install bash-completion
