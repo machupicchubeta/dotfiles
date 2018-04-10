@@ -252,8 +252,6 @@ cask install google-earth-web-plugin
 cask install google-earth-pro
 cask install zoomus
 
-linkapps
-
 # fonts
 cask install font-fira-code
 cask install font-firacode-nerd-font
