@@ -159,6 +159,7 @@ install protobuf
 install pv
 install ccze
 install git-secrets
+install testssl
 
 # for ruby
 install openssl --force

@@ -164,6 +164,7 @@ brew install protobuf
 brew install pv
 brew install ccze
 brew install git-secrets
+brew install testssl
 
 # for ruby
 brew install openssl --force
