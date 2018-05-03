@@ -8,6 +8,7 @@ untap homebrew/bundle
 untap puma/puma
 untap kylef/formulae
 untap caskroom/fonts
+untap buo/cask-upgrade
 
 prune
 
@@ -20,6 +21,7 @@ tap homebrew/bundle
 tap puma/puma
 tap kylef/formulae
 tap caskroom/fonts
+tap buo/cask-upgrade
 
 update
 upgrade --fetch-HEAD
@@ -259,6 +261,8 @@ cask install font-firacode-nerd-font
 
 # xquartz required
 install diff-pdf
+
+cu --all --cleanup --yes
 
 cleanup
 cask cleanup
