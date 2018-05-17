@@ -162,6 +162,8 @@ install pv
 install ccze
 install git-secrets
 install testssl
+install kubernetes-cli
+install kubernetes-helm
 
 # for ruby
 install openssl --force

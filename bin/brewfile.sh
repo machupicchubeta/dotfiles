@@ -167,6 +167,8 @@ brew install pv
 brew install ccze
 brew install git-secrets
 brew install testssl
+brew install kubernetes-cli
+brew install kubernetes-helm
 
 # for ruby
 brew install openssl --force
