@@ -33,9 +33,8 @@ innodb_file_per_table = 1
 innodb_large_prefix = 1
 
 init-connect = 'SET NAMES utf8mb4'
-#collation-server = utf8mb4_unicode_ci
-collation-server = utf8mb4_bin
-character-set-server = utf8mb4
+collation_server = utf8mb4_bin
+character_set_server = utf8mb4
 skip-character-set-client-handshake
 
 [client]
