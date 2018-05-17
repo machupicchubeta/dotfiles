@@ -259,6 +259,7 @@ brew cask install aerial
 brew cask install google-earth-web-plugin
 brew cask install google-earth-pro
 brew cask install zoomus
+brew cask install spotify
 
 # fonts
 brew cask install font-fira-code
