@@ -56,7 +56,7 @@
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
-	commentchar = ^
+  commentchar = ^
 [color "branch"]
   current = yellow reverse
   local = yellow
