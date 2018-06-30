@@ -98,7 +98,6 @@ brew install p7zip
 brew install pick
 brew install ctags
 brew install tree
-brew install chromedriver
 brew install packer
 brew install packer-completion
 brew install chrome-cli
@@ -262,6 +261,7 @@ brew cask install google-earth-web-plugin
 brew cask install google-earth-pro
 brew cask install zoomus
 brew cask install spotify
+brew cask install chromedriver
 
 # fonts
 brew cask install font-fira-code

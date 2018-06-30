@@ -93,7 +93,6 @@ install p7zip
 install pick
 install ctags
 install tree
-install chromedriver
 install packer
 install packer-completion
 install chrome-cli
@@ -257,6 +256,7 @@ cask install google-earth-web-plugin
 cask install google-earth-pro
 cask install zoomus
 cask install spotify
+cask install chromedriver
 
 # fonts
 cask install font-fira-code
