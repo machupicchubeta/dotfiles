@@ -39,6 +39,7 @@ brew install wget
 brew install curl --force
 brew link curl --force
 brew install mysql
+brew install mysql@5.7
 brew install redis
 brew install memcached
 brew install node

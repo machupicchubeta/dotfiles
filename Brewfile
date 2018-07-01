@@ -34,6 +34,7 @@ install wget
 install curl --force
 link curl --force
 install mysql
+install mysql@5.7
 install redis
 install memcached
 install node
