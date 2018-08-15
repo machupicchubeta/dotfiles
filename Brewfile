@@ -258,6 +258,7 @@ cask install google-earth-pro
 cask install zoomus
 cask install spotify
 cask install chromedriver
+cask install microsoft-remote-desktop-beta
 
 # fonts
 cask install font-fira-code

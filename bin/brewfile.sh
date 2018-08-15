@@ -263,6 +263,7 @@ brew cask install google-earth-pro
 brew cask install zoomus
 brew cask install spotify
 brew cask install chromedriver
+brew cask install microsoft-remote-desktop-beta
 
 # fonts
 brew cask install font-fira-code
