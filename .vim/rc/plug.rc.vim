@@ -9,6 +9,7 @@ if has('vim_starting')
 
   Plug 'itchyny/lightline.vim'
   Plug 'w0rp/ale'
+  Plug 'maximbaz/lightline-ale'
   Plug 'jceb/vim-hier'
   Plug 'rainerborene/vim-reek'
   Plug 'vim-scripts/ShowMarks'
