@@ -246,7 +246,7 @@ function! LightlineMode()
 endfunction
 
 function! LightLineALEStatus()
-  return ALEGetStatusLine()
+  return exists('*ALEGetStatusLine') ? ALEGetStatusLine() : ''
 endfunction
 " }}}
 
