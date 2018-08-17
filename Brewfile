@@ -9,6 +9,7 @@ untap puma/puma
 untap kylef/formulae
 untap caskroom/fonts
 untap buo/cask-upgrade
+untap InstantClientTap/instantclient
 
 prune
 
@@ -22,6 +23,7 @@ tap puma/puma
 tap kylef/formulae
 tap caskroom/fonts
 tap buo/cask-upgrade
+tap InstantClientTap/instantclient
 
 update
 upgrade --fetch-HEAD
@@ -185,6 +187,11 @@ install libiconv --force
 unlink libxml2
 unlink libxslt
 unlink libiconv
+
+# for oracle
+install instantclient-basic
+install instantclient-sqlplus
+install instantclient-sdk
 
 # cask
 cask install dropbox

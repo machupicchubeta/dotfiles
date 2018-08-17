@@ -14,6 +14,7 @@ if [[ $(brew tap | grep puma/puma) ]]; then brew untap puma/puma; fi
 if [[ $(brew tap | grep kylef/formulae) ]]; then brew untap kylef/formulae; fi
 if [[ $(brew tap | grep caskroom/fonts) ]]; then brew untap caskroom/fonts; fi
 if [[ $(brew tap | grep buo/cask-upgrade) ]]; then brew untap buo/cask-upgrade; fi
+if [[ $(brew tap | grep InstantClientTap/instantclient) ]]; then brew untap InstantClientTap/instantclient; fi
 
 brew prune
 
@@ -27,6 +28,7 @@ brew tap puma/puma
 brew tap kylef/formulae
 brew tap caskroom/fonts
 brew tap buo/cask-upgrade
+brew tap InstantClientTap/instantclient
 
 brew update
 brew upgrade --fetch-HEAD
@@ -190,6 +192,11 @@ brew install libiconv --force
 if ! [[ $(brew info libxml2 | grep 'Not installed') ]]; then brew unlink libxml2; fi
 if ! [[ $(brew info libxslt | grep 'Not installed') ]]; then brew unlink libxslt; fi
 if ! [[ $(brew info libiconv | grep 'Not installed') ]]; then brew unlink libiconv; fi
+
+# for oracle
+brew install instantclient-basic
+brew install instantclient-sqlplus
+brew install instantclient-sdk
 
 # cask
 brew cask install dropbox
