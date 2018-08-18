@@ -216,7 +216,6 @@ cask install disk-inventory-x
 cask install itrash
 cask install cyberduck
 cask install inssider
-cask install lastpass
 cask install qlstephen
 cask install qlmarkdown
 cask install quicklook-json

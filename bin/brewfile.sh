@@ -221,7 +221,6 @@ brew cask install disk-inventory-x
 brew cask install itrash
 brew cask install cyberduck
 brew cask install inssider
-brew cask install lastpass
 brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
