@@ -265,6 +265,16 @@ cask install zoomus
 cask install spotify
 cask install chromedriver
 cask install microsoft-remote-desktop-beta
+cask install mono-mdk
+cask install xamarin
+cask install xamarin-studio
+cask install xamarin-mac
+cask install xamarin-ios
+cask install xamarin-android
+cask install xamarin-android-player
+cask install xamarin-profiler
+cask install visual-studio
+cask install visual-studio-code
 
 # fonts
 cask install font-fira-code
