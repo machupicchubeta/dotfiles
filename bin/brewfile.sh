@@ -214,6 +214,7 @@ brew cask install skitch
 brew cask install geektool
 brew cask install xquartz
 brew cask install java
+brew cask install java8
 brew cask install skype
 brew cask install knock
 brew cask install licecap
@@ -281,6 +282,7 @@ brew cask install xamarin-android-player
 brew cask install xamarin-profiler
 brew cask install visual-studio
 brew cask install visual-studio-code
+brew cask install android-sdk
 
 # fonts
 brew cask install font-fira-code

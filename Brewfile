@@ -209,6 +209,7 @@ cask install skitch
 cask install geektool
 cask install xquartz
 cask install java
+cask install java8
 cask install skype
 cask install knock
 cask install licecap
@@ -276,6 +277,7 @@ cask install xamarin-android-player
 cask install xamarin-profiler
 cask install visual-studio
 cask install visual-studio-code
+cask install android-sdk
 
 # fonts
 cask install font-fira-code
