@@ -61,7 +61,8 @@ install neovim --HEAD
 install bash-completion
 install imagemagick
 unlink imagemagick
-link imagemagick --force
+install imagemagick@6
+link imagemagick@6 --force
 install phantomjs
 install sl
 install bash

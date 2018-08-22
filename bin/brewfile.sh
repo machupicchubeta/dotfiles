@@ -66,7 +66,8 @@ brew install neovim --HEAD
 brew install bash-completion
 brew install imagemagick
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
-brew link imagemagick --force
+brew install imagemagick@6
+brew link imagemagick@6 --force
 brew install phantomjs
 brew install sl
 brew install bash
