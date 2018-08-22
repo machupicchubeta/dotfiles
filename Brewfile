@@ -278,6 +278,7 @@ cask install xamarin-profiler
 cask install visual-studio
 cask install visual-studio-code
 cask install android-sdk
+cask install android-studio
 
 # fonts
 cask install font-fira-code

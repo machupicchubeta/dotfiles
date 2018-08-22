@@ -283,6 +283,7 @@ brew cask install xamarin-profiler
 brew cask install visual-studio
 brew cask install visual-studio-code
 brew cask install android-sdk
+brew cask install android-studio
 
 # fonts
 brew cask install font-fira-code
