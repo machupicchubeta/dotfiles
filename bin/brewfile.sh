@@ -274,6 +274,7 @@ brew cask install spotify
 brew cask install chromedriver
 brew cask install microsoft-remote-desktop-beta
 brew cask install mono-mdk
+brew cask install dotnet
 brew cask install xamarin
 brew cask install xamarin-studio
 brew cask install xamarin-mac

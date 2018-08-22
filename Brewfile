@@ -269,6 +269,7 @@ cask install spotify
 cask install chromedriver
 cask install microsoft-remote-desktop-beta
 cask install mono-mdk
+cask install dotnet
 cask install xamarin
 cask install xamarin-studio
 cask install xamarin-mac
