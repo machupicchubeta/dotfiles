@@ -167,6 +167,7 @@ install git-secrets
 install testssl
 install kubernetes-cli
 install kubernetes-helm
+install gradle
 
 # for ruby
 install openssl --force

@@ -172,6 +172,7 @@ brew install git-secrets
 brew install testssl
 brew install kubernetes-cli
 brew install kubernetes-helm
+brew install gradle
 
 # for ruby
 brew install openssl --force
