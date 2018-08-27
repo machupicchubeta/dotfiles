@@ -7,6 +7,3 @@ eval $(gdircolors ~/Tools/seebi/dircolors-solarized)
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 ssh-add -A &> /dev/null
-
-jenv add $(/usr/libexec/java_home -v 1.8)
-jenv add $(/usr/libexec/java_home -v 1.9)
