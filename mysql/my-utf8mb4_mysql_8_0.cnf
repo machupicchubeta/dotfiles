@@ -1,0 +1,18 @@
+# For advice on how to change settings please see
+# https://dev.mysql.com/doc/refman/8.0/en/server-configuration-defaults.html
+
+[mysqld]
+sql-mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+
+init-connect = 'SET NAMES utf8mb4'
+collation_server = utf8mb4_bin
+character_set_server = utf8mb4
+skip-character-set-client-handshake
+
+default-authentication-plugin = mysql_native_password
+
+[client]
+default-character-set = utf8mb4
+
+[mysql]
+default-character-set = utf8mb4
