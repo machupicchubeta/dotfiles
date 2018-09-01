@@ -173,6 +173,32 @@ brew install testssl
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install gradle
+brew install azure-cli
+brew install bench
+brew install circleci
+brew install eslint
+brew install iso-codes
+brew install openssh
+brew install ssh-copy-id
+brew install ssh-permit-a38
+brew install swiftformat
+brew install terraform_landscape
+brew install thors-serializer
+brew install uriparser
+brew install util-linux
+brew install watchexec
+brew install xcodegen
+brew install webpack
+brew install elixir
+brew install elm
+brew install erlang
+brew install ghostscript
+brew install json11
+brew install duck
+brew install doctl
+brew install git-quick-stats
+brew install elasticsearch
+brew install kibana
 
 # for ruby
 brew install openssl --force
@@ -286,6 +312,8 @@ brew cask install visual-studio
 brew cask install visual-studio-code
 brew cask install android-sdk
 brew cask install android-studio
+brew cask install dynamodb-local
+brew cask install td-agent
 
 # fonts
 brew cask install font-fira-code

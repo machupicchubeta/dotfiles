@@ -168,6 +168,32 @@ install testssl
 install kubernetes-cli
 install kubernetes-helm
 install gradle
+install azure-cli
+install bench
+install circleci
+install eslint
+install iso-codes
+install openssh
+install ssh-copy-id
+install ssh-permit-a38
+install swiftformat
+install terraform_landscape
+install thors-serializer
+install uriparser
+install util-linux
+install watchexec
+install xcodegen
+install webpack
+install elixir
+install elm
+install erlang
+install ghostscript
+install json11
+install duck
+install doctl
+install git-quick-stats
+install elasticsearch
+install kibana
 
 # for ruby
 install openssl --force
@@ -281,6 +307,8 @@ cask install visual-studio
 cask install visual-studio-code
 cask install android-sdk
 cask install android-studio
+cask install dynamodb-local
+cask install td-agent
 
 # fonts
 cask install font-fira-code
