@@ -325,4 +325,3 @@ brew install diff-pdf
 brew cu --all --cleanup --yes
 
 brew cleanup
-brew cask cleanup

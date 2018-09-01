@@ -320,4 +320,3 @@ install diff-pdf
 cu --all --cleanup --yes
 
 cleanup
-cask cleanup
