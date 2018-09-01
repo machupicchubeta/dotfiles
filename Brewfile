@@ -173,7 +173,6 @@ install bench
 install circleci
 install eslint
 install iso-codes
-install openssh
 install ssh-copy-id
 install ssh-permit-a38
 install swiftformat

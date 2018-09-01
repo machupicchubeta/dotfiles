@@ -178,7 +178,6 @@ brew install bench
 brew install circleci
 brew install eslint
 brew install iso-codes
-brew install openssh
 brew install ssh-copy-id
 brew install ssh-permit-a38
 brew install swiftformat
