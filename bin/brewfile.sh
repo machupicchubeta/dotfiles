@@ -266,7 +266,7 @@ brew cask install docker
 brew cask install 1password
 brew cask install gpg-suite
 brew cask install fliqlo
-brew cask install aerial
+brew cask install google-featured-photos
 brew cask install google-earth-web-plugin
 brew cask install google-earth-pro
 brew cask install zoomus
