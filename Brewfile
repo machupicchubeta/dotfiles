@@ -57,6 +57,7 @@ link vim --force
 unlink macvim
 install macvim --with-luajit
 link macvim --force
+install luarocks
 install neovim --HEAD
 install bash-completion
 install imagemagick

@@ -62,6 +62,7 @@ brew link vim --force
 if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
 brew install macvim --with-luajit
 brew link macvim --force
+brew install luarocks
 brew install neovim --HEAD
 brew install bash-completion
 brew install imagemagick
