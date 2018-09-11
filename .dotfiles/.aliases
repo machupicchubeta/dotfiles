@@ -185,3 +185,7 @@ alias ctags_run='ctags --exclude=.git --exclude=.bundle --exclude=vendor/bundle 
 
 # postgtres
 alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
+
+# docker
+alias dk='docker'
+alias dkc='docker-compose'
