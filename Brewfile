@@ -308,7 +308,6 @@ cask install visual-studio-code
 cask install android-sdk
 cask install android-studio
 cask install dynamodb-local
-cask install td-agent
 
 # fonts
 cask install font-fira-code

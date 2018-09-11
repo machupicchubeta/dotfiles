@@ -313,7 +313,6 @@ brew cask install visual-studio-code
 brew cask install android-sdk
 brew cask install android-studio
 brew cask install dynamodb-local
-brew cask install td-agent
 
 # fonts
 brew cask install font-fira-code
