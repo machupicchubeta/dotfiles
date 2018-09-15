@@ -351,10 +351,10 @@ colorscheme solarized
 "endif
 
 let g:rails_gem_projections = {
-            \ "factory_girl": {
+            \ "factory_bot": {
             \   "spec/factories/*.rb": {
             \     "command": "factory",
-            \     "template": "FactoryGirl.define do\n  factory :%s do\n  end\nend",
+            \     "template": "FactoryBot.define do\n  factory :%s do\n  end\nend",
             \     "alternate": "app/models/%s.rb",
             \     "related": "db/schema.rb#%p",
             \     "affinity": "model"
