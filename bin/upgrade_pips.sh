@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# pip
+pip install --upgrade pip
+
 # pip2
 pip2 install neovim
 
