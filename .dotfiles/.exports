@@ -41,3 +41,11 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 
 export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
+
+export PYTHON2HOME=$(if which pyenv > /dev/null; then echo -n "$(pyenv root)/versions/$(pyenv global | grep 2\.)"; else '/usr/local'; fi)
+export PYTHON2PATH=$PYTHON2HOME/bin
+export PYTHON3HOME=$(if which pyenv > /dev/null; then echo -n "$(pyenv root)/versions/$(pyenv global | grep 3\.)"; else '/usr/local'; fi)
+export PYTHON3PATH=$PYTHON3HOME/bin
+
+export PYTHONHOME=$PYTHON3HOME
+export PYTHONPATH=$PYTHON3PATH

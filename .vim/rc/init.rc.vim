@@ -57,6 +57,9 @@ if s:dein_dir != '' || &runtimepath !~ '/dein.vim'
         \ fnamemodify(s:dein_dir, ':p') , '/$', '', '')
 endif
 
+" Load Python
+let g:python3_host_prog = expand('$PYTHONPATH/python')
+
 " Load vim-plug
 if has('nvim')
   let s:plug_path = '~/.local/share/nvim/site/autoload/plug.vim'
