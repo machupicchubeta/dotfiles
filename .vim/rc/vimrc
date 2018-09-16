@@ -424,8 +424,8 @@ nmap ga <Plug>(EasyAlign)
 " vim-monster
 let g:monster#completion#rcodetools#backend = "async_rct_complete"
 
+" neocomplete.vim {{{
 if !has('nvim')
-  " neocomplete.vim {{{
   " Disable AutoComplPop.
   let g:acp_enableAtStartup = 1
   " Use neocomplete.
@@ -505,19 +505,19 @@ if !has('nvim')
     let g:neocomplete#text_mode_filetypes = {}
   endif
   let g:neocomplete#text_mode_filetypes.gitcommit = 0
-  " }}}
 endif
+" }}}
 
 " easytags
 let g:easytags_async = 1
 
-" deoplete
+" deoplete {{{
 if has('nvim')
   let g:deoplete#enable_at_startup = 1
   let g:deoplete#omni#input_patterns = {}
-  let g:deoplete#omni#input_patterns.ruby =
-        \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
+  let g:deoplete#omni#input_patterns.ruby = ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
 endif
+" }}}
 
 " open-browser {{{
   nmap ;o <Plug>(openbrowser-open)
