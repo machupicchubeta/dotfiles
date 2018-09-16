@@ -15,6 +15,7 @@ if [[ $(brew tap | grep kylef/formulae) ]]; then brew untap kylef/formulae; fi
 if [[ $(brew tap | grep caskroom/fonts) ]]; then brew untap caskroom/fonts; fi
 if [[ $(brew tap | grep buo/cask-upgrade) ]]; then brew untap buo/cask-upgrade; fi
 if [[ $(brew tap | grep InstantClientTap/instantclient) ]]; then brew untap InstantClientTap/instantclient; fi
+if [[ $(brew tap | grep universal-ctags/universal-ctags) ]]; then brew untap universal-ctags/universal-ctags; fi
 
 brew prune
 
@@ -29,6 +30,7 @@ brew tap kylef/formulae
 brew tap caskroom/fonts
 brew tap buo/cask-upgrade
 brew tap InstantClientTap/instantclient
+brew tap universal-ctags/universal-ctags
 
 brew update
 brew upgrade --fetch-HEAD
@@ -101,7 +103,7 @@ brew install fontforge
 brew install lastpass-cli --with-pinentry --with-doc
 brew install p7zip
 brew install pick
-brew install ctags
+brew install universal-ctags
 brew install tree
 brew install packer
 brew install packer-completion

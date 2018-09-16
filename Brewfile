@@ -10,6 +10,7 @@ untap kylef/formulae
 untap caskroom/fonts
 untap buo/cask-upgrade
 untap InstantClientTap/instantclient
+untap universal-ctags/universal-ctags
 
 prune
 
@@ -24,6 +25,7 @@ tap kylef/formulae
 tap caskroom/fonts
 tap buo/cask-upgrade
 tap InstantClientTap/instantclient
+tap universal-ctags/universal-ctags
 
 update
 upgrade --fetch-HEAD
@@ -96,7 +98,7 @@ install fontforge
 install lastpass-cli --with-pinentry --with-doc
 install p7zip
 install pick
-install ctags
+install universal-ctags --HEAD
 install tree
 install packer
 install packer-completion
