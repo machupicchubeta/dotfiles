@@ -63,7 +63,7 @@ if has('vim_starting')
   Plug 'Shougo/echodoc.vim'
   Plug 'Shougo/junkfile.vim', { 'on': 'JunkFileOpen' }
   Plug 'Shougo/vinarise.vim', { 'on': 'Vinarise' }
-  Plug 'tpope/vim-bundler', { 'on': [ 'Bundle', 'BOpen' ] }
+  Plug 'tpope/vim-bundler', { 'on': [ 'Bundle', 'Bopen' ] }
   Plug 'kana/vim-smartchr'
   Plug 'thinca/vim-ref'
   Plug 'yuku-t/vim-ref-ri', { 'for': 'ruby' }
