@@ -60,19 +60,8 @@ if has('vim_starting')
   Plug 'Shougo/context_filetype.vim'
   Plug 'ujihisa/vimshell-ssh', { 'for': 'vimshell' }
   Plug 'yomi322/vim-gitcomplete', { 'for': 'vimshell' }
-  Plug 'Shougo/neoyank.vim', { 'on': 'Unite' }
   Plug 'Shougo/echodoc.vim'
-  Plug 'Shougo/unite.vim', { 'on': 'Unite' }
-  Plug 'Shougo/vimfiler.vim', { 'on': 'Unite' }
-  Plug 'Shougo/unite-outline', { 'on': 'Unite' }
-  Plug 'hewes/unite-gtags', { 'on': 'Unite' }
-  Plug 'thinca/vim-unite-history', { 'on': 'Unite' }
-  Plug 'osyo-manga/unite-filetype', { 'on': 'Unite' }
-  Plug 'Shougo/unite-help', { 'on': 'Unite' }
-  Plug 'tsukkee/unite-tag', { 'on': 'Unite' }
   Plug 'Shougo/junkfile.vim', { 'on': 'JunkFileOpen' }
-  Plug 'ujihisa/unite-colorscheme', { 'on': 'Unite' }
-  Plug 'basyura/unite-rails', { 'on': 'Unite', 'for': 'ruby' }
   Plug 'Shougo/vinarise.vim', { 'on': 'Vinarise' }
   Plug 'tpope/vim-bundler', { 'on': [ 'Bundle', 'BOpen' ] }
   Plug 'kana/vim-smartchr'
@@ -82,7 +71,6 @@ if has('vim_starting')
   Plug 'tpope/vim-fugitive'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'osyo-manga/vim-monster', { 'for': 'ruby' }
-  Plug 'kana/vim-tabpagecd', { 'on': 'Unite' }
   Plug 'chikatoike/concealedyank.vim', { 'on': '<Plug>(operator-concealedyank)' }
   Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
   Plug 'mattn/emmet-vim'
