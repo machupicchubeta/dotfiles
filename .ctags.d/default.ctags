@@ -1,7 +1,10 @@
 --recurse=yes
---exclude=.*
---exclude=log
---exclude=vendor
---exclude=tmp
---append=no
---languages=ruby,javascript
+--exclude=*/.*
+--exclude=*/*.log
+--exclude=*/.git/*
+--exclude=*/log/*
+--exclude=*/vendor/*
+--exclude=*/tmp/*
+--exclude=*/node_modules/*
+--append=yes
+--languages=all

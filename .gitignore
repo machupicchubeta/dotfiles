@@ -9,5 +9,6 @@ dist
 .vim/undo/*
 .vim/autoload/*
 .vim/plugged/*
+.vim/tags
 
 .dotfiles/.private
