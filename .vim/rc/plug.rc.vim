@@ -78,6 +78,22 @@ if has('vim_starting')
   Plug 'easymotion/vim-easymotion'
   Plug 'kana/vim-niceblock'
   Plug 'pbrisbin/vim-mkdir'
+  Plug 'Shougo/denite.nvim'
+  if has('nvim')
+    Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+  else
+    Plug 'Shougo/defx.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
+  Plug 'junegunn/vim-emoji'
+  Plug 'pocari/vim-denite-emoji'
+  Plug 'motemen/ghq'
+  Plug 'Jagua/vim-denite-ghq'
+  Plug 'ozelentok/denite-gtags'
+  Plug 'chemzqm/unite-location'
+  Plug '5t111111/denite-rails'
+  Plug 'lambdalisue/session.vim'
 
   call plug#end()
 
