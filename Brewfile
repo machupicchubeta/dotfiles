@@ -195,7 +195,6 @@ install duck
 install doctl
 install git-quick-stats
 install elasticsearch
-install kibana
 
 # for ruby
 install openssl --force

@@ -200,7 +200,6 @@ brew install duck
 brew install doctl
 brew install git-quick-stats
 brew install elasticsearch
-brew install kibana
 
 # for ruby
 brew install openssl --force
