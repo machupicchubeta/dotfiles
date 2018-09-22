@@ -31,7 +31,6 @@ if has('vim_starting')
   Plug 'slim-template/vim-slim', { 'for': 'slim' }
   Plug 'tpope/vim-haml', { 'for': 'haml' }
   Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-  Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
   Plug 'elzr/vim-json', { 'for': 'json' }
   Plug 'rcmdnk/vim-markdown', { 'for': [ 'markdown', 'mkd', 'md' ] }
   Plug 'kana/vim-operator-user'
