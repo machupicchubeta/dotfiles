@@ -488,15 +488,8 @@ if !has('nvim')
 endif
 " }}}
 
-" easytags {{{
+" tags {{{
 set tags=./tags;,$HOME/.vim/tags;
-" set tags=$HOME/.vim/tags
-let g:easytags_cmd = '/usr/local/bin/ctags'
-let g:easytags_async = 1
-let g:easytags_file = expand('$HOME/.vim/tags')
-let g:easytags_dynamic_files = 1
-let g:easytags_events = ['BufWritePost']
-let g:easytags_suppress_ctags_warning = 1
 " }}}
 
 " deoplete {{{

@@ -16,7 +16,6 @@ if has('vim_starting')
   Plug 'tyru/caw.vim'
   Plug 'taku-o/vim-toggle'
   Plug 'kana/vim-submode'
-  Plug 'xolox/vim-easytags'
   Plug 'xolox/vim-misc'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'tpope/vim-surround'
@@ -47,6 +46,7 @@ if has('vim_starting')
   Plug 'vim-jp/syntax-vim-ex'
   Plug 'othree/html5.vim'
   Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
+  Plug 'ludovicchabant/vim-gutentags'
 
   if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
