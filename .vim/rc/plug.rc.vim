@@ -47,6 +47,7 @@ if has('vim_starting')
   Plug 'othree/html5.vim'
   Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
   Plug 'ludovicchabant/vim-gutentags'
+  Plug 'ecomba/vim-ruby-refactoring'
 
   if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
