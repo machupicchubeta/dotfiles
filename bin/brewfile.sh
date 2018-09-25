@@ -198,6 +198,7 @@ brew install duck
 brew install doctl
 brew install git-quick-stats
 brew install elasticsearch
+brew install peco
 brew install fzf
 
 # for ruby

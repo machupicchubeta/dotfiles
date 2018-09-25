@@ -193,6 +193,7 @@ install duck
 install doctl
 install git-quick-stats
 install elasticsearch
+install peco
 install fzf
 
 # for ruby
