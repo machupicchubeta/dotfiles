@@ -193,6 +193,7 @@ install duck
 install doctl
 install git-quick-stats
 install elasticsearch
+install fzf
 
 # for ruby
 install openssl --force
