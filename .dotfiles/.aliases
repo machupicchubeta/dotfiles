@@ -189,4 +189,7 @@ alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
 
 # docker
 alias dk='docker'
+alias dkps='docker ps'
+alias dke='docker exec --interactive --tty'
 alias dkc='docker-compose'
+alias dkcps='docker-compose ps'

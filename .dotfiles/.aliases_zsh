@@ -1,5 +1,6 @@
 alias -g L='| less'
 alias -g G='| grep'
+alias -g GV='| grep -v grep | grep'
 alias -g X='| xargs'
 alias -g P='| pick'
 alias -g C='| pbcopy'
