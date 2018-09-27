@@ -71,7 +71,6 @@ if has('vim_starting')
   Plug 'moro/vim-review'
   Plug 'tpope/vim-fugitive'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'osyo-manga/vim-monster', { 'for': 'ruby' }
   Plug 'chikatoike/concealedyank.vim', { 'on': '<Plug>(operator-concealedyank)' }
   Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
   Plug 'mattn/emmet-vim'
