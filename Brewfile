@@ -66,7 +66,6 @@ install imagemagick
 unlink imagemagick
 install imagemagick@6
 link imagemagick@6 --force
-install phantomjs
 install sl
 install bash
 install heroku-toolbelt
@@ -309,6 +308,7 @@ cask install visual-studio-code
 cask install android-sdk
 cask install android-studio
 cask install dynamodb-local
+cask install phantomjs
 
 # fonts
 cask install font-fira-code

@@ -71,7 +71,6 @@ brew install imagemagick
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
 brew install imagemagick@6
 brew link imagemagick@6 --force
-brew install phantomjs
 brew install sl
 brew install bash
 brew install heroku-toolbelt
@@ -314,6 +313,7 @@ brew cask install visual-studio-code
 brew cask install android-sdk
 brew cask install android-studio
 brew cask install dynamodb-local
+brew cask install phantomjs
 
 # fonts
 brew cask install font-fira-code
