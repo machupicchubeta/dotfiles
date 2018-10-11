@@ -199,6 +199,7 @@ brew install git-quick-stats
 brew install elasticsearch
 brew install peco
 brew install fzf
+brew install coffeescript
 
 # for ruby
 brew install openssl --force

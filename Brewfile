@@ -194,6 +194,7 @@ install git-quick-stats
 install elasticsearch
 install peco
 install fzf
+install coffeescript
 
 # for ruby
 install openssl --force

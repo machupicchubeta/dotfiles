@@ -94,6 +94,7 @@ if has('vim_starting')
   Plug 'chemzqm/unite-location'
   Plug '5t111111/denite-rails'
   Plug 'lambdalisue/session.vim'
+  Plug 'kchmck/vim-coffee-script'
 
   call plug#end()
 
