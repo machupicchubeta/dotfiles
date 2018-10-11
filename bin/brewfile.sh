@@ -204,6 +204,7 @@ brew install fzf
 brew install coffeescript
 brew install zlib
 brew install awscli --HEAD
+brew install clamav
 
 # for ruby
 brew install openssl --force

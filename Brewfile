@@ -199,6 +199,7 @@ install fzf
 install coffeescript
 install zlib
 install awscli --HEAD
+install clamav
 
 # for ruby
 install openssl --force
