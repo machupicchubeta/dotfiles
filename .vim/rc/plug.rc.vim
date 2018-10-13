@@ -95,6 +95,8 @@ if has('vim_starting')
   Plug '5t111111/denite-rails'
   Plug 'lambdalisue/session.vim'
   Plug 'kchmck/vim-coffee-script'
+  Plug '/usr/local/opt/fzf'
+  Plug 'junegunn/fzf.vim'
 
   call plug#end()
 
