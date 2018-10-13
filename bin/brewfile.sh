@@ -56,6 +56,8 @@ brew install z
 brew install zsh
 brew install zsh-completions
 brew install zsh-navigation-tools
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 brew install terminal-notifier
 brew install source-highlight
 if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi

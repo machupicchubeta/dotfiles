@@ -51,6 +51,8 @@ install z
 install zsh
 install zsh-completions
 install zsh-navigation-tools
+install zsh-autosuggestions
+install zsh-syntax-highlighting
 install terminal-notifier
 install source-highlight
 unlink vim

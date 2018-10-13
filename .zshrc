@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z tmux osx vagrant ruby npm gem tmuxinator history docker redis-cli zsh-completions)
+plugins=(git z tmux osx vagrant ruby npm gem tmuxinator history docker redis-cli zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
 autoload -U compinit && compinit
 
 # User configuration
@@ -94,3 +94,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 test -e "$(brew --prefix fzf)/shell/completion.zsh" && source "$(brew --prefix fzf)/shell/completion.zsh"
 test -e "$(brew --prefix fzf)/shell/key-bindings.zsh" && source "$(brew --prefix fzf)/shell/key-bindings.zsh"
+
+test -e "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" && source "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+test -e "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" && source "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
