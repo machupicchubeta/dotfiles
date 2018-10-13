@@ -88,7 +88,7 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
     source "~/.enhancd/zsh/enhancd.zsh"
 fi
 
-source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+test -e "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh" && source "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
