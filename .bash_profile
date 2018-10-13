@@ -31,3 +31,6 @@ eval "$(direnv hook bash)"
 if [ -f "~/.enhancd/bash/enhancd.bash" ]; then
     source "~/.enhancd/bash/enhancd.bash"
 fi
+
+test -e "$(brew --prefix fzf)/shell/completion.bash" && source "$(brew --prefix fzf)/shell/completion.bash"
+test -e "$(brew --prefix fzf)/shell/key-bindings.bash" && source "$(brew --prefix fzf)/shell/key-bindings.bash"

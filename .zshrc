@@ -95,3 +95,6 @@ fi
 source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+test -e "$(brew --prefix fzf)/shell/completion.zsh" && source "$(brew --prefix fzf)/shell/completion.zsh"
+test -e "$(brew --prefix fzf)/shell/key-bindings.zsh" && source "$(brew --prefix fzf)/shell/key-bindings.zsh"
