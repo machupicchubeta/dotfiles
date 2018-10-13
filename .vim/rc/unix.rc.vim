@@ -1,4 +1,4 @@
-set shell=sh
+set shell=zsh
 
 let $PATH = expand('~/bin').':/usr/local/bin/:'.$PATH
 
