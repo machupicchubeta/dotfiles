@@ -45,7 +45,8 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z tmux osx vagrant ruby npm gem tmuxinator history docker redis-cli)
+plugins=(git z tmux osx vagrant ruby npm gem tmuxinator history docker redis-cli zsh-completions)
+autoload -U compinit && compinit
 
 # User configuration
 
@@ -80,12 +81,7 @@ for file in ~/.dotfiles/.{exports,extra,aliases,aliases_zsh,functions,private}; 
   [ -r "$file" ] && source "$file"
 done
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 eval "$(direnv hook zsh)"
-
-plugins+=(zsh-completions)
-autoload -U compinit && compinit
 
 # enhancd
 if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
