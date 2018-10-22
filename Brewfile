@@ -70,7 +70,7 @@ install imagemagick@6
 link imagemagick@6 --force
 install sl
 install bash
-install heroku-toolbelt
+install heroku/brew/heroku
 install pyenv --HEAD
 install jq
 install ansible

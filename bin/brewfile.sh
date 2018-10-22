@@ -75,7 +75,7 @@ brew install imagemagick@6
 brew link imagemagick@6 --force
 brew install sl
 brew install bash
-brew install heroku-toolbelt
+brew install heroku/brew/heroku
 brew install pyenv --HEAD
 brew install jq
 brew install ansible
