@@ -55,12 +55,12 @@ install zsh-autosuggestions
 install zsh-syntax-highlighting
 install terminal-notifier
 install source-highlight
-unlink vim
-install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
-link vim --force
 unlink macvim
-install macvim --with-luajit
-link macvim --force
+unlink vim
+install macvim
+unlink macvim
+unlink vim
+install vim --HEAD
 install luarocks
 install neovim --HEAD
 install bash-completion

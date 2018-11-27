@@ -60,12 +60,12 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install terminal-notifier
 brew install source-highlight
-if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
-brew install vim --with-luajit --with-python3 --HEAD --with-override-system-vi
-brew link vim --force
 if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
-brew install macvim --with-luajit
-brew link macvim --force
+if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
+brew install macvim
+if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
+if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
+brew install vim --HEAD
 brew install luarocks
 brew install neovim --HEAD
 brew install bash-completion
