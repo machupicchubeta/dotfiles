@@ -65,7 +65,7 @@ if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install macvim
 if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
 if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
-brew install vim --HEAD
+brew install vim
 brew install luarocks
 brew install neovim --HEAD
 brew install bash-completion

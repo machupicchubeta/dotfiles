@@ -60,7 +60,7 @@ unlink vim
 install macvim
 unlink macvim
 unlink vim
-install vim --HEAD
+install vim
 install luarocks
 install neovim --HEAD
 install bash-completion
