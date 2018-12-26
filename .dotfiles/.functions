@@ -111,3 +111,6 @@ function extract() {
     echo "'$1' is not a valid file"
   fi
 }
+
+# rbenv
+function rbenv_normal_maintenance() { rbenv install -l | grep -E '^\s+(\d+\.\d+)\.\d+$' | awk '{ if ($1 >= 2.4) print $0 }' | sort --reverse }
