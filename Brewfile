@@ -71,7 +71,7 @@ link imagemagick@6 --force
 install sl
 install bash
 install heroku/brew/heroku
-install pyenv --HEAD
+install pyenv
 install jq
 install ansible
 install watch

@@ -76,7 +76,7 @@ brew link imagemagick@6 --force
 brew install sl
 brew install bash
 brew install heroku/brew/heroku
-brew install pyenv --HEAD
+brew install pyenv
 brew install jq
 brew install ansible
 brew install watch
