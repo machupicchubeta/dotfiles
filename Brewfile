@@ -197,6 +197,7 @@ install elasticsearch
 install peco
 install fzf
 install coffeescript
+install zlib
 
 # for ruby
 install openssl --force
