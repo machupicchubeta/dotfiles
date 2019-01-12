@@ -203,6 +203,7 @@ brew install peco
 brew install fzf
 brew install coffeescript
 brew install zlib
+brew install awscli --HEAD
 
 # for ruby
 brew install openssl --force

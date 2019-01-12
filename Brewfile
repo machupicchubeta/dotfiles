@@ -198,6 +198,7 @@ install peco
 install fzf
 install coffeescript
 install zlib
+install awscli --HEAD
 
 # for ruby
 install openssl --force
