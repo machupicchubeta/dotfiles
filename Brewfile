@@ -310,4 +310,4 @@ install diff-pdf
 
 cu --all --cleanup --yes
 
-cleanup
+cleanup --prune=0 -s

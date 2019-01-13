@@ -315,4 +315,4 @@ brew install diff-pdf
 
 brew cu --all --cleanup --yes
 
-brew cleanup
+brew cleanup --prune=0 -s
