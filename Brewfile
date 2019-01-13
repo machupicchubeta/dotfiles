@@ -1,19 +1,4 @@
 
-untap thoughtbot/formulae
-untap raggi/ale
-untap neovim/homebrew-neovim
-untap caskroom/versions
-untap homebrew/services
-untap homebrew/bundle
-untap puma/puma
-untap kylef/formulae
-untap caskroom/fonts
-untap buo/cask-upgrade
-untap InstantClientTap/instantclient
-untap universal-ctags/universal-ctags
-
-prune
-
 tap thoughtbot/formulae
 tap raggi/ale
 tap neovim/homebrew-neovim

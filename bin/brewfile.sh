@@ -4,21 +4,6 @@ sudo chown -R $(whoami):admin $(brew --prefix)/*
 cd $(brew --repository) && git checkout master
 cd -
 
-if [[ $(brew tap | grep thoughtbot/formulae) ]]; then brew untap thoughtbot/formulae; fi
-if [[ $(brew tap | grep raggi/ale) ]]; then brew untap raggi/ale; fi
-if [[ $(brew tap | grep neovim/homebrew-neovim) ]]; then brew untap neovim/homebrew-neovim; fi
-if [[ $(brew tap | grep caskroom/versions) ]]; then brew untap caskroom/versions; fi
-if [[ $(brew tap | grep homebrew/services) ]]; then brew untap homebrew/services; fi
-if [[ $(brew tap | grep homebrew/bundle) ]]; then brew untap homebrew/bundle; fi
-if [[ $(brew tap | grep puma/puma) ]]; then brew untap puma/puma; fi
-if [[ $(brew tap | grep kylef/formulae) ]]; then brew untap kylef/formulae; fi
-if [[ $(brew tap | grep caskroom/fonts) ]]; then brew untap caskroom/fonts; fi
-if [[ $(brew tap | grep buo/cask-upgrade) ]]; then brew untap buo/cask-upgrade; fi
-if [[ $(brew tap | grep InstantClientTap/instantclient) ]]; then brew untap InstantClientTap/instantclient; fi
-if [[ $(brew tap | grep universal-ctags/universal-ctags) ]]; then brew untap universal-ctags/universal-ctags; fi
-
-brew prune
-
 brew tap thoughtbot/formulae
 brew tap raggi/ale
 brew tap neovim/homebrew-neovim
