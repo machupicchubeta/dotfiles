@@ -17,7 +17,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-# Set architecture flags
 export ARCHFLAGS="-arch x86_64"
 
 export export LESS='-R'
@@ -27,7 +26,6 @@ complete -C aws_completer aws
 
 eval "$(direnv hook bash)"
 
-# enhancd
 if [ -f "~/.enhancd/bash/enhancd.bash" ]; then
     source "~/.enhancd/bash/enhancd.bash"
 fi

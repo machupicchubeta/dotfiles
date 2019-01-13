@@ -83,7 +83,6 @@ done
 
 eval "$(direnv hook zsh)"
 
-# enhancd
 if [ -f "${HOME}/Tools/b4b4r07/enhancd/init.sh" ]; then
   source "${HOME}/Tools/b4b4r07/enhancd/init.sh"
 fi
