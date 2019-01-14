@@ -11,6 +11,7 @@ tap caskroom/fonts
 tap buo/cask-upgrade
 tap InstantClientTap/instantclient
 tap universal-ctags/universal-ctags
+tap heroku/brew
 
 update
 upgrade --fetch-HEAD
@@ -55,7 +56,7 @@ install imagemagick@6
 link imagemagick@6 --force
 install sl
 install bash
-install heroku/brew/heroku
+install heroku
 install pyenv
 install jq
 install ansible
