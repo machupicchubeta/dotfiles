@@ -80,7 +80,7 @@ install tor
 install nkf
 install automake
 install fontforge
-install lastpass-cli --with-pinentry --with-doc
+install lastpass-cli
 install p7zip
 install pick
 install universal-ctags --HEAD

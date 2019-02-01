@@ -85,7 +85,7 @@ brew install tor
 brew install nkf
 brew install automake
 brew install fontforge
-brew install lastpass-cli --with-pinentry --with-doc
+brew install lastpass-cli
 brew install p7zip
 brew install pick
 brew install universal-ctags --HEAD
