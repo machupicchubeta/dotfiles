@@ -12,7 +12,7 @@ brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma
 brew tap kylef/formulae
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew tap buo/cask-upgrade
 brew tap InstantClientTap/instantclient
 brew tap universal-ctags/universal-ctags

@@ -7,7 +7,7 @@ tap homebrew/services
 tap homebrew/bundle
 tap puma/puma
 tap kylef/formulae
-tap caskroom/fonts
+tap homebrew/cask-fonts
 tap buo/cask-upgrade
 tap InstantClientTap/instantclient
 tap universal-ctags/universal-ctags
