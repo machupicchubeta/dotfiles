@@ -1,7 +1,6 @@
 
 tap thoughtbot/formulae
 tap raggi/ale
-tap neovim/homebrew-neovim
 tap homebrew/cask-versions
 tap homebrew/services
 tap homebrew/bundle
