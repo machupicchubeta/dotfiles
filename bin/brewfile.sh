@@ -5,7 +5,6 @@ cd $(brew --repository) && git checkout master
 cd -
 
 brew tap thoughtbot/formulae
-brew tap raggi/ale
 brew tap homebrew/cask-versions
 brew tap homebrew/services
 brew tap homebrew/bundle
@@ -203,7 +202,6 @@ brew install ruby-build --HEAD
 brew install rbenv --HEAD
 brew install rbenv-default-gems
 
-brew install openssl-osx-ca
 brew install libressl
 
 # for nokogiri

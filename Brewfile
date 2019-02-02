@@ -1,6 +1,5 @@
 
 tap thoughtbot/formulae
-tap raggi/ale
 tap homebrew/cask-versions
 tap homebrew/services
 tap homebrew/bundle
@@ -198,7 +197,6 @@ install ruby-build --HEAD
 install rbenv --HEAD
 install rbenv-default-gems
 
-install openssl-osx-ca
 install libressl
 
 # for nokogiri
