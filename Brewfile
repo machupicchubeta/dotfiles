@@ -12,6 +12,10 @@ tap InstantClientTap/instantclient
 tap universal-ctags/universal-ctags
 tap heroku/brew
 
+unlink macvim
+unlink vim
+unlink neovim
+
 update
 upgrade --fetch-HEAD
 
@@ -40,14 +44,13 @@ install zsh-autosuggestions
 install zsh-syntax-highlighting
 install terminal-notifier
 install source-highlight
-unlink macvim
-unlink vim
 install macvim
-unlink macvim
-unlink vim
 install vim
+link macvim
+link vim --overwrite
 install luarocks
 install neovim --HEAD
+link neovim
 install bash-completion
 install imagemagick
 unlink imagemagick

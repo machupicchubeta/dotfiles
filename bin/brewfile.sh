@@ -17,6 +17,10 @@ brew tap InstantClientTap/instantclient
 brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
 
+if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
+if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
+if ! [[ $(brew info neovim | grep 'Not installed') ]]; then brew unlink neovim; fi
+
 brew update
 brew upgrade --fetch-HEAD
 
@@ -45,14 +49,13 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install terminal-notifier
 brew install source-highlight
-if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
-if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install macvim
-if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
-if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install vim
+brew link macvim
+brew link vim --overwrite
 brew install luarocks
 brew install neovim --HEAD
+brew link neovim
 brew install bash-completion
 brew install imagemagick
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
