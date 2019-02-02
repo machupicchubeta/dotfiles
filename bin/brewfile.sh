@@ -7,7 +7,7 @@ cd -
 brew tap thoughtbot/formulae
 brew tap raggi/ale
 brew tap neovim/homebrew-neovim
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma

@@ -2,7 +2,7 @@
 tap thoughtbot/formulae
 tap raggi/ale
 tap neovim/homebrew-neovim
-tap caskroom/versions
+tap homebrew/cask-versions
 tap homebrew/services
 tap homebrew/bundle
 tap puma/puma
