@@ -187,6 +187,7 @@ install coffeescript
 install zlib
 install awscli --HEAD
 install clamav
+install whois
 
 # for ruby
 install openssl --force
