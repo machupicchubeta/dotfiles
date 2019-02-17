@@ -76,7 +76,7 @@ install tmux
 install screen
 install reattach-to-user-namespace
 # install gnupg
-# install grc
+install grc
 install rmtrash
 install tor
 install nkf

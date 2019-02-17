@@ -81,7 +81,7 @@ brew install tmux
 brew install screen
 brew install reattach-to-user-namespace
 # install gnupg
-# install grc
+brew install grc
 brew install rmtrash
 brew install tor
 brew install nkf
