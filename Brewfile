@@ -51,6 +51,7 @@ install luarocks
 install neovim --HEAD
 link neovim
 install bash-completion
+unlink imagemagick
 install imagemagick
 unlink imagemagick
 install imagemagick@6
