@@ -189,6 +189,7 @@ install zlib
 install awscli --HEAD
 install clamav
 install whois
+install bettercap
 
 # for ruby
 install openssl --force

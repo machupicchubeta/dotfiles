@@ -194,6 +194,7 @@ brew install zlib
 brew install awscli --HEAD
 brew install clamav
 brew install whois
+brew install bettercap
 
 # for ruby
 brew install openssl --force
