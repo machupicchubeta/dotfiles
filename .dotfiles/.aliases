@@ -1,4 +1,3 @@
-# Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~" # `cd` is probably faster to type though
@@ -21,18 +20,6 @@ alias ll='ls -l'
 alias lla='ls -la'
 alias lt='ls --tree'
 
-# case ${OSTYPE} in
-  # darwin*)
-    # for Mac
-    # export CLICOLOR=1
-    # alias ls='ls -G -F'
-    # ;;
-  # linux*)
-    # for Linux
-    # alias ls='ls -F --color=auto'
-    # ;;
-# esac
-
 alias rrf='rm -rf'
 alias rr='rm -rfi'
 alias rm='rm -i'
@@ -46,26 +33,6 @@ alias pd='popd'
 alias mkdir='mkdir -p'
 
 alias sudo='sudo '
-
-# Always use color output for `ls`
-# if [[ "$OSTYPE" =~ ^darwin ]]; then
-  # alias ls="command ls -G"
-# else
-  # alias ls="command ls --color"
-  # export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
-# fi
-
-# `cat` with beautiful colors. requires Pygments installed.
-# sudo easy_install Pygments
-#alias c='pygmentize -O style=monokai -f console256 -g'
-
-# GIT STUFF
-
-# Undo a `git push`
-alias undopush="git push -f origin HEAD^:master"
-
-# hub override.
-# alias git=hub  # not crazy about this..
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
@@ -88,7 +55,6 @@ alias c="tr -d '\n' | pbcopy"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
-# Shortcuts
 alias drop="cd ~/Dropbox"
 alias doc="cd ~/Documents"
 alias download="cd ~/Downloads"
@@ -108,7 +74,6 @@ alias vv="nvim"
 alias vvv="mvim -v"
 alias master="git checkout master"
 alias release="git checkout release"
-# alias m="mate ."
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -145,49 +110,35 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
-# bundler
 alias b='bundle'
 alias be='bundle exec'
 
-# parallel_spec
 alias test_in_parallel='bundle && rails db:environment:set RAILS_ENV=test; rails parallel:load_schema parallel:rake\[db:migrate\] parallel:rake\[db:seed_fu\] parallel:spec'
 
-# rake
 alias rk='rake'
 alias rks='rake spec'
 
-# rails
 alias rs='rails server -b lvh.me -p 3000'
 alias rc='rails console'
 alias rr='rails runner'
 alias sidekiq='bundle exec sidekiq -C config/sidekiq.yml'
 alias sidekiq_daemon='bundle exec sidekiq -C config/sidekiq.yml -d'
 
-# rspec
 alias test_in_serial='bundle && rails db:environment:set RAILS_ENV=test; rails db:reset db:migrate db:seed db:seed_fu spec'
 alias retest='rspec --only-failures'
 alias next_failure='rspec --next-failure'
 
-# c#
-#alias cs='csharp'
-
-# translate-shell
 alias t='trans'
 
-# googler
 alias ggr='googler'
 alias ggrks='googler'
 
-# homebrew
 alias brew_convert='ruby bin/convert_brewfile_to_shell_script.rb Brewfile > bin/brewfile.sh'
 
-# ctags
 alias ctags_for_vim='ctags --recurse=yes -f $HOME/.vim/tags'
 
-# postgtres
 alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
 
-# docker
 alias dk='docker'
 alias dkps='docker ps'
 alias dke='docker exec --interactive --tty'
