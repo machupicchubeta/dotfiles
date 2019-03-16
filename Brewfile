@@ -191,6 +191,7 @@ install clamav
 install whois
 install bettercap
 install lsd
+install serverless
 
 # for ruby
 install openssl --force

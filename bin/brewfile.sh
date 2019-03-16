@@ -196,6 +196,7 @@ brew install clamav
 brew install whois
 brew install bettercap
 brew install lsd
+brew install serverless
 
 # for ruby
 brew install openssl --force
