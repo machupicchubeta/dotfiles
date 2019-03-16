@@ -7,17 +7,24 @@ alias -- -="cd -"
 #proxy switching
 alias proxy='sudo ~/.dotfiles/libs/proxy.sh'
 
-alias ls='gls --color=auto --time-style=long-iso'
+alias gls='gls --color=auto --time-style=long-iso'
 
 # List all files colorized in long format, including dot files
 #alias la="ls -Gla"
-alias la="ls -la"
+alias gla="gls -la"
 
-alias ll="ls -l"
-alias lh="ls -lh"
+alias gll="gls -l"
+alias glh="gls -lh"
 
 # List only directories
-alias lsd='ls -l | grep "^d"'
+alias glsd='gls -l | grep "^d"'
+
+alias ls='lsd'
+alias l='ls -la'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 
 # case ${OSTYPE} in
   # darwin*)

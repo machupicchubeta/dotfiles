@@ -195,6 +195,7 @@ brew install awscli --HEAD
 brew install clamav
 brew install whois
 brew install bettercap
+brew install lsd
 
 # for ruby
 brew install openssl --force

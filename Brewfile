@@ -190,6 +190,7 @@ install awscli --HEAD
 install clamav
 install whois
 install bettercap
+install lsd
 
 # for ruby
 install openssl --force
