@@ -137,7 +137,6 @@ brew install stunnel
 brew install sqlmap
 brew install rust
 brew install plenv
-brew install perl-build
 brew install shyaml
 brew install gpg
 brew install shellcheck

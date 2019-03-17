@@ -132,7 +132,6 @@ install stunnel
 install sqlmap
 install rust
 install plenv
-install perl-build
 install shyaml
 install gpg
 install shellcheck
