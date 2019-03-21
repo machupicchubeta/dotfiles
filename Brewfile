@@ -191,6 +191,7 @@ install whois
 install bettercap
 install lsd
 install serverless
+install amazon-ecs-cli
 
 # for ruby
 install openssl --force

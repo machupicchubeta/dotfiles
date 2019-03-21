@@ -196,6 +196,7 @@ brew install whois
 brew install bettercap
 brew install lsd
 brew install serverless
+brew install amazon-ecs-cli
 
 # for ruby
 brew install openssl --force
