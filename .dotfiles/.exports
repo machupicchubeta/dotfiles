@@ -32,6 +32,8 @@ export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME=~/.config
 
+fpath=($(brew --prefix zsh-completions)/share/zsh-completions $fpath)
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
