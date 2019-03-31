@@ -83,8 +83,6 @@ done
 
 eval "$(direnv hook zsh)"
 
-test -e "${HOME}/Tools/b4b4r07/enhancd/init.sh" && source "${HOME}/Tools/b4b4r07/enhancd/init.sh"
-
 test -e "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh" && source "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
