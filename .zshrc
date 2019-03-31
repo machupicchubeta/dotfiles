@@ -83,9 +83,7 @@ done
 
 eval "$(direnv hook zsh)"
 
-if [ -f "${HOME}/Tools/b4b4r07/enhancd/init.sh" ]; then
-  source "${HOME}/Tools/b4b4r07/enhancd/init.sh"
-fi
+test -e "${HOME}/Tools/b4b4r07/enhancd/init.sh" && source "${HOME}/Tools/b4b4r07/enhancd/init.sh"
 
 test -e "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh" && source "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh"
 
