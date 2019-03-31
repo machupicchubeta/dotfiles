@@ -77,20 +77,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-for file in ~/.dotfiles/.{exports,extra,aliases,aliases_zsh,functions,private}; do
+for file in ~/.dotfiles/.{exports,exports_zsh,extra,aliases,aliases_zsh,functions,private}; do
   [ -r "$file" ] && source "$file"
 done
-
-eval "$(direnv hook zsh)"
-
-test -e "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh" && source "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-test -e "$(brew --prefix fzf)/shell/completion.zsh" && source "$(brew --prefix fzf)/shell/completion.zsh"
-test -e "$(brew --prefix fzf)/shell/key-bindings.zsh" && source "$(brew --prefix fzf)/shell/key-bindings.zsh"
-
-test -e "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" && source "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-test -e "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" && source "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-test -e '/usr/local/share/zsh/site-functions/_aws' && source '/usr/local/share/zsh/site-functions/_aws'

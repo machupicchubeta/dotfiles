@@ -1,4 +1,4 @@
-for file in ~/.dotfiles/.{exports,extra,bash_prompt,aliases,aliases_bash,functions}; do
+for file in ~/.dotfiles/.{exports,exports_bash,extra,bash_prompt,aliases,aliases_bash,functions}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
@@ -13,18 +13,9 @@ shopt -s nocaseglob
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
 export ARCHFLAGS="-arch x86_64"
 
 export export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 complete -C aws_completer aws
-
-eval "$(direnv hook bash)"
-
-test -e "$(brew --prefix fzf)/shell/completion.bash" && source "$(brew --prefix fzf)/shell/completion.bash"
-test -e "$(brew --prefix fzf)/shell/key-bindings.bash" && source "$(brew --prefix fzf)/shell/key-bindings.bash"
