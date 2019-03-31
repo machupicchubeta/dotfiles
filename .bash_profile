@@ -13,9 +13,4 @@ shopt -s nocaseglob
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-export ARCHFLAGS="-arch x86_64"
-
-export export LESS='-R'
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-
 complete -C aws_completer aws
