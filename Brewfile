@@ -48,7 +48,7 @@ install vim
 link macvim
 link vim --overwrite
 install luarocks
-install neovim --HEAD
+install neovim
 link neovim
 install bash-completion
 unlink imagemagick

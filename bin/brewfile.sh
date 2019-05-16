@@ -53,7 +53,7 @@ brew install vim
 brew link macvim
 brew link vim --overwrite
 brew install luarocks
-brew install neovim --HEAD
+brew install neovim
 brew link neovim
 brew install bash-completion
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
