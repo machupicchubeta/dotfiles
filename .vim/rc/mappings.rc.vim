@@ -363,3 +363,9 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 " }}}
+
+nnoremap <leader>w :w<cr>
+nnoremap <leader>wa :wall<cr>
+nnoremap <leader>wqa :wqall<cr>
+nnoremap <leader>qa :qall!<cr>
+noremap <leader><leader> <C-W><C-w>
