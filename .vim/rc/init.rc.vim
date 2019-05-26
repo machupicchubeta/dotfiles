@@ -18,7 +18,7 @@ language message C
 let g:mapleader = '`'
 
 " Use <LocalLeader> in filetype plugin.
-let g:maplocalleader = 'm'
+let g:maplocalleader = '_'
 
 if IsWindows()
   " Exchange path separator.
