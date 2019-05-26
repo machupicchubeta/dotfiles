@@ -15,7 +15,7 @@ language message C
 
 " Use ',' instead of '\'.
 " Use <Leader> in global plugin.
-let g:mapleader = ','
+let g:mapleader = '`'
 
 " Use <LocalLeader> in filetype plugin.
 let g:maplocalleader = 'm'
