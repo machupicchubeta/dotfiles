@@ -315,6 +315,7 @@ brew cask install phantomjs
 # fonts
 brew cask install font-fira-code
 brew cask install font-firacode-nerd-font
+brew cask install font-hack-nerd-font
 
 # xquartz required
 brew install diff-pdf

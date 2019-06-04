@@ -310,6 +310,7 @@ cask install phantomjs
 # fonts
 cask install font-fira-code
 cask install font-firacode-nerd-font
+cask install font-hack-nerd-font
 
 # xquartz required
 install diff-pdf
