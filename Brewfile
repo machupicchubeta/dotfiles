@@ -306,6 +306,7 @@ cask install android-sdk
 cask install android-studio
 cask install dynamodb-local
 cask install phantomjs
+cask install discord
 
 # fonts
 cask install font-fira-code
