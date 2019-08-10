@@ -263,7 +263,6 @@ brew cask install suspicious-package
 brew cask install packages
 brew cask install qlcolorcode
 brew cask install qlimagesize
-brew cask install hetimazipql
 brew cask install iterm2
 brew cask install gyazo
 brew cask install 0xed
