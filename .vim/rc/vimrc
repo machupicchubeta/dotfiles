@@ -689,3 +689,7 @@ endfunction
 
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
 " }}}
+
+" cursor_shape {{{
+set guicursor=n-v-o-c:hor10,i-ci-ve-sm:ver20,r-cr:block,a:blinkwait1000-blinkon1000-blinkoff1000
+" }}}
