@@ -46,6 +46,7 @@ brew install zsh-completions
 brew install zsh-navigation-tools
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install zplug
 brew install terminal-notifier
 brew install source-highlight
 brew install macvim
