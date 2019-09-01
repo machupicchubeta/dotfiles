@@ -31,7 +31,6 @@ if has('vim_starting')
   Plug 'tpope/vim-haml', { 'for': 'haml' }
   Plug 'Shougo/vimproc.vim', { 'do': 'make' }
   Plug 'elzr/vim-json', { 'for': 'json' }
-  Plug 'rcmdnk/vim-markdown', { 'for': [ 'markdown', 'mkd', 'md' ] }
   Plug 'kana/vim-operator-user'
   Plug 'kana/vim-operator-replace'
   Plug 'rhysd/vim-operator-surround'
