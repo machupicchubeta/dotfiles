@@ -47,7 +47,6 @@ export PYTHONPATH=$(if which pyenv > /dev/null; then echo -n "$(pyenv root)/shim
 
 export ENHANCD_FILTER=fzf
 export ENHANCD_DOT_ARG='~~'
-test -e "${HOME}/Tools/b4b4r07/enhancd/init.sh" && source "${HOME}/Tools/b4b4r07/enhancd/init.sh"
 
 export LDFLAGS="-L/usr/local/opt/libffi/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/readline/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/readline/include"
