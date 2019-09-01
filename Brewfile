@@ -70,7 +70,6 @@ install gnu-sed
 install ttyrec
 install dnsmasq
 install ag
-install jq
 install spark
 install tmux
 install screen
