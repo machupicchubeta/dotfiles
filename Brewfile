@@ -41,6 +41,7 @@ install zsh-completions
 install zsh-navigation-tools
 install zsh-autosuggestions
 install zsh-syntax-highlighting
+install zplug
 install terminal-notifier
 install source-highlight
 install macvim
