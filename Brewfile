@@ -192,6 +192,7 @@ install bettercap
 install lsd
 install serverless
 install amazon-ecs-cli
+install emojify
 
 # for ruby
 install openssl --force

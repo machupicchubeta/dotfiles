@@ -197,6 +197,7 @@ brew install bettercap
 brew install lsd
 brew install serverless
 brew install amazon-ecs-cli
+brew install emojify
 
 # for ruby
 brew install openssl --force
