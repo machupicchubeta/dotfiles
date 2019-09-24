@@ -198,6 +198,7 @@ brew install lsd
 brew install serverless
 brew install amazon-ecs-cli
 brew install emojify
+brew install jsonpp
 
 # for ruby
 brew install openssl --force
