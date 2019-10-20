@@ -238,6 +238,7 @@ brew cask install slack
 brew cask install skitch
 brew cask install geektool
 brew cask install xquartz
+brew cask install adoptopenjdk
 brew cask install java
 brew cask install java8
 brew cask install skype
