@@ -18,6 +18,12 @@ unlink neovim
 update
 upgrade --fetch-HEAD
 
+# sleuthkit
+cask install adoptopenjdk
+cask install java
+cask install java8
+install sleuthkit
+
 install git
 install tig
 install hub
@@ -233,9 +239,6 @@ cask install slack
 cask install skitch
 cask install geektool
 cask install xquartz
-cask install adoptopenjdk
-cask install java
-cask install java8
 cask install skype
 cask install knock
 cask install licecap
