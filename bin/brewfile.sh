@@ -26,7 +26,7 @@ brew upgrade --fetch-HEAD
 # sleuthkit
 brew cask install adoptopenjdk
 brew cask install java
-brew cask install java8
+brew cask install adoptopenjdk8
 brew install sleuthkit
 
 brew install git
