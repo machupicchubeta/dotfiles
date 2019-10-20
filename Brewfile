@@ -21,7 +21,7 @@ upgrade --fetch-HEAD
 # sleuthkit
 cask install adoptopenjdk
 cask install java
-cask install java8
+cask install adoptopenjdk8
 install sleuthkit
 
 install git
