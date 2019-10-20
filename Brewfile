@@ -284,7 +284,6 @@ cask install 1password
 cask install gpg-suite
 cask install fliqlo
 cask install google-featured-photos
-cask install google-earth-web-plugin
 cask install google-earth-pro
 cask install zoomus
 cask install spotify
