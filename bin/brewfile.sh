@@ -16,10 +16,6 @@ brew tap InstantClientTap/instantclient
 brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
 
-if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
-if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
-if ! [[ $(brew info neovim | grep 'Not installed') ]]; then brew unlink neovim; fi
-
 brew update
 brew upgrade --fetch-HEAD
 
