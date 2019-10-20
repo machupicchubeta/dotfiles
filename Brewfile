@@ -44,10 +44,10 @@ install zsh-syntax-highlighting
 install zplug
 install terminal-notifier
 install source-highlight
+unlink vim
 install macvim
+unlink macvim
 install vim
-link macvim
-link vim --overwrite
 install luarocks
 install neovim
 link neovim

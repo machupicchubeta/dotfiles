@@ -49,10 +49,10 @@ brew install zsh-syntax-highlighting
 brew install zplug
 brew install terminal-notifier
 brew install source-highlight
+brew unlink vim
 brew install macvim
+brew unlink macvim
 brew install vim
-brew link macvim
-brew link vim --overwrite
 brew install luarocks
 brew install neovim
 brew link neovim
