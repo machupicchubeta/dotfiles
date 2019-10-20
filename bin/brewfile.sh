@@ -23,6 +23,12 @@ if ! [[ $(brew info neovim | grep 'Not installed') ]]; then brew unlink neovim; 
 brew update
 brew upgrade --fetch-HEAD
 
+# sleuthkit
+brew cask install adoptopenjdk
+brew cask install java
+brew cask install java8
+brew install sleuthkit
+
 brew install git
 brew install tig
 brew install hub
@@ -238,9 +244,6 @@ brew cask install slack
 brew cask install skitch
 brew cask install geektool
 brew cask install xquartz
-brew cask install adoptopenjdk
-brew cask install java
-brew cask install java8
 brew cask install skype
 brew cask install knock
 brew cask install licecap
