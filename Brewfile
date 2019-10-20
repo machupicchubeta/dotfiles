@@ -145,7 +145,6 @@ install ghq
 install flow
 unlink ocaml
 install ocaml
-link ocaml
 install jenv
 install kotlin
 install rcm
