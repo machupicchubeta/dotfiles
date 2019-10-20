@@ -11,10 +11,6 @@ tap InstantClientTap/instantclient
 tap universal-ctags/universal-ctags
 tap heroku/brew
 
-unlink macvim
-unlink vim
-unlink neovim
-
 update
 upgrade --fetch-HEAD
 
