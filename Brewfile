@@ -233,6 +233,7 @@ cask install slack
 cask install skitch
 cask install geektool
 cask install xquartz
+cask install adoptopenjdk
 cask install java
 cask install java8
 cask install skype
