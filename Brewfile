@@ -194,6 +194,7 @@ install lsd
 install serverless
 install amazon-ecs-cli
 install emojify
+install jsonpp
 
 # for ruby
 install openssl --force
