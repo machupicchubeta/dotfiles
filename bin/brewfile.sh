@@ -297,13 +297,6 @@ brew cask install chromedriver
 brew cask install microsoft-remote-desktop-beta
 brew cask install mono-mdk
 brew cask install dotnet
-brew cask install xamarin
-brew cask install xamarin-studio
-brew cask install xamarin-mac
-brew cask install xamarin-ios
-brew cask install xamarin-android
-brew cask install xamarin-android-player
-brew cask install xamarin-profiler
 brew cask install visual-studio
 brew cask install visual-studio-code
 brew cask install android-sdk
