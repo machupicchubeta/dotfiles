@@ -25,8 +25,8 @@ install tig
 install hub
 install git-lfs
 install wget
-install curl --force
-link curl --force
+install curl
+link curl
 install mysql
 install mysql@5.7
 install redis
@@ -35,8 +35,8 @@ install node
 install node-build
 install nodenv
 install watchman
-install sqlite --force
-link sqlite --force
+install sqlite
+link sqlite
 install z
 install zsh
 install zsh-completions
@@ -58,7 +58,7 @@ unlink imagemagick
 install imagemagick
 unlink imagemagick
 install imagemagick@6
-link imagemagick@6 --force
+link imagemagick@6
 install sl
 install bash
 install heroku
@@ -119,8 +119,8 @@ install asciiquarium
 install cmatrix
 install pow
 install yarn
-install nss --force
-link nss --force
+install nss
+link nss
 install cheat
 install ripgrep
 install ios-sim
@@ -197,10 +197,10 @@ install emojify
 install jsonpp
 
 # for ruby
-install openssl --force
+install openssl
 unlink openssl
-link openssl --force
-install readline --force
+link openssl
+install readline
 install ruby-build
 install rbenv
 install rbenv-default-gems
@@ -208,10 +208,10 @@ install rbenv-default-gems
 install libressl
 
 # for nokogiri
-install libxml2 --force
-install libxslt --force
-install libiconv --force
-# link libxml2 libxslt libiconv --force
+install libxml2
+install libxslt
+install libiconv
+# link libxml2 libxslt libiconv
 unlink libxml2
 unlink libxslt
 unlink libiconv
