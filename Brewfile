@@ -20,6 +20,7 @@ cask install java
 cask install adoptopenjdk8
 install sleuthkit
 
+install cmake
 install git
 install tig
 install hub

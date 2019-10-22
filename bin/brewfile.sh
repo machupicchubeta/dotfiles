@@ -25,6 +25,7 @@ brew cask install java
 brew cask install adoptopenjdk8
 brew install sleuthkit
 
+brew install cmake
 brew install git
 brew install tig
 brew install hub
