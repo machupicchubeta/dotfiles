@@ -49,9 +49,9 @@ brew install zsh-syntax-highlighting
 brew install zplug
 brew install terminal-notifier
 brew install source-highlight
-brew unlink vim
+if ! [[ $(brew info vim | grep 'Not installed') ]]; then brew unlink vim; fi
 brew install macvim
-brew unlink macvim
+if ! [[ $(brew info macvim | grep 'Not installed') ]]; then brew unlink macvim; fi
 brew install vim
 brew install luarocks
 brew install neovim
