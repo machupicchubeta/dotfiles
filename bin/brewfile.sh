@@ -92,7 +92,7 @@ brew install fontforge
 brew install lastpass-cli
 brew install p7zip
 brew install pick
-brew install universal-ctags
+brew install universal-ctags --HEAD
 brew install tree
 brew install packer
 brew install packer-completion
