@@ -31,7 +31,6 @@ brew install hub
 brew install git-lfs
 brew install wget
 brew install curl
-brew link curl
 brew install mysql
 brew install mysql@5.7
 brew install redis
@@ -41,7 +40,6 @@ brew install node-build
 brew install nodenv
 brew install watchman
 brew install sqlite
-brew link sqlite
 brew install z
 brew install zsh
 brew install zsh-completions
@@ -57,13 +55,11 @@ brew unlink macvim
 brew install vim
 brew install luarocks
 brew install neovim
-brew link neovim
 brew install bash-completion
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
 brew install imagemagick
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
 brew install imagemagick@6
-brew link imagemagick@6
 brew install sl
 brew install bash
 brew install heroku
@@ -125,7 +121,6 @@ brew install cmatrix
 brew install pow
 brew install yarn
 brew install nss
-brew link nss
 brew install cheat
 brew install ripgrep
 brew install ios-sim
@@ -203,8 +198,6 @@ brew install jsonpp
 
 # for ruby
 brew install openssl
-if ! [[ $(brew info openssl | grep 'Not installed') ]]; then brew unlink openssl; fi
-brew link openssl
 brew install readline
 brew install ruby-build
 brew install rbenv
@@ -216,7 +209,6 @@ brew install libressl
 brew install libxml2
 brew install libxslt
 brew install libiconv
-# link libxml2 libxslt libiconv
 if ! [[ $(brew info libxml2 | grep 'Not installed') ]]; then brew unlink libxml2; fi
 if ! [[ $(brew info libxslt | grep 'Not installed') ]]; then brew unlink libxslt; fi
 if ! [[ $(brew info libiconv | grep 'Not installed') ]]; then brew unlink libiconv; fi

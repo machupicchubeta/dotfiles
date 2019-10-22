@@ -26,7 +26,6 @@ install hub
 install git-lfs
 install wget
 install curl
-link curl
 install mysql
 install mysql@5.7
 install redis
@@ -36,7 +35,6 @@ install node-build
 install nodenv
 install watchman
 install sqlite
-link sqlite
 install z
 install zsh
 install zsh-completions
@@ -52,13 +50,11 @@ unlink macvim
 install vim
 install luarocks
 install neovim
-link neovim
 install bash-completion
 unlink imagemagick
 install imagemagick
 unlink imagemagick
 install imagemagick@6
-link imagemagick@6
 install sl
 install bash
 install heroku
@@ -120,7 +116,6 @@ install cmatrix
 install pow
 install yarn
 install nss
-link nss
 install cheat
 install ripgrep
 install ios-sim
@@ -198,8 +193,6 @@ install jsonpp
 
 # for ruby
 install openssl
-unlink openssl
-link openssl
 install readline
 install ruby-build
 install rbenv
@@ -211,7 +204,6 @@ install libressl
 install libxml2
 install libxslt
 install libiconv
-# link libxml2 libxslt libiconv
 unlink libxml2
 unlink libxslt
 unlink libiconv
