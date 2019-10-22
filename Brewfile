@@ -32,8 +32,8 @@ install mysql@5.7
 install redis
 install memcached
 install node
-install node-build --HEAD
-install nodenv --HEAD
+install node-build
+install nodenv
 install watchman
 install sqlite --force
 link sqlite --force
@@ -87,7 +87,7 @@ install fontforge
 install lastpass-cli
 install p7zip
 install pick
-install universal-ctags --HEAD
+install universal-ctags
 install tree
 install packer
 install packer-completion
@@ -186,7 +186,7 @@ install peco
 install fzf
 install coffeescript
 install zlib
-install awscli --HEAD
+install awscli
 install clamav
 install whois
 install bettercap
@@ -201,8 +201,8 @@ install openssl --force
 unlink openssl
 link openssl --force
 install readline --force
-install ruby-build --HEAD
-install rbenv --HEAD
+install ruby-build
+install rbenv
 install rbenv-default-gems
 
 install libressl
