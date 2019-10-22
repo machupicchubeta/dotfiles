@@ -30,8 +30,8 @@ brew install tig
 brew install hub
 brew install git-lfs
 brew install wget
-brew install curl --force
-brew link curl --force
+brew install curl
+brew link curl
 brew install mysql
 brew install mysql@5.7
 brew install redis
@@ -40,8 +40,8 @@ brew install node
 brew install node-build
 brew install nodenv
 brew install watchman
-brew install sqlite --force
-brew link sqlite --force
+brew install sqlite
+brew link sqlite
 brew install z
 brew install zsh
 brew install zsh-completions
@@ -63,7 +63,7 @@ if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink ima
 brew install imagemagick
 if ! [[ $(brew info imagemagick | grep 'Not installed') ]]; then brew unlink imagemagick; fi
 brew install imagemagick@6
-brew link imagemagick@6 --force
+brew link imagemagick@6
 brew install sl
 brew install bash
 brew install heroku
@@ -124,8 +124,8 @@ brew install asciiquarium
 brew install cmatrix
 brew install pow
 brew install yarn
-brew install nss --force
-brew link nss --force
+brew install nss
+brew link nss
 brew install cheat
 brew install ripgrep
 brew install ios-sim
@@ -202,10 +202,10 @@ brew install emojify
 brew install jsonpp
 
 # for ruby
-brew install openssl --force
+brew install openssl
 if ! [[ $(brew info openssl | grep 'Not installed') ]]; then brew unlink openssl; fi
-brew link openssl --force
-brew install readline --force
+brew link openssl
+brew install readline
 brew install ruby-build
 brew install rbenv
 brew install rbenv-default-gems
@@ -213,10 +213,10 @@ brew install rbenv-default-gems
 brew install libressl
 
 # for nokogiri
-brew install libxml2 --force
-brew install libxslt --force
-brew install libiconv --force
-# link libxml2 libxslt libiconv --force
+brew install libxml2
+brew install libxslt
+brew install libiconv
+# link libxml2 libxslt libiconv
 if ! [[ $(brew info libxml2 | grep 'Not installed') ]]; then brew unlink libxml2; fi
 if ! [[ $(brew info libxslt | grep 'Not installed') ]]; then brew unlink libxslt; fi
 if ! [[ $(brew info libiconv | grep 'Not installed') ]]; then brew unlink libiconv; fi
