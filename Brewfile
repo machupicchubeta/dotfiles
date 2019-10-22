@@ -87,7 +87,7 @@ install fontforge
 install lastpass-cli
 install p7zip
 install pick
-install universal-ctags
+install universal-ctags --HEAD
 install tree
 install packer
 install packer-completion
