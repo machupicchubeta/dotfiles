@@ -37,8 +37,8 @@ brew install mysql@5.7
 brew install redis
 brew install memcached
 brew install node
-brew install node-build --HEAD
-brew install nodenv --HEAD
+brew install node-build
+brew install nodenv
 brew install watchman
 brew install sqlite --force
 brew link sqlite --force
@@ -92,7 +92,7 @@ brew install fontforge
 brew install lastpass-cli
 brew install p7zip
 brew install pick
-brew install universal-ctags --HEAD
+brew install universal-ctags
 brew install tree
 brew install packer
 brew install packer-completion
@@ -191,7 +191,7 @@ brew install peco
 brew install fzf
 brew install coffeescript
 brew install zlib
-brew install awscli --HEAD
+brew install awscli
 brew install clamav
 brew install whois
 brew install bettercap
@@ -206,8 +206,8 @@ brew install openssl --force
 if ! [[ $(brew info openssl | grep 'Not installed') ]]; then brew unlink openssl; fi
 brew link openssl --force
 brew install readline --force
-brew install ruby-build --HEAD
-brew install rbenv --HEAD
+brew install ruby-build
+brew install rbenv
 brew install rbenv-default-gems
 
 brew install libressl
