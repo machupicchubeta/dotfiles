@@ -9,6 +9,3 @@ test -e "$(brew --prefix fzf)/shell/key-bindings.zsh" && source "$(brew --prefix
 test -e "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" && source "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 test -e "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" && source "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 test -e '/usr/local/share/zsh/site-functions/_aws' && source '/usr/local/share/zsh/site-functions/_aws'
-
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
