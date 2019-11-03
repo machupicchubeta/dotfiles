@@ -3,9 +3,6 @@
 # pip
 pip install --upgrade pip
 
-# pip2
-pip2 install pynvim
-
 # pip3
 pip3 install --upgrade pip setuptools wheel
 pip3 list --outdated | awk 'NR>2{print $1}' | xargs pip3 install -U
