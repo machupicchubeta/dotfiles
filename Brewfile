@@ -1,305 +1,299 @@
+system "sudo chown -R $(whoami):admin $(brew --prefix)/*"
+system "cd $(brew --repository) && git checkout master"
 
-tap thoughtbot/formulae
-tap homebrew/cask-versions
-tap homebrew/services
-tap homebrew/bundle
-tap puma/puma
-tap kylef/formulae
-tap homebrew/cask-fonts
-tap buo/cask-upgrade
-tap InstantClientTap/instantclient
-tap universal-ctags/universal-ctags
-tap heroku/brew
+tap "thoughtbot/formulae"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
+tap "homebrew/bundle"
+tap "puma/puma"
+tap "kylef/formulae"
+tap "homebrew/cask-fonts"
+tap "buo/cask-upgrade"
+tap "InstantClientTap/instantclient"
+tap "universal-ctags/universal-ctags"
+tap "heroku/brew"
 
-update
-upgrade --fetch-HEAD
+system "brew update"
+system "brew upgrade --fetch-HEAD"
 
 # sleuthkit
-cask install adoptopenjdk
-cask install java
-cask install adoptopenjdk8
-install sleuthkit
+cask "adoptopenjdk"
+cask "java"
+cask "adoptopenjdk8"
+brew "sleuthkit"
 
-install cmake
-install git
-install tig
-install hub
-install git-lfs
-install wget
-install curl
-install mysql
-install mysql@5.7
-install redis
-install memcached
-install node
-install node-build
-install nodenv
-install watchman
-install sqlite
-install z
-install zsh
-install zsh-completions
-install zsh-navigation-tools
-install zsh-autosuggestions
-install zsh-syntax-highlighting
-install zplug
-install terminal-notifier
-install source-highlight
-unlink vim
-install macvim
-unlink macvim
-install vim
-install luarocks
-install neovim
-install bash-completion
-unlink imagemagick
-install imagemagick
-unlink imagemagick
-install imagemagick@6
-install sl
-install bash
-install heroku
-install pyenv
-install jq
-install ansible
-install watch
-install osquery
-install direnv
-install coreutils
-install gnu-sed
-install ttyrec
-install dnsmasq
-install ag
-install spark
-install tmux
-install screen
-install reattach-to-user-namespace
-# install gnupg
-install grc
-install rmtrash
-install tor
-install nkf
-install automake
-install fontforge
-install p7zip
-install pick
-install universal-ctags --HEAD
-install tree
-install packer
-install packer-completion
-install chrome-cli
-install cscope
-install postgresql
-install parallel
-install nmap
-install go
-install goenv
-install slackcat
-install lame
-install vault
-install googler
-install translate-shell
-install yank
-install sshrc
-install v8
-install git-secrets
-install sslscan
-install diff-so-fancy
-install mas
-install wireshark
-install git-when-merged
-install fortune
-install cowsay
-install figlet
-install asciiquarium
-install cmatrix
-install pow
-install yarn
-install nss
-install cheat
-install ripgrep
-install ios-sim
-install swift
-install swiftenv
-install swiftlint
-install terraform
-install x265
-install puma-dev
-install stunnel
-install sqlmap
-install rust
-install plenv
-install shyaml
-install gpg
-install shellcheck
-install ghq
-install flow
-unlink ocaml
-install ocaml
-install jenv
-install kotlin
-install rcm
-install ansible-lint
-install firebase-cli
-install logrotate
-install pre-commit
-install terragrunt
-install kibana
-install protobuf
-install pv
-install ccze
-install git-secrets
-install testssl
-install kubernetes-cli
-install kubernetes-helm
-install gradle
-install azure-cli
-install bench
-install circleci
-install eslint
-install iso-codes
-install ssh-copy-id
-install ssh-permit-a38
-install swiftformat
-install terraform_landscape
-install thors-serializer
-install uriparser
-install util-linux
-install watchexec
-install xcodegen
-install webpack
-install elixir
-install elm
-install erlang
-install ghostscript
-install json11
-install duck
-install doctl
-install git-quick-stats
-install elasticsearch
-install peco
-install fzf
-install coffeescript
-install zlib
-install awscli
-install clamav
-install whois
-install bettercap
-install lsd
-install serverless
-install amazon-ecs-cli
-install emojify
-install jsonpp
+brew "cmake"
+brew "git"
+brew "tig"
+brew "hub"
+brew "git-lfs"
+brew "wget"
+brew "curl"
+brew "mysql", link: false, conflicts_with: ["mysql@5.7"]
+brew "mysql@5.7", link: true, conflicts_with: ["mysql"]
+brew "redis"
+brew "memcached"
+brew "node"
+brew "node-build"
+brew "nodenv"
+brew "watchman"
+brew "sqlite"
+brew "z"
+brew "zsh"
+brew "zsh-completions"
+brew "zsh-navigation-tools"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zplug"
+brew "terminal-notifier"
+brew "source-highlight"
+brew "macvim", link: false, conflicts_with: ["vim"]
+brew "vim", link: true, conflicts_with: ["macvim"]
+brew "luarocks"
+brew "neovim"
+brew "bash-completion"
+brew "imagemagick", link: false, conflicts_with: ["imagemagick@6"]
+brew "imagemagick@6", link: true, conflicts_with: ["imagemagick"]
+brew "sl"
+brew "bash"
+brew "heroku"
+brew "pyenv"
+brew "jq"
+brew "ansible"
+brew "watch"
+brew "osquery"
+brew "direnv"
+brew "coreutils"
+brew "gnu-sed"
+brew "ttyrec"
+brew "dnsmasq"
+brew "ag"
+brew "spark"
+brew "tmux"
+brew "screen"
+brew "reattach-to-user-namespace"
+# brew "gnupg"
+brew "grc"
+brew "rmtrash"
+brew "tor"
+brew "nkf"
+brew "automake"
+brew "fontforge"
+brew "p7zip"
+brew "pick"
+brew "universal-ctags", args:["HEAD"]
+brew "tree"
+brew "packer"
+brew "packer-completion"
+brew "chrome-cli"
+brew "cscope"
+brew "postgresql"
+brew "parallel"
+brew "nmap"
+brew "go"
+brew "goenv"
+brew "slackcat"
+brew "lame"
+brew "vault"
+brew "googler"
+brew "translate-shell"
+brew "yank"
+brew "sshrc"
+brew "v8"
+brew "git-secrets"
+brew "sslscan"
+brew "diff-so-fancy"
+brew "mas"
+brew "wireshark"
+brew "git-when-merged"
+brew "fortune"
+brew "cowsay"
+brew "figlet"
+brew "asciiquarium"
+brew "cmatrix"
+brew "pow"
+brew "yarn"
+brew "nss"
+brew "cheat"
+brew "ripgrep"
+brew "ios-sim"
+brew "swift"
+brew "swiftenv"
+brew "swiftlint"
+brew "terraform"
+brew "x265"
+brew "puma-dev"
+brew "stunnel"
+brew "sqlmap"
+brew "rust"
+brew "plenv"
+brew "shyaml"
+brew "gpg"
+brew "shellcheck"
+brew "ghq"
+brew "flow"
+brew "ocaml", link: false
+brew "jenv"
+brew "kotlin"
+brew "rcm"
+brew "ansible-lint"
+brew "firebase-cli"
+brew "logrotate"
+brew "pre-commit"
+brew "terragrunt"
+brew "kibana"
+brew "protobuf", link: true, conflicts_with: ["mysql", "mysql@5.7"]
+brew "pv"
+brew "ccze"
+brew "git-secrets"
+brew "testssl"
+brew "kubernetes-cli"
+brew "kubernetes-helm"
+brew "gradle"
+brew "azure-cli"
+brew "bench"
+brew "circleci"
+brew "eslint"
+brew "iso-codes"
+brew "ssh-copy-id"
+brew "ssh-permit-a38"
+brew "swiftformat"
+brew "terraform_landscape"
+brew "thors-serializer"
+brew "uriparser"
+brew "util-linux"
+brew "watchexec"
+brew "xcodegen"
+brew "webpack"
+brew "elixir"
+brew "elm"
+brew "erlang"
+brew "ghostscript"
+brew "json11"
+brew "duck"
+brew "doctl"
+brew "git-quick-stats"
+brew "elasticsearch"
+brew "peco"
+brew "fzf"
+brew "coffeescript"
+brew "zlib"
+brew "awscli"
+brew "clamav"
+brew "whois"
+brew "bettercap"
+brew "lsd"
+brew "serverless"
+brew "amazon-ecs-cli"
+brew "emojify"
+brew "jsonpp"
 
 # for ruby
-install openssl
-install readline
-install ruby-build
-install rbenv
-install rbenv-default-gems
+brew "openssl"
+brew "readline"
+brew "ruby-build"
+brew "rbenv"
+brew "rbenv-default-gems"
 
-install libressl
+brew "libressl"
 
 # for nokogiri
-install libxml2
-install libxslt
-install libiconv
-unlink libxml2
-unlink libxslt
-unlink libiconv
+brew "libxml2", link: false
+brew "libxslt", link: false
+brew "libiconv", link: false
 
 # for oracle
-install instantclient-basic
-install instantclient-sqlplus
-install instantclient-sdk
+brew "instantclient-basic"
+brew "instantclient-sqlplus"
+brew "instantclient-sdk"
 
 # cask
-cask install dropbox
-cask install google-japanese-ime
-cask install vagrant
-cask install virtualbox
-cask install google-chrome
-cask install firefox
-cask install firefox-developer-edition
-cask install flash-npapi
-cask install evernote
-cask install slack
-cask install skitch
-cask install geektool
-cask install xquartz
-cask install skype
-cask install knock
-cask install licecap
-cask install sublime-text
-cask install atom
-cask install encryptme
-cask install karabiner-elements
-cask install slate
-cask install google-hangouts
-cask install dash
-cask install reflector
-cask install disk-inventory-x
-cask install itrash
-cask install cyberduck
-cask install inssider
-cask install qlstephen
-cask install qlmarkdown
-cask install quicklook-json
-cask install quicklook-csv
-cask install betterzip
-cask install suspicious-package
-cask install packages
-cask install qlcolorcode
-cask install qlimagesize
-cask install iterm2
-cask install gyazo
-cask install 0xed
-cask install alfred
-cask install githubpulse
-cask install github
-cask install paparazzi
-cask install box-sync
-cask install google-chrome-canary
-cask install soundflower
-cask install vlc
-cask install chrome-remote-desktop-host
-cask install near-lock
-cask install vivaldi
-cask install lacona
-cask install wireshark-chmodbpf
-cask install sketch
-cask install flinto
-cask install blisk
-cask install gitter
-cask install flux
-cask install docker
-cask install 1password
-cask install gpg-suite
-cask install fliqlo
-cask install google-featured-photos
-cask install google-earth-pro
-cask install zoomus
-cask install spotify
-cask install chromedriver
-cask install microsoft-remote-desktop-beta
-cask install mono-mdk
-cask install dotnet
-cask install visual-studio
-cask install visual-studio-code
-cask install android-sdk
-cask install android-studio
-cask install dynamodb-local
-cask install phantomjs
-cask install discord
+cask "dropbox"
+cask "google-japanese-ime"
+cask "vagrant"
+cask "virtualbox"
+cask "google-chrome"
+cask "firefox"
+cask "firefox-developer-edition"
+cask "flash-npapi"
+cask "evernote"
+cask "slack"
+cask "skitch"
+cask "geektool"
+cask "xquartz"
+cask "skype"
+cask "knock"
+cask "licecap"
+cask "sublime-text"
+cask "atom"
+cask "encryptme"
+cask "karabiner-elements"
+cask "slate"
+cask "google-hangouts"
+cask "dash"
+cask "reflector"
+cask "disk-inventory-x"
+cask "itrash"
+cask "cyberduck"
+cask "inssider"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "quicklook-csv"
+cask "betterzip"
+cask "suspicious-package"
+cask "packages"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "iterm2"
+cask "gyazo"
+cask "0xed"
+cask "alfred"
+cask "githubpulse"
+cask "github"
+cask "paparazzi"
+cask "box-sync"
+cask "google-chrome-canary"
+cask "soundflower"
+cask "vlc"
+cask "chrome-remote-desktop-host"
+cask "near-lock"
+cask "vivaldi"
+cask "lacona"
+cask "wireshark-chmodbpf"
+cask "sketch"
+cask "flinto"
+cask "blisk"
+cask "gitter"
+cask "flux"
+cask "docker"
+cask "1password"
+cask "gpg-suite"
+cask "fliqlo"
+cask "google-featured-photos"
+cask "google-earth-pro"
+cask "zoomus"
+cask "spotify"
+cask "chromedriver"
+cask "microsoft-remote-desktop-beta"
+cask "mono-mdk"
+cask "dotnet"
+cask "visual-studio"
+cask "visual-studio-code"
+cask "android-sdk"
+cask "android-studio"
+cask "dynamodb-local"
+cask "phantomjs"
+cask "discord"
 
 # fonts
-cask install font-fira-code
-cask install font-firacode-nerd-font
-cask install font-hack-nerd-font
+cask "font-fira-code"
+cask "font-firacode-nerd-font"
+cask "font-hack-nerd-font"
 
 # xquartz required
-install diff-pdf
+brew "diff-pdf"
 
-cu --all --cleanup --yes
+system "brew cu --all --cleanup --yes"
 
-cleanup --prune=0 -s
+system "brew cleanup --prune=0 -s"
