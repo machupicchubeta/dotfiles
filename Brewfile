@@ -16,6 +16,11 @@ tap "heroku/brew"
 system "brew update"
 system "brew upgrade --fetch-HEAD"
 
+brew "mas"
+mas "Xcode", id: 497799835
+system "sudo xcodebuild -license"
+system "if ! [[ $(xcode-select -v | grep -E '^xcode-select version \d+\.$') ]]; then xcode-select --install; fi"
+
 # sleuthkit
 cask "adoptopenjdk"
 cask "java"
