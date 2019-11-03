@@ -1,5 +1,9 @@
 system "sudo chown -R $(whoami):admin $(brew --prefix)/*"
 system "cd $(brew --repository) && git checkout master"
+system "brew install mas"
+system "mas install 497799835"
+system "sudo xcodebuild -license"
+system "xcode-select --install"
 
 tap "thoughtbot/formulae"
 tap "homebrew/cask-versions"
@@ -15,11 +19,6 @@ tap "heroku/brew"
 
 system "brew update"
 system "brew upgrade --fetch-HEAD"
-
-brew "mas"
-mas "Xcode", id: 497799835
-system "sudo xcodebuild -license"
-system "if ! [[ $(xcode-select -v | grep -E '^xcode-select version \d+\.$') ]]; then xcode-select --install; fi"
 
 # sleuthkit
 cask "adoptopenjdk"
@@ -108,7 +107,6 @@ brew "v8"
 brew "git-secrets"
 brew "sslscan"
 brew "diff-so-fancy"
-brew "mas"
 brew "wireshark"
 brew "git-when-merged"
 brew "fortune"
