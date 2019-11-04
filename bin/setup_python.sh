@@ -1,4 +1,10 @@
 #!/bin/bash
+set -eu
+
+latest_python3_version=$(pyenv install -l | grep -E '^\s+3\.\d+\.\d+$' | tail -n 1)
+pyenv install --skip-existing $latest_python3_version
+pyenv global $latest_python3_version
+pyenv rehash
 
 # pip
 pip install --upgrade pip
