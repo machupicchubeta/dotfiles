@@ -1,7 +1,11 @@
 #!/bin/bash
 set -eu
 
-PERL_BUILD_PATH="$(plenv root)/plugins/perl-build"
+PLENV_PLUGINS_PATH="$(plenv root)/plugins"
+if [ ! -d $PLENV_PLUGINS_PATH ]; then
+  mkdir -p $PLENV_PLUGINS_PATH
+fi
+PERL_BUILD_PATH="$PLENV_PLUGINS_PATH/perl-build"
 if [ ! -d $PERL_BUILD_PATH ]; then
   git clone git://github.com/tokuhirom/Perl-Build.git $PERL_BUILD_PATH
 else
