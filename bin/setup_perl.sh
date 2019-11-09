@@ -18,3 +18,5 @@ if ! [[ $(plenv versions | grep $latest_perl5_version) ]]; then
 fi
 plenv global $latest_perl5_version
 plenv rehash
+
+eval "$(plenv init -)"

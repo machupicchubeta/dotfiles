@@ -6,6 +6,8 @@ nodenv install --skip-existing $latest_nodejs_version
 nodenv global $latest_nodejs_version
 nodenv rehash
 
+eval "$(nodenv init -)"
+
 npm install -g npm
 npm install -g neovim
 npm update -g

@@ -6,6 +6,8 @@ pyenv install --skip-existing $latest_python3_version
 pyenv global $latest_python3_version
 pyenv rehash
 
+eval "$(pyenv init -)"
+
 # pip
 pip install --upgrade pip
 
