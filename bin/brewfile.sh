@@ -97,6 +97,7 @@ brew install automake
 brew install fontforge
 brew install p7zip
 brew install pick
+brew install docutils
 brew install universal-ctags --HEAD
 brew link universal-ctags
 brew install tree
