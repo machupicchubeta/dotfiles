@@ -6,6 +6,8 @@ rbenv install --skip-existing $latest_ruby_version
 rbenv global $latest_ruby_version
 rbenv rehash
 
+eval "$(rbenv init -)"
+
 # gem
 gem update --system
 gem update
