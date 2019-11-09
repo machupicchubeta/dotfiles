@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-latest_nodejs_version=$(nodenv install -l | grep -E '^\s+(\d+\.\d+)\.\d+$' | tail -n 1 | sed -e 's/^[ ]*//g')
+latest_nodejs_version=$(nodenv install -l | grep -E '^(\d+\.\d+)\.\d+$' | tail -n 1)
 nodenv install --skip-existing $latest_nodejs_version
 nodenv global $latest_nodejs_version
 nodenv rehash
