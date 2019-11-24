@@ -305,6 +305,7 @@ brew cask install android-studio
 brew cask install dynamodb-local
 brew cask install phantomjs
 brew cask install discord
+brew cask install aerial
 
 # fonts
 brew cask install font-fira-code
