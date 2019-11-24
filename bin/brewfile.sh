@@ -229,11 +229,14 @@ brew install instantclient-sqlplus
 brew install instantclient-sdk
 
 # cask
-brew cask install dropbox
+brew cask install 1password
+brew cask install iterm2
 brew cask install google-japanese-ime
+brew cask install google-chrome
+brew cask install docker
+brew cask install dropbox
 brew cask install vagrant
 brew cask install virtualbox
-brew cask install google-chrome
 brew cask install firefox
 brew cask install firefox-developer-edition
 brew cask install flash-npapi
@@ -266,7 +269,6 @@ brew cask install suspicious-package
 brew cask install packages
 brew cask install qlcolorcode
 brew cask install qlimagesize
-brew cask install iterm2
 brew cask install gyazo
 brew cask install 0xed
 brew cask install alfred
@@ -287,8 +289,6 @@ brew cask install flinto
 brew cask install blisk
 brew cask install gitter
 brew cask install flux
-brew cask install docker
-brew cask install 1password
 brew cask install gpg-suite
 brew cask install fliqlo
 brew cask install google-earth-pro
