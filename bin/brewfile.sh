@@ -197,7 +197,6 @@ brew install fzf
 brew install coffeescript
 brew install zlib
 brew install awscli
-brew install clamav
 brew install whois
 brew install bettercap
 brew install lsd
