@@ -76,12 +76,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-for file in ~/.dotfiles/.{exports,exports_zsh,exports_compiler_options,extra,aliases,aliases_zsh,functions,private}; do
+for file in $HOME/.dotfiles/.{exports,exports_zsh,exports_compiler_options,extra,aliases,aliases_zsh,functions,private}; do
   [ -r "$file" ] && source "$file"
 done
 
 function box_name {
-  [ -f ~/.box-name ] && cat ~/.box-name || echo $SHORT_HOST || echo $HOST
+  [ -f $HOME/.box-name ] && cat $HOME/.box-name || echo $SHORT_HOST || echo $HOST
 }
 
 # spaceship-prompt
