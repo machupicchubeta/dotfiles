@@ -2,7 +2,7 @@ _PID=$$; _PPID=$(ps -o ppid -p $_PID | tail -n 1)
 
 eval "$(hub alias -s)"
 
-eval $(gdircolors ~/Tools/seebi/dircolors-solarized)
+eval $(gdircolors ~/Repositories/github.com/seebi/dircolors-solarized)
 
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
