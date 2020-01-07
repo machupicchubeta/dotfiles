@@ -12,5 +12,3 @@ dist
 .vim/tags
 
 .dotfiles/.private
-
-tags
