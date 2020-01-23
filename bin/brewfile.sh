@@ -16,7 +16,6 @@ brew tap puma/puma
 brew tap kylef/formulae
 brew tap homebrew/cask-fonts
 brew tap buo/cask-upgrade
-brew tap InstantClientTap/instantclient
 brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
 
@@ -221,11 +220,6 @@ brew install libxslt
 brew unlink libxslt
 brew install libiconv
 brew unlink libiconv
-
-# for oracle
-brew install instantclient-basic
-brew install instantclient-sqlplus
-brew install instantclient-sdk
 
 # cask
 brew cask install 1password
