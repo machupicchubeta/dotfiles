@@ -299,6 +299,7 @@ brew cask install dynamodb-local
 brew cask install phantomjs
 brew cask install discord
 brew cask install aerial
+brew cask install figma
 
 # fonts
 brew cask install font-fira-code
