@@ -300,6 +300,7 @@ brew cask install phantomjs
 brew cask install discord
 brew cask install aerial
 brew cask install figma
+brew cask install miro-formerly-realtimeboard
 
 # fonts
 brew cask install font-fira-code
