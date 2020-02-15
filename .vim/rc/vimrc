@@ -1,8 +1,3 @@
-" Make vim more useful
-if &compatible
-  set nocompatible
-endif
-
 " source_rc {{{
 function! s:source_rc(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))
