@@ -1,3 +1,5 @@
+set secure
+
 " source_rc {{{
 function! s:source_rc(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))
@@ -41,8 +43,9 @@ call s:source_rc('plug')
 call s:source_rc('ideographic-space')
 call s:source_rc('search')
 call s:source_rc('diff')
-
-set secure
+call s:source_rc('cursor')
+call s:source_rc('tags')
+call s:source_rc('matchit')
 
 call s:source_rc('emmet')
 call s:source_rc('rspec')
@@ -57,16 +60,13 @@ call s:source_rc('indent-guides')
 call s:source_rc('fugitive')
 call s:source_rc('easy-align')
 call s:source_rc('neocomplete')
-call s:source_rc('tags')
 call s:source_rc('deoplete')
 call s:source_rc('open-browser')
 call s:source_rc('operator-replace')
 call s:source_rc('operator-surround')
-call s:source_rc('matchit')
 call s:source_rc('reek')
 call s:source_rc('ale')
 call s:source_rc('javascript')
 call s:source_rc('javascript-libraries-syntax')
 call s:source_rc('delimitmate')
 call s:source_rc('fzf')
-call s:source_rc('cursor')
