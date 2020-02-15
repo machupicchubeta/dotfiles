@@ -149,3 +149,8 @@ if has('cryptv')
   " It seems 15ms overhead.
   "  set cryptmethod=blowfish2
 endif
+
+if !has('nvim')
+  " Allow cursor keys in insert mode
+  set esckeys
+endif

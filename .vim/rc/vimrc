@@ -1,3 +1,5 @@
+set secure
+
 " source_rc {{{
 function! s:source_rc(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))
@@ -23,12 +25,6 @@ function! s:source_rc(path, ...) abort
 endfunction
 " }}}
 
-" Define augroup {{{
-augroup MyAutoCmd
-  autocmd!
-augroup END
-" }}}
-
 if has('vim_starting')
   call s:source_rc('init')
 endif
@@ -44,51 +40,12 @@ if IsMac()
   call s:source_rc('unix')
 end
 call s:source_rc('plug')
-
-if !has('nvim')
-  " Allow cursor keys in insert mode
-  set esckeys
-endif
-
-" Add the g flag to search/replace by default
-set gdefault
-
-" Highlight current line
-set cursorline
-set cursorcolumn
-
 call s:source_rc('ideographic-space')
 call s:source_rc('search')
-
-" Enable mouse in all modes
-set mouse=a
-
-" Show the cursor position
-set ruler
-
-" Show the current mode
-set showmode
-
-" Use relative line numbers
-if exists("&relativenumber")
- set relativenumber
- au BufReadPost * set relativenumber
-endif
-
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
-
-set pastetoggle=<C-E>
-
 call s:source_rc('diff')
-
-" Use English help file
-set helplang& helplang=en,ja
-
-" Default home directory
-let t:cwd = getcwd()
-
-set secure
+call s:source_rc('cursor')
+call s:source_rc('tags')
+call s:source_rc('matchit')
 
 call s:source_rc('emmet')
 call s:source_rc('rspec')
@@ -103,16 +60,13 @@ call s:source_rc('indent-guides')
 call s:source_rc('fugitive')
 call s:source_rc('easy-align')
 call s:source_rc('neocomplete')
-call s:source_rc('tags')
 call s:source_rc('deoplete')
 call s:source_rc('open-browser')
 call s:source_rc('operator-replace')
 call s:source_rc('operator-surround')
-call s:source_rc('matchit')
 call s:source_rc('reek')
 call s:source_rc('ale')
 call s:source_rc('javascript')
 call s:source_rc('javascript-libraries-syntax')
 call s:source_rc('delimitmate')
 call s:source_rc('fzf')
-call s:source_rc('cursor')
