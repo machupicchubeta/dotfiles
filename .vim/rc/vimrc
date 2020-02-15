@@ -37,26 +37,17 @@ augroup END
 if has('vim_starting')
   call s:source_rc('init')
 endif
-
 call s:source_rc('encoding')
-
 call s:source_rc('edit')
-
 call s:source_rc('view')
-
 call s:source_rc('filetype')
-
-
 call s:source_rc('mappings')
-
 if has('nvim')
   call s:source_rc('neovim')
 endif
-
 if IsMac()
   call s:source_rc('unix')
 end
-
 call s:source_rc('plug')
 
 if !has('nvim')
