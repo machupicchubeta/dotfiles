@@ -87,3 +87,9 @@ endif
 " let g:loaded_man               = 1
 " let g:loaded_matchit           = 1
 " }}}
+
+" Define augroup {{{
+augroup MyAutoCmd
+  autocmd!
+augroup END
+" }}}

@@ -191,3 +191,34 @@ else
     return len(a:str)
   endfunction
 endif
+
+" Add the g flag to search/replace by default
+set gdefault
+
+" Highlight current line
+set cursorline
+set cursorcolumn
+
+" Enable mouse in all modes
+set mouse=a
+
+" Show the cursor position
+set ruler
+
+" Show the current mode
+set showmode
+
+" Use relative line numbers
+if exists("&relativenumber")
+ set relativenumber
+ au BufReadPost * set relativenumber
+endif
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
+" Use English help file
+set helplang& helplang=en,ja
+
+" Default home directory
+let t:cwd = getcwd()
