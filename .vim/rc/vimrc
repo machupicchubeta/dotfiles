@@ -6,7 +6,7 @@ endif
 " source_rc {{{
 function! s:source_rc(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))
-  let abspath = resolve(expand('~/.vim/rc/' . a:path))
+  let abspath = resolve(expand('~/.vim/rc/' . a:path . '.rc.vim'))
   if !use_global
     execute 'source' fnameescape(abspath)
     return
@@ -35,16 +35,16 @@ augroup END
 " }}}
 
 if has('vim_starting')
-  call s:source_rc('init.rc.vim')
+  call s:source_rc('init')
 endif
 
-call s:source_rc('encoding.rc.vim')
+call s:source_rc('encoding')
 
-call s:source_rc('edit.rc.vim')
+call s:source_rc('edit')
 
-call s:source_rc('view.rc.vim')
+call s:source_rc('view')
 
-" call s:source_rc('filetype.rc.vim')
+" call s:source_rc('filetype')
 
 " filetype {{{
 autocmd MyAutoCmd FileType,Syntax,BufNewFile,BufNew,BufRead
@@ -67,17 +67,17 @@ endfunction "}}}
 call s:my_on_filetype()
 " }}}
 
-call s:source_rc('mappings.rc.vim')
+call s:source_rc('mappings')
 
 if has('nvim')
-  call s:source_rc('neovim.rc.vim')
+  call s:source_rc('neovim')
 endif
 
 if IsMac()
-  call s:source_rc('unix.rc.vim')
+  call s:source_rc('unix')
 end
 
-call s:source_rc('plug.rc.vim')
+call s:source_rc('plug')
 
 if !has('nvim')
   " Allow cursor keys in insert mode
