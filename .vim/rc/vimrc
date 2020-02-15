@@ -96,10 +96,6 @@ let t:cwd = getcwd()
 set secure
 
 call s:source_rc('emmet')
-
-" quickrun key-mapping
-silent! nmap <unique> <Space>r <Plug>(quickrun)
-
 call s:source_rc('rspec')
 call s:source_rc('submode')
 call s:source_rc('showmarks')
