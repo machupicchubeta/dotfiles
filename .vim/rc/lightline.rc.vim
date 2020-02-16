@@ -2,7 +2,7 @@ let g:lightline = {
         \ 'colorscheme': 'solarized',
         \ 'mode_map': {'c': 'NORMAL'},
         \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], [ 'ale' ] ]
+        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
         \ },
         \ 'component_function': {
         \   'modified': 'LightlineModified',
@@ -12,8 +12,7 @@ let g:lightline = {
         \   'fileformat': 'LightlineFileformat',
         \   'filetype': 'LightlineFiletype',
         \   'fileencoding': 'LightlineFileencoding',
-        \   'mode': 'LightlineMode',
-        \   'ale': 'LightLineALEStatus'
+        \   'mode': 'LightlineMode'
         \ }
         \ }
 
@@ -57,8 +56,4 @@ endfunction
 
 function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
-endfunction
-
-function! LightLineALEStatus()
-  return exists('*ALEGetStatusLine') ? ALEGetStatusLine() : ''
 endfunction

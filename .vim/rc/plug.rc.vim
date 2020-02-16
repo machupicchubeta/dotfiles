@@ -7,9 +7,15 @@ endif
 if has('vim_starting')
   call plug#begin(s:plugged_path)
 
+  Plug 'prabirshrestha/async.vim'
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'mattn/vim-lsp-icons'
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/vim-vsnip-integ'
   Plug 'itchyny/lightline.vim'
-  Plug 'w0rp/ale'
-  Plug 'maximbaz/lightline-ale'
   Plug 'jceb/vim-hier'
   Plug 'rainerborene/vim-reek'
   Plug 'vim-scripts/ShowMarks'
@@ -30,30 +36,16 @@ if has('vim_starting')
   Plug 'slim-template/vim-slim', { 'for': 'slim' }
   Plug 'tpope/vim-haml', { 'for': 'haml' }
   Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-  Plug 'elzr/vim-json', { 'for': 'json' }
   Plug 'kana/vim-operator-user'
   Plug 'kana/vim-operator-replace'
   Plug 'rhysd/vim-operator-surround'
   Plug 'kana/vim-textobj-user'
   Plug 'osyo-manga/vim-textobj-multiblock'
   Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'sass', 'less', 'sacs' ] }
-  Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
-  Plug 'othree/yajs.vim', { 'for': ['javascript', 'javascript.jsx'] }
-  Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
-  Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
-  Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'javascript.jsx'] }
   Plug 'vim-jp/syntax-vim-ex'
   Plug 'othree/html5.vim'
-  Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
   Plug 'ludovicchabant/vim-gutentags'
   Plug 'ecomba/vim-ruby-refactoring'
-
-  if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  else
-    Plug 'Shougo/neocomplete.vim', { 'for': 'ruby' }
-  endif
-
   Plug 'tpope/vim-rails', { 'for': [ 'haml', 'slim', 'ruby', 'eruby' ] }
   Plug 'tpope/vim-endwise'
   Plug 'alpaca-tc/neorspec.vim', { 'on': [ 'RSpec', 'RSpecAll', 'RSpecCurrent', 'RSpecNearest', 'RSpecRetry' ] }
