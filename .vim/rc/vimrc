@@ -48,7 +48,6 @@ call s:source_rc('tags')
 call s:source_rc('matchit')
 
 call s:source_rc('emmet')
-call s:source_rc('rspec')
 call s:source_rc('submode')
 call s:source_rc('showmarks')
 call s:source_rc('lightline')
