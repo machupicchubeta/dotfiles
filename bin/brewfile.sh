@@ -35,11 +35,7 @@ brew install hub
 brew install git-lfs
 brew install wget
 brew install curl
-brew unlink mysql
 brew install mysql
-brew unlink mysql
-brew install mysql@5.7
-brew link mysql@5.7 --force
 brew install redis
 brew install memcached
 brew install node
@@ -64,11 +60,7 @@ brew link vim
 brew install luarocks
 brew install neovim
 brew install bash-completion
-brew unlink imagemagick
 brew install imagemagick
-brew unlink imagemagick
-brew install imagemagick@6
-brew link imagemagick@6
 brew install sl
 brew install bash
 brew install heroku
