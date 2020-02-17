@@ -8,7 +8,6 @@ if has('vim_starting')
   call plug#begin(s:plugged_path)
 
   Plug 'xolox/vim-misc'
-  Plug 'Shougo/vimproc.vim', { 'do': 'make' }
   Plug 'kana/vim-operator-user'
   Plug 'kana/vim-operator-replace'
   Plug 'rhysd/vim-operator-surround'
@@ -44,7 +43,6 @@ if has('vim_starting')
   Plug 'Raimondi/delimitMate'
   Plug 'kana/vim-smartchr'
   Plug 'taku-o/vim-toggle'
-  Plug 'jceb/vim-hier'
   Plug 'vim-jp/syntax-vim-ex'
   Plug 'ludovicchabant/vim-gutentags'
   Plug 'vim-scripts/ruby-matchit'
