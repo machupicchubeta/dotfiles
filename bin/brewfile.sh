@@ -18,6 +18,7 @@ brew tap homebrew/cask-fonts
 brew tap buo/cask-upgrade
 brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
+brew tap github/gh
 
 brew update
 brew upgrade --fetch-HEAD
@@ -195,6 +196,7 @@ brew install serverless
 brew install amazon-ecs-cli
 brew install emojify
 brew install jsonpp
+brew install gh
 
 # for ruby
 brew install openssl
