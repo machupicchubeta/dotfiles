@@ -283,7 +283,6 @@ brew cask install zoomus
 brew cask install spotify
 brew cask install chromedriver
 brew cask install microsoft-remote-desktop-beta
-brew cask install mono-mdk
 brew cask install dotnet
 brew cask install visual-studio
 brew cask install visual-studio-code
