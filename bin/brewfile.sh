@@ -8,6 +8,8 @@ mas install 497799835 # Xcode
 sudo xcodebuild -license
 xcode-select --install
 
+mas install 411213048 # LadioCast
+
 brew tap thoughtbot/formulae
 brew tap homebrew/cask-versions
 brew tap homebrew/services
