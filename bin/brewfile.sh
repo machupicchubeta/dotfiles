@@ -201,6 +201,7 @@ brew install emojify
 brew install jsonpp
 brew install gh
 brew install mosquitto
+brew install arp-scan
 
 # for ruby
 brew install openssl
