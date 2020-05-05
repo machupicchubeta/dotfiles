@@ -200,6 +200,7 @@ brew install amazon-ecs-cli
 brew install emojify
 brew install jsonpp
 brew install gh
+brew install mosquitto
 
 # for ruby
 brew install openssl
