@@ -299,6 +299,7 @@ brew cask install discord
 brew cask install aerial
 brew cask install figma
 brew cask install miro-formerly-realtimeboard
+brew cask install amazon-chime
 
 # fonts
 brew cask install font-fira-code
