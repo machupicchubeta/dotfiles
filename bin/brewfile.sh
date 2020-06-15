@@ -202,6 +202,7 @@ brew install jsonpp
 brew install gh
 brew install mosquitto
 brew install arp-scan
+brew install rustup
 
 # for ruby
 brew install openssl
