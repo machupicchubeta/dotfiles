@@ -223,6 +223,7 @@ brew unlink libiconv
 
 # cask
 brew cask install 1password
+brew cask install 1password-cli
 brew cask install iterm2
 brew cask install google-japanese-ime
 brew cask install google-chrome
