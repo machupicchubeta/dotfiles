@@ -21,6 +21,7 @@ brew tap buo/cask-upgrade
 brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
 brew tap github/gh
+brew tap mongodb/brew
 
 brew update
 brew upgrade --fetch-HEAD
@@ -203,6 +204,7 @@ brew install gh
 brew install mosquitto
 brew install arp-scan
 brew install rustup
+brew install mongodb-community
 
 # for ruby
 brew install openssl
