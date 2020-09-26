@@ -304,6 +304,7 @@ brew cask install figma
 brew cask install miro-formerly-realtimeboard
 brew cask install amazon-chime
 brew cask install osquery
+brew cask install lens
 
 # fonts
 brew cask install font-fira-code
