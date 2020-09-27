@@ -73,7 +73,6 @@ brew install pyenv
 brew install jq
 brew install ansible
 brew install watch
-brew install osquery
 brew install direnv
 brew install coreutils
 brew install gnu-sed
@@ -304,6 +303,7 @@ brew cask install aerial
 brew cask install figma
 brew cask install miro-formerly-realtimeboard
 brew cask install amazon-chime
+brew cask install osquery
 
 # fonts
 brew cask install font-fira-code
