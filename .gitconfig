@@ -121,3 +121,5 @@
   newHighlight = green bold 22
 [ghq]
   root = ~/Repositories
+[init]
+  defaultBranch = main
