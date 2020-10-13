@@ -204,6 +204,7 @@ brew install mosquitto
 brew install arp-scan
 brew install rustup
 brew install mongodb-community
+brew install aws-shell
 
 # for ruby
 brew install openssl
