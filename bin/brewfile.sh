@@ -9,6 +9,7 @@ sudo xcodebuild -license
 xcode-select --install
 
 mas install 411213048 # LadioCast
+mas install 1284863847 # Unsplash Wallpapers
 
 brew tap thoughtbot/formulae
 brew tap homebrew/cask-versions
