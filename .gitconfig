@@ -29,13 +29,13 @@
   t = tag
   rb = rebase
   sh = show
-  changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...master --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
+  changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
 #  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
   ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
   cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
-  sweep = "!f() { git branch --no-color --merged | grep -v master | xargs -n 1 git branch -D; }; f"
-  merged = "!f() { git branch --no-color -r --merged | grep -v master | sed 's/origin\\///'; }; f"
+  sweep = "!f() { git branch --no-color --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | xargs -n 1 git branch -D; }; f"
+  merged = "!f() { git branch --no-color -r --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | sed 's/origin\\///'; }; f"
   lg = ! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
   lga = ! git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
   l1 = ! git log --oneline --color | emojify | less -r
@@ -121,3 +121,5 @@
   newHighlight = green bold 22
 [ghq]
   root = ~/Repositories
+[init]
+  defaultBranch = main
