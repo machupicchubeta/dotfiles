@@ -11,6 +11,6 @@ fi
 
 zplug load
 
-if [ -e $(brew --prefix)/opt/zplug/repos/denysdovhan/spaceship-prompt/spaceship.zsh-theme ] && [ ! -L "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme" ]; then
-  ln -s $(brew --prefix)/opt/zplug/repos/denysdovhan/spaceship-prompt/spaceship.zsh-theme "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
+if [ -e /usr/local/opt/zplug/repos/denysdovhan/spaceship-prompt/spaceship.zsh-theme ] && [ ! -L "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme" ]; then
+  ln -s /usr/local/opt/zplug/repos/denysdovhan/spaceship-prompt/spaceship.zsh-theme "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
 fi
