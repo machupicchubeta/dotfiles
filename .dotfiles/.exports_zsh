@@ -1,11 +1,11 @@
 eval "$(direnv hook zsh)"
 
-fpath=($(brew --prefix zsh-completions)/share/zsh-completions $fpath)
+fpath=(/usr/local/opt/zsh-completions/share/zsh-completions $fpath)
 
-test -e "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh" && source "$(brew --prefix zsh-navigation-tools)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh"
+test -e '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' && source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-test -e "$(brew --prefix fzf)/shell/completion.zsh" && source "$(brew --prefix fzf)/shell/completion.zsh"
-test -e "$(brew --prefix fzf)/shell/key-bindings.zsh" && source "$(brew --prefix fzf)/shell/key-bindings.zsh"
-test -e "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" && source "$(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-test -e "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" && source "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+test -e '/usr/local/opt/fzf/shell/completion.zsh' && source '/usr/local/opt/fzf/shell/completion.zsh'
+test -e '/usr/local/opt/fzf/shell/key-bindings.zsh' && source '/usr/local/opt/fzf/shell/key-bindings.zsh'
+test -e '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh' && source '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
+test -e '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' && source '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
 test -e '/usr/local/share/zsh/site-functions/_aws' && source '/usr/local/share/zsh/site-functions/_aws'

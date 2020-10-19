@@ -1,5 +1,5 @@
 eval "$(direnv hook bash)"
 
-test -e "$(brew --prefix)/etc/bash_completion" && source "$(brew --prefix)/etc/bash_completion"
-test -e "$(brew --prefix fzf)/shell/completion.bash" && source "$(brew --prefix fzf)/shell/completion.bash"
-test -e "$(brew --prefix fzf)/shell/key-bindings.bash" && source "$(brew --prefix fzf)/shell/key-bindings.bash"
+test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completion'
+test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
+test -e '/usr/local/opt/fzf/shell/key-bindings.bash' && source '/usr/local/opt/fzf/shell/key-bindings.bash'
