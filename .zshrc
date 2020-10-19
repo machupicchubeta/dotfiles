@@ -129,3 +129,7 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
+
+# if (which zprof > /dev/null) ;then
+#   zprof | less
+# fi
