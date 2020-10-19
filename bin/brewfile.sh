@@ -309,6 +309,7 @@ brew cask install osquery
 brew cask install lens
 brew cask install framer
 brew cask install kite
+brew cask install deepl
 
 # fonts
 brew cask install font-fira-code
