@@ -203,7 +203,7 @@ brew install jsonpp
 brew install gh
 brew install mosquitto
 brew install arp-scan
-brew install rustup
+brew install rustup-init
 brew install mongodb-community
 brew install aws-shell
 
