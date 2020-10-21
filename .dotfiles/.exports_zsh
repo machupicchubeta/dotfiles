@@ -1,6 +1,6 @@
 eval "$(direnv hook zsh)"
 
-fpath=(/usr/local/opt/zsh-completions/share/zsh-completions $fpath)
+fpath=($HOME/.zfunc /usr/local/opt/zsh-completions/share/zsh-completions $fpath)
 
 test -e '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' && source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
