@@ -81,7 +81,7 @@ for file in $HOME/.dotfiles/.{exports,exports_zsh,exports_compiler_options,extra
 done
 
 function box_name {
-  [ -f $HOME/.box-name ] && cat $HOME/.box-name || echo $SHORT_HOST || echo $HOST
+  [ -f $HOME/.box-name ] && cat $HOME/.box-name || ([[ ! -z "$SHORT_HOST" ]] && echo $SHORT_HOST) || ([[ ! -z "$HOST" ]] && echo $HOST) || hostname -s || uname -n
 }
 
 # spaceship-prompt
