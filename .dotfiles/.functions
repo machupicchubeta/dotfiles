@@ -116,3 +116,8 @@ function extract() {
 function rbenv_normal_maintenance() {
   rbenv install -l | grep -E '^\s+(\d+\.\d+)\.\d+$' | awk '{ if ($1 >= 2.4) print $0 }' | sort --reverse
 }
+
+# switch to default branch in git
+function default_branch() {
+  git checkout "$(git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@')"
+}
