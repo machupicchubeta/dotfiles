@@ -119,7 +119,6 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 alias b='bundle'
-alias be='bundle exec'
 
 alias test_in_parallel='bundle && rails db:environment:set RAILS_ENV=test; rails parallel:load_schema parallel:rake\[db:migrate\] parallel:rake\[db:seed_fu\] parallel:spec'
 
