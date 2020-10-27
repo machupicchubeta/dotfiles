@@ -4,6 +4,26 @@ source $ZPLUG_HOME/init.zsh
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "b4b4r07/emoji-cli"
+zplug "lib/clipboard.zsh", from:oh-my-zsh
+zplug "lib/completion.zsh", from:oh-my-zsh
+zplug "lib/correction.zsh", from:oh-my-zsh
+zplug "lib/directories.zsh", from:oh-my-zsh
+zplug "lib/functions.zsh", from:oh-my-zsh
+zplug "lib/git.zsh", from:oh-my-zsh
+zplug "lib/grep.zsh", from:oh-my-zsh
+zplug "lib/history.zsh", from:oh-my-zsh
+zplug "lib/key-bindings.zsh", from:oh-my-zsh
+zplug "lib/misc.zsh", from:oh-my-zsh
+zplug "lib/spectrum.zsh", from:oh-my-zsh
+zplug "lib/termsupport.zsh", from:oh-my-zsh
+zplug "lib/theme-and-appearance.zsh", from:oh-my-zsh
+zplug "plugins/bundler", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/history", from:oh-my-zsh
+zplug "plugins/osx", from:oh-my-zsh
+zplug "plugins/redis-cli", from:oh-my-zsh
+zplug "plugins/z", from:oh-my-zsh
 zplug "$HOME/.zsh", from:local, use:"*.zsh"
 
 if ! zplug check; then
@@ -11,7 +31,3 @@ if ! zplug check; then
 fi
 
 zplug load
-
-if [ -e /usr/local/opt/zplug/repos/denysdovhan/spaceship-prompt/spaceship.zsh-theme ] && [ ! -L "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme" ]; then
-  ln -s /usr/local/opt/zplug/repos/denysdovhan/spaceship-prompt/spaceship.zsh-theme "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
-fi
