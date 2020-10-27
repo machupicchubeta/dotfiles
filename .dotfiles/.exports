@@ -47,3 +47,5 @@ export PYTHONPATH=$(if which pyenv > /dev/null; then echo -n "$(pyenv root)/shim
 
 export ENHANCD_FILTER=fzf
 export ENHANCD_DOT_ARG='~~'
+
+export GREP_OPTIONS='--color=auto'
