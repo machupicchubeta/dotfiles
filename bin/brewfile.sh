@@ -310,6 +310,7 @@ brew cask install lens
 brew cask install framer
 brew cask install kite
 brew cask install deepl
+brew cask install marvel
 
 # fonts
 brew cask install font-fira-code
