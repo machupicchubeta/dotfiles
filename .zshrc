@@ -1,5 +1,4 @@
 source $HOME/.zplugrc
-autoload -U compinit && compinit
 
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
@@ -57,6 +56,8 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
+
+autoload -U compinit && compinit
 
 # if (which zprof > /dev/null) ;then
 #   zprof | less
