@@ -11,9 +11,6 @@ select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
-autoload -Uz compinit
-compinit
-
 autoload predict-on
 zle -N predict-on
 zle -N predict-off
