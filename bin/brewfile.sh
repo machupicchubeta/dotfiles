@@ -311,6 +311,7 @@ brew cask install framer
 brew cask install kite
 brew cask install deepl
 brew cask install marvel
+brew cask install brave-browser
 
 # fonts
 brew cask install font-fira-code
