@@ -23,6 +23,7 @@ brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
 brew tap github/gh
 brew tap mongodb/brew
+brew tap clementtsang/bottom
 
 brew update
 brew upgrade --fetch-HEAD
@@ -206,6 +207,7 @@ brew install arp-scan
 brew install rustup-init
 brew install mongodb-community
 brew install aws-shell
+brew install bottom
 
 # for ruby
 brew install openssl
