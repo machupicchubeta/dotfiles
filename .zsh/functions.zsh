@@ -116,3 +116,7 @@ function extract() {
 function default_branch() {
   git checkout "$(git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@')"
 }
+
+function box_name {
+  [ -f $HOME/.box-name ] && cat $HOME/.box-name || ([[ ! -z "$SHORT_HOST" ]] && echo $SHORT_HOST) || ([[ ! -z "$HOST" ]] && echo $HOST) || hostname -s || uname -n
+}
