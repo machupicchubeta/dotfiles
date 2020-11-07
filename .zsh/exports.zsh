@@ -1,0 +1,62 @@
+ export ARCHFLAGS="-arch x86_64"
+# Make vim the default editor
+export EDITOR="vim"
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+export LESS='-R'
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+
+# Prefer US English and use UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export PATH="/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:/usr/local/opt/libressl/bin:/usr/local/opt/curl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/nss/bin:/usr/local/opt/mysql@5.7/bin:$PYTHOPATH:$HOME/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/opt/go/libexec/bin"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/man:$MANPATH"
+
+# Larger bash history (allow 2^10^2 entries; default is 500)
+export HISTSIZE=1048576
+export SAVEHIST=1048576
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+# Make some commands not show up in history
+#export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+export HISTIGNORE="history:cd:pwd:exit:date:* --help"
+
+export TERM=xterm-256color
+
+export HOMEBREW_GITHUB_API_TOKEN=
+
+export AWS_PROFILE=default
+
+export DISABLE_SPRING=1
+
+export XDG_CONFIG_HOME=~/.config
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+if which goenv > /dev/null; then eval "$(goenv init -)"; fi
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
+
+export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
+
+export PYTHONPATH=$(if which pyenv > /dev/null; then echo -n "$(pyenv root)/shims"; else '/usr/local/bin'; fi)
+
+export ENHANCD_FILTER=fzf
+export ENHANCD_DOT_ARG='~~'
+
+export GREP_OPTIONS='--color=auto'
+
+eval "$(direnv hook zsh)"
+
+fpath=($HOME/.zfunc /usr/local/opt/zsh-completions/share/zsh-completions $fpath)
+
+test -e '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' && source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'
+test -e '/usr/local/opt/fzf/shell/completion.zsh' && source '/usr/local/opt/fzf/shell/completion.zsh'
+test -e '/usr/local/opt/fzf/shell/key-bindings.zsh' && source '/usr/local/opt/fzf/shell/key-bindings.zsh'
+test -e '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh' && source '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
+test -e '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' && source '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
+test -e '/usr/local/share/zsh/site-functions/_aws' && source '/usr/local/share/zsh/site-functions/_aws'

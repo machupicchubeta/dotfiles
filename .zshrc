@@ -3,10 +3,6 @@ source $HOME/.zplugrc
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
-for file in $HOME/.dotfiles/.{exports,exports_zsh,exports_compiler_options,extra,aliases,aliases_zsh,functions,private}; do
-  [ -r "$file" ] && source "$file"
-done
-
 function box_name {
   [ -f $HOME/.box-name ] && cat $HOME/.box-name || ([[ ! -z "$SHORT_HOST" ]] && echo $SHORT_HOST) || ([[ ! -z "$HOST" ]] && echo $HOST) || hostname -s || uname -n
 }
