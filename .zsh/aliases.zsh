@@ -1,7 +1,7 @@
 alias ~="cd ~" # `cd` is probably faster to type though
 
 #proxy switching
-alias proxy='sudo ~/.dotfiles/libs/proxy.sh'
+alias proxy="sudo $HOME/bin/proxy.sh"
 
 alias gls='gls --color=auto --time-style=long-iso'
 alias gla='gls -a'
