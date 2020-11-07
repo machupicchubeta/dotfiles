@@ -5,14 +5,14 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
+if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
+if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 
-eval "$(direnv hook zsh)"
-eval $(gdircolors ~/Repositories/github.com/seebi/dircolors-solarized)
-eval "$(hub alias -s)"
+if [ -r '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' ]; then source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'; fi
+if [ -r '/usr/local/opt/fzf/shell/completion.zsh' ]; then source '/usr/local/opt/fzf/shell/completion.zsh'; fi
+if [ -r '/usr/local/opt/fzf/shell/key-bindings.zsh' ]; then source '/usr/local/opt/fzf/shell/key-bindings.zsh'; fi
+if [ -r '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh' ]; then source '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh'; fi
+if [ -r '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' ]; then source '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'; fi
+if [ -r '/usr/local/share/zsh/site-functions/_aws' ]; then source '/usr/local/share/zsh/site-functions/_aws'; fi
 
-test -e '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' && source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'
-test -e '/usr/local/opt/fzf/shell/completion.zsh' && source '/usr/local/opt/fzf/shell/completion.zsh'
-test -e '/usr/local/opt/fzf/shell/key-bindings.zsh' && source '/usr/local/opt/fzf/shell/key-bindings.zsh'
-test -e '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh' && source '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
-test -e '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' && source '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
-test -e '/usr/local/share/zsh/site-functions/_aws' && source '/usr/local/share/zsh/site-functions/_aws'
+if [ -r "$HOME/Repositories/github.com/seebi/dircolors-solarized" ]; then eval $(gdircolors "$HOME/Repositories/github.com/seebi/dircolors-solarized"); fi
