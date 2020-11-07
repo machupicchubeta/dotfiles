@@ -11,6 +11,7 @@ dist
 .vim/plugged/*
 .vim/tags
 
-.dotfiles/.private
+*/.private
+*/private.*
 
 !**/.keep
