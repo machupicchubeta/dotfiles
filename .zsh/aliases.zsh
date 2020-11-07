@@ -1,8 +1,4 @@
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....='cd ../../..'
 alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 #proxy switching
 alias proxy='sudo ~/.dotfiles/libs/proxy.sh'
@@ -15,10 +11,6 @@ alias gllh='gls -lh'
 alias glsd='gls -l | grep "^d"'
 
 alias ls='lsd'
-alias l='ls -la'
-alias la='ls -a'
-alias ll='ls -l'
-alias lla='ls -la'
 alias lt='ls --tree'
 
 alias rrf='rm -rf'
