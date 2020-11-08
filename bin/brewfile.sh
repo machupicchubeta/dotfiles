@@ -208,6 +208,7 @@ brew install rustup-init
 brew install mongodb-community
 brew install aws-shell
 brew install bottom
+brew install gibo
 
 # for ruby
 brew install openssl
