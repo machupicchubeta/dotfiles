@@ -1,4 +1,5 @@
 source $HOME/.zplugrc
+source $HOME/.zsh/hooks.zsh
 
 autoload -U compinit && compinit
 
