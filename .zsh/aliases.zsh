@@ -117,9 +117,9 @@ alias test_in_parallel='bundle && rails db:environment:set RAILS_ENV=test; rails
 alias rk='rake'
 alias rks='rake spec'
 
-alias rs='rails server -b lvh.me -p 3000'
-alias rc='rails console'
-alias rr='rails runner'
+alias rs='bin/rails server -b lvh.me -p 3000'
+alias rc='bin/rails console'
+alias rr='bin/rails runner'
 alias sidekiq='bundle exec sidekiq -C config/sidekiq.yml'
 alias sidekiq_daemon='bundle exec sidekiq -C config/sidekiq.yml -d'
 
