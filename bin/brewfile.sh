@@ -320,6 +320,19 @@ brew cask install brave-browser
 brew cask install font-fira-code
 brew cask install font-firacode-nerd-font
 brew cask install font-hack-nerd-font
+brew cask install font-victor-mono
+brew cask install font-victor-mono-nerd-font
+brew cask install font-monoid
+brew cask install font-monoid-nerd-font
+brew cask install font-lilex
+brew cask install font-iosevka
+brew cask install font-iosevka-slab
+brew cask install font-iosevka-nerd-font
+brew cask install font-hasklig
+brew cask install font-cascadia-code
+brew cask install font-cascadia-code-pl
+brew cask install font-jetbrains-mono
+brew cask install font-jetbrains-mono-nerd-font
 
 # xquartz required
 brew install diff-pdf
