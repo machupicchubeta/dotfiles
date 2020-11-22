@@ -154,3 +154,5 @@ if !has('nvim')
   " Allow cursor keys in insert mode
   set esckeys
 endif
+
+set backupcopy=yes
