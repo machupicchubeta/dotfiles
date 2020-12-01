@@ -16,3 +16,5 @@ if [ -r '/usr/local/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zs
 if [ -r '/usr/local/share/zsh/site-functions/_aws' ]; then source '/usr/local/share/zsh/site-functions/_aws'; fi
 
 if [ -r "$HOME/Repositories/github.com/seebi/dircolors-solarized" ]; then eval $(gdircolors "$HOME/Repositories/github.com/seebi/dircolors-solarized"); fi
+
+preexec() { print '' }
