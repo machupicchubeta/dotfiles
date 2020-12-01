@@ -7,6 +7,7 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 if which hub > /dev/null; then eval "$(hub alias -s)"; fi
+if which zoxide > /dev/null; then eval "$(zoxide init zsh)"; fi
 
 if [ -r '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' ]; then source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'; fi
 if [ -r '/usr/local/opt/fzf/shell/completion.zsh' ]; then source '/usr/local/opt/fzf/shell/completion.zsh'; fi

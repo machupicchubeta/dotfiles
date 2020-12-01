@@ -213,6 +213,7 @@ brew install tldr
 brew install fd
 brew install ripgrep
 brew install rga
+brew install zoxide
 
 # for ruby
 brew install openssl
