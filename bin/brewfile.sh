@@ -216,6 +216,7 @@ brew install rga
 brew install zoxide
 brew install exa
 brew install bat
+brew install git-delta
 
 # for ruby
 brew install openssl
