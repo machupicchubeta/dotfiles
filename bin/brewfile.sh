@@ -214,6 +214,7 @@ brew install fd
 brew install ripgrep
 brew install rga
 brew install zoxide
+brew install exa
 
 # for ruby
 brew install openssl
