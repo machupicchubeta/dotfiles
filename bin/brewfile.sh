@@ -210,6 +210,7 @@ brew install aws-shell
 brew install bottom
 brew install gibo
 brew install tldr
+brew install fd
 
 # for ruby
 brew install openssl
