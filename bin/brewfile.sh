@@ -209,6 +209,7 @@ brew install mongodb-community
 brew install aws-shell
 brew install bottom
 brew install gibo
+brew install tldr
 
 # for ruby
 brew install openssl
