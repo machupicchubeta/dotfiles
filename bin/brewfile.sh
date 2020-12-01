@@ -211,6 +211,7 @@ brew install bottom
 brew install gibo
 brew install tldr
 brew install fd
+brew install ripgrep
 
 # for ruby
 brew install openssl
