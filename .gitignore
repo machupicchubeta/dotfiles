@@ -10,6 +10,7 @@ dist
 .vim/autoload/*
 .vim/plugged/*
 .vim/tags
+.vim/pack/*
 
 */.private
 */private.*
