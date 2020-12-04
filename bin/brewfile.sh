@@ -212,6 +212,7 @@ brew install gibo
 brew install tldr
 brew install fd
 brew install ripgrep
+brew install rga
 
 # for ruby
 brew install openssl
