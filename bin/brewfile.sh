@@ -117,7 +117,6 @@ brew install sshrc
 brew install v8
 brew install git-secrets
 brew install sslscan
-brew install diff-so-fancy
 brew install wireshark
 brew install git-when-merged
 brew install fortune
