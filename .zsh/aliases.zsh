@@ -160,3 +160,6 @@ elif which putclip >/dev/null 2>&1 ; then
     # Cygwin
     alias -g C='| putclip'
 fi
+
+alias k='exa -l --time-style=long-iso --group --binary --color always --icons -a -a -s type  --group-directories-first'
+alias kk='exa -l --time-style=long-iso --group --binary --color always --icons -a -a -s type --group-directories-first'
