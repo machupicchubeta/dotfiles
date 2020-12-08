@@ -110,7 +110,6 @@ brew install goenv
 brew install slackcat
 brew install lame
 brew install vault
-brew install googler
 brew install translate-shell
 brew install yank
 brew install sshrc
