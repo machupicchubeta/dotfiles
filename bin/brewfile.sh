@@ -341,8 +341,5 @@ brew cask install font-cascadia-code-pl
 brew cask install font-jetbrains-mono
 brew cask install font-jetbrains-mono-nerd-font
 
-# xquartz required
-brew install diff-pdf
-
 brew cu --all --cleanup --yes
 brew cleanup --prune=0 -s
