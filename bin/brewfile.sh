@@ -273,8 +273,6 @@ brew cask install betterzip
 brew cask install suspicious-package
 brew cask install packages
 brew cask install qlcolorcode
-brew cask install qlimagesize
-brew cask install mdimagesizemdimporter
 brew cask install gyazo
 brew cask install 0xed
 brew cask install alfred
