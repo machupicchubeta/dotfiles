@@ -262,7 +262,6 @@ brew install --cask google-hangouts
 brew install --cask dash
 brew install --cask reflector
 brew install --cask disk-inventory-x
-brew install --cask itrash
 brew install --cask cyberduck
 brew install --cask inssider
 brew install --cask qlstephen
