@@ -170,3 +170,6 @@ alias pss='procs'
 alias sedd='sd'
 
 alias lzd='lazydocker'
+
+alias lg='lazygit'
+alias lzg='lazygit'
