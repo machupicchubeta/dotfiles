@@ -166,3 +166,5 @@ alias bbb='bat --show-all --theme="Solarized (dark)"'
 alias bbb_="bat --show-all --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo \"Solarized (dark)\")"
 
 alias pss='procs'
+
+alias sedd='sd'
