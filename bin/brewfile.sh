@@ -216,6 +216,7 @@ brew install bat
 brew install git-delta
 brew install procs
 brew install sd
+brew install lazydocker
 
 # for ruby
 brew install openssl

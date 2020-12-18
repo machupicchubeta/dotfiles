@@ -168,3 +168,5 @@ alias bbb_="bat --show-all --theme=\$(defaults read -globalDomain AppleInterface
 alias pss='procs'
 
 alias sedd='sd'
+
+alias lzd='lazydocker'
