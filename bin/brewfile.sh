@@ -215,6 +215,7 @@ brew install exa
 brew install bat
 brew install git-delta
 brew install procs
+brew install sd
 
 # for ruby
 brew install openssl
