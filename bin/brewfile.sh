@@ -340,6 +340,7 @@ brew install --cask font-cascadia-code
 brew install --cask font-cascadia-code-pl
 brew install --cask font-jetbrains-mono
 brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-source-han-code-jp
 
 brew cu --all --cleanup --yes
 brew cleanup --prune=0 -s
