@@ -322,6 +322,7 @@ brew install --cask deepl
 brew install --cask marvel
 brew install --cask brave-browser
 brew install --cask raindropio
+brew install --cask postman
 
 # fonts
 brew install --cask font-fira-code
