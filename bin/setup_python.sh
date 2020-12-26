@@ -8,11 +8,8 @@ pyenv rehash
 
 eval "$(pyenv init -)"
 
-# pip
-pip install --upgrade pip
-
-# pip3
-pip3 install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade pip
+pip3 install --upgrade setuptools wheel
 pip3 list --outdated | awk 'NR>2{print $1}' | xargs pip3 install --upgrade
 pip3 install cfn-lint
 pip3 install pynvim
