@@ -248,7 +248,6 @@ brew install --cask vagrant
 brew install --cask virtualbox
 brew install --cask firefox
 brew install --cask firefox-developer-edition
-brew install --cask flash-npapi
 brew install --cask evernote
 brew install --cask slack
 brew install --cask skitch
