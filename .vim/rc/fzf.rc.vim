@@ -141,3 +141,4 @@ function! s:fzf_statusline()
 endfunction
 
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
+set rtp+=/usr/local/opt/fzf
