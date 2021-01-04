@@ -63,7 +63,6 @@ brew install source-highlight
 brew install macvim
 brew unlink macvim
 brew install vim
-brew link vim
 brew install luarocks
 brew install neovim
 brew install bash-completion
