@@ -168,4 +168,5 @@ alias lzd='lazydocker'
 alias lg='lazygit'
 alias lzg='lazygit'
 
-alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
+# alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
+alias brew='env PATH=${PATH/$HOME\/\.pyenv\/shims:/} brew'
