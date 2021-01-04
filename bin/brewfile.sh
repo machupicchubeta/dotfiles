@@ -115,7 +115,6 @@ brew install sshrc
 brew install v8
 brew install git-secrets
 brew install sslscan
-brew install wireshark
 brew install git-when-merged
 brew install fortune
 brew install cowsay
@@ -288,6 +287,7 @@ brew install --cask vlc
 brew install --cask chrome-remote-desktop-host
 brew install --cask vivaldi
 brew install --cask lacona
+brew install --cask wireshark
 brew install --cask wireshark-chmodbpf
 brew install --cask sketch
 brew install --cask flinto
