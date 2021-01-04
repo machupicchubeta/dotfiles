@@ -111,7 +111,6 @@ brew install slackcat
 brew install lame
 brew install vault
 brew install yank
-brew install sshrc
 brew install v8
 brew install git-secrets
 brew install sslscan
