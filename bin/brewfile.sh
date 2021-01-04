@@ -25,6 +25,8 @@ brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
 
+brew unlink macvim
+brew unlink vim
 brew update
 brew upgrade --fetch-HEAD
 
@@ -58,11 +60,9 @@ brew install zsh-syntax-highlighting
 brew install zplug
 brew install terminal-notifier
 brew install source-highlight
-brew unlink vim
 brew install macvim
 brew unlink macvim
 brew install vim
-brew link vim
 brew install luarocks
 brew install neovim
 brew install bash-completion
