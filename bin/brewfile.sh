@@ -154,7 +154,6 @@ brew install terragrunt
 brew install kibana
 brew install protobuf
 brew install pv
-brew install ccze
 brew install git-secrets
 brew install testssl
 brew install kubernetes-cli
