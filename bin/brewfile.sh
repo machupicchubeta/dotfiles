@@ -178,7 +178,6 @@ brew install elixir
 brew install elm
 brew install erlang
 brew install ghostscript
-brew install json11
 brew install duck
 brew install doctl
 brew install git-quick-stats
