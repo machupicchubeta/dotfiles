@@ -87,7 +87,6 @@ brew install screen
 brew install reattach-to-user-namespace
 # brew install gnupg
 brew install grc
-brew install rmtrash
 brew install tor
 brew install nkf
 brew install automake
