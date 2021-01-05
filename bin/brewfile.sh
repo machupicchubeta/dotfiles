@@ -36,13 +36,56 @@ brew install --cask java
 brew install --cask adoptopenjdk8
 brew install sleuthkit
 
-brew install cmake
+# GNU command line tools
+brew install coreutils
+brew install binutils
+brew install diffutils
+brew install ed
+brew install findutils
+brew install gawk
+brew install gnu-indent
+brew install gnu-sed
+brew install gnu-tar
+brew install gnu-which
+brew install gnutls
+brew install gnu-getopt
+brew install grep
+brew install gzip
+brew install screen
+brew install watch
+brew install wdiff
+brew install wget
+brew install bash
+brew install emacs
+brew install gdb
+brew install gpatch
+brew install less
+brew install m4
+brew install make
+brew install nano
+
+# use a newer version instead of the version shipped by macOS
+brew install file-formula
 brew install git
+# brew install openssh # Kick out "openssh"; d911522cc87c65ecef011e3bb2d58574e97bcae7
+brew install perl
+brew install python
+brew install rsync
+brew install svn
+brew install unzip
+brew install macvim
+brew unlink macvim
+brew install vim
+brew install zsh
+brew install curl
+brew install sqlite
+brew install sl
+brew install zlib
+
+brew install cmake
 brew install tig
 brew install hub
 brew install git-lfs
-brew install wget
-brew install curl
 brew install mysql
 brew install redis
 brew install memcached
@@ -50,9 +93,7 @@ brew install node
 brew install node-build --HEAD
 brew install nodenv
 brew install watchman
-brew install sqlite
 brew install z
-brew install zsh
 brew install zsh-completions
 brew install zsh-navigation-tools
 brew install zsh-autosuggestions
@@ -60,30 +101,21 @@ brew install zsh-syntax-highlighting
 brew install zplug
 brew install terminal-notifier
 brew install source-highlight
-brew install macvim
-brew unlink macvim
-brew install vim
 brew install luarocks
 brew install neovim
 brew install bash-completion
 brew install imagemagick
-brew install sl
 brew install gti
-brew install bash
 brew install heroku
 brew install pyenv
 brew install jq
 brew install ansible
-brew install watch
 brew install direnv
-brew install coreutils
-brew install gnu-sed
 brew install ttyrec
 brew install dnsmasq
 brew install ag
 brew install spark
 brew install tmux
-brew install screen
 brew install reattach-to-user-namespace
 # brew install gnupg
 brew install grc
@@ -184,7 +216,6 @@ brew install elasticsearch
 brew install peco
 brew install fzf
 brew install coffeescript
-brew install zlib
 brew install awscli
 brew install whois
 brew install bettercap
