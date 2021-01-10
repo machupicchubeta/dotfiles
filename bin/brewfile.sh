@@ -25,8 +25,10 @@ brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
 
-brew unlink macvim
 brew unlink vim
+brew upgrade macvim
+brew unlink macvim
+brew upgrade vim
 brew update
 brew upgrade --fetch-HEAD
 
