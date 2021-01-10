@@ -322,7 +322,6 @@ brew install --cask flinto
 brew install --cask blisk
 brew install --cask gitter
 brew install --cask flux
-brew install --cask gpg-suite
 brew install --cask fliqlo
 brew install --cask google-earth-pro
 brew install --cask zoomus
