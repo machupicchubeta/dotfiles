@@ -119,7 +119,7 @@ brew install ag
 brew install spark
 brew install tmux
 brew install reattach-to-user-namespace
-# brew install gnupg
+brew install gnupg
 brew install grc
 brew install tor
 brew install nkf
@@ -170,7 +170,6 @@ brew install sqlmap
 brew install rust
 brew install plenv
 brew install shyaml
-brew install gpg
 brew install shellcheck
 brew install ghq
 brew install flow
