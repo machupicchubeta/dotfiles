@@ -139,7 +139,7 @@ brew install postgresql
 brew install parallel
 brew install nmap
 brew install go
-brew install goenv
+brew install goenv --HEAD
 brew install slackcat
 brew install lame
 brew install vault
