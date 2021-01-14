@@ -257,11 +257,8 @@ brew install libressl
 
 # for nokogiri
 brew install libxml2
-brew unlink libxml2
 brew install libxslt
-brew unlink libxslt
 brew install libiconv
-brew unlink libiconv
 
 # cask
 brew install --cask 1password
