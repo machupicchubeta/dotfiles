@@ -5,7 +5,6 @@ gem-browse
 refe2
 parser --pre
 rubocop --pre
-git-gsub
 gem-ctags
 fastri
 review
