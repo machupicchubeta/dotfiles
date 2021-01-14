@@ -7,3 +7,5 @@ goenv global $latest_go_version
 goenv rehash
 
 eval "$(goenv init -)"
+
+go get github.com/fujimura/git-gsub
