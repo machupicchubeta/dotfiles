@@ -84,6 +84,7 @@ brew install sqlite
 brew install sl
 brew install zlib
 
+brew install gcc
 brew install cmake
 brew install tig
 brew install hub
