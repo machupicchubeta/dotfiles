@@ -29,6 +29,7 @@ brew unlink vim
 brew upgrade macvim
 brew unlink macvim
 brew upgrade vim
+brw link vim
 brew update
 brew upgrade --fetch-HEAD
 
