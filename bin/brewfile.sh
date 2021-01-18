@@ -190,7 +190,6 @@ brew install protobuf
 brew install pv
 brew install git-secrets
 brew install testssl
-brew install kubernetes-cli
 brew install kubernetes-helm
 brew install gradle
 brew install azure-cli
