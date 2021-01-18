@@ -24,6 +24,7 @@ brew tap heroku/brew
 brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
+brew tap elastic/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -185,7 +186,6 @@ brew install firebase-cli
 brew install logrotate
 brew install pre-commit
 brew install terragrunt
-brew install kibana
 brew install protobuf
 brew install pv
 brew install git-secrets
@@ -214,7 +214,6 @@ brew install ghostscript
 brew install duck
 brew install doctl
 brew install git-quick-stats
-brew install elasticsearch
 brew install peco
 brew install fzf
 brew install coffeescript
@@ -246,6 +245,8 @@ brew install procs
 brew install sd
 brew install lazydocker
 brew install lazygit
+brew install elasticsearch-full
+brew install kibana-full
 
 # for ruby
 brew install openssl
