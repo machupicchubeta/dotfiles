@@ -127,7 +127,6 @@ brew install grc
 brew install tor
 brew install nkf
 brew install automake
-brew install fontforge
 brew install p7zip
 brew install pick
 brew install docutils
@@ -348,6 +347,7 @@ brew install --cask brave-browser
 brew install --cask raindropio
 brew install --cask postman
 brew install --cask messenger
+brew install --cask fontforge
 
 # fonts
 brew install --cask font-fira-code
