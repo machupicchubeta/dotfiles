@@ -51,7 +51,6 @@ export ENHANCD_DOT_ARG='~~'
 
 export GREP_OPTIONS='--color=auto'
 
-
 test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completion'
 test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
 test -e '/usr/local/opt/fzf/shell/key-bindings.bash' && source '/usr/local/opt/fzf/shell/key-bindings.bash'
