@@ -14,7 +14,7 @@ export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/opt/libxml2/bin:/usr/local/opt/libxslt/bin:/usr/local/opt/libiconv/bin:/usr/local/opt/openssl/lib:/usr/local/opt/openssl/include:/usr/local/opt/openssl/bin:/usr/local/opt/libressl/bin:/usr/local/opt/curl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/nss/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/opt/go/libexec/bin"
+export PATH="/usr/local/opt/libxml2/bin:/usr/local/opt/libxslt/bin:/usr/local/opt/libiconv/bin:/usr/local/opt/openssl/bin:/usr/local/opt/libressl/bin:/usr/local/opt/curl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/nss/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/opt/go/libexec/bin"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/man:$MANPATH"
 
 # Larger bash history (allow 2^10^2 entries; default is 500)
