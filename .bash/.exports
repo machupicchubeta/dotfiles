@@ -44,7 +44,7 @@ if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
 
 export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
 
-export PYTHONPATH=$(if which pyenv > /dev/null; then echo -n "$(pyenv root)/shims"; else '/usr/local/bin'; fi)
+export PYTHONPATH=$(if [ -d "$HOME/.pyenv/shims" ]; then echo "$HOME/.pyenv/shims"; elif [ -d '/usr/local/opt/python/libexec/bin' ]; then '/usr/local/opt/python/libexec/bin'; else '/usr/bin/python'; fi)
 
 export ENHANCD_FILTER=fzf
 export ENHANCD_DOT_ARG='~~'
