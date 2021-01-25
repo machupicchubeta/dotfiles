@@ -321,7 +321,7 @@ brew install --cask gitter
 brew install --cask flux
 brew install --cask fliqlo
 brew install --cask google-earth-pro
-brew install --cask zoomus
+brew install --cask zoom
 brew install --cask spotify
 brew install --cask chromedriver
 brew install --cask microsoft-remote-desktop-beta
