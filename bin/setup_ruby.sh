@@ -1,8 +1,6 @@
 #!/bin/bash
 set -eu
 
-sudo xcode-select -s /Library/Developer/CommandLineTools
-
 latest_ruby_version=$(rbenv install -l | grep --perl-regexp '^(\d+\.\d+)\.\d+$' | tail -n 1)
 rbenv install --skip-existing $latest_ruby_version
 rbenv global $latest_ruby_version

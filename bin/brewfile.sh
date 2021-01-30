@@ -5,9 +5,6 @@ sudo chown -R $(whoami):admin $(brew --prefix)/*
 cd $(brew --repository) && git checkout master
 brew install mas
 mas install 497799835 # Xcode
-sudo xcodebuild -license
-xcode-select --install
-
 mas install 411213048 # LadioCast
 mas install 1284863847 # Unsplash Wallpapers
 
