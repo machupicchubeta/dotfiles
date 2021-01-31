@@ -51,6 +51,13 @@
   ps- = "!f() { git push $1 $(git bn); }; f"
   psfo = !git push --force-with-lease origin $(git bn)
   psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
+  show-default-branch = "!f() { git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'; }; f"
+  checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
+  db = !git checkout-default-branch
+  prr-upstream = "!f() { git checkout $(git show-default-branch) && git pull --rebase --prune upstream $(git show-default-branch); }; f"
+  ch- = "!f() { git checkout $(git branch | grep -v \"`git show-default-branch`\" | fzf); }; f"
+  chb-origin = "!f() { git branch -r | grep origin | grep -v \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
+  chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
 [color]
   ui = true
 [apply]
