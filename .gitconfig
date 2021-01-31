@@ -46,10 +46,11 @@
   pull--request = browse-remote --pr
   release-branch = !git checkout -b release_$(date +%Y%m%d_%H%M)
   release-tag = !git tag RELEASE_$(date +%Y%m%d_%H%M)
-  pso = !git push origin $(git branch --show-current)
-  ps- = "!f() { git push $1 $(git branch --show-current); }; f"
-  psfo = !git push --force-with-lease origin $(git branch --show-current)
-  psf- = "!f() { git push --force-with-lease $1 $(git branch --show-current); }; f"
+  bn = !git branch --show-current
+  pso = !git push origin $(git bn)
+  ps- = "!f() { git push $1 $(git bn); }; f"
+  psfo = !git push --force-with-lease origin $(git bn)
+  psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
 [color]
   ui = true
 [apply]
