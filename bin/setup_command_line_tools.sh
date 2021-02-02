@@ -3,7 +3,7 @@ set -eu
 
 COMMAND_LINE_TOOLS_PATH='/Library/Developer/CommandLineTools'
 if [[ $(xcode-select --print-path) != "$COMMAND_LINE_TOOLS_PATH" ]]; then
-  rm -rf "$COMMAND_LINE_TOOLS_PATH"
+  sudo rm -rf "$COMMAND_LINE_TOOLS_PATH"
   xcode-select --install
   sudo xcode-select -s "$COMMAND_LINE_TOOLS_PATH"
 fi
