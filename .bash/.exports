@@ -53,6 +53,8 @@ export GREP_OPTIONS='--color=auto'
 
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
 
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl"
+
 test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completion'
 test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
 test -e '/usr/local/opt/fzf/shell/key-bindings.bash' && source '/usr/local/opt/fzf/shell/key-bindings.bash'

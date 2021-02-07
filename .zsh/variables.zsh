@@ -48,6 +48,8 @@ export GREP_OPTIONS='--color=auto'
 
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
 
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl"
+
 # spaceship-prompt
 export SPACESHIP_TIME_SHOW=true
 export SPACESHIP_TIME_FORMAT="%D{%Y-%m-%d %H:%M:%S.%. %z}"
