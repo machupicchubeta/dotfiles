@@ -1,6 +1,3 @@
-_PID=$$; _PPID=$(ps -o ppid -p $_PID | tail -n 1)
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-
 export ARCHFLAGS="-arch x86_64"
 # Make vim the default editor
 export EDITOR="vim"
