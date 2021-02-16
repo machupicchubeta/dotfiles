@@ -238,6 +238,7 @@ brew install elasticsearch-full
 brew install kibana-full
 brew install openjdk
 brew install sleuthkit
+brew install robotsandpencils/made/xcodes
 
 # for ruby
 brew install openssl
