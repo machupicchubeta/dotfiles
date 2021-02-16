@@ -13,7 +13,6 @@ brew tap homebrew/cask-versions
 brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma
-brew tap kylef/formulae
 brew tap homebrew/cask-fonts
 brew tap buo/cask-upgrade
 brew tap universal-ctags/universal-ctags
@@ -154,7 +153,6 @@ brew install cheat
 brew install ripgrep
 brew install ios-sim
 brew install swift
-brew install swiftenv
 brew install swiftlint
 brew install terraform
 brew install x265
