@@ -32,9 +32,7 @@ brew update
 brew upgrade --fetch-HEAD
 
 # sleuthkit
-brew install --cask adoptopenjdk
 brew install --cask java
-brew install --cask adoptopenjdk8
 brew install sleuthkit
 
 # GNU command line tools
@@ -326,8 +324,6 @@ brew install --cask microsoft-remote-desktop-beta
 brew install --cask dotnet
 brew install --cask visual-studio
 brew install --cask visual-studio-code
-brew install --cask android-sdk
-brew install --cask android-studio
 brew install --cask dynamodb-local
 brew install --cask phantomjs
 brew install --cask discord
