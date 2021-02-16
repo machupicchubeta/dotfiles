@@ -31,10 +31,6 @@ brew link vim
 brew update
 brew upgrade --fetch-HEAD
 
-# sleuthkit
-brew install --cask java
-brew install sleuthkit
-
 # GNU command line tools
 brew install coreutils
 brew install binutils
@@ -242,6 +238,8 @@ brew install lazydocker
 brew install lazygit
 brew install elasticsearch-full
 brew install kibana-full
+brew install openjdk
+brew install sleuthkit
 
 # for ruby
 brew install openssl
