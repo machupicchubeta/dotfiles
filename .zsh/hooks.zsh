@@ -4,7 +4,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 if which zoxide > /dev/null; then eval "$(zoxide init zsh)"; fi
