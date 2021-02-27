@@ -317,7 +317,6 @@ brew install --cask google-earth-pro
 brew install --cask zoom
 brew install --cask spotify
 brew install --cask chromedriver
-brew install --cask microsoft-remote-desktop-beta
 brew install --cask dotnet
 brew install --cask visual-studio
 brew install --cask visual-studio-code
