@@ -34,8 +34,6 @@ export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME=~/.config
 
-export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
-
 export PYTHONPATH=$(if [ -d "$HOME/.pyenv/shims" ]; then echo "$HOME/.pyenv/shims"; elif [ -d '/usr/local/opt/python/libexec/bin' ]; then '/usr/local/opt/python/libexec/bin'; else '/usr/bin/python'; fi)
 
 export ENHANCD_FILTER=fzf
