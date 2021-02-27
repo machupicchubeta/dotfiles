@@ -294,7 +294,6 @@ brew install --cask suspicious-package
 brew install --cask packages
 brew install --cask qlcolorcode
 brew install --cask gyazo
-brew install --cask 0xed
 brew install --cask alfred
 brew install --cask githubpulse
 brew install --cask github
