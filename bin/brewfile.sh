@@ -279,7 +279,6 @@ brew install --cask atom
 brew install --cask encryptme
 brew install --cask karabiner-elements
 brew install --cask slate
-brew install --cask google-hangouts
 brew install --cask dash
 brew install --cask reflector
 brew install --cask disk-inventory-x
