@@ -308,7 +308,6 @@ brew install --cask vivaldi
 brew install --cask lacona
 brew install --cask wireshark
 brew install --cask sketch
-brew install --cask flinto
 brew install --cask blisk
 brew install --cask gitter
 brew install --cask flux
