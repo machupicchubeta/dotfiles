@@ -150,7 +150,6 @@ brew install pow
 brew install yarn
 brew install nss
 brew install cheat
-brew install ripgrep
 brew install ios-sim
 brew install swift
 brew install swiftlint
