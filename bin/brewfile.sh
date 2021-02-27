@@ -3,6 +3,7 @@ set -u
 
 sudo chown -R $(whoami):admin $(brew --prefix)/*
 cd $(brew --repository) && git checkout master
+
 brew install mas
 mas install 497799835 # Xcode
 mas install 411213048 # LadioCast
@@ -238,22 +239,20 @@ brew install kibana-full
 brew install openjdk
 brew install sleuthkit
 brew install robotsandpencils/made/xcodes
+brew install libressl
 
-# for ruby
+# For Ruby
 brew install openssl
 brew install readline
 brew install ruby-build
 brew install rbenv
 brew install rbenv-default-gems
 
-brew install libressl
-
-# for nokogiri
+# For Nokogiri gem
 brew install libxml2
 brew install libxslt
 brew install libiconv
 
-# cask
 brew install --cask 1password
 brew install --cask 1password-cli
 brew install --cask iterm2
@@ -335,7 +334,6 @@ brew install --cask postman
 brew install --cask messenger
 brew install --cask fontforge
 
-# fonts
 brew install --cask font-fira-code
 brew install --cask font-firacode-nerd-font
 brew install --cask font-hack-nerd-font
