@@ -1,5 +1,0 @@
-eval "$(hub alias -s)"
-
-eval $(gdircolors ~/Repositories/github.com/seebi/dircolors-solarized)
-
-ssh-add -A &> /dev/null

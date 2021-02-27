@@ -33,14 +33,6 @@ export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME=~/.config
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which plenv > /dev/null; then eval "$(plenv init -)"; fi
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-if which goenv > /dev/null; then eval "$(goenv init -)"; fi
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
-
 export ANDROID_SDK_ROOT='/usr/local/share/android-sdk'
 
 export PYTHONPATH=$(if [ -d "$HOME/.pyenv/shims" ]; then echo "$HOME/.pyenv/shims"; elif [ -d '/usr/local/opt/python/libexec/bin' ]; then '/usr/local/opt/python/libexec/bin'; else '/usr/bin/python'; fi)
@@ -53,7 +45,3 @@ export GREP_OPTIONS='--color=auto'
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl"
-
-test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completion'
-test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
-test -e '/usr/local/opt/fzf/shell/key-bindings.bash' && source '/usr/local/opt/fzf/shell/key-bindings.bash'
