@@ -325,7 +325,7 @@ brew install --cask phantomjs
 brew install --cask discord
 brew install --cask aerial
 brew install --cask figma
-brew install --cask miro-formerly-realtimeboard
+brew install --cask miro
 brew install --cask amazon-chime
 brew install --cask osquery
 brew install --cask lens
