@@ -295,7 +295,6 @@ brew install --cask alfred
 brew install --cask githubpulse
 brew install --cask github
 brew install --cask paparazzi
-brew install --cask box-sync
 brew install --cask google-chrome-canary
 brew install --cask soundflower
 brew install --cask vlc
@@ -336,6 +335,9 @@ brew install --cask fontforge
 brew install --cask microsoft-office
 brew install --cask microsoft-outlook
 brew install --cask zoom-outlook-plugin
+brew install --cask box-sync
+brew install --cask box-drive
+brew install --cask box-notes
 
 brew install --cask font-fira-code
 brew install --cask font-firacode-nerd-font
