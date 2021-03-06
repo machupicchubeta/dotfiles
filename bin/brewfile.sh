@@ -333,6 +333,9 @@ brew install --cask raindropio
 brew install --cask postman
 brew install --cask messenger
 brew install --cask fontforge
+brew install --cask microsoft-office
+brew install --cask microsoft-outlook
+brew install --cask zoom-outlook-plugin
 
 brew install --cask font-fira-code
 brew install --cask font-firacode-nerd-font
