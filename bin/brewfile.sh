@@ -338,6 +338,7 @@ brew install --cask zoom-outlook-plugin
 brew install --cask box-sync
 brew install --cask box-drive
 brew install --cask box-notes
+brew install --cask drawio
 
 brew install --cask font-fira-code
 brew install --cask font-firacode-nerd-font
