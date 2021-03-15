@@ -240,6 +240,7 @@ brew install openjdk
 brew install sleuthkit
 brew install robotsandpencils/made/xcodes
 brew install libressl
+brew install graphicsmagick
 
 # For Ruby
 brew install openssl
