@@ -22,6 +22,7 @@ brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
 brew tap elastic/tap
+brew tap eugenmayer/dockersync
 
 brew unlink vim
 brew upgrade macvim
@@ -241,6 +242,9 @@ brew install sleuthkit
 brew install robotsandpencils/made/xcodes
 brew install libressl
 brew install graphicsmagick
+brew install unox
+brew install fswatch
+brew install unison
 
 # For Ruby
 brew install openssl
