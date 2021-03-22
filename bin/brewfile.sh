@@ -23,6 +23,7 @@ brew tap mongodb/brew
 brew tap clementtsang/bottom
 brew tap elastic/tap
 brew tap eugenmayer/dockersync
+brew tap nodenv/nodenv
 
 brew unlink vim
 brew upgrade macvim
@@ -245,6 +246,7 @@ brew install graphicsmagick
 brew install unox
 brew install fswatch
 brew install unison
+brew install nodenv-package-json-engine
 
 # For Ruby
 brew install openssl
