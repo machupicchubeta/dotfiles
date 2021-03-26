@@ -247,6 +247,7 @@ brew install unox
 brew install fswatch
 brew install unison
 brew install nodenv-package-json-engine
+brew install shared-mime-info
 
 # For Ruby
 brew install openssl
