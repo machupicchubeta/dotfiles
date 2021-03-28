@@ -344,6 +344,7 @@ brew install --cask microsoft-office
 brew install --cask box-drive
 brew install --cask box-notes
 brew install --cask drawio
+brew install --cask coscreen
 
 brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
