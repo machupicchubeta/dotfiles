@@ -248,6 +248,7 @@ brew install fswatch
 brew install unison
 brew install nodenv-package-json-engine
 brew install shared-mime-info
+brew install graphviz
 
 # For Ruby
 brew install openssl
