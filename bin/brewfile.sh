@@ -24,6 +24,7 @@ brew tap clementtsang/bottom
 brew tap elastic/tap
 brew tap eugenmayer/dockersync
 brew tap nodenv/nodenv
+brew tap spectralops/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -249,6 +250,7 @@ brew install unison
 brew install nodenv-package-json-engine
 brew install shared-mime-info
 brew install graphviz
+brew install teller
 
 # For Ruby
 brew install openssl
