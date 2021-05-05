@@ -10,8 +10,6 @@ test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completi
 test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
 test -e '/usr/local/opt/fzf/shell/key-bindings.bash' && source '/usr/local/opt/fzf/shell/key-bindings.bash'
 
-eval "$(hub alias -s)"
-
 eval $(gdircolors ~/Repositories/github.com/seebi/dircolors-solarized)
 
 ssh-add -A &> /dev/null
