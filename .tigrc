@@ -1,0 +1,1 @@
+bind main H !@bash -c "cut -c-7 <<<%(commit) | xargs echo -n | pbcopy"
