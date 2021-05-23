@@ -41,6 +41,7 @@
   l1 = ! git log --oneline --color | emojify | less -r
   g = grep
   fixup = commit --amend -C HEAD
+  auto-fixup = "!f() { TARGET=$(git rev-parse \"$1\"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
   topic-branch = "!f() { git-topic-branch }; f"
   backup = "!f() { git-backup }; f"
   pull--request = browse-remote --pr
