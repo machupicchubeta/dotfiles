@@ -171,4 +171,4 @@ alias lg='lazygit'
 alias lzg='lazygit'
 
 # alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
-alias brew='env PATH=${PATH/$HOME\/\.pyenv\/shims:/} brew'
+alias brew='env PATH=${PATH/$PYENV_ROOT\/shims:/} brew'

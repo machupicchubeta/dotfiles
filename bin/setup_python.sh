@@ -6,7 +6,7 @@ pyenv install --skip-existing $latest_python3_version
 pyenv global $latest_python3_version
 pyenv rehash
 
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 python3 -m pip install --upgrade pip
 pip3 install --upgrade setuptools wheel
