@@ -251,6 +251,7 @@ brew install nodenv-package-json-engine
 brew install shared-mime-info
 brew install graphviz
 brew install teller
+brew install screenfetch
 
 # For Ruby
 brew install openssl
