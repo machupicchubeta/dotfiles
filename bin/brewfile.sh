@@ -25,6 +25,7 @@ brew tap elastic/tap
 brew tap eugenmayer/dockersync
 brew tap nodenv/nodenv
 brew tap spectralops/tap
+brew tap hashicorp/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -157,7 +158,6 @@ brew install cheat
 brew install ios-sim
 brew install swift
 brew install swiftlint
-brew install terraform
 brew install x265
 brew install puma-dev
 brew install stunnel
@@ -252,6 +252,7 @@ brew install shared-mime-info
 brew install graphviz
 brew install teller
 brew install screenfetch
+brew install hashicorp/tap/terraform
 
 # For Ruby
 brew install openssl
