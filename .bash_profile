@@ -14,3 +14,4 @@ shopt -s nocaseglob
 complete -W "NSGlobalDomain" defaults
 
 complete -C aws_completer aws
+complete -C /usr/local/bin/terraform terraform
