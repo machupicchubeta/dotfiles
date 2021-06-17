@@ -253,6 +253,7 @@ brew install graphviz
 brew install teller
 brew install screenfetch
 brew install hashicorp/tap/terraform
+brew install tfenv
 
 # For Ruby
 brew install openssl
