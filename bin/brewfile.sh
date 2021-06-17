@@ -32,6 +32,11 @@ brew upgrade macvim
 brew unlink macvim
 brew upgrade vim
 brew link vim
+brew unlink hashicorp/tap/terraform
+brew upgrade tfenv
+brew unlink tfenv
+brew upgrade hashicorp/tap/terraform
+brew link hashicorp/tap/terraform
 brew update
 brew upgrade --fetch-HEAD
 
