@@ -16,4 +16,6 @@ if [ -r '/usr/local/share/zsh/site-functions/_aws' ]; then source '/usr/local/sh
 
 if [ -r "$HOME/Repositories/github.com/seebi/dircolors-solarized" ]; then eval $(gdircolors "$HOME/Repositories/github.com/seebi/dircolors-solarized"); fi
 
+complete -o nospace -C /usr/local/bin/terraform terraform
+
 preexec() { print '' }
