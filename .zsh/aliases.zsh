@@ -53,6 +53,7 @@ alias doc="cd ~/Documents"
 alias download="cd ~/Downloads"
 alias repo="cd ~/Repositories"
 alias repos='cd $(ghq root)/$(ghq list | fzf)'
+alias rp='cd $(ghq root)/$(ghq list | fzf)'
 alias remote_repos='hub browse $(ghq list | fzf | cut -d "/" -f 2,3)'
 alias dotfiles="cd ~/Repositories/github.com/machupicchubeta/dotfiles"
 alias bin="cd ~/bin"
