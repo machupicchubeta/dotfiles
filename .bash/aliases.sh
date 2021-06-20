@@ -130,6 +130,9 @@ alias test_in_serial='bundle && rails db:environment:set RAILS_ENV=test; rails d
 alias retest='rspec --only-failures'
 alias next_failure='rspec --next-failure'
 
+alias yw='HOST=lvh.me yarn watch'
+alias yb='HOST-lvh.me yarn build'
+
 alias ctags_for_vim='ctags --recurse=yes -f $HOME/.vim/tags'
 
 alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
