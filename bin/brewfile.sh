@@ -8,6 +8,7 @@ brew install mas
 mas install 497799835 # Xcode
 mas install 411213048 # LadioCast
 mas install 1284863847 # Unsplash Wallpapers
+mas install 1295203466 # Microsoft Remote Desktop
 
 brew tap thoughtbot/formulae
 brew tap homebrew/cask-versions
