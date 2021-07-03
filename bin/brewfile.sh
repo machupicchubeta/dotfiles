@@ -263,6 +263,7 @@ brew install hashicorp/tap/terraform
 brew install tfenv
 brew install neovim-remote
 brew install starship
+brew install minikube
 
 # For Ruby
 brew install openssl
