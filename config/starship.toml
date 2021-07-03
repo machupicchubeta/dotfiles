@@ -1,0 +1,328 @@
+format = """
+$username\
+$directory\
+$vcsh\
+$nix_shell\
+$shell\
+$shlvl\
+$hostname\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$kubernetes\
+$docker_context\
+$package\
+$conda\
+$cmake\
+$crystal\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$custom\
+$cmd_duration\
+$jobs\
+$memory_usage\
+$battery\
+$time\
+$status\
+$line_break\
+$character"""
+
+# scan_timeout = 1000
+# command_timeout = 10000
+
+add_newline = true
+
+[aws]
+symbol = "☁️   "
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "dimmed yellow"
+
+
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "☠️ "
+
+[[battery.display]]
+threshold = 10
+style = "red"
+
+[[battery.display]]
+threshold = 30
+style = "yellow"
+discharging_symbol = "⚠️ "
+
+[character]
+success_symbol = "[ﬦ ➜](bold green)"
+error_symbol = "[∅ ✗](bold red)"
+vicmd_symbol = "[ ➜](bold green) "
+
+[cmake]
+style = "blue"
+
+[cmd_duration]
+min_time = 500
+style = "yellow"
+
+[conda]
+style = "green"
+
+[crystal]
+style = "red"
+
+[dart]
+style = "blue"
+
+[deno]
+style = "green"
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+style = "cyan"
+
+[docker_context]
+style = "blue"
+
+[dotnet]
+symbol = "🥅 "
+style = "blue"
+
+[elixir]
+style = "purple"
+
+[elm]
+style = "cyan"
+
+[env_var]
+variable = 'HOST'
+default = "👑"
+style = "dimmed white"
+
+[erlang]
+style = "red"
+
+[gcloud]
+symbol = "☁️ 🇬️ "
+style = "dimmed blue"
+
+[git_branch]
+symbol = "🌱 "
+style = "purple"
+
+[git_commit]
+tag_symbol = "🔖 "
+style = "green"
+
+[git_state]
+format = '[\( $state ($progress_current of $progress_total)\)]($style) '
+style = "dimmed red"
+rebase = "REBASING 🏕 "
+merge = "MERGING 🦓 "
+revert = "REVERTING 🔙 "
+cherry_pick = "CHERRY-PICKING 🍒 "
+bisect = "BISECTING 🍪 "
+am = "AM ✉️ "
+am_or_rebase = "AM/REBASE 🏕 ✉️ "
+
+[git_status]
+format = '([\[ $all_status$ahead_behind\]]($style) )'
+style = "purple"
+conflicted = "🔮 "
+ahead = "🏎 💨"
+behind = "👾 "
+diverged = "🥨 "
+untracked = "🚧 "
+stashed = "💭 "
+modified = "✨ "
+staged = "📦 "
+renamed = "📛 "
+deleted = "🗑 "
+
+[golang]
+style = "cyan"
+
+[helm]
+style = "white"
+
+[hostname]
+ssh_only = true
+style = "dimmed green"
+format = "on [$hostname]($style) "
+
+[java]
+style = "dimmed red"
+
+[jobs]
+style = "blue"
+
+[julia]
+style = "purple"
+
+[kotlin]
+style = "blue"
+
+[kubernetes]
+disabled = false
+symbol = "⛵ "
+format = 'on [$symbol$context \($namespace\)]($style) '
+style = "cyan"
+
+[line_break]
+disabled = false
+
+[lua]
+style = "blue"
+
+[memory_usage]
+disabled = false
+style = "dimmed white"
+
+[hg_branch]
+symbol = "🧪 "
+style = "purple"
+
+[nim]
+style = "yellow"
+
+[nix_shell]
+style = "blue"
+
+[nodejs]
+style = "green"
+not_capable_style = "red"
+
+[ocaml]
+style = "yellow"
+
+[openstack]
+symbol = "☁️ 🅾 "
+style = "dimmed yellow"
+
+[package]
+symbol = "🎁 "
+style = "208"
+
+[perl]
+style = "149"
+
+[php]
+style = "147"
+
+[purescript]
+style = "white"
+
+[python]
+style = "yellow"
+
+[rlang]
+style = "blue"
+
+[red]
+style = "red"
+
+[ruby]
+style = "red"
+
+[rust]
+style = "red"
+
+[scala]
+style = "dimmed red"
+
+[shell]
+format = "$indicator "
+disabled = false
+bash_indicator = "𝗯𝗮𝘀𝗵"
+fish_indicator = "🐠"
+zsh_indicator = "𝘇𝘀𝗵"
+powershell_indicator = "_"
+ion_indicator = "𝗶𝗼𝗻"
+elvish_indicator = "𝗲𝗹𝘃𝗶𝘀𝗵"
+tcsh_indicator = "𝘁𝗰𝘀𝗵"
+unknown_indicator = "❔"
+
+[shlvl]
+disabled = false
+symbol = "♻️ "
+format = "[$symbol $shlvl]($style) "
+style = "yellow"
+threshold = 2
+
+[singularity]
+style = "dimmed blue"
+
+[status]
+style = "red"
+symbol = "🚒"
+signal_symbol = "⚡️"
+format = '[ \[ $symbol $common_meaning$signal_name$maybe_int \]]($style) '
+map_symbol = true
+disabled = false
+
+[swift]
+style = "202"
+
+[terraform]
+style = "105"
+
+[time]
+disabled = false
+format = 'at 🕙 [$time]($style)'
+style = "dimmed blue"
+time_format = "%F %T %:z"
+
+[username]
+style_user = "dimmed blue"
+style_root = "dimmed white"
+disabled = false
+show_always = true
+
+[vagrant]
+style = "cyan"
+
+[vlang]
+style = "blue"
+
+[vcsh]
+symbol = "🆅"
+format = "[ $symbol $repo ]($style) "
+style = "yellow"
+
+[zig]
+style = "yellow"
+
+[custom]
+style = "green"
