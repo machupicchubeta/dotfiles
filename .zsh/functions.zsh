@@ -112,10 +112,6 @@ function extract() {
   fi
 }
 
-function box_name {
-  [ -f $HOME/.box-name ] && cat $HOME/.box-name || ([[ ! -z "$SHORT_HOST" ]] && echo $SHORT_HOST) || ([[ ! -z "$HOST" ]] && echo $HOST) || hostname -s || uname -n
-}
-
 function rga-fzf() {
   RG_PREFIX="rga --files-with-matches"
   local file
