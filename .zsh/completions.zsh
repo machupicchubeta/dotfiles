@@ -1,4 +1,5 @@
 fpath=($HOME/.zfunc /usr/local/opt/zsh-completions/share/zsh-completions $fpath)
+_cache_hosts=(`ruby -ne 'if /^Host\s+(.+)$/; print $1.strip, "\n"; end' $HOME/.ssh/config`)
 
 autoload -Uz colors
 colors
@@ -15,6 +16,7 @@ zle -N predict-off
 zstyle ':predict' verbose true
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
 zstyle ':completion:*' completer _complete _ignored _cmdstring _canonical_paths _expand _extensions _external_pwds _expand_alias _files _multi_parts
+zstyle ':completion:*' list-colors ''
 zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 zstyle ':completion:*' ignore-parents parent pwd ..
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
