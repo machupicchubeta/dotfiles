@@ -12,8 +12,6 @@ alias glsd='gls -l | grep "^d"'
 
 alias ls='lsd'
 alias lt='ls --tree'
-alias lss='ls -alh --group-dirs first'
-alias lk='ls -alh --group-dirs first'
 
 alias rrf='rm -rf'
 alias rr='rm -rfi'
