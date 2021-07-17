@@ -264,6 +264,7 @@ brew install tfenv
 brew install neovim-remote
 brew install starship
 brew install minikube
+brew install dust
 
 # For Ruby
 brew install openssl
