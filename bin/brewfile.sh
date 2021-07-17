@@ -265,6 +265,7 @@ brew install neovim-remote
 brew install starship
 brew install minikube
 brew install dust
+brew install tokei
 
 # For Ruby
 brew install openssl
