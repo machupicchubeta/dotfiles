@@ -267,6 +267,7 @@ brew install minikube
 brew install dust
 brew install tokei
 brew install hyperfine
+brew install bandwhich
 
 # For Ruby
 brew install openssl
