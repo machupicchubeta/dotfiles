@@ -266,6 +266,7 @@ brew install starship
 brew install minikube
 brew install dust
 brew install tokei
+brew install hyperfine
 
 # For Ruby
 brew install openssl
