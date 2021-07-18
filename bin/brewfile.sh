@@ -269,6 +269,7 @@ brew install tokei
 brew install hyperfine
 brew install bandwhich
 brew install grex
+brew install duf
 
 # For Ruby
 brew install openssl
