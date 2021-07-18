@@ -277,6 +277,7 @@ brew install wasmtime
 brew install licensefinder
 brew install dog
 brew install xh
+brew install curlie
 
 # For Ruby
 brew install openssl
