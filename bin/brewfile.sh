@@ -270,6 +270,7 @@ brew install hyperfine
 brew install bandwhich
 brew install grex
 brew install duf
+brew install broot
 
 # For Ruby
 brew install openssl
