@@ -27,6 +27,7 @@ brew tap eugenmayer/dockersync
 brew tap nodenv/nodenv
 brew tap spectralops/tap
 brew tap hashicorp/tap
+brew tap cantino/mcfly
 
 brew unlink vim
 brew upgrade macvim
@@ -281,6 +282,7 @@ brew install curlie
 brew install httpie
 brew install gping
 brew install glances
+brew install mcfly
 
 # For Ruby
 brew install openssl

@@ -5,6 +5,7 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
+if which mcfly > /dev/null; then eval "$(mcfly init zsh)"; fi
 
 test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completion'
 test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
