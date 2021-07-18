@@ -271,6 +271,7 @@ brew install bandwhich
 brew install grex
 brew install duf
 brew install broot
+brew install choose-rust
 
 # For Ruby
 brew install openssl
