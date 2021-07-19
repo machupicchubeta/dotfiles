@@ -22,6 +22,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/history", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/redis-cli", from:oh-my-zsh
+zplug "plugins/terraform", from:oh-my-zsh
 zplug "plugins/z", from:oh-my-zsh
 zplug "$HOME/.zsh", from:local, use:"*.zsh", ignore:"hooks.zsh"
 
