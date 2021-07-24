@@ -57,6 +57,7 @@ if has('vim_starting')
   Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'sass', 'less', 'sacs' ] }
   Plug 'junegunn/vim-emoji'
   Plug 'tyru/open-browser.vim'
+  Plug 'codota/tabnine-vim'
 
   call plug#end()
 
