@@ -156,3 +156,4 @@ if !has('nvim')
 endif
 
 set backupcopy=yes
+set pastetoggle=<C-E>

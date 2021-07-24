@@ -364,4 +364,17 @@ nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 " }}}
 
-set pastetoggle=<C-E>
+" Up to the end of a line or Up to the beginning of a line {{{
+nnoremap Y y$
+nnoremap yY y0
+nnoremap cC c0
+nnoremap dD d0
+nnoremap vv V
+nnoremap V v$
+nnoremap vV v0
+" }}}
+
+" Increment and Decrement {{{
+nnoremap + <C-a>
+nnoremap - <C-x>
+" }}}
