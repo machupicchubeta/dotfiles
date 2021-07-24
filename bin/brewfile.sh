@@ -376,6 +376,7 @@ brew install --cask microsoft-teams
 brew install --cask synergy
 brew install --cask sharemouse
 brew install --cask alacritty
+brew install --cask session-manager-plugin
 
 brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
