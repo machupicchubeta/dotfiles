@@ -373,3 +373,8 @@ nnoremap vv V
 nnoremap V v$
 nnoremap vV v0
 " }}}
+
+" Increment and Decrement {{{
+nnoremap + <C-a>
+nnoremap - <C-x>
+" }}}
