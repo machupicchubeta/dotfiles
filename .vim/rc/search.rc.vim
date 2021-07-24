@@ -12,3 +12,7 @@ set incsearch
 
 " Searches wrap around the end of the file.
 set wrapscan
+
+" Automatically open quickfix-window on grep {{{
+autocmd QuickFixCmdPost *grep* cwindow
+" }}}
