@@ -378,3 +378,10 @@ nnoremap vV v0
 nnoremap + <C-a>
 nnoremap - <C-x>
 " }}}
+
+" Navigate in the quickfix-window list {{{
+nnoremap <Leader><Leader>p :cprevious<CR>
+nnoremap <Leader><Leader>n :cnext<CR>
+nnoremap <Leader><Leader>P :<C-u>cfirst<CR>
+nnoremap <Leader><Leader>N :<C-u>clast<CR>
+" }}}
