@@ -365,8 +365,6 @@ brew install --cask postman
 brew install --cask messenger
 brew install --cask fontforge
 brew install --cask microsoft-office
-brew install --cask box-drive
-brew install --cask box-notes
 brew install --cask drawio
 brew install --cask coscreen
 brew install --cask mmhmm
