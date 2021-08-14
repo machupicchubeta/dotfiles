@@ -272,6 +272,7 @@ brew install grex
 brew install duf
 brew install broot
 brew install choose-rust
+brew install detect-secrets
 
 # For Ruby
 brew install openssl
