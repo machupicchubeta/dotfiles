@@ -275,6 +275,7 @@ brew install choose-rust
 brew install detect-secrets
 brew install mongocli
 brew install wasmtime
+brew install licensefinder
 
 # For Ruby
 brew install openssl
