@@ -281,6 +281,7 @@ brew install curlie
 brew install httpie
 brew install gping
 brew install glances
+brew install vite
 
 # For Ruby
 brew install openssl
