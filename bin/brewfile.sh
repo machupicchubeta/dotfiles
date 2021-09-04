@@ -109,8 +109,7 @@ brew install zplug
 brew install terminal-notifier
 brew install source-highlight
 brew install luarocks
-brew install --HEAD luajit
-brew install --HEAD neovim
+brew install neovim
 brew install bash-completion
 brew install imagemagick
 brew install gti
