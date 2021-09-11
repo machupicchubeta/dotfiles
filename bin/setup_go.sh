@@ -8,4 +8,4 @@ goenv rehash
 
 eval "$(goenv init -)"
 
-go get github.com/fujimura/git-gsub
+go install github.com/fujimura/git-gsub@latest
