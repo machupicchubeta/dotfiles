@@ -9,6 +9,7 @@ mas install 497799835 # Xcode
 mas install 411213048 # LadioCast
 mas install 1284863847 # Unsplash Wallpapers
 mas install 1295203466 # Microsoft Remote Desktop
+mas install 1482920575 # DuckDuckGo Privacy Essentials
 
 brew tap thoughtbot/formulae
 brew tap homebrew/cask-versions
