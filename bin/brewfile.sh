@@ -279,6 +279,7 @@ brew install dog
 brew install xh
 brew install curlie
 brew install httpie
+brew install gping
 
 # For Ruby
 brew install openssl
