@@ -278,6 +278,7 @@ brew install licensefinder
 brew install dog
 brew install xh
 brew install curlie
+brew install httpie
 
 # For Ruby
 brew install openssl
