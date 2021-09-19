@@ -275,6 +275,7 @@ brew install detect-secrets
 brew install mongocli
 brew install wasmtime
 brew install licensefinder
+brew install dog
 
 # For Ruby
 brew install openssl
