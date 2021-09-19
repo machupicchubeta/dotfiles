@@ -282,6 +282,7 @@ brew install httpie
 brew install gping
 brew install glances
 brew install vite
+brew install esbuild
 
 # For Ruby
 brew install openssl
