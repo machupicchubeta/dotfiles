@@ -35,7 +35,9 @@ if has('vim_starting')
   Plug 'hrsh7th/vim-vsnip-integ'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'junegunn/vim-easy-align'
-  Plug 'nathanaelkane/vim-indent-guides'
+  if !exists('g:vscode')
+    Plug 'nathanaelkane/vim-indent-guides'
+  endif
   Plug 'kana/vim-niceblock'
   Plug 'Shougo/context_filetype.vim'
   Plug 'tyru/caw.vim'
