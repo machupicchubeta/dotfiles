@@ -19,7 +19,9 @@ if has('vim_starting')
   Plug 'lambdalisue/session.vim'
   Plug 'kana/vim-submode'
   Plug 'vim-scripts/grep.vim'
-  Plug 'easymotion/vim-easymotion'
+  if !exists('g:vscode')
+    Plug 'easymotion/vim-easymotion'
+  endif
   Plug 'pbrisbin/vim-mkdir'
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
