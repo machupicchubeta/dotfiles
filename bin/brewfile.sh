@@ -285,6 +285,7 @@ brew install vite
 brew install esbuild
 brew install f2
 brew install cfn-lint
+brew install k6
 
 # For Ruby
 brew install openssl
