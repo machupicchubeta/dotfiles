@@ -43,4 +43,4 @@ export GREP_OPTIONS='--color=auto'
 
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
 
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"

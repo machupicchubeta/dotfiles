@@ -288,6 +288,7 @@ brew install cfn-lint
 
 # For Ruby
 brew install openssl
+brew install openssl@1.1
 brew install readline
 brew install ruby-build
 brew install rbenv
