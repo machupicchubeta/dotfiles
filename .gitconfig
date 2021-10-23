@@ -23,11 +23,19 @@
   delete-branch = branch -D
   ch = checkout
   chb = checkout -b
+  sw = switch
+  swc = switch --create
+  swfc = switch --force-create
+  new-branch = swc
+  new-branch-force = swfc
   crp = cherry-pick
   fc = fetch
   ft = fetch --tags
   t = tag
   rb = rebase
+  rst = restore
+  rsts = restore --staged
+  rstsw = restore --staged --worktree
   sh = show
   changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
 #  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
