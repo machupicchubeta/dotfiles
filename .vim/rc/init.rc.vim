@@ -30,7 +30,7 @@ xnoremap ,  <Nop>
 
 if IsWindows()
   " Exchange path separator.
-   set shellslash
+  set shellslash
 endif
 
 let $CACHE = expand('~/.cache')
