@@ -25,7 +25,7 @@
   chb = checkout -b
   sw = switch
   swc = switch --create
-  swfc = switch --force-create
+  swcf = switch --force-create
   new-branch = swc
   new-branch-force = swfc
   crp = cherry-pick
