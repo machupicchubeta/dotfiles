@@ -36,6 +36,11 @@
   rst = restore
   rsts = restore --staged
   rstsw = restore --staged --worktree
+  rt = rst
+  rts = rsts
+  rtsw = rstsw
+  rt-s = rts
+  rt-sw = rtsw
   sh = show
   changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
 #  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
@@ -64,8 +69,11 @@
   db = !git checkout-default-branch
   prr-upstream = "!f() { git checkout $(git show-default-branch) && git pull --rebase --prune upstream $(git show-default-branch); }; f"
   ch- = "!f() { git checkout $(git branch | grep -v \"`git show-default-branch`\" | fzf); }; f"
+  sw- = ch-
   chb-origin = "!f() { git branch -r | grep origin | grep -v \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
+  swc-origin = chb-origin
   chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
+  swc-upstream = chb-upstream
 [color]
   ui = true
 [apply]
