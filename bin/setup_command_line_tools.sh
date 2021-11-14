@@ -12,11 +12,15 @@ tell application "System Events"
     click button "Agree" of window "License Agreement"
     repeat
       delay 0.5
-      if name of first button of first window contains "Done" then
-        exit repeat
-      end if
+      try
+        if name of first button of first window contains "Done" then
+          click button "Done" of first window
+          exit repeat
+        end if
+      on error
+        -- do nothing
+      end try
     end repeat
-    click button "Done" of first window
   end tell
 end tell
 EOD
