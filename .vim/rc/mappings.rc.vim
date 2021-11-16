@@ -385,3 +385,9 @@ nnoremap <Leader><Leader>n :cnext<CR>
 nnoremap <Leader><Leader>P :<C-u>cfirst<CR>
 nnoremap <Leader><Leader>N :<C-u>clast<CR>
 " }}}
+
+nnoremap <leader>w :w<cr>
+nnoremap <leader>wa :wall<cr>
+nnoremap <leader>wqa :wqall<cr>
+nnoremap <leader>qa :qall!<cr>
+noremap <leader><leader> <C-W><C-w>
