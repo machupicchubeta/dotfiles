@@ -285,6 +285,7 @@ brew install vite
 brew install esbuild
 brew install f2
 brew install cfn-lint
+brew install aws-vault
 
 # For Ruby
 brew install openssl
