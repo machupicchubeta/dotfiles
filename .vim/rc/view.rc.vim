@@ -222,3 +222,8 @@ set helplang& helplang=en,ja
 
 " Default home directory
 let t:cwd = getcwd()
+
+" Disable IME on Vim
+set iminsert=0
+set imsearch=-1
+inoremap <ESC> <ESC>:set iminsert=0<CR>
