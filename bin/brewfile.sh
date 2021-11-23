@@ -26,18 +26,13 @@ brew tap elastic/tap
 brew tap eugenmayer/dockersync
 brew tap nodenv/nodenv
 brew tap spectralops/tap
-brew tap hashicorp/tap
+brew tap warrensbox/tap
 
 brew unlink vim
 brew upgrade macvim
 brew unlink macvim
 brew upgrade vim
 brew link vim
-brew unlink hashicorp/tap/terraform
-brew upgrade tfenv
-brew unlink tfenv
-brew upgrade hashicorp/tap/terraform
-brew link hashicorp/tap/terraform
 brew update
 brew upgrade --fetch-HEAD
 
@@ -183,7 +178,6 @@ brew install ansible-lint
 brew install firebase-cli
 brew install logrotate
 brew install pre-commit
-brew install terragrunt
 brew install protobuf
 brew install pv
 brew install git-secrets
@@ -258,8 +252,6 @@ brew install shared-mime-info
 brew install graphviz
 brew install teller
 brew install screenfetch
-brew install hashicorp/tap/terraform
-brew install tfenv
 brew install neovim-remote
 brew install starship
 brew install minikube
@@ -286,6 +278,8 @@ brew install esbuild
 brew install f2
 brew install cfn-lint
 brew install aws-vault
+brew install tfenv
+brew install warrensbox/tap/tgswitch
 
 # For Ruby
 brew install openssl
