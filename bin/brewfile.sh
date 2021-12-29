@@ -27,6 +27,7 @@ brew tap eugenmayer/dockersync
 brew tap nodenv/nodenv
 brew tap spectralops/tap
 brew tap warrensbox/tap
+brew tap auth0/auth0-cli
 
 brew unlink vim
 brew upgrade macvim
@@ -280,6 +281,7 @@ brew install cfn-lint
 brew install aws-vault
 brew install tfenv
 brew install warrensbox/tap/tgswitch
+brew install auth0
 
 # For Ruby
 brew install openssl
