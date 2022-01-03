@@ -94,6 +94,7 @@ brew install redis
 brew install memcached
 brew install node
 brew install node-build --HEAD
+brew link node-build
 brew install nodenv
 brew install watchman
 brew install z
