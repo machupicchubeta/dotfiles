@@ -8,7 +8,6 @@ if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 if which zoxide > /dev/null; then eval "$(zoxide init zsh)"; fi
 if which starship > /dev/null; then eval "$(starship init zsh)"; fi
 
-if [ -r '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh' ]; then source '/usr/local/opt/zsh-navigation-tools/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh'; fi
 if [ -r '/usr/local/opt/fzf/shell/completion.zsh' ]; then source '/usr/local/opt/fzf/shell/completion.zsh'; fi
 if [ -r '/usr/local/opt/fzf/shell/key-bindings.zsh' ]; then source '/usr/local/opt/fzf/shell/key-bindings.zsh'; fi
 if [ -r '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh' ]; then source '/usr/local/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh'; fi

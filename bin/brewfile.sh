@@ -99,7 +99,6 @@ brew install nodenv
 brew install watchman
 brew install z
 brew install zsh-completions
-brew install zsh-navigation-tools
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zplug
