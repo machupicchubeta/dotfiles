@@ -154,7 +154,6 @@ brew install cowsay
 brew install figlet
 brew install asciiquarium
 brew install cmatrix
-brew install pow
 brew install yarn
 brew install nss
 brew install cheat
