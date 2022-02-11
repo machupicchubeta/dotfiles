@@ -231,14 +231,6 @@ xnoremap s :s//g<Left><Left>
 " endfunction
 "}}}
 
-" Easy escape."{{{
-inoremap jj           <ESC>
-cnoremap <expr> j
-      \ getcmdline()[getcmdpos()-2] ==# 'j' ? "\<BS>\<C-c>" : 'j'
-
-inoremap j<Space>     j
-"}}}
-
 " a>, i], etc... "{{{
 " <angle>
 onoremap aa  a>
