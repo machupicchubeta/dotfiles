@@ -354,7 +354,6 @@ brew install --cask zoom
 brew install --cask spotify
 brew install --cask chromedriver
 brew install --cask dotnet-sdk
-brew install --cask visual-studio
 brew install --cask visual-studio-code
 brew install --cask dynamodb-local
 brew install --cask phantomjs
