@@ -282,6 +282,7 @@ brew install tfenv
 brew install warrensbox/tap/tgswitch
 brew install auth0
 brew install jless
+brew install terraform-lsp
 
 # For Ruby
 brew install openssl
