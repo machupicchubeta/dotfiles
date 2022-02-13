@@ -349,7 +349,6 @@ brew install --cask wireshark
 brew install --cask sketch
 brew install --cask blisk
 brew install --cask gitter
-brew install --cask flux
 brew install --cask fliqlo
 brew install --cask google-earth-pro
 brew install --cask zoom
