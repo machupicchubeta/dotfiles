@@ -281,6 +281,7 @@ brew install aws-vault
 brew install tfenv
 brew install warrensbox/tap/tgswitch
 brew install auth0
+brew install jless
 
 # For Ruby
 brew install openssl
