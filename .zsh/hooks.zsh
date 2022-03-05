@@ -5,7 +5,6 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
-if which zoxide > /dev/null; then eval "$(zoxide init zsh)"; fi
 if which starship > /dev/null; then eval "$(starship init zsh)"; fi
 
 if [ -r '/usr/local/opt/fzf/shell/completion.zsh' ]; then source '/usr/local/opt/fzf/shell/completion.zsh'; fi
