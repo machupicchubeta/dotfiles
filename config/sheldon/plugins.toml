@@ -1,0 +1,45 @@
+shell = "zsh"
+apply = ["defer"]
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+apply = ["source"]
+
+[templates]
+defer = { value = 'zsh-defer source "{{ file }}"', each = true }
+
+[plugins.compinit]
+inline = 'autoload -Uz compinit && zsh-defer compinit && compinit'
+
+[plugins.enhancd]
+github = "b4b4r07/enhancd"
+
+[plugins.emoji-cli]
+github = "b4b4r07/emoji-cli"
+
+[plugins.ohmyzsh-lib]
+github = "ohmyzsh/ohmyzsh"
+dir = "lib"
+use = ["{clipboard,completion,correction,directories,functions,git,grep,history,key-bindings,misc,spectrum,termsupport,theme-and-appearance}.zsh"]
+apply = ["source"]
+
+[plugins.ohmyzsh-plugins]
+github = "ohmyzsh/ohmyzsh"
+dir = "plugins"
+use = ["{bundler/bundler,git/git,history/history,macos/macos,terraform/terraform,z/z}.plugin.zsh"]
+apply = ["source"]
+
+[plugins.ohmyzsh-plugin-docker]
+github = "ohmyzsh/ohmyzsh"
+dir = "plugins"
+use = ["docker/_docker"]
+
+[plugins.ohmyzsh-plugin-redis-cli]
+github = "ohmyzsh/ohmyzsh"
+dir = "plugins"
+use = ["redis-cli/_redis-cli"]
+
+[plugins.dotfiles]
+local = "~/.zsh"
+use = ["*.zsh"]
+apply = ["source"]
