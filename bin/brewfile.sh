@@ -101,7 +101,6 @@ brew install z
 brew install zsh-completions
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
-brew install zplug
 brew install terminal-notifier
 brew install source-highlight
 brew install luarocks
@@ -283,6 +282,7 @@ brew install warrensbox/tap/tgswitch
 brew install auth0
 brew install jless
 brew install terraform-lsp
+brew install sheldon
 
 # For Ruby
 brew install openssl
