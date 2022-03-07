@@ -35,7 +35,7 @@ export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME=~/.config
 
-export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d '/usr/local/opt/python/libexec/bin' ]; then '/usr/local/opt/python/libexec/bin'; else '/usr/bin/python'; fi)
+export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d '/usr/local/opt/python/libexec/bin' ]; then echo '/usr/local/opt/python/libexec/bin'; else echo '/usr/bin/python'; fi)
 
 export ENHANCD_FILTER=fzf
 export ENHANCD_DOT_ARG='~~'
