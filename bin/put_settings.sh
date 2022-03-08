@@ -25,12 +25,16 @@ fi
 if [ -L "$XDG_CONFIG_HOME/nvim" ]; then
   unlink "$XDG_CONFIG_HOME/nvim"
 fi
-ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
+if [ -f "$SETTINGS_PATH/.vim" ]; then
+  ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
+fi
 
 if [ -L "$XDG_CONFIG_HOME/starship.toml" ]; then
   unlink "$XDG_CONFIG_HOME/starship.toml"
 fi
-ln -s "$SETTINGS_PATH/config/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
+if [ -f "$SETTINGS_PATH/config/starship.toml" ]; then
+  ln -s "$SETTINGS_PATH/config/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
+fi
 
 if [ ! -d "$XDG_CONFIG_HOME/lsd" ]; then
   mkdir "$XDG_CONFIG_HOME/lsd"
@@ -38,7 +42,9 @@ fi
 if [ -L "$XDG_CONFIG_HOME/lsd/config.yaml" ]; then
   unlink "$XDG_CONFIG_HOME/lsd/config.yaml"
 fi
-ln -s "$SETTINGS_PATH/config/lsd/config.yaml" "$XDG_CONFIG_HOME/lsd/config.yaml"
+if [ -f "$SETTINGS_PATH/config/lsd/config.yaml" ]; then
+  ln -s "$SETTINGS_PATH/config/lsd/config.yaml" "$XDG_CONFIG_HOME/lsd/config.yaml"
+fi
 
 if [ ! -d "$XDG_CONFIG_HOME/sheldon" ]; then
   mkdir "$XDG_CONFIG_HOME/sheldon"
@@ -49,7 +55,9 @@ fi
 if [ -e "$XDG_CONFIG_HOME/sheldon/plugins.toml" ]; then
   mv "$XDG_CONFIG_HOME/sheldon/plugins.toml" "$XDG_CONFIG_HOME"/sheldon/plugins.toml_"$(date +%Y-%m-%dT%H:%M:%S%z)"
 fi
-ln -s "$SETTINGS_PATH/config/sheldon/plugins.toml" "$XDG_CONFIG_HOME/sheldon/plugins.toml"
+if [ -f "$SETTINGS_PATH/config/sheldon/plugins.toml" ]; then
+  ln -s "$SETTINGS_PATH/config/sheldon/plugins.toml" "$XDG_CONFIG_HOME/sheldon/plugins.toml"
+fi
 
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
     dot_file=$1
@@ -66,7 +74,9 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
 if [ -L "$HOME/.irbrc" ]; then
   unlink "$HOME/.irbrc"
 fi
-ln -s "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" "$HOME/.irbrc"
+if [ -f "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" ]; then
+  ln -s "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" "$HOME/.irbrc"
+fi
 
 if [ -L /etc/my.cnf ]; then
   sudo unlink /etc/my.cnf
@@ -74,7 +84,9 @@ fi
 if [ -e /etc/my.cnf ]; then
   sudo mv /etc/my.cnf /etc/my.cnf_"$(date +%Y-%m-%dT%H:%M:%S%z)"
 fi
-sudo ln -s "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" /etc/my.cnf
+if [ -f "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" ]; then
+  sudo ln -s "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" /etc/my.cnf
+fi
 
 : "${RBENV_ROOT:=$HOME/.rbenv}"
 
@@ -85,4 +97,6 @@ fi
 if [ -L "$RBENV_ROOT/default-gems" ]; then
   unlink "$RBENV_ROOT/default-gems"
 fi
-ln -s "$SETTINGS_PATH/rbenv/default-gems" "$RBENV_ROOT/default-gems"
+if [ -f "$SETTINGS_PATH/rbenv/default-gems" ]; then
+  ln -s "$SETTINGS_PATH/rbenv/default-gems" "$RBENV_ROOT/default-gems"
+fi

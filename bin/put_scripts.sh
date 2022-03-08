@@ -24,9 +24,13 @@ done
 if [ -L "$BIN_PATH/diceware.rb" ]; then
   unlink "$BIN_PATH/diceware.rb"
 fi
-ln -s "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.rb" "$BIN_PATH/diceware.rb"
+if [ -f "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.rb" ]; then
+  ln -s "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.rb" "$BIN_PATH/diceware.rb"
+fi
 
 if [ -L "$BIN_PATH/diceware.wordlist.asc" ]; then
   unlink "$BIN_PATH/diceware.wordlist.asc"
 fi
-ln -s "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.wordlist.asc" "$BIN_PATH/diceware.wordlist.asc"
+if [ -f "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.wordlist.asc" ]; then
+  ln -s "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.wordlist.asc" "$BIN_PATH/diceware.wordlist.asc"
+fi
