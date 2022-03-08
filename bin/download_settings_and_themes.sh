@@ -1,0 +1,27 @@
+#!/bin/bash
+set -eu
+
+: "${REPOSITORIES_PATH:=$HOME/Repositories}"
+
+if [ ! -d "$REPOSITORIES_PATH" ]; then
+  mkdir "$REPOSITORIES_PATH"
+fi
+
+if [ "${GHQ_ROOT:+ghq_root}" ]; then
+  export GHQ_ROOT=$REPOSITORIES_PATH
+fi
+
+if [ ! -x "$(command -v ghq)" ]; then
+  echo "Install ghq command first."
+  exit 1
+fi
+
+ghq get --update --parallel github.com/machupicchubeta/laptop
+ghq get --update --parallel github.com/machupicchubeta/dotfiles
+ghq get --update --parallel github.com/machupicchubeta/diceware
+ghq get --update --parallel github.com/altercation/solarized
+ghq get --update --parallel github.com/mbadolato/iTerm2-Color-Schemes
+ghq get --update --parallel github.com/seebi/dircolors-solarized
+ghq get --update --parallel gist.github.com/4979906
+ghq get --update --parallel github.com/tony/tmux-config
+ghq get --update --parallel github.com/k0kubun/dotfiles

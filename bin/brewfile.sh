@@ -1,8 +1,20 @@
 #!/bin/bash
 set -u
 
-sudo chown -R $(whoami):admin $(brew --prefix)/*
-cd $(brew --repository) && git checkout master
+: "${HOMEBREW_PREFIX:=/usr/local}"
+: "${HOMEBREW_REPOSITORY:=/usr/local/Homebrew}"
+
+if [ ! -x "$(command -v git)" ]; then
+  echo "Install git command first."
+  exit 1
+fi
+sudo chown -R $(whoami):admin "$HOMEBREW_PREFIX"/*
+cd "$HOMEBREW_REPOSITORY" && git checkout master
+
+if [ ! -x "$(command -v brew)" ]; then
+  echo "Install brew command first."
+  exit 1
+fi
 
 brew install mas
 mas install 497799835 # Xcode
