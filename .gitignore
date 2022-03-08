@@ -11,8 +11,13 @@ dist
 .vim/plugged/*
 .vim/tags
 .vim/pack/*
-
 */.private
 */private.*
+.bundle/*
+.bundle_arm64/*
+.bundle_x86_64/*
 
+!.bundle/config
+!.bundle_arm64/config
+!.bundle_x86_64/config
 !**/.keep

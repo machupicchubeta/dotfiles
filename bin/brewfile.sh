@@ -1,8 +1,13 @@
 #!/bin/bash
 set -u
 
-: "${HOMEBREW_PREFIX:=/usr/local}"
-: "${HOMEBREW_REPOSITORY:=/usr/local/Homebrew}"
+if [ "$(uname -m)" = "x86_64" ]; then
+  : "${HOMEBREW_PREFIX:=/usr/local}"
+  : "${HOMEBREW_REPOSITORY:=/usr/local/Homebrew}"
+elif [ "$(uname -m)" = "arm64" ]; then
+  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+  : "${HOMEBREW_REPOSITORY:=/opt/homebrew}"
+fi
 
 if [ ! -x "$(command -v git)" ]; then
   echo "Install git command first."

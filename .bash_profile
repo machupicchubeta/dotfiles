@@ -14,4 +14,11 @@ shopt -s nocaseglob
 complete -W "NSGlobalDomain" defaults
 
 complete -C aws_completer aws
-complete -C /usr/local/bin/terraform terraform
+
+if [ "$(uname -m)" = "x86_64" ]; then
+  : "${HOMEBREW_PREFIX:=/usr/local}"
+elif [ "$(uname -m)" = "arm64" ]; then
+  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+fi
+
+complete -C $HOMEBREW_PREFIX/bin/terraform terraform

@@ -128,7 +128,13 @@ alias yb='HOST-lvh.me yarn build'
 
 alias ctags_for_vim='ctags --recurse=yes -f $HOME/.vim/tags'
 
-alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
+if [ "$(uname -m)" = "x86_64" ]; then
+  : "${HOMEBREW_PREFIX:=/usr/local}"
+elif [ "$(uname -m)" = "arm64" ]; then
+  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+fi
+
+alias start_postgres="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l logfile start"
 
 alias dk='docker'
 alias dkps='docker ps'
@@ -172,3 +178,17 @@ alias lzd='lazydocker'
 
 alias lg='lazygit'
 alias lzg='lazygit'
+
+: "${CPU_BRAND:=$(/usr/sbin/sysctl -n machdep.cpu.brand_string)}"
+if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a -x "$(command -v arch)" ]; then
+  alias x86_64='exec arch -arch x86_64 "$SHELL"'
+  alias x64='x86_64'
+  alias arm64='exec arch -arch arm64e "$SHELL"'
+  alias a64='arm64'
+
+: "${X86_64_HOMEBREW_PATH:=/usr/local/bin/brew}"
+  if [ "$(uname -m)" = "arm64" -a -x "$X86_64_HOMEBREW_PATH" ]; then
+    alias x86_64_brew="arch -arch x86_64 $X86_64_HOMEBREW_PATH"
+    alias x64_brew='x86_64_brew'
+  fi
+fi
