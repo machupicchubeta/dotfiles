@@ -47,7 +47,7 @@ if [ -L "$XDG_CONFIG_HOME/sheldon/plugins.toml" ]; then
   unlink "$XDG_CONFIG_HOME/sheldon/plugins.toml"
 fi
 if [ -e "$XDG_CONFIG_HOME/sheldon/plugins.toml" ]; then
-  mv "$XDG_CONFIG_HOME/sheldon/plugins.toml" "$XDG_CONFIG_HOME"/sheldon/plugins."$(date +%Y-%m-%dT%H:%M:%S%z)".toml
+  mv "$XDG_CONFIG_HOME/sheldon/plugins.toml" "$XDG_CONFIG_HOME"/sheldon/plugins.toml_"$(date +%Y-%m-%dT%H:%M:%S%z)"
 fi
 ln -s "$SETTINGS_PATH/config/sheldon/plugins.toml" "$XDG_CONFIG_HOME/sheldon/plugins.toml"
 
