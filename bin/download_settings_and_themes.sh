@@ -7,9 +7,7 @@ if [ ! -d "$REPOSITORIES_PATH" ]; then
   mkdir "$REPOSITORIES_PATH"
 fi
 
-if [ "${GHQ_ROOT:+ghq_root}" ]; then
-  export GHQ_ROOT=$REPOSITORIES_PATH
-fi
+export GHQ_ROOT="${GHQ_ROOT:=$REPOSITORIES_PATH}"
 
 if [ ! -x "$(command -v ghq)" ]; then
   echo "Install ghq command first."
