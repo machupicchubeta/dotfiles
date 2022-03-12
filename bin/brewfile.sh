@@ -318,7 +318,9 @@ brew install --cask google-chrome
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask vagrant
-brew install --cask virtualbox
+if [ "$(uname -m)" = "x86_64" ]; then
+  brew install --cask virtualbox
+fi
 brew install --cask firefox
 brew install --cask firefox-developer-edition
 brew install --cask evernote
