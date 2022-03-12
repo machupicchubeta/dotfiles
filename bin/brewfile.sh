@@ -195,7 +195,6 @@ brew install testssl
 brew install kubernetes-helm
 brew install gradle
 brew install azure-cli
-brew install bench
 brew install circleci
 brew install eslint
 brew install iso-codes
