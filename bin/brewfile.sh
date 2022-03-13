@@ -355,7 +355,9 @@ brew install --cask githubpulse
 brew install --cask github
 brew install --cask paparazzi
 brew install --cask google-chrome-canary
-brew install --cask soundflower
+if [ "$(uname -m)" = "x86_64" ]; then
+  brew install --cask soundflower
+fi
 brew install --cask vlc
 brew install --cask chrome-remote-desktop-host
 brew install --cask vivaldi
