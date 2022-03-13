@@ -36,7 +36,6 @@ brew tap mongodb/brew
 brew tap clementtsang/bottom
 brew tap elastic/tap
 brew tap eugenmayer/dockersync
-brew tap nodenv/nodenv
 brew tap spectralops/tap
 brew tap warrensbox/tap
 brew tap auth0/auth0-cli
@@ -257,7 +256,6 @@ brew install graphicsmagick
 brew install unox
 brew install fswatch
 brew install unison
-brew install nodenv-package-json-engine
 brew install shared-mime-info
 brew install graphviz
 brew install teller
