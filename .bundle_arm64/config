@@ -1,0 +1,6 @@
+---
+BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries=true --with-xml2-include=/opt/homebrew/opt/libxml2/include/libxml2"
+BUNDLE_JOBS: "7"
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_BUILD__MYSQL2: "--with-opt-dir=/opt/homebrew/opt/openssl"
+BUNDLE_BUILD__PUMA: "--with-cflags=-Wno-error=implicit-function-declaration"

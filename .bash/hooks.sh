@@ -6,10 +6,19 @@ if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
 
-test -e '/usr/local/etc/bash_completion' && source '/usr/local/etc/bash_completion'
-test -e '/usr/local/opt/fzf/shell/completion.bash' && source '/usr/local/opt/fzf/shell/completion.bash'
-test -e '/usr/local/opt/fzf/shell/key-bindings.bash' && source '/usr/local/opt/fzf/shell/key-bindings.bash'
+if [ "$(uname -m)" = "x86_64" ]; then
+  : "${HOMEBREW_PREFIX:=/usr/local}"
+elif [ "$(uname -m)" = "arm64" ]; then
+  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+fi
 
-eval $(gdircolors ~/Repositories/github.com/seebi/dircolors-solarized)
+test -e "$HOMEBREW_PREFIX/etc/bash_completion" && source "$HOMEBREW_PREFIX/etc/bash_completion"
+test -e "$HOMEBREW_PREFIX/opt/fzf/shell/completion.bash" && source "$HOMEBREW_PREFIX/opt/fzf/shell/completion.bash"
+test -e "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.bash" && source "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.bash"
+
+: "${REPOSITORIES_PATH:=$HOME/Repositories}"
+: "${GITHUB_REPOSITORIES_PATH=$REPOSITORIES_PATH/github.com}"
+
+eval $(gdircolors "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized")
 
 ssh-add -A &> /dev/null

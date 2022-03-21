@@ -136,7 +136,13 @@ alias yb='HOST-lvh.me yarn build'
 
 alias ctags_for_vim='ctags --recurse=yes -f $HOME/.vim/tags'
 
-alias start_postgres='pg_ctl -D /usr/local/var/postgres -l logfile start'
+if [ "$(uname -m)" = "x86_64" ]; then
+  : "${HOMEBREW_PREFIX:=/usr/local}"
+elif [ "$(uname -m)" = "arm64" ]; then
+  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+fi
+
+alias start_postgres="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l logfile start"
 
 alias dk='docker'
 alias dkps='docker ps'

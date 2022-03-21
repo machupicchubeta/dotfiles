@@ -1,8 +1,13 @@
 #!/bin/bash
 set -u
 
-: "${HOMEBREW_PREFIX:=/usr/local}"
-: "${HOMEBREW_REPOSITORY:=/usr/local/Homebrew}"
+if [ "$(uname -m)" = "x86_64" ]; then
+  : "${HOMEBREW_PREFIX:=/usr/local}"
+  : "${HOMEBREW_REPOSITORY:=/usr/local/Homebrew}"
+elif [ "$(uname -m)" = "arm64" ]; then
+  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+  : "${HOMEBREW_REPOSITORY:=/opt/homebrew}"
+fi
 
 if [ ! -x "$(command -v git)" ]; then
   echo "Install git command first."
@@ -305,118 +310,131 @@ brew install libxml2
 brew install libxslt
 brew install libiconv
 
-brew install --cask 1password
-brew install --cask 1password-cli
-brew install --cask iterm2
-brew install --cask google-japanese-ime
-brew install --cask google-chrome
-brew install --cask docker
-brew install --cask dropbox
-brew install --cask vagrant
-brew install --cask virtualbox
-brew install --cask firefox
-brew install --cask firefox-developer-edition
-brew install --cask evernote
-brew install --cask slack
-brew install --cask skitch
-brew install --cask geektool
-brew install --cask xquartz
-brew install --cask skype
-brew install --cask knock
-brew install --cask licecap
-brew install --cask sublime-text
-brew install --cask atom
-brew install --cask encryptme
-brew install --cask karabiner-elements
-brew install --cask slate
-brew install --cask dash
-brew install --cask reflector
-brew install --cask disk-inventory-x
-brew install --cask cyberduck
-brew install --cask inssider
-brew install --cask qlstephen
-brew install --cask qlmarkdown
-brew install --cask quicklook-json
-brew install --cask quicklook-csv
-brew install --cask betterzip
-brew install --cask suspicious-package
-brew install --cask packages
-brew install --cask qlcolorcode
-brew install --cask gyazo
-brew install --cask alfred
-brew install --cask githubpulse
-brew install --cask github
-brew install --cask paparazzi
-brew install --cask google-chrome-canary
-brew install --cask soundflower
-brew install --cask vlc
-brew install --cask chrome-remote-desktop-host
-brew install --cask vivaldi
-brew install --cask lacona
-brew install --cask wireshark
-brew install --cask sketch
-brew install --cask blisk
-brew install --cask gitter
-brew install --cask fliqlo
-brew install --cask google-earth-pro
-brew install --cask zoom
-brew install --cask spotify
-brew install --cask chromedriver
-brew install --cask dotnet-sdk
-brew install --cask visual-studio-code
-brew install --cask dynamodb-local
-brew install --cask phantomjs
-brew install --cask discord
-brew install --cask aerial
-brew install --cask figma
-brew install --cask miro
-brew install --cask amazon-chime
-brew install --cask osquery
-brew install --cask lens
-brew install --cask framer
-brew install --cask kite
-brew install --cask deepl
-brew install --cask marvel
-brew install --cask brave-browser
-brew install --cask raindropio
-brew install --cask postman
-brew install --cask messenger
-brew install --cask fontforge
-brew install --cask microsoft-office
-brew install --cask drawio
-brew install --cask coscreen
-brew install --cask mmhmm
-brew install --cask notion
-brew install --cask kindle
-brew install --cask microsoft-teams
-brew install --cask synergy
-brew install --cask sharemouse
-brew install --cask alacritty
-brew install --cask session-manager-plugin
-brew install --cask microsoft-edge
-brew install --cask grammarly
-brew install --cask raycast
-brew install --cask blackhole-2ch
-brew install --cask blackhole-16ch
-brew install --cask blackhole-64ch
+: "${CPU_BRAND:=$(/usr/sbin/sysctl -n machdep.cpu.brand_string)}"
 
-brew install --cask font-fira-code
-brew install --cask font-fira-code-nerd-font
-brew install --cask font-hack-nerd-font
-brew install --cask font-victor-mono
-brew install --cask font-victor-mono-nerd-font
-brew install --cask font-monoid
-brew install --cask font-monoid-nerd-font
-brew install --cask font-lilex
-brew install --cask font-iosevka
-brew install --cask font-iosevka-slab
-brew install --cask font-iosevka-nerd-font
-brew install --cask font-hasklig
-brew install --cask font-cascadia-code
-brew install --cask font-cascadia-code-pl
-brew install --cask font-jetbrains-mono
-brew install --cask font-jetbrains-mono-nerd-font
-brew install --cask font-ibm-plex
+if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a "$(uname -m)" = "x86_64" ]; then
+  echo -e "Skip universal casks installation for under x86_64 arch settings.\nOn Apple silicon, please run under arm64 arch settings."
+else
+  brew install --cask 1password
+  brew install --cask 1password-cli
+  brew install --cask iterm2
+  brew install --cask google-japanese-ime
+  brew install --cask google-chrome
+  brew install --cask docker
+  brew install --cask dropbox
+  brew install --cask vagrant
+  brew install --cask firefox
+  brew install --cask firefox-developer-edition
+  brew install --cask evernote
+  brew install --cask slack
+  brew install --cask skitch
+  brew install --cask geektool
+  brew install --cask xquartz
+  brew install --cask skype
+  brew install --cask knock
+  brew install --cask licecap
+  brew install --cask sublime-text
+  brew install --cask atom
+  brew install --cask encryptme
+  brew install --cask karabiner-elements
+  brew install --cask slate
+  brew install --cask dash
+  brew install --cask reflector
+  brew install --cask disk-inventory-x
+  brew install --cask cyberduck
+  brew install --cask inssider
+  brew install --cask qlstephen
+  brew install --cask qlmarkdown
+  brew install --cask quicklook-json
+  brew install --cask quicklook-csv
+  brew install --cask betterzip
+  brew install --cask suspicious-package
+  brew install --cask packages
+  brew install --cask qlcolorcode
+  brew install --cask gyazo
+  brew install --cask alfred
+  brew install --cask githubpulse
+  brew install --cask github
+  brew install --cask paparazzi
+  brew install --cask google-chrome-canary
+  brew install --cask vlc
+  brew install --cask chrome-remote-desktop-host
+  brew install --cask vivaldi
+  brew install --cask lacona
+  brew install --cask wireshark
+  brew install --cask sketch
+  brew install --cask blisk
+  brew install --cask gitter
+  brew install --cask fliqlo
+  brew install --cask google-earth-pro
+  brew install --cask zoom
+  brew install --cask spotify
+  brew install --cask chromedriver
+  brew install --cask dotnet-sdk
+  brew install --cask visual-studio-code
+  brew install --cask dynamodb-local
+  brew install --cask phantomjs
+  brew install --cask discord
+  brew install --cask aerial
+  brew install --cask figma
+  brew install --cask miro
+  brew install --cask amazon-chime
+  brew install --cask osquery
+  brew install --cask lens
+  brew install --cask framer
+  brew install --cask kite
+  brew install --cask deepl
+  brew install --cask marvel
+  brew install --cask brave-browser
+  brew install --cask raindropio
+  brew install --cask postman
+  brew install --cask messenger
+  brew install --cask fontforge
+  brew install --cask microsoft-office
+  brew install --cask drawio
+  brew install --cask coscreen
+  brew install --cask mmhmm
+  brew install --cask notion
+  brew install --cask kindle
+  brew install --cask microsoft-teams
+  brew install --cask synergy
+  brew install --cask sharemouse
+  brew install --cask alacritty
+  brew install --cask session-manager-plugin
+  brew install --cask microsoft-edge
+  brew install --cask grammarly
+  brew install --cask raycast
+  brew install --cask blackhole-2ch
+  brew install --cask blackhole-16ch
+  brew install --cask blackhole-64ch
 
-brew cu --all --cleanup --yes
+  brew install --cask font-fira-code
+  brew install --cask font-fira-code-nerd-font
+  brew install --cask font-hack-nerd-font
+  brew install --cask font-victor-mono
+  brew install --cask font-victor-mono-nerd-font
+  brew install --cask font-monoid
+  brew install --cask font-monoid-nerd-font
+  brew install --cask font-lilex
+  brew install --cask font-iosevka
+  brew install --cask font-iosevka-slab
+  brew install --cask font-iosevka-nerd-font
+  brew install --cask font-hasklig
+  brew install --cask font-cascadia-code
+  brew install --cask font-cascadia-code-pl
+  brew install --cask font-jetbrains-mono
+  brew install --cask font-jetbrains-mono-nerd-font
+  brew install --cask font-ibm-plex
+
+  brew cu --all --cleanup --yes
+fi
+
+if [ "$(uname -m)" = "x86_64" ]; then
+  brew install --cask virtualbox
+  brew install --cask soundflower
+
+  brew cu virtualbox --cleanup
+  brew cu soundflower --cleanup
+fi
+
 brew cleanup --prune=0 -s
