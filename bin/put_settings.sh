@@ -25,7 +25,7 @@ fi
 if [ -L "$XDG_CONFIG_HOME/nvim" ]; then
   unlink "$XDG_CONFIG_HOME/nvim"
 fi
-if [ -f "$SETTINGS_PATH/.vim" ]; then
+if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
