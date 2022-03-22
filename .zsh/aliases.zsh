@@ -139,8 +139,6 @@ alias start_postgres="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l logfile start"
 alias dk='docker'
 alias dkps='docker ps'
 alias dke='docker exec --interactive --tty'
-alias dkc='docker-compose'
-alias dkcps='docker-compose ps'
 
 alias -g L='| less'
 alias -g G='| grep'
