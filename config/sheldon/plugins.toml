@@ -26,7 +26,7 @@ apply = ["source"]
 [plugins.ohmyzsh-plugins]
 github = "ohmyzsh/ohmyzsh"
 dir = "plugins"
-use = ["{bundler/bundler,git/git,history/history,macos/macos,terraform/terraform,z/z}.plugin.zsh"]
+use = ["{bundler/bundler,docker-compose/docker-compose,git/git,history/history,macos/macos,terraform/terraform,z/z}.plugin.zsh"]
 apply = ["source"]
 
 [plugins.ohmyzsh-plugin-docker]
