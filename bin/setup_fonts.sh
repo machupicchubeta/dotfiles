@@ -3,7 +3,7 @@ set -eu
 
 USER_FONT_DIR="$HOME/Library/Fonts/"
 
-echo -e "\nCopy SFMono fonts to User font directory"
+echo -e "\nCopy SFMono fonts to the user font directory"
 TERMINAL_APP_PATH=""
 if [ -d "/System/Applications/Utilities/Terminal.app" ]; then
   TERMINAL_APP_PATH="/System/Applications/Utilities/Terminal.app"
@@ -14,7 +14,7 @@ if [ -n "$TERMINAL_APP_PATH" ]; then
   cp -f "$TERMINAL_APP_PATH"/Contents/Resources/Fonts/*.otf "$USER_FONT_DIR"
 fi
 
-echo -e "\nInstall \"Source Han Code JP\" to User font directory"
+echo -e "\nInstall \"Source Han Code JP\" to the user font directory"
 curl -fsSL https://github.com/adobe-fonts/source-han-code-jp/archive/refs/tags/2.012R.tar.gz | tar -xzC /tmp/
 SOURCE_HAN_CODE_JP_TEMP_DIR="/tmp/source-han-code-jp-2.012R"
 if [ -d "$SOURCE_HAN_CODE_JP_TEMP_DIR" ]; then
