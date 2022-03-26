@@ -44,6 +44,7 @@ brew tap eugenmayer/dockersync
 brew tap spectralops/tap
 brew tap warrensbox/tap
 brew tap auth0/auth0-cli
+brew tap daipeihust/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -296,6 +297,7 @@ brew install auth0
 brew install jless
 brew install terraform-lsp
 brew install sheldon
+brew install im-select
 
 # For Ruby
 brew install openssl
