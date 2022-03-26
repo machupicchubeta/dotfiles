@@ -7,7 +7,7 @@ endfunction
 function! IsMac() abort
   return !s:is_windows && !has('win32unix')
       \ && (has('mac') || has('macunix') || has('gui_macvim')
-      \     || (!executable('xdg-open') && system('uname') =~? '^darwin'))
+      \     || (!executable('xdg-open') && trim(system('uname')) =~? '^darwin'))
 endfunction
 
 " Use English interface.

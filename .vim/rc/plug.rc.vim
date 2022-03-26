@@ -36,7 +36,7 @@ if has('vim_starting')
     Plug 'kana/vim-submode'
     Plug 'easymotion/vim-easymotion'
     Plug 'pbrisbin/vim-mkdir'
-    if system("uname -m") == "arm64"
+    if trim(system("uname -m")) == "arm64"
       Plug '/opt/homebrew/opt/fzf'
     else
       Plug '/usr/local/opt/fzf'

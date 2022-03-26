@@ -1,6 +1,6 @@
 set shell=zsh
 
-if system("uname -m") == "arm64"
+if trim(system("uname -m")) == "arm64"
   let $PATH = expand('~/bin').':/opt/homebrew/bin/:'.$PATH
 else
   let $PATH = expand('~/bin').':/usr/local/bin/:'.$PATH
