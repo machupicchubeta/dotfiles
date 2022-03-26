@@ -1,0 +1,7 @@
+shell = "bash"
+apply = ["source"]
+
+[plugins.dotfiles]
+local = "~/.bash"
+use = ["*.sh"]
+apply = ["source"]

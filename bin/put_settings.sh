@@ -18,6 +18,7 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path 
   ' sh {} \;
 
 : "${XDG_CONFIG_HOME:=$HOME/.config}"
+: "${XDG_DATA_HOME:=$HOME/.local/share}"
 
 if [ ! -d "$XDG_CONFIG_HOME" ]; then
   mkdir "$XDG_CONFIG_HOME"
@@ -46,18 +47,24 @@ if [ -f "$SETTINGS_PATH/config/lsd/config.yaml" ]; then
   ln -s "$SETTINGS_PATH/config/lsd/config.yaml" "$XDG_CONFIG_HOME/lsd/config.yaml"
 fi
 
-if [ ! -d "$XDG_CONFIG_HOME/sheldon" ]; then
-  mkdir "$XDG_CONFIG_HOME/sheldon"
-fi
-if [ -L "$XDG_CONFIG_HOME/sheldon/plugins.toml" ]; then
-  unlink "$XDG_CONFIG_HOME/sheldon/plugins.toml"
-fi
-if [ -e "$XDG_CONFIG_HOME/sheldon/plugins.toml" ]; then
-  mv "$XDG_CONFIG_HOME/sheldon/plugins.toml" "$XDG_CONFIG_HOME"/sheldon/plugins.toml_"$(date +%Y-%m-%dT%H:%M:%S%z)"
-fi
-if [ -f "$SETTINGS_PATH/config/sheldon/plugins.toml" ]; then
-  ln -s "$SETTINGS_PATH/config/sheldon/plugins.toml" "$XDG_CONFIG_HOME/sheldon/plugins.toml"
-fi
+for shell in "bash" "zsh"; do
+  if [ ! -d "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
+    mkdir "$XDG_CONFIG_HOME/sheldon_$shell"
+  fi
+  if [ -L "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml" ]; then
+    unlink "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml"
+  fi
+  if [ -e "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml" ]; then
+    mv "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml" "$XDG_CONFIG_HOME/sheldon_$shell"/plugins.toml_"$(date +%Y-%m-%dT%H:%M:%S%z)"
+  fi
+  if [ -f "$SETTINGS_PATH/config/sheldon_$shell/plugins.toml" ]; then
+    ln -s "$SETTINGS_PATH/config/sheldon_$shell/plugins.toml" "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml"
+  fi
+  if [ ! -d "$XDG_DATA_HOME/sheldon_$shell" ]; then
+    mkdir "$XDG_DATA_HOME/sheldon_$shell"
+  fi
+done
+unset -v shell
 
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
     dot_file=$1
