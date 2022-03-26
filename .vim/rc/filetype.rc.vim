@@ -32,7 +32,7 @@
 "   autocmd FileType html
 "        \ setlocal includeexpr=substitute(v:fname,'^\\/','','') |
 "        \ setlocal path+=./;/
-"   if system("uname -m") == "arm64"
+"   if trim(system("uname -m")) == "arm64"
 "     autocmd FileType php setlocal path+=/opt/homebrew/share/pear
 "   else
 "     autocmd FileType php setlocal path+=/usr/local/share/pear
