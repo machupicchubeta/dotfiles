@@ -399,8 +399,6 @@ else
   brew install --cask notion
   brew install --cask kindle
   brew install --cask microsoft-teams
-  brew install --cask synergy
-  brew install --cask sharemouse
   brew install --cask alacritty
   brew install --cask session-manager-plugin
   brew install --cask microsoft-edge
