@@ -1,24 +1,15 @@
-for file in ~/.bash/{variables,hooks,prompt,aliases,functions,private}.sh; do
-  [ -r "$file" ] && source "$file"
-done
-unset file
+: "${XDG_CONFIG_HOME:=$HOME/.config}"
+: "${XDG_DATA_HOME:=$HOME/.local/share}"
 
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
-
-# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
-# Add tab completion for `defaults read|write NSGlobalDomain`
-# You could just use `-g` instead, but I like being explicit
-complete -W "NSGlobalDomain" defaults
-
-complete -C aws_completer aws
-
-if [ "$(uname -m)" = "x86_64" ]; then
-  : "${HOMEBREW_PREFIX:=/usr/local}"
-elif [ "$(uname -m)" = "arm64" ]; then
+if [ "$(uname -m)" = "arm64" ]; then
   : "${HOMEBREW_PREFIX:=/opt/homebrew}"
+  if [ -z "$(echo $PATH | grep -o $HOMEBREW_PREFIX/bin)" ]; then
+    export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+  fi
 fi
 
-complete -C $HOMEBREW_PREFIX/bin/terraform terraform
+if which sheldon > /dev/null; then
+  export SHELDON_CONFIG_DIR="$XDG_CONFIG_HOME/sheldon_bash"
+  export SHELDON_DATA_DIR="$XDG_DATA_HOME/sheldon_bash"
+  eval "$(sheldon source)"
+fi
