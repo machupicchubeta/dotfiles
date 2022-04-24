@@ -7,7 +7,7 @@ if [ ! -d $PLENV_PLUGINS_PATH ]; then
 fi
 PERL_BUILD_PATH="$PLENV_PLUGINS_PATH/perl-build"
 if [ ! -d $PERL_BUILD_PATH ]; then
-  git clone git://github.com/tokuhirom/Perl-Build.git $PERL_BUILD_PATH
+  git clone https://github.com/tokuhirom/Perl-Build.git $PERL_BUILD_PATH
 else
   cd $PERL_BUILD_PATH && git checkout master && git pull --rebase --prune
 fi
