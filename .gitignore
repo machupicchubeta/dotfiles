@@ -2,6 +2,7 @@ temp
 dist
 
 .lesshst
+tags.lock
 .vim/.netrwhist
 .vim/backups/*
 .vim/colors/*
