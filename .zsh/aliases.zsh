@@ -59,7 +59,6 @@ alias remote_repos='hub browse $(ghq list | fzf | cut -d "/" -f 2,3)'
 alias dotfiles="cd ~/Repositories/github.com/machupicchubeta/dotfiles"
 alias bin="cd ~/bin"
 alias tmp="cd ~/tmp"
-alias setup="cd ~/Repositories/github.com/machupicchubeta/laptop"
 alias laptop="cd ~/Repositories/github.com/machupicchubeta/laptop"
 alias g="git"
 alias v="vi"
