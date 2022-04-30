@@ -324,5 +324,5 @@ style = "yellow"
 [zig]
 style = "yellow"
 
-[custom]
+[custom.none]
 style = "green"
