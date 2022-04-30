@@ -13,4 +13,5 @@ endfunction
 augroup im_select
   autocmd!
   autocmd BufNew,BufEnter,InsertLeave * call MakeInputSourceToEnglish()
+  autocmd BufNew,BufEnter * startinsert
 augroup END
