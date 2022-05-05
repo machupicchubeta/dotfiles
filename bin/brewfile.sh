@@ -45,6 +45,7 @@ brew tap spectralops/tap
 brew tap warrensbox/tap
 brew tap auth0/auth0-cli
 brew tap daipeihust/tap
+brew tap Code-Hex/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -165,7 +166,6 @@ brew install git-secrets
 brew install sslscan
 brew install git-when-merged
 brew install fortune
-brew install cowsay
 brew install figlet
 brew install asciiquarium
 brew install cmatrix
@@ -298,6 +298,7 @@ brew install jless
 brew install terraform-lsp
 brew install sheldon
 brew install im-select
+brew install neo-cowsay
 
 # For Ruby
 brew install openssl
