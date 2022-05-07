@@ -76,7 +76,9 @@ brew install wdiff
 brew install wget
 brew install bash
 brew install emacs
-brew install gdb
+if [ "$(uname -m)" = "x86_64" ]; then
+  brew install gdb
+fi
 brew install gpatch
 brew install less
 brew install m4
