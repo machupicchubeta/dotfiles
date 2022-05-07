@@ -40,7 +40,6 @@ brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
 brew tap elastic/tap
-brew tap eugenmayer/dockersync
 brew tap spectralops/tap
 brew tap warrensbox/tap
 brew tap auth0/auth0-cli
@@ -260,9 +259,6 @@ brew install sleuthkit
 brew install robotsandpencils/made/xcodes
 brew install libressl
 brew install graphicsmagick
-brew install unox
-brew install fswatch
-brew install unison
 brew install shared-mime-info
 brew install graphviz
 brew install teller
