@@ -198,7 +198,7 @@ brew install protobuf
 brew install pv
 brew install git-secrets
 brew install testssl
-brew install kubernetes-helm
+brew install helm
 brew install gradle
 brew install azure-cli
 brew install circleci
