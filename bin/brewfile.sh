@@ -413,6 +413,7 @@ else
   brew install --cask warp
   brew install --cask cloudflare-warp
   brew install --cask hyper
+  brew install --cask xcodes
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
