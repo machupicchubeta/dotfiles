@@ -383,7 +383,6 @@ else
   brew install --cask osquery
   brew install --cask lens
   brew install --cask framer
-  brew install --cask kite
   brew install --cask deepl
   brew install --cask marvel
   brew install --cask brave-browser
