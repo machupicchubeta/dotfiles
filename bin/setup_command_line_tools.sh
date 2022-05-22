@@ -2,6 +2,12 @@
 set -eu
 
 COMMAND_LINE_TOOLS_PATH='/Library/Developer/CommandLineTools'
+
+if [ -d "$COMMAND_LINE_TOOLS_PATH/usr/bin" -a -d "$COMMAND_LINE_TOOLS_PATH/SDKs" ]; then
+  echo -e "Skip the (re)installation of CommandLineTools.\nSince usr/bin and SDKs directories exist under $COMMAND_LINE_TOOLS_PATH, (re)installation is unlikely to be necessary.\nIf you are forced to re-install, remove those directories before executing the command."
+  exit 0
+fi
+
 sudo rm -rf "$COMMAND_LINE_TOOLS_PATH"
 xcode-select --install > /dev/null 2>&1
 sleep 1
