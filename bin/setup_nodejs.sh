@@ -8,6 +8,6 @@ nodenv rehash
 
 eval "$(nodenv init -)"
 
-npm install -g npm
-npm install -g neovim
-npm update -g
+npm install --location=global npm
+npm install --location=global neovim
+npm update --location=global
