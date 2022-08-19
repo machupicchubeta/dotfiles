@@ -9,3 +9,4 @@ goenv rehash
 eval "$(goenv init -)"
 
 go install github.com/fujimura/git-gsub@latest
+go install golang.org/x/tools/gopls@latest
