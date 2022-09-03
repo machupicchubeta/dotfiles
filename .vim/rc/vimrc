@@ -58,7 +58,7 @@ call s:source_rc('emmet')
 call s:source_rc('open-browser')
 
 if !exists('g:vscode')
-  call s:source_rc('solarized')
+  call s:source_rc('palenight')
   call s:source_rc('showmarks')
   call s:source_rc('submode')
   call s:source_rc('fzf')
