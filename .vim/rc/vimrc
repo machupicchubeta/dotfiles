@@ -69,7 +69,3 @@ if !exists('g:vscode')
   call s:source_rc('rails')
   call s:source_rc('reek')
 endif
-
-if exists('g:vscode')
-  call s:source_rc('im-select')
-endif

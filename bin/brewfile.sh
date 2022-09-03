@@ -43,7 +43,6 @@ brew tap elastic/tap
 brew tap spectralops/tap
 brew tap warrensbox/tap
 brew tap auth0/auth0-cli
-brew tap daipeihust/tap
 brew tap Code-Hex/tap
 
 brew unlink vim
@@ -295,7 +294,6 @@ brew install auth0
 brew install jless
 brew install terraform-lsp
 brew install sheldon
-brew install im-select
 brew install neo-cowsay
 brew install neovide
 
