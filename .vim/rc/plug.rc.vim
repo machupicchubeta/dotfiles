@@ -30,7 +30,7 @@ if has('vim_starting')
   Plug 'tyru/open-browser.vim'
 
   if !exists('g:vscode')
-    Plug 'altercation/vim-colors-solarized'
+    Plug 'drewtempelmeyer/palenight.vim'
     Plug 'vim-scripts/ShowMarks'
     Plug 'lambdalisue/session.vim'
     Plug 'kana/vim-submode'
