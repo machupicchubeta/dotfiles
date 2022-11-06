@@ -343,14 +343,9 @@ else
   brew install --cask disk-inventory-x
   brew install --cask cyberduck
   brew install --cask inssider
-  brew install --cask qlstephen
-  brew install --cask qlmarkdown
-  brew install --cask quicklook-json
-  brew install --cask quicklook-csv
   brew install --cask betterzip
   brew install --cask suspicious-package
   brew install --cask packages
-  brew install --cask qlcolorcode
   brew install --cask gyazo
   brew install --cask alfred
   brew install --cask githubpulse
