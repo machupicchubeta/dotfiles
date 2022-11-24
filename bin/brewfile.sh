@@ -355,7 +355,6 @@ else
   brew install --cask vlc
   brew install --cask chrome-remote-desktop-host
   brew install --cask vivaldi
-  brew install --cask lacona
   brew install --cask wireshark
   brew install --cask sketch
   brew install --cask blisk
