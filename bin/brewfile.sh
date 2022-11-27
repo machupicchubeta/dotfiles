@@ -334,7 +334,6 @@ else
   brew install --cask knock
   brew install --cask licecap
   brew install --cask sublime-text
-  brew install --cask atom
   brew install --cask encryptme
   brew install --cask karabiner-elements
   brew install --cask slate
