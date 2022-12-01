@@ -30,4 +30,4 @@ complete -C aws_completer aws
 
 complete -C $HOMEBREW_PREFIX/bin/terraform terraform
 
-ssh-add -A &> /dev/null
+ssh-add --apple-load-keychain &> /dev/null
