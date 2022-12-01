@@ -1,1 +1,1 @@
-ssh-add -A &> /dev/null
+ssh-add --apple-load-keychain &> /dev/null

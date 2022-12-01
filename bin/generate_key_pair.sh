@@ -8,5 +8,5 @@ if [ ! -e "$HOME/.ssh/id_$ALGORITHM" ]; then
   read -r email
   ssh-keygen -t "$ALGORITHM" -C "$email"
   eval "$(ssh-agent -s)"
-  ssh-add -K "$HOME/.ssh/id_$ALGORITHM"
+  ssh-add --apple-use-keychain "$HOME/.ssh/id_$ALGORITHM"
 fi
