@@ -324,7 +324,14 @@ function! StripWhitespace ()
   call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
+" }}}
+
+" Enter blank line {{{
 noremap <CR> o<ESC>
+inoremap <S-CR> <End><CR>
+inoremap <C-S-CR> <Home><CR><Up>
+nnoremap <S-CR> mzo<ESC>`z
+nnoremap <C-S-CR> mzO<ESC>`z
 " }}}
 
 " move between tabs key map {{{
