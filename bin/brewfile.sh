@@ -296,6 +296,7 @@ brew install terraform-lsp
 brew install sheldon
 brew install neo-cowsay
 brew install neovide
+brew install glab
 
 # For Ruby
 brew install openssl
