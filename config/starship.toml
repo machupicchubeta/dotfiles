@@ -85,7 +85,7 @@ style = "yellow"
 discharging_symbol = "⚠️ "
 
 [character]
-success_symbol = "[ﬦ ➜](bold green)"
+success_symbol = "[λ ➜](bold green)"
 error_symbol = "[∅ ✗](bold red)"
 vicmd_symbol = "[ ➜](bold green) "
 
