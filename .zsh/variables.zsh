@@ -52,12 +52,8 @@ export AWS_PROFILE=default
 export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME="$HOME/.config"
-export REPOSITORIES_PATH="$HOME/Repositories"
-export GHQ_ROOT="$REPOSITORIES_PATH"
-export GITHUB_REPOSITORIES_PATH="$REPOSITORIES_PATH/github.com"
-export SETTINGS_PATH="$GITHUB_REPOSITORIES_PATH/$(whoami)/dotfiles"
-export BIN_PATH="$HOME/bin"
 export RBENV_ROOT="$HOME/.rbenv"
+export GHQ_ROOT="$HOME/Repositories"
 
 export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python/libexec/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python/libexec/bin"; else echo '/usr/bin/python'; fi)
 

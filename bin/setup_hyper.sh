@@ -22,3 +22,7 @@ for config_directory in "${CONFIG_DIRECTORIES[@]}"; do
     ln -s "$SETTINGS_PATH/hyper/.hyper.js" "$config_directory/.hyper.js"
   fi
 done
+
+unset SETTINGS_PATH
+unset GITHUB_REPOSITORIES_PATH
+unset REPOSITORIES_PATH

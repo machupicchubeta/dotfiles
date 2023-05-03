@@ -21,3 +21,6 @@ if [ -r "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized" ]; then eval $(gdi
 complete -o nospace -C $HOMEBREW_PREFIX/bin/terraform terraform
 
 preexec() { print '' }
+
+unset GITHUB_REPOSITORIES_PATH
+unset REPOSITORIES_PATH
