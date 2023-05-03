@@ -34,3 +34,8 @@ fi
 if [ -f "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.wordlist.asc" ]; then
   ln -s "$GITHUB_REPOSITORIES_PATH/machupicchubeta/diceware/diceware.wordlist.asc" "$BIN_PATH/diceware.wordlist.asc"
 fi
+
+unset SETTINGS_PATH
+unset GITHUB_REPOSITORIES_PATH
+unset REPOSITORIES_PATH
+unset BIN_PATH

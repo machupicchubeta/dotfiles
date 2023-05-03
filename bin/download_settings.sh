@@ -31,3 +31,5 @@ if [ ! -x "$(command -v gh)" ]; then
 fi
 
 gh auth login --web
+
+unset REPOSITORIES_PATH

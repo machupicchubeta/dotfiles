@@ -107,3 +107,7 @@ fi
 if [ -f "$SETTINGS_PATH/rbenv/default-gems" ]; then
   ln -s "$SETTINGS_PATH/rbenv/default-gems" "$RBENV_ROOT/default-gems"
 fi
+
+unset SETTINGS_PATH
+unset GITHUB_REPOSITORIES_PATH
+unset REPOSITORIES_PATH
