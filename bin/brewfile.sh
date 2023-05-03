@@ -403,6 +403,7 @@ else
   brew install --cask hyper
   brew install --cask xcodes
   brew install --cask ngrok
+  brew install --cask clickup
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
