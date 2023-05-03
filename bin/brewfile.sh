@@ -105,7 +105,6 @@ brew install gcc
 brew install cmake
 brew install gdbm
 brew install tig
-brew install hub
 brew install git-lfs
 brew install mysql
 brew install redis
