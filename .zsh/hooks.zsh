@@ -16,7 +16,7 @@ if [ -r "$HOMEBREW_PREFIX/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-
 if [ -r "$HOMEBREW_PREFIX/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then source "$HOMEBREW_PREFIX/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"; fi
 if [ -r "$HOMEBREW_PREFIX/share/zsh/site-functions/_aws" ]; then source "$HOMEBREW_PREFIX/share/zsh/site-functions/_aws"; fi
 
-if [ -r "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized" ]; then eval $(gdircolors "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized"); fi
+if [ -r "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized" ]; then eval $(gdircolors "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized/dircolors.ansi-universal"); fi
 
 complete -o nospace -C $HOMEBREW_PREFIX/bin/terraform terraform
 
