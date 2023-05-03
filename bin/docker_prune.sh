@@ -3,6 +3,7 @@ set -eu
 
 docker system prune --all
 docker system prune --volumes
+docker builder prune --all
 docker container prune
 if [ $(docker container ls --all --quiet | wc -l) -gt 0 ]; then
   docker container stop $(docker container ls --all --quiet)
