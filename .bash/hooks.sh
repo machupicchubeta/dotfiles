@@ -14,7 +14,7 @@ if [ -r "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.bash" ]; then source "$HOME
 : "${REPOSITORIES_PATH:=$HOME/Repositories}"
 : "${GITHUB_REPOSITORIES_PATH=$REPOSITORIES_PATH/github.com}"
 
-eval $(gdircolors "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized/dircolors.ansi-universal")
+if [ -r "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized/dircolors.ansi-universal" ]; then eval $(gdircolors "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized/dircolors.ansi-universal"); fi
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
