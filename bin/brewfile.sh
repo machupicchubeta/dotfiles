@@ -405,6 +405,7 @@ else
   brew install --cask ngrok
   brew install --cask clickup
   brew install --cask asana
+  brew install --cask slack-cli
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
