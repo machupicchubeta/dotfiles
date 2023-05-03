@@ -297,6 +297,7 @@ brew install sheldon
 brew install neo-cowsay
 brew install neovide
 brew install glab
+brew install flyctl
 
 # For Ruby
 brew install openssl
