@@ -22,7 +22,11 @@ zle -N predict-off
 zstyle ':predict' verbose true
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
 zstyle ':completion:*' completer _complete _ignored _cmdstring _canonical_paths _expand _extensions _external_pwds _expand_alias _files _multi_parts
-zstyle ':completion:*' list-colors ''
+if [ -n "$LS_COLORS" ]; then
+  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+else
+  zstyle ':completion:*' list-colors ''
+fi
 zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 zstyle ':completion:*' ignore-parents parent pwd ..
 zstyle ':completion:*:sudo:*' command-path $HOMEBREW_PREFIX/sbin $HOMEBREW_PREFIX/bin /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
