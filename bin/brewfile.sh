@@ -367,7 +367,6 @@ else
   brew install --cask dotnet-sdk
   brew install --cask visual-studio-code
   brew install --cask dynamodb-local
-  brew install --cask phantomjs
   brew install --cask discord
   brew install --cask aerial
   brew install --cask figma
