@@ -80,6 +80,7 @@ alias rprn="echo RELEASE_$(date +%Y%m%d_%H%M)"
 alias release_pull_request="git pull-request -b release -l release"
 alias rpr="git pull-request -b release -l release"
 alias github-cli="gh"
+alias git_config="git config --list | fzf"
 
 # File size
 alias fs="stat -f \"%z bytes\""
