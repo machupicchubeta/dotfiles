@@ -297,6 +297,7 @@ brew install neo-cowsay
 brew install neovide
 brew install glab
 brew install flyctl
+brew install ffmpeg
 
 # For Ruby
 brew install openssl
