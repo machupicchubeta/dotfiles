@@ -39,6 +39,11 @@ local = "~/.zsh"
 use = ["*.zsh"]
 apply = ["source"]
 
+[plugins.dotfiles.private]
+local = "~/.zsh.private"
+use = ["*.zsh"]
+apply = ["source"]
+
 [plugins.rbenv]
 inline = 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi'
 
