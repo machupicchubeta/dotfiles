@@ -6,7 +6,7 @@ local = "~/.bash"
 use = ["*.sh"]
 apply = ["source"]
 
-[plugins.dotfiles.private]
+[plugins.dotfiles-private]
 local = "~/.bash.private"
 use = ["*.sh"]
 apply = ["source"]
