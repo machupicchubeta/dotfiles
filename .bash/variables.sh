@@ -11,7 +11,7 @@ elif [ "$(uname -m)" = "arm64" ]; then
 fi
 
 # Make vim the default editor
-export EDITOR="vim"
+export EDITOR="nvim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
