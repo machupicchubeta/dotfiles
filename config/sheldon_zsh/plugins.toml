@@ -39,7 +39,7 @@ local = "~/.zsh"
 use = ["*.zsh"]
 apply = ["source"]
 
-[plugins.dotfiles.private]
+[plugins.dotfiles-private]
 local = "~/.zsh.private"
 use = ["*.zsh"]
 apply = ["source"]
