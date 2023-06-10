@@ -5,7 +5,7 @@ set -eu
 : "${GITHUB_REPOSITORIES_PATH:=$REPOSITORIES_PATH/github.com}"
 : "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/$(whoami)/dotfiles}"
 
-find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path "$SETTINGS_PATH/.." ! -path "$SETTINGS_PATH/.git/" -exec sh -c '
+find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path "$SETTINGS_PATH/.." ! -path "$SETTINGS_PATH/.git" -exec sh -c '
     dot_directory=$1
     dot_directory_name=$(basename "$dot_directory")
     if [ -L "$HOME/$dot_directory_name" ]; then
