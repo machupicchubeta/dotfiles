@@ -409,6 +409,7 @@ else
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
+  brew install --cask font-fira-mono-nerd-font
   brew install --cask font-hack-nerd-font
   brew install --cask font-victor-mono
   brew install --cask font-victor-mono-nerd-font
@@ -418,12 +419,22 @@ else
   brew install --cask font-iosevka
   brew install --cask font-iosevka-slab
   brew install --cask font-iosevka-nerd-font
+  brew install --cask font-iosevka-term-nerd-font
   brew install --cask font-hasklig
   brew install --cask font-cascadia-code
   brew install --cask font-cascadia-code-pl
   brew install --cask font-jetbrains-mono
   brew install --cask font-jetbrains-mono-nerd-font
   brew install --cask font-ibm-plex
+  brew install --cask font-blex-mono-nerd-font
+  brew install --cask font-mplus-nerd-font
+  brew install --cask font-noto-nerd-font
+  brew install --cask font-go-mono-nerd-font
+  brew install --cask font-inconsolata-nerd-font
+  brew install --cask font-inconsolata-go-nerd-font
+  brew install --cask font-anonymice-nerd-font
+  brew install --cask font-agave-nerd-font
+  brew install --cask font-3270-nerd-font
 
   brew cu --all --cleanup --yes
 fi
