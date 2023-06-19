@@ -61,7 +61,7 @@ for shell in "bash" "zsh"; do
     ln -s "$SETTINGS_PATH/config/sheldon_$shell/plugins.toml" "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml"
   fi
   if [ ! -d "$XDG_DATA_HOME/sheldon_$shell" ]; then
-    mkdir "$XDG_DATA_HOME/sheldon_$shell"
+    mkdir --parents "$XDG_DATA_HOME/sheldon_$shell"
   fi
 done
 unset -v shell
