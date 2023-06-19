@@ -23,6 +23,9 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path 
 if [ ! -d "$XDG_CONFIG_HOME" ]; then
   mkdir "$XDG_CONFIG_HOME"
 fi
+if [ ! -d "$XDG_DATA_HOME" ]; then
+  mkdir --parents "$XDG_DATA_HOME"
+fi
 if [ -L "$XDG_CONFIG_HOME/nvim" ]; then
   unlink "$XDG_CONFIG_HOME/nvim"
 fi
@@ -61,7 +64,7 @@ for shell in "bash" "zsh"; do
     ln -s "$SETTINGS_PATH/config/sheldon_$shell/plugins.toml" "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml"
   fi
   if [ ! -d "$XDG_DATA_HOME/sheldon_$shell" ]; then
-    mkdir --parents "$XDG_DATA_HOME/sheldon_$shell"
+    mkdir "$XDG_DATA_HOME/sheldon_$shell"
   fi
 done
 unset -v shell
