@@ -1,11 +1,13 @@
 if [ "$(uname -m)" = "x86_64" ]; then
   export ARCHFLAGS="-arch x86_64"
   export HOMEBREW_PREFIX="/usr/local"
+  export HOMEBREW_CELLAR="/usr/local/Cellar"
   export HOMEBREW_REPOSITORY="/usr/local/Homebrew"
   export BUNDLE_USER_HOME="$HOME/.bundle_x86_64"
 elif [ "$(uname -m)" = "arm64" ]; then
   export ARCHFLAGS="-arch arm64"
   export HOMEBREW_PREFIX="/opt/homebrew"
+  export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
   export HOMEBREW_REPOSITORY="/opt/homebrew"
   export BUNDLE_USER_HOME="$HOME/.bundle_arm64"
 fi
@@ -27,8 +29,8 @@ export PATH="$HOMEBREW_PREFIX/opt/libxml2/bin:$HOMEBREW_PREFIX/opt/libxslt/bin:$
 if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a "$(uname -m)" = "arm64" ]; then
   export PATH="$PATH:/usr/local/bin"
 fi
-: "${MANPATH:=}"
-export MANPATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnuman:$HOMEBREW_PREFIX/opt/erlang/lib/erlang/man:$HOMEBREW_PREFIX/man:$MANPATH"
+export MANPATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnuman:$HOMEBREW_PREFIX/opt/erlang/lib/erlang/man:$HOMEBREW_PREFIX/share/man${MANPATH+:$MANPATH}"
+export INFOPATH="$HOMEBREW_PREFIX/share/info:${INFOPATH:-}"
 
 # Larger bash history (allow 2^10^2 entries; default is 500)
 export HISTSIZE=1048576
