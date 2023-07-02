@@ -338,7 +338,6 @@ else
   brew install --cask sublime-text
   brew install --cask encryptme
   brew install --cask karabiner-elements
-  brew install --cask slate
   brew install --cask dash
   brew install --cask reflector
   brew install --cask disk-inventory-x
@@ -445,6 +444,8 @@ if [ "$(uname -m)" = "x86_64" ]; then
 
   brew cu virtualbox --cleanup
   brew cu soundflower --cleanup
+elif [ "$(uname -m)" = "arm64" ]; then
+  brew install --cask fertigt-slate
 fi
 
 brew cleanup --prune=0 -s
