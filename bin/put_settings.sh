@@ -3,7 +3,7 @@ set -eu
 
 : "${REPOSITORIES_PATH:=$HOME/Repositories}"
 : "${GITHUB_REPOSITORIES_PATH:=$REPOSITORIES_PATH/github.com}"
-: "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/$(whoami)/dotfiles}"
+: "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/machupicchubeta/dotfiles}"
 
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path "$SETTINGS_PATH/.." ! -path "$SETTINGS_PATH/.git" -exec sh -c '
     dot_directory=$1

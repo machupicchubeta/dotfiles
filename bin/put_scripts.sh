@@ -4,7 +4,7 @@ set -eu
 : "${BIN_PATH:=$HOME/bin}"
 : "${REPOSITORIES_PATH:=$HOME/Repositories}"
 : "${GITHUB_REPOSITORIES_PATH:=$REPOSITORIES_PATH/github.com}"
-: "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/$(whoami)/dotfiles}"
+: "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/machupicchubeta/dotfiles}"
 
 if [ ! -d "$BIN_PATH" ]; then
   mkdir "$BIN_PATH"
