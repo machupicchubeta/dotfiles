@@ -3,7 +3,7 @@ set -eu
 
 : "${REPOSITORIES_PATH:=$HOME/Repositories}"
 : "${GITHUB_REPOSITORIES_PATH:=$REPOSITORIES_PATH/github.com}"
-: "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/$(whoami)/dotfiles}"
+: "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/machupicchubeta/dotfiles}"
 : "${XDG_CONFIG_HOME:=$HOME/.config}"
 
 CONFIG_DIRECTORIES=("$HOME" "$XDG_CONFIG_HOME/Hyper" "$HOME/Library/Application Support/Hyper")
