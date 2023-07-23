@@ -39,7 +39,6 @@ brew tap heroku/brew
 brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
-brew tap elastic/tap
 brew tap spectralops/tap
 brew tap warrensbox/tap
 brew tap auth0/auth0-cli
@@ -250,8 +249,6 @@ brew install procs
 brew install sd
 brew install lazydocker
 brew install lazygit
-brew install elasticsearch-full
-brew install kibana-full
 brew install openjdk
 brew install sleuthkit
 brew install robotsandpencils/made/xcodes
