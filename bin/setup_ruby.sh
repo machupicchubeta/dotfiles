@@ -14,6 +14,3 @@ eval "$(rbenv init -)"
 gem update --system
 gem update
 gem cleanup
-
-latest_solargraph_core_version=$(solargraph available-cores | grep --perl-regexp '^(\d+\.\d+)\.\d+$' | head -n 1)
-solargraph download-core $latest_solargraph_core_version
