@@ -69,7 +69,6 @@ symbol = "☁️   "
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = "dimmed yellow"
 
-
 [battery]
 full_symbol = "🔋 "
 charging_symbol = "⚡️ "
@@ -135,7 +134,7 @@ style = "dimmed white"
 style = "red"
 
 [gcloud]
-symbol = "☁️ 🇬️ "
+symbol = "☁️  🇬️ "
 style = "dimmed blue"
 
 [git_branch]
