@@ -69,7 +69,6 @@ symbol = "☁️   "
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = "dimmed yellow"
 
-
 [battery]
 full_symbol = "🔋 "
 charging_symbol = "⚡️ "
