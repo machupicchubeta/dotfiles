@@ -135,7 +135,7 @@ style = "dimmed white"
 style = "red"
 
 [gcloud]
-symbol = "☁️ 🇬️ "
+symbol = "☁️  🇬️ "
 style = "dimmed blue"
 
 [git_branch]
