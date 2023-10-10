@@ -150,7 +150,7 @@ brew install packer
 brew install packer-completion
 brew install chrome-cli
 brew install cscope
-brew install postgresql
+brew install postgresql@16
 brew install parallel
 brew install nmap
 brew install go
