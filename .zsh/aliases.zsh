@@ -162,8 +162,8 @@ elif which putclip >/dev/null 2>&1 ; then
     alias -g C='| putclip'
 fi
 
-alias k='exa -l --time-style=long-iso --group --binary --color always --icons -a -a -s type  --group-directories-first'
-alias kk='exa -l --time-style=long-iso --group --binary --color always --icons -a -a -s type --group-directories-first'
+alias k='eza -l --time-style=long-iso --group --binary --color always --icons -a -a -s type  --group-directories-first'
+alias kk='eza -l --time-style=long-iso --group --binary --color always --icons -a -a -s type --group-directories-first'
 
 alias _bb_='bat -p --paging=never --theme="Solarized (dark)"'
 alias bb='bat --theme="Solarized (dark)"'
