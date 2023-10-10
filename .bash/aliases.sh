@@ -145,7 +145,7 @@ elif [ "$(uname -m)" = "arm64" ]; then
   : "${HOMEBREW_PREFIX:=/opt/homebrew}"
 fi
 
-alias start_postgres="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l logfile start"
+alias start_postgres="pg_ctl -D $HOMEBREW_PREFIX/var/postgresql@16 -l logfile start"
 
 alias dk='docker'
 alias dkps='docker ps'
