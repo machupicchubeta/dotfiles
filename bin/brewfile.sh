@@ -211,7 +211,6 @@ brew install watchexec
 brew install xcodegen
 brew install webpack
 brew install elixir
-brew install elm
 brew install erlang
 brew install ghostscript
 brew install duck
