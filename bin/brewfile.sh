@@ -146,8 +146,6 @@ brew install docutils
 brew install universal-ctags --HEAD
 brew link universal-ctags
 brew install tree
-brew install packer
-brew install packer-completion
 brew install chrome-cli
 brew install cscope
 brew install postgresql@16
