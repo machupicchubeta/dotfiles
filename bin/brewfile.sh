@@ -200,7 +200,6 @@ brew install circleci
 brew install eslint
 brew install iso-codes
 brew install ssh-copy-id
-brew install ssh-permit-a38
 brew install swiftformat
 brew install terraform_landscape
 brew install thors-serializer
