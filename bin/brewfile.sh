@@ -242,7 +242,7 @@ brew install tldr
 brew install fd
 brew install ripgrep
 brew install rga
-brew install exa
+brew install eza
 brew install bat
 brew install git-delta
 brew install procs
