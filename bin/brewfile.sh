@@ -155,7 +155,6 @@ brew install go
 brew install goenv --HEAD
 brew install slackcat
 brew install lame
-brew install vault
 brew install yank
 brew install v8
 brew install git-secrets
