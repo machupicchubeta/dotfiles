@@ -136,6 +136,7 @@ brew install spark
 brew install tmux
 brew install reattach-to-user-namespace
 brew install gnupg
+brew install pinentry-mac
 brew install grc
 brew install tor
 brew install nkf
