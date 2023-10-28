@@ -40,28 +40,25 @@ if [ -f "$SETTINGS_PATH/config/starship.toml" ]; then
   ln -s "$SETTINGS_PATH/config/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
 fi
 
-if [ ! -d "$XDG_CONFIG_HOME/lsd" ]; then
-  mkdir "$XDG_CONFIG_HOME/lsd"
+if [ -L "$XDG_CONFIG_HOME/lsd" ]; then
+  unlink "$XDG_CONFIG_HOME/lsd"
 fi
-if [ -L "$XDG_CONFIG_HOME/lsd/config.yaml" ]; then
-  unlink "$XDG_CONFIG_HOME/lsd/config.yaml"
+if [ -d "$XDG_CONFIG_HOME/lsd" ]; then
+  mv "$XDG_CONFIG_HOME/lsd" "$XDG_CONFIG_HOME/lsd_$(date +%Y-%m-%dT%H:%M:%S%z)"
 fi
-if [ -f "$SETTINGS_PATH/config/lsd/config.yaml" ]; then
-  ln -s "$SETTINGS_PATH/config/lsd/config.yaml" "$XDG_CONFIG_HOME/lsd/config.yaml"
+if [ -d "$SETTINGS_PATH/config/lsd" ]; then
+  ln -s "$SETTINGS_PATH/config/lsd" "$XDG_CONFIG_HOME/lsd"
 fi
 
 for shell in "bash" "zsh"; do
-  if [ ! -d "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
-    mkdir "$XDG_CONFIG_HOME/sheldon_$shell"
+  if [ -L "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
+    unlink "$XDG_CONFIG_HOME/sheldon_$shell"
   fi
-  if [ -L "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml" ]; then
-    unlink "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml"
+  if [ -d "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
+    mv "$XDG_CONFIG_HOME/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"_"$(date +%Y-%m-%dT%H:%M:%S%z)"
   fi
-  if [ -e "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml" ]; then
-    mv "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml" "$XDG_CONFIG_HOME/sheldon_$shell"/plugins.toml_"$(date +%Y-%m-%dT%H:%M:%S%z)"
-  fi
-  if [ -f "$SETTINGS_PATH/config/sheldon_$shell/plugins.toml" ]; then
-    ln -s "$SETTINGS_PATH/config/sheldon_$shell/plugins.toml" "$XDG_CONFIG_HOME/sheldon_$shell/plugins.toml"
+  if [ -d "$SETTINGS_PATH/config/sheldon_$shell" ]; then
+    ln -s "$SETTINGS_PATH/config/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"
   fi
   if [ ! -d "$XDG_DATA_HOME/sheldon_$shell" ]; then
     mkdir "$XDG_DATA_HOME/sheldon_$shell"
