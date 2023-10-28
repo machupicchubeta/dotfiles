@@ -66,3 +66,5 @@ export GUILE_TLS_CERTIFICATE_DIRECTORY="$HOMEBREW_PREFIX/etc/gnutls/"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1"
 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+
+export GPG_TTY=$(tty)
