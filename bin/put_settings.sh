@@ -63,6 +63,7 @@ for app in "git" "starship" "lsd" "sheldon"; do
     done
   fi
 done
+unset -v app
 unset -v shell
 
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
