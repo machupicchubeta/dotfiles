@@ -82,6 +82,7 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#F2E6D4,bg=#7E87D6,bold,underline"
 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
 
