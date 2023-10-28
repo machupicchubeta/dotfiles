@@ -113,9 +113,6 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
-[user]
-  name = machupicchubeta
-  email = machupicchubeta@gmail.com
 [pull]
   rebase = true
 [push]
