@@ -81,8 +81,6 @@
 [core]
   pager = delta
   editor = vim
-  excludesfile = ~/.gitignore_global
-  attributesfile = ~/.gitattributes
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
   commentchar = ^
 [color "branch"]

@@ -35,7 +35,7 @@ if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
-for app in "starship" "lsd" "sheldon"; do
+for app in "git" "starship" "lsd" "sheldon"; do
   if [ -L "$XDG_CONFIG_HOME/$app" ]; then
     unlink "$XDG_CONFIG_HOME/$app"
   fi
