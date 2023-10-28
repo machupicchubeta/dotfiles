@@ -35,38 +35,32 @@ if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
-if [ -L "$XDG_CONFIG_HOME/starship" ]; then
-  unlink "$XDG_CONFIG_HOME/starship"
-fi
-if [ -d "$XDG_CONFIG_HOME/starship" ]; then
-  mv "$XDG_CONFIG_HOME/starship" "$XDG_CONFIG_HOME/starship_$timestamp"
-fi
-if [ -d "$SETTINGS_PATH/config/starship" ]; then
-  ln -s "$SETTINGS_PATH/config/starship" "$XDG_CONFIG_HOME/starship"
-fi
+for app in "starship" "lsd" "sheldon"; do
+  if [ -L "$XDG_CONFIG_HOME/$app" ]; then
+    unlink "$XDG_CONFIG_HOME/$app"
+  fi
+  if [ -d "$XDG_CONFIG_HOME/$app" ]; then
+    mv "$XDG_CONFIG_HOME/$app" "$XDG_CONFIG_HOME/$app"_"$timestamp"
+  fi
+  if [ -d "$SETTINGS_PATH/config/$app" ]; then
+    ln -s "$SETTINGS_PATH/config/$app" "$XDG_CONFIG_HOME/$app"
+  fi
 
-if [ -L "$XDG_CONFIG_HOME/lsd" ]; then
-  unlink "$XDG_CONFIG_HOME/lsd"
-fi
-if [ -d "$XDG_CONFIG_HOME/lsd" ]; then
-  mv "$XDG_CONFIG_HOME/lsd" "$XDG_CONFIG_HOME/lsd_$timestamp"
-fi
-if [ -d "$SETTINGS_PATH/config/lsd" ]; then
-  ln -s "$SETTINGS_PATH/config/lsd" "$XDG_CONFIG_HOME/lsd"
-fi
-
-for shell in "bash" "zsh"; do
-  if [ -L "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
-    unlink "$XDG_CONFIG_HOME/sheldon_$shell"
-  fi
-  if [ -d "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
-    mv "$XDG_CONFIG_HOME/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"_"$timestamp"
-  fi
-  if [ -d "$SETTINGS_PATH/config/sheldon_$shell" ]; then
-    ln -s "$SETTINGS_PATH/config/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"
-  fi
-  if [ ! -d "$XDG_DATA_HOME/sheldon_$shell" ]; then
-    mkdir "$XDG_DATA_HOME/sheldon_$shell"
+  if [ "$app" = "sheldon" ]; then
+    for shell in "bash" "zsh"; do
+      if [ -L "$XDG_CONFIG_HOME/$app"_"$shell" ]; then
+        unlink "$XDG_CONFIG_HOME/$app"_"$shell"
+      fi
+      if [ -d "$XDG_CONFIG_HOME/$app"_"$shell" ]; then
+        mv "$XDG_CONFIG_HOME/$app"_"$shell" "$XDG_CONFIG_HOME/$app"_"$shell"_"$timestamp"
+      fi
+      if [ -d "$SETTINGS_PATH/config/$app"_"$shell" ]; then
+        ln -s "$SETTINGS_PATH/config/$app"_"$shell" "$XDG_CONFIG_HOME/$app"_"$shell"
+      fi
+      if [ ! -d "$XDG_DATA_HOME/$app"_"$shell" ]; then
+        mkdir "$XDG_DATA_HOME/$app"_"$shell"
+      fi
+    done
   fi
 done
 unset -v shell
