@@ -1,15 +1,28 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
 if [ "$(uname -m)" = "x86_64" ]; then
   export ARCHFLAGS="-arch x86_64"
   export HOMEBREW_PREFIX="/usr/local"
   export HOMEBREW_CELLAR="/usr/local/Cellar"
   export HOMEBREW_REPOSITORY="/usr/local/Homebrew"
-  export BUNDLE_USER_HOME="$HOME/.bundle_x86_64"
+
+  export BUNDLE_USER_HOME="$XDG_DATA_HOME/bundle/x86_64"
+  export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle/x86_64/config"
+  export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle/x86_64"
+  export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle/x86_64/plugin"
 elif [ "$(uname -m)" = "arm64" ]; then
   export ARCHFLAGS="-arch arm64"
   export HOMEBREW_PREFIX="/opt/homebrew"
   export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
   export HOMEBREW_REPOSITORY="/opt/homebrew"
-  export BUNDLE_USER_HOME="$HOME/.bundle_arm64"
+
+  export BUNDLE_USER_HOME="$XDG_DATA_HOME/bundle/arm64"
+  export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle/arm64/config"
+  export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle/arm64"
+  export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle/arm64/plugin"
 fi
 
 # Make vim the default editor
@@ -48,11 +61,6 @@ export HOMEBREW_GITHUB_API_TOKEN=
 export AWS_PROFILE=default
 
 export DISABLE_SPRING=1
-
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
 
 export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python/libexec/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python/libexec/bin"; else echo '/usr/bin/python'; fi)
 

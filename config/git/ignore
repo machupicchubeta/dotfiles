@@ -15,11 +15,7 @@ tags.lock
 **/.private
 **/private.*
 .bundle/*
-.bundle_arm64/*
-.bundle_x86_64/*
 vendor/bundle/**
 
 !.bundle/config
-!.bundle_arm64/config
-!.bundle_x86_64/config
 !**/.keep
