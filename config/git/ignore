@@ -1,8 +1,8 @@
 temp
 dist
-
-.lesshst
+tags
 tags.lock
+.lesshst
 .vim/.netrwhist
 .vim/backups/*
 .vim/colors/*
@@ -17,6 +17,7 @@ tags.lock
 .bundle/*
 .bundle_arm64/*
 .bundle_x86_64/*
+vendor/bundle/**
 
 !.bundle/config
 !.bundle_arm64/config
