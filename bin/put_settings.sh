@@ -5,6 +5,8 @@ set -eu
 : "${GITHUB_REPOSITORIES_PATH:=$REPOSITORIES_PATH/github.com}"
 : "${SETTINGS_PATH:=$GITHUB_REPOSITORIES_PATH/machupicchubeta/dotfiles}"
 
+timestamp="$(date +%Y-%m-%dT%H:%M:%S%z)"
+
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path "$SETTINGS_PATH/.." ! -path "$SETTINGS_PATH/.git" -exec sh -c '
     dot_directory=$1
     dot_directory_name=$(basename "$dot_directory")
@@ -12,7 +14,7 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path 
       unlink "$HOME/$dot_directory_name"
     fi
     if [ -e "$HOME/$dot_directory_name" ]; then
-      mv "$HOME/$dot_directory_name" "$HOME"/"$dot_directory_name"_"$(date +%Y-%m-%dT%H:%M:%S%z)"
+      mv "$HOME/$dot_directory_name" "$HOME"/"$dot_directory_name"_"$timestamp"
     fi
     ln -s "$dot_directory" "$HOME/$dot_directory_name"
   ' sh {} \;
@@ -37,7 +39,7 @@ if [ -L "$XDG_CONFIG_HOME/starship" ]; then
   unlink "$XDG_CONFIG_HOME/starship"
 fi
 if [ -d "$XDG_CONFIG_HOME/starship" ]; then
-  mv "$XDG_CONFIG_HOME/starship" "$XDG_CONFIG_HOME/starship_$(date +%Y-%m-%dT%H:%M:%S%z)"
+  mv "$XDG_CONFIG_HOME/starship" "$XDG_CONFIG_HOME/starship_$timestamp"
 fi
 if [ -d "$SETTINGS_PATH/config/starship" ]; then
   ln -s "$SETTINGS_PATH/config/starship" "$XDG_CONFIG_HOME/starship"
@@ -47,7 +49,7 @@ if [ -L "$XDG_CONFIG_HOME/lsd" ]; then
   unlink "$XDG_CONFIG_HOME/lsd"
 fi
 if [ -d "$XDG_CONFIG_HOME/lsd" ]; then
-  mv "$XDG_CONFIG_HOME/lsd" "$XDG_CONFIG_HOME/lsd_$(date +%Y-%m-%dT%H:%M:%S%z)"
+  mv "$XDG_CONFIG_HOME/lsd" "$XDG_CONFIG_HOME/lsd_$timestamp"
 fi
 if [ -d "$SETTINGS_PATH/config/lsd" ]; then
   ln -s "$SETTINGS_PATH/config/lsd" "$XDG_CONFIG_HOME/lsd"
@@ -58,7 +60,7 @@ for shell in "bash" "zsh"; do
     unlink "$XDG_CONFIG_HOME/sheldon_$shell"
   fi
   if [ -d "$XDG_CONFIG_HOME/sheldon_$shell" ]; then
-    mv "$XDG_CONFIG_HOME/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"_"$(date +%Y-%m-%dT%H:%M:%S%z)"
+    mv "$XDG_CONFIG_HOME/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"_"$timestamp"
   fi
   if [ -d "$SETTINGS_PATH/config/sheldon_$shell" ]; then
     ln -s "$SETTINGS_PATH/config/sheldon_$shell" "$XDG_CONFIG_HOME/sheldon_$shell"
@@ -76,7 +78,7 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
       unlink "$HOME/$dot_filename"
     fi
     if [ -e "$HOME/$dot_filename" ]; then
-      mv "$HOME/$dot_filename" "$HOME"/"$dot_filename"_"$(date +%Y-%m-%dT%H:%M:%S%z)"
+      mv "$HOME/$dot_filename" "$HOME"/"$dot_filename"_"$timestamp"
     fi
     ln -s "$dot_file" "$HOME/$dot_filename"
   ' sh {} \;
@@ -92,7 +94,7 @@ if [ -L /etc/my.cnf ]; then
   sudo unlink /etc/my.cnf
 fi
 if [ -e /etc/my.cnf ]; then
-  sudo mv /etc/my.cnf /etc/my.cnf_"$(date +%Y-%m-%dT%H:%M:%S%z)"
+  sudo mv /etc/my.cnf /etc/my.cnf_"$timestamp"
 fi
 if [ -f "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" ]; then
   sudo ln -s "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" /etc/my.cnf
@@ -114,3 +116,5 @@ fi
 unset SETTINGS_PATH
 unset GITHUB_REPOSITORIES_PATH
 unset REPOSITORIES_PATH
+
+unset timestamp
