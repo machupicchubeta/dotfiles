@@ -49,17 +49,8 @@ for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "rspec" "t
 
   if [ "$app" = "sheldon" ]; then
     for shell in "bash" "zsh"; do
-      if [ -L "$XDG_CONFIG_HOME/$app"_"$shell" ]; then
-        unlink "$XDG_CONFIG_HOME/$app"_"$shell"
-      fi
-      if [ -d "$XDG_CONFIG_HOME/$app"_"$shell" ]; then
-        mv "$XDG_CONFIG_HOME/$app"_"$shell" "$XDG_CONFIG_HOME/$app"_"$shell"_"$timestamp"
-      fi
-      if [ -d "$SETTINGS_PATH/config/$app"_"$shell" ]; then
-        ln -s "$SETTINGS_PATH/config/$app"_"$shell" "$XDG_CONFIG_HOME/$app"_"$shell"
-      fi
-      if [ ! -d "$XDG_DATA_HOME/$app"_"$shell" ]; then
-        mkdir "$XDG_DATA_HOME/$app"_"$shell"
+      if [ ! -d "$XDG_DATA_HOME/$app/$shell" ]; then
+        mkdir --parents "$XDG_DATA_HOME/$app/$shell"
       fi
     done
   fi
