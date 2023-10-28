@@ -33,11 +33,14 @@ if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
-if [ -L "$XDG_CONFIG_HOME/starship.toml" ]; then
-  unlink "$XDG_CONFIG_HOME/starship.toml"
+if [ -L "$XDG_CONFIG_HOME/starship" ]; then
+  unlink "$XDG_CONFIG_HOME/starship"
 fi
-if [ -f "$SETTINGS_PATH/config/starship.toml" ]; then
-  ln -s "$SETTINGS_PATH/config/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
+if [ -d "$XDG_CONFIG_HOME/starship" ]; then
+  mv "$XDG_CONFIG_HOME/starship" "$XDG_CONFIG_HOME/starship_$(date +%Y-%m-%dT%H:%M:%S%z)"
+fi
+if [ -d "$SETTINGS_PATH/config/starship" ]; then
+  ln -s "$SETTINGS_PATH/config/starship" "$XDG_CONFIG_HOME/starship"
 fi
 
 if [ -L "$XDG_CONFIG_HOME/lsd" ]; then
