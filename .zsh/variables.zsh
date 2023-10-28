@@ -54,6 +54,10 @@ export AWS_PROFILE=default
 export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
 export RBENV_ROOT="$HOME/.rbenv"
 export GHQ_ROOT="$HOME/Repositories"
 
