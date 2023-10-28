@@ -102,17 +102,16 @@ if [ -f "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" ]; then
   sudo ln -s "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" /etc/my.cnf
 fi
 
-: "${RBENV_ROOT:=$HOME/.rbenv}"
+: "${RBENV_ROOT:=$XDG_DATA_HOME/rbenv}"
 
 if [ ! -d "$RBENV_ROOT" ]; then
-  mkdir "$RBENV_ROOT"
+  mkdir --parent "$RBENV_ROOT"
 fi
-
 if [ -L "$RBENV_ROOT/default-gems" ]; then
   unlink "$RBENV_ROOT/default-gems"
 fi
-if [ -f "$SETTINGS_PATH/rbenv/default-gems" ]; then
-  ln -s "$SETTINGS_PATH/rbenv/default-gems" "$RBENV_ROOT/default-gems"
+if [ -f "$SETTINGS_PATH/local/share/rbenv/default-gems" ]; then
+  ln -s "$SETTINGS_PATH/local/share/rbenv/default-gems" "$RBENV_ROOT/default-gems"
 fi
 
 unset SETTINGS_PATH

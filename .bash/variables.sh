@@ -75,5 +75,6 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1"
 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
+export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
 
 export GPG_TTY=$(tty)

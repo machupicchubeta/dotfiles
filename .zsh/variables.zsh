@@ -66,7 +66,6 @@ export AWS_PROFILE=default
 
 export DISABLE_SPRING=1
 
-export RBENV_ROOT="$HOME/.rbenv"
 export GHQ_ROOT="$HOME/Repositories"
 
 export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python/libexec/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python/libexec/bin"; else echo '/usr/bin/python'; fi)
@@ -84,5 +83,6 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#F2E6D4,bg=#7E87D6,bold,underline"
 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
+export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
 
 export GPG_TTY=$(tty)
