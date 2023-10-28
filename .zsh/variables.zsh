@@ -54,6 +54,10 @@ export AWS_PROFILE=default
 export DISABLE_SPRING=1
 
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
 export RBENV_ROOT="$HOME/.rbenv"
 export GHQ_ROOT="$HOME/Repositories"
 
@@ -69,3 +73,5 @@ export GUILE_TLS_CERTIFICATE_DIRECTORY="$HOMEBREW_PREFIX/etc/gnutls/"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#F2E6D4,bg=#7E87D6,bold,underline"
+
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
