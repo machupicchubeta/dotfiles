@@ -46,8 +46,8 @@ export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export _Z_DATA="$XDG_DATA_HOME/z/data"
 export NODENV_ROOT="$XDG_DATA_HOME/nodenv"
+export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 
-export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOMEBREW_PREFIX/opt/libxml2/bin:$HOMEBREW_PREFIX/opt/libxslt/bin:$HOMEBREW_PREFIX/opt/libiconv/bin:$HOMEBREW_PREFIX/opt/openssl/bin:$HOMEBREW_PREFIX/opt/libressl/bin:$HOMEBREW_PREFIX/opt/curl/bin:$HOMEBREW_PREFIX/opt/sqlite/bin:$HOMEBREW_PREFIX/opt/nss/bin:$HOMEBREW_PREFIX/opt/ruby/bin:$HOMEBREW_PREFIX/opt/go/bin:$HOMEBREW_PREFIX/opt/python/bin:$HOMEBREW_PREFIX/opt/python/libexec/bin:$HOMEBREW_PREFIX/opt/openjdk/bin:$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$HOMEBREW_PREFIX/opt/ed/libexec/gnubin:$HOMEBREW_PREFIX/opt/ed/bin:$HOMEBREW_PREFIX/opt/findutils/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-indent/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-which/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-getopt/bin:$HOMEBREW_PREFIX/opt/grep/libexec/gnubin:$HOMEBREW_PREFIX/opt/m4/bin:$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$HOMEBREW_PREFIX/opt/file-formula/bin:$HOMEBREW_PREFIX/opt/apr/bin:$HOMEBREW_PREFIX/opt/unzip/bin:$HOMEBREW_PREFIX/opt/ssh-copy-id/bin:$HOMEBREW_PREFIX/opt/util-linux/bin:$HOMEBREW_PREFIX/opt/util-linux/sbin:$HOMEBREW_PREFIX/opt/postgresql@16/bin:$HOME/bin:$CARGO_HOME/bin:$PYENV_ROOT/bin:$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a "$(uname -m)" = "arm64" ]; then
   export PATH="$PATH:/usr/local/bin"
