@@ -36,7 +36,7 @@ if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
-for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "rspec" "tmux"; do
+for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "irb" "rspec" "tmux"; do
   if [ -L "$XDG_CONFIG_HOME/$app" ]; then
     unlink "$XDG_CONFIG_HOME/$app"
   fi
@@ -68,6 +68,10 @@ for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "rspec" "t
       fi
     done
   fi
+
+  if [ "$app" = "irb" ] && [ ! -d "$XDG_DATA_HOME/$app" ]; then
+    mkdir --parents "$XDG_DATA_HOME/$app"
+  fi
 done
 unset -v app
 unset -v shell
@@ -84,13 +88,6 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
     fi
     ln -s "$dot_file" "$HOME/$dot_filename"
   ' sh {} \;
-
-if [ -L "$HOME/.irbrc" ]; then
-  unlink "$HOME/.irbrc"
-fi
-if [ -f "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" ]; then
-  ln -s "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" "$HOME/.irbrc"
-fi
 
 if [ -L /etc/my.cnf ]; then
   sudo unlink /etc/my.cnf

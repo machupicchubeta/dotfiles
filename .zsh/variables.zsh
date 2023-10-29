@@ -85,5 +85,6 @@ export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
+export IRBRC="$XDG_CONFIG_HOME/irb/irbrc"
 
 export GPG_TTY=$(tty)
