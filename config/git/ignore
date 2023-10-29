@@ -12,8 +12,8 @@ tags.lock
 .vim/plugged/*
 .vim/tags
 .vim/pack/*
-**/.private
-**/private.*
+**/*private*
+**/*private/**
 .bundle/*
 vendor/bundle/**
 
