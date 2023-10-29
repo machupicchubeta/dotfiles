@@ -81,7 +81,7 @@ export DISABLE_SPRING=1
 
 export GHQ_ROOT="$HOME/Repositories"
 
-export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python/libexec/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python/libexec/bin"; else echo '/usr/bin/python'; fi)
+export PYTHONPATH=$(if [ -d "$PYENV_ROOT/shims" ]; then echo "$PYENV_ROOT/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python/bin"; else echo '/usr/bin'; fi)
 
 export ENHANCD_FILTER=fzf
 export ENHANCD_DOT_ARG='~~'
