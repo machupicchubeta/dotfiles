@@ -37,8 +37,16 @@ export LESSOPEN="| $HOMEBREW_PREFIX/bin/src-hilite-lesspipe.sh %s"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
+export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
+export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
+export IRBRC="$XDG_CONFIG_HOME/irb/irbrc"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOMEBREW_PREFIX/opt/libxml2/bin:$HOMEBREW_PREFIX/opt/libxslt/bin:$HOMEBREW_PREFIX/opt/libiconv/bin:$HOMEBREW_PREFIX/opt/openssl/bin:$HOMEBREW_PREFIX/opt/libressl/bin:$HOMEBREW_PREFIX/opt/curl/bin:$HOMEBREW_PREFIX/opt/sqlite/bin:$HOMEBREW_PREFIX/opt/nss/bin:$HOMEBREW_PREFIX/opt/ruby/bin:$HOMEBREW_PREFIX/opt/go/bin:$HOMEBREW_PREFIX/opt/python/bin:$HOMEBREW_PREFIX/opt/python/libexec/bin:$HOMEBREW_PREFIX/opt/openjdk/bin:$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$HOMEBREW_PREFIX/opt/ed/libexec/gnubin:$HOMEBREW_PREFIX/opt/ed/bin:$HOMEBREW_PREFIX/opt/findutils/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-indent/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-which/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-getopt/bin:$HOMEBREW_PREFIX/opt/grep/libexec/gnubin:$HOMEBREW_PREFIX/opt/m4/bin:$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$HOMEBREW_PREFIX/opt/file-formula/bin:$HOMEBREW_PREFIX/opt/apr/bin:$HOMEBREW_PREFIX/opt/unzip/bin:$HOMEBREW_PREFIX/opt/ssh-copy-id/bin:$HOMEBREW_PREFIX/opt/util-linux/bin:$HOMEBREW_PREFIX/opt/util-linux/sbin:$HOMEBREW_PREFIX/opt/postgresql@16/bin:$HOME/bin:$HOME/.cargo/bin:$PYENV_ROOT/bin:$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="$HOMEBREW_PREFIX/opt/libxml2/bin:$HOMEBREW_PREFIX/opt/libxslt/bin:$HOMEBREW_PREFIX/opt/libiconv/bin:$HOMEBREW_PREFIX/opt/openssl/bin:$HOMEBREW_PREFIX/opt/libressl/bin:$HOMEBREW_PREFIX/opt/curl/bin:$HOMEBREW_PREFIX/opt/sqlite/bin:$HOMEBREW_PREFIX/opt/nss/bin:$HOMEBREW_PREFIX/opt/ruby/bin:$HOMEBREW_PREFIX/opt/go/bin:$HOMEBREW_PREFIX/opt/python/bin:$HOMEBREW_PREFIX/opt/python/libexec/bin:$HOMEBREW_PREFIX/opt/openjdk/bin:$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$HOMEBREW_PREFIX/opt/ed/libexec/gnubin:$HOMEBREW_PREFIX/opt/ed/bin:$HOMEBREW_PREFIX/opt/findutils/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-indent/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-which/libexec/gnubin:$HOMEBREW_PREFIX/opt/gnu-getopt/bin:$HOMEBREW_PREFIX/opt/grep/libexec/gnubin:$HOMEBREW_PREFIX/opt/m4/bin:$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$HOMEBREW_PREFIX/opt/file-formula/bin:$HOMEBREW_PREFIX/opt/apr/bin:$HOMEBREW_PREFIX/opt/unzip/bin:$HOMEBREW_PREFIX/opt/ssh-copy-id/bin:$HOMEBREW_PREFIX/opt/util-linux/bin:$HOMEBREW_PREFIX/opt/util-linux/sbin:$HOMEBREW_PREFIX/opt/postgresql@16/bin:$HOME/bin:$CARGO_HOME/bin:$PYENV_ROOT/bin:$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a "$(uname -m)" = "arm64" ]; then
   export PATH="$PATH:/usr/local/bin"
 fi
@@ -72,11 +80,5 @@ export GREP_OPTIONS='--color=auto'
 export GUILE_TLS_CERTIFICATE_DIRECTORY="$HOMEBREW_PREFIX/etc/gnutls/"
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1"
-
-export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
-export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
-export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
-export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
-export IRBRC="$XDG_CONFIG_HOME/irb/irbrc"
 
 export GPG_TTY=$(tty)
