@@ -36,7 +36,7 @@ if filereadable(expand('~/.secret_vimrc'))
 endif
 
 " Load Python
-let g:python3_host_prog = expand('$PYTHONPATH/python')
+let g:python3_host_prog = expand('$PYTHONPATH/python3')
 
 " Load vim-plug
 if has('nvim')
