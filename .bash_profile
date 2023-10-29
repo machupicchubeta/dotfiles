@@ -9,7 +9,7 @@ if [ "$(uname -m)" = "arm64" ]; then
 fi
 
 if which sheldon > /dev/null; then
-  export SHELDON_CONFIG_DIR="$XDG_CONFIG_HOME/sheldon_bash"
-  export SHELDON_DATA_DIR="$XDG_DATA_HOME/sheldon_bash"
+  export SHELDON_CONFIG_DIR="$XDG_CONFIG_HOME/sheldon/bash"
+  export SHELDON_DATA_DIR="$XDG_DATA_HOME/sheldon/bash"
   eval "$(sheldon source)"
 fi

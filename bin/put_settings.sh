@@ -21,6 +21,7 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type d ! -path "$SETTINGS_PATH/." ! -path 
 
 : "${XDG_CONFIG_HOME:=$HOME/.config}"
 : "${XDG_DATA_HOME:=$HOME/.local/share}"
+: "${XDG_CACHE_HOME:=$HOME/.cache}"
 
 if [ ! -d "$XDG_CONFIG_HOME" ]; then
   mkdir "$XDG_CONFIG_HOME"
@@ -35,7 +36,7 @@ if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
-for app in "git" "starship" "lsd" "sheldon"; do
+for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "irb" "rspec" "tmux"; do
   if [ -L "$XDG_CONFIG_HOME/$app" ]; then
     unlink "$XDG_CONFIG_HOME/$app"
   fi
@@ -48,23 +49,33 @@ for app in "git" "starship" "lsd" "sheldon"; do
 
   if [ "$app" = "sheldon" ]; then
     for shell in "bash" "zsh"; do
-      if [ -L "$XDG_CONFIG_HOME/$app"_"$shell" ]; then
-        unlink "$XDG_CONFIG_HOME/$app"_"$shell"
-      fi
-      if [ -d "$XDG_CONFIG_HOME/$app"_"$shell" ]; then
-        mv "$XDG_CONFIG_HOME/$app"_"$shell" "$XDG_CONFIG_HOME/$app"_"$shell"_"$timestamp"
-      fi
-      if [ -d "$SETTINGS_PATH/config/$app"_"$shell" ]; then
-        ln -s "$SETTINGS_PATH/config/$app"_"$shell" "$XDG_CONFIG_HOME/$app"_"$shell"
-      fi
-      if [ ! -d "$XDG_DATA_HOME/$app"_"$shell" ]; then
-        mkdir "$XDG_DATA_HOME/$app"_"$shell"
+      if [ ! -d "$XDG_DATA_HOME/$app/$shell" ]; then
+        mkdir --parents "$XDG_DATA_HOME/$app/$shell"
       fi
     done
+  fi
+
+  if [ "$app" = "bundle" ]; then
+    for arch in "x86_64" "arm64"; do
+      if [ ! -d "$XDG_DATA_HOME/$app/$arch" ]; then
+        mkdir --parents "$XDG_DATA_HOME/$app/$arch"
+      fi
+      if [ ! -d "$XDG_DATA_HOME/$app/$arch/plugin" ]; then
+        mkdir --parents "$XDG_DATA_HOME/$app/$arch/plugin"
+      fi
+      if [ ! -d "$XDG_CACHE_HOME/$app/$arch" ]; then
+        mkdir --parents "$XDG_CACHE_HOME/$app/$arch"
+      fi
+    done
+  fi
+
+  if [ "$app" = "irb" ] && [ ! -d "$XDG_DATA_HOME/$app" ]; then
+    mkdir --parents "$XDG_DATA_HOME/$app"
   fi
 done
 unset -v app
 unset -v shell
+unset -v arch
 
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
     dot_file=$1
@@ -78,13 +89,6 @@ find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
     ln -s "$dot_file" "$HOME/$dot_filename"
   ' sh {} \;
 
-if [ -L "$HOME/.irbrc" ]; then
-  unlink "$HOME/.irbrc"
-fi
-if [ -f "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" ]; then
-  ln -s "$GITHUB_REPOSITORIES_PATH/k0kubun/dotfiles/config/.irbrc" "$HOME/.irbrc"
-fi
-
 if [ -L /etc/my.cnf ]; then
   sudo unlink /etc/my.cnf
 fi
@@ -95,17 +99,16 @@ if [ -f "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" ]; then
   sudo ln -s "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" /etc/my.cnf
 fi
 
-: "${RBENV_ROOT:=$HOME/.rbenv}"
+: "${RBENV_ROOT:=$XDG_DATA_HOME/rbenv}"
 
 if [ ! -d "$RBENV_ROOT" ]; then
-  mkdir "$RBENV_ROOT"
+  mkdir --parent "$RBENV_ROOT"
 fi
-
 if [ -L "$RBENV_ROOT/default-gems" ]; then
   unlink "$RBENV_ROOT/default-gems"
 fi
-if [ -f "$SETTINGS_PATH/rbenv/default-gems" ]; then
-  ln -s "$SETTINGS_PATH/rbenv/default-gems" "$RBENV_ROOT/default-gems"
+if [ -f "$SETTINGS_PATH/local/share/rbenv/default-gems" ]; then
+  ln -s "$SETTINGS_PATH/local/share/rbenv/default-gems" "$RBENV_ROOT/default-gems"
 fi
 
 unset SETTINGS_PATH
