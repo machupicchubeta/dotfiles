@@ -12,6 +12,8 @@ alias glsd='gls -l | grep "^d"'
 
 alias ls='lsd'
 alias lt='ls --tree'
+alias ltree='ls --tree'
+alias treee='ls --tree'
 
 alias rrf='rm -rf'
 alias rr='rm -rfi'
@@ -162,8 +164,11 @@ elif which putclip >/dev/null 2>&1 ; then
     alias -g C='| putclip'
 fi
 
-alias k='eza -l --time-style=long-iso --group --binary --color always --icons -a -a -s type  --group-directories-first'
-alias kk='eza -l --time-style=long-iso --group --binary --color always --icons -a -a -s type --group-directories-first'
+alias k='eza --long --color=auto --icons --all --all --sort=name --group-directories-first --binary --group --header --time-style="+%F %T %a" --octal-permissions'
+alias kk='eza --long --color=auto --icons --all --all --sort=type --group-directories-first --binary --group --header --time-style="+%F %T %a" --octal-permissions'
+alias kt='eza --tree'
+alias ktree='eza --tree'
+alias treeee='eza --tree'
 
 alias _bb_='bat -p --paging=never --theme="Solarized (dark)"'
 alias bb='bat --theme="Solarized (dark)"'

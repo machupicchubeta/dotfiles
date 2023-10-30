@@ -1,2 +1,15 @@
+blocks:
+  - permission
+  - size
+  - user
+  - group
+  - date
+  - name
+
+date: '+%F %T %a'
+
 sorting:
+  column: name
   dir-grouping: first
+
+header: true
