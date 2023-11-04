@@ -108,7 +108,7 @@ brew install git
 # brew install perl
 # brew install python@3
 brew install rsync
-brew install svn
+brew install subversion
 brew install unzip
 # brew install macvim
 # brew unlink macvim
@@ -199,13 +199,13 @@ brew install sheldon
 brew install starship
 
 # Searching and Finding tools
-brew install ag
+brew install the_silver_searcher
 brew install pick
 brew install peco
 brew install fzf
 brew install fd
 brew install ripgrep
-brew install rga
+brew install ripgrep-all
 
 # Data stores
 brew install mysql
