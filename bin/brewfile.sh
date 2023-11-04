@@ -292,7 +292,7 @@ brew install flyctl
 brew install ffmpeg
 
 # For Ruby
-brew install openssl
+brew install openssl@3
 brew install openssl@1.1
 brew install readline
 brew install libyaml
