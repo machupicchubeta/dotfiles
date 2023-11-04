@@ -63,6 +63,8 @@ brew install libyaml
 brew install gmp
 brew install libffi
 
+brew install libressl
+
 # Libraries, Software Runtime Environments for installing Ruby with YJIT
 brew install sqlite
 brew install python
@@ -89,7 +91,7 @@ brew install watch
 brew install wdiff
 brew install wget
 brew install bash
-brew install emacs
+# brew install emacs
 if [ "$(uname -m)" = "x86_64" ]; then
   brew install gdb
 fi
@@ -97,226 +99,264 @@ brew install gpatch
 brew install less
 # brew install m4
 brew install make
-brew install nano
+# brew install nano
 
-# use a newer version instead of the version shipped by macOS
+# Use the newer version tools instead of the version shipped by macOS
 brew install file-formula
 brew install git
 # brew install openssh # Kick out "openssh"; d911522cc87c65ecef011e3bb2d58574e97bcae7
-brew install perl
+# brew install perl
 # brew install python
 brew install rsync
 brew install svn
 brew install unzip
-brew install macvim
-brew unlink macvim
-brew install vim
+# brew install macvim
+# brew unlink macvim
+# brew install vim
 brew install zsh
 brew install curl
 # brew install sqlite
 brew install sl
 brew install zlib
 
+# Programming languages, Software Development Environments, its environment management or build tools and libraries
 brew install gcc
 brew install cmake
 brew install gdbm
-brew install tig
-brew install git-lfs
-brew install mysql
-brew install redis
-brew install memcached
-brew install node
+
+brew install rustup-init
+# brew install rust
+brew install ruby-build
+brew install rbenv
+brew install rbenv-default-gems
+brew install ruby
+brew install pyenv
+# brew install python
+brew install plenv
+brew install perl
+brew install goenv --HEAD
+brew install go
 brew install node-build --HEAD
 brew link node-build
 brew install nodenv
-brew install watchman
+brew install node
+brew install yarn
+brew install jenv
+brew install openjdk
+brew install kotlin
+brew install luarocks
+brew install lua
+brew install ocaml
+brew unlink ocaml
+brew install elixir
+brew install erlang
+brew install coffeescript
+brew install ghostscript
+brew install tfenv
+
+brew install protobuf
+brew install mosquitto
+brew install gradle
+brew install wasmtime
+brew install webpack
+brew install v8
+brew install vite
+brew install esbuild
+brew install terraform-lsp
+
+# Libraries used in Nokogiri gem
+brew install libxml2
+brew install libxslt
+brew install libiconv
+
+# Text Editor and its extensions
+brew install nano
+brew install emacs
+brew install neovim
+brew install neovim-remote
+brew install neovide
+brew install macvim
+brew unlink macvim
+brew install vim
+brew install universal-ctags --HEAD
+brew link universal-ctags
+brew install source-highlight
+brew install cscope
+brew install robotsandpencils/made/xcodes
+brew install swift
+
+# Shell extensions
 brew install z
 brew install zsh-completions
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install terminal-notifier
-brew install source-highlight
-brew install luarocks
-brew install neovim
 brew install bash-completion
-brew install imagemagick
-brew install gti
-brew install heroku
-brew install pyenv
-brew install jq
-brew install ansible
-brew install direnv
-brew install ttyrec
-brew install dnsmasq
-brew install ag
-brew install spark
 brew install tmux
 brew install reattach-to-user-namespace
+
+brew install sheldon
+brew install starship
+
+# Searching and Finding tools
+brew install ag
+brew install pick
+brew install peco
+brew install fzf
+brew install fd
+brew install ripgrep
+brew install rga
+
+# Data stores
+brew install mysql
+brew install postgresql@16
+brew install redis
+brew install memcached
+brew install mongodb-community
+
+# Web Application Servers
+brew install puma-dev
+
+# Virtual Machines and Infrastructure tools
+brew install helm
+brew install minikube
+brew install ansible
+brew install lazydocker
+
+# XaaS tools
+brew install heroku
+brew install firebase-cli
+brew install azure-cli
+brew install doctl
+brew install awscli
+brew install amazon-ecs-cli
+brew install aws-shell
+brew install mongocli
+brew install aws-vault
+
+brew install gh
+brew install serverless
+brew install circleci
+brew install warrensbox/tap/tgswitch
+brew install auth0
+brew install glab
+brew install flyctl
+
+# Linters and Code Formatters
+brew install swiftlint
+brew install shellcheck
+brew install flow
+brew install ansible-lint
+brew install eslint
+brew install swiftformat
+brew install cfn-lint
+
+# Command-line tools
+brew install jq
+brew install gti
+brew install direnv
+brew install spark
 brew install gnupg
 brew install pinentry-mac
 brew install grc
-brew install tor
 brew install nkf
-brew install automake
-brew install p7zip
-brew install pick
-brew install docutils
-brew install universal-ctags --HEAD
-brew link universal-ctags
-brew install tree
 brew install chrome-cli
-brew install cscope
-brew install postgresql@16
 brew install parallel
-brew install nmap
-brew install go
-brew install goenv --HEAD
 brew install slackcat
-brew install lame
 brew install yank
-brew install v8
-brew install git-secrets
-brew install sslscan
-brew install git-when-merged
 brew install fortune
 brew install figlet
 brew install asciiquarium
 brew install cmatrix
-brew install yarn
-brew install nss
-brew install cheat
 brew install ios-sim
-brew install swift
-brew install swiftlint
-brew install x265
-brew install puma-dev
-brew install stunnel
-brew install sqlmap
-# brew install rust
-brew install plenv
 brew install shyaml
-brew install shellcheck
-brew install ghq
-brew install flow
-brew install ocaml
-brew unlink ocaml
-brew install jenv
-brew install kotlin
-brew install rcm
-brew install ansible-lint
-brew install firebase-cli
-brew install logrotate
-brew install pre-commit
-brew install protobuf
 brew install pv
-brew install git-secrets
-brew install testssl
-brew install helm
-brew install gradle
-brew install azure-cli
-brew install circleci
-brew install eslint
 brew install iso-codes
 brew install ssh-copy-id
-brew install swiftformat
 brew install terraform_landscape
 brew install thors-serializer
 brew install uriparser
 brew install util-linux
-brew install watchexec
-brew install xcodegen
-brew install webpack
-brew install elixir
-brew install erlang
-brew install ghostscript
-brew install duck
-brew install doctl
-brew install git-quick-stats
-brew install peco
-brew install fzf
-brew install coffeescript
-brew install awscli
-brew install whois
-brew install bettercap
-brew install lsd
-brew install serverless
-brew install amazon-ecs-cli
 brew install emojify
 brew install jsonpp
-brew install gh
-brew install mosquitto
-brew install arp-scan
-brew install rustup-init
-brew install mongodb-community
-brew install aws-shell
-brew install bottom
+brew install shared-mime-info
+brew install screenfetch
+brew install grex
+brew install hyperfine
+brew install choose-rust
+brew install jless
+brew install neo-cowsay
+brew install sd
+
+# File management tools
+brew install tree
+brew install tig
+brew install git-lfs
+brew install watchman
+brew install imagemagick
+brew install git-secrets
+brew install p7zip
+brew install automake
+brew install git-when-merged
+brew install git-quick-stats
+brew install ghq
+brew install rcm
+brew install logrotate
+brew install pre-commit
+brew install watchexec
 brew install gibo
-brew install tldr
-brew install fd
-brew install ripgrep
-brew install rga
+brew install lsd
 brew install eza
 brew install bat
 brew install git-delta
-brew install procs
-brew install sd
-brew install lazydocker
 brew install lazygit
-brew install openjdk
 brew install sleuthkit
-brew install robotsandpencils/made/xcodes
-brew install libressl
 brew install graphicsmagick
-brew install shared-mime-info
 brew install graphviz
 brew install teller
-brew install screenfetch
-brew install neovim-remote
-brew install starship
-brew install minikube
 brew install dust
 brew install tokei
-brew install hyperfine
-brew install bandwhich
-brew install grex
 brew install duf
 brew install broot
-brew install choose-rust
 brew install detect-secrets
-brew install mongocli
-brew install wasmtime
 brew install licensefinder
+brew install f2
+brew install xcodegen
+
+# Process monitoring and management tools
+brew install procs
+brew install bottom
+brew install glances
+
+# Network and Security tools
+brew install dnsmasq
+brew install tor
+brew install nmap
+brew install sslscan
+brew install nss
+brew install stunnel
+brew install sqlmap
+brew install testssl
+brew install duck
+brew install whois
+brew install bettercap
+brew install arp-scan
+brew install bandwhich
 brew install xh
 brew install curlie
 brew install httpie
 brew install gping
-brew install glances
-brew install vite
-brew install esbuild
-brew install f2
-brew install cfn-lint
-brew install aws-vault
-brew install tfenv
-brew install warrensbox/tap/tgswitch
-brew install auth0
-brew install jless
-brew install terraform-lsp
-brew install sheldon
-brew install neo-cowsay
-brew install neovide
-brew install glab
-brew install flyctl
+
+# Documentation tools
+brew install cheat
+brew install docutils
+brew install tldr
+
+# Audio and Video tools
+brew install ttyrec
+brew install lame
+brew install x265
 brew install ffmpeg
-
-# For Ruby
-brew install ruby-build
-brew install rbenv
-brew install rbenv-default-gems
-
-# For Nokogiri gem
-brew install libxml2
-brew install libxslt
-brew install libiconv
 
 : "${CPU_BRAND:=$(/usr/sbin/sysctl -n machdep.cpu.brand_string)}"
 
