@@ -90,7 +90,8 @@ export GREP_OPTIONS='--color=auto'
 
 export GUILE_TLS_CERTIFICATE_DIRECTORY="$HOMEBREW_PREFIX/etc/gnutls/"
 
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@1.1 --with-libyaml-dir=$HOMEBREW_PREFIX/opt/libyaml --with-libffi-dir=$HOMEBREW_PREFIX/opt/libffi"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3 --with-libyaml-dir=$HOMEBREW_PREFIX/opt/libyaml --with-libffi-dir=$HOMEBREW_PREFIX/opt/libffi"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#F2E6D4,bg=#7E87D6,bold,underline"
 
