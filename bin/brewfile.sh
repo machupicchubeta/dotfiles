@@ -52,6 +52,17 @@ brew link vim
 brew update
 brew upgrade --fetch-HEAD
 
+# Libraries that used in Ruby or so, or used to build from source code
+brew install openssl@3
+brew install openssl@1.1
+brew install readline
+brew install m4
+brew install autoconf
+brew install bison
+brew install libyaml
+brew install gmp
+brew install libffi
+
 # GNU command line tools
 brew install coreutils
 brew install binutils
@@ -78,7 +89,7 @@ if [ "$(uname -m)" = "x86_64" ]; then
 fi
 brew install gpatch
 brew install less
-brew install m4
+# brew install m4
 brew install make
 brew install nano
 
@@ -292,11 +303,6 @@ brew install flyctl
 brew install ffmpeg
 
 # For Ruby
-brew install openssl@3
-brew install openssl@1.1
-brew install readline
-brew install libyaml
-brew install libffi
 brew install ruby-build
 brew install rbenv
 brew install rbenv-default-gems
