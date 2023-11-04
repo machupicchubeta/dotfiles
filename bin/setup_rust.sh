@@ -7,6 +7,7 @@ set -eu
 
 # if [[ ! -d "$HOME/.cargo/bin" ]]; then RUSTUP_INIT_SKIP_PATH_CHECK=yes rustup-init -y --no-modify-path --default-host x86_64-apple-darwin --default-toolchain stable --profile default; fi
 if [[ ! -d "$CARGO_HOME/bin" ]]; then RUSTUP_INIT_SKIP_PATH_CHECK=yes rustup-init -y --no-update-default-toolchain --no-modify-path; fi
+rustup default stable
 rustup update
 
 if [ "$(uname -m)" = "x86_64" ]; then
