@@ -295,6 +295,8 @@ brew install ffmpeg
 brew install openssl
 brew install openssl@1.1
 brew install readline
+brew install libyaml
+brew install libffi
 brew install ruby-build
 brew install rbenv
 brew install rbenv-default-gems
