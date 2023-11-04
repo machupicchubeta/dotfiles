@@ -63,6 +63,12 @@ brew install libyaml
 brew install gmp
 brew install libffi
 
+# Libraries, Software Runtime Environments for installing Ruby with YJIT
+brew install sqlite
+brew install python
+brew install llvm@16
+brew install rust
+
 # GNU command line tools
 brew install coreutils
 brew install binutils
@@ -98,7 +104,7 @@ brew install file-formula
 brew install git
 # brew install openssh # Kick out "openssh"; d911522cc87c65ecef011e3bb2d58574e97bcae7
 brew install perl
-brew install python
+# brew install python
 brew install rsync
 brew install svn
 brew install unzip
@@ -107,7 +113,7 @@ brew unlink macvim
 brew install vim
 brew install zsh
 brew install curl
-brew install sqlite
+# brew install sqlite
 brew install sl
 brew install zlib
 
@@ -186,7 +192,7 @@ brew install x265
 brew install puma-dev
 brew install stunnel
 brew install sqlmap
-brew install rust
+# brew install rust
 brew install plenv
 brew install shyaml
 brew install shellcheck

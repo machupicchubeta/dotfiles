@@ -85,6 +85,6 @@ export GREP_OPTIONS='--color=auto'
 export GUILE_TLS_CERTIFICATE_DIRECTORY="$HOMEBREW_PREFIX/etc/gnutls/"
 
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3 --with-libyaml-dir=$HOMEBREW_PREFIX/opt/libyaml --with-libffi-dir=$HOMEBREW_PREFIX/opt/libffi --with-readline-dir=$HOMEBREW_PREFIX/opt/readline --with-gmp-dir=$HOMEBREW_PREFIX/opt/gmp"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3 --with-libyaml-dir=$HOMEBREW_PREFIX/opt/libyaml --with-libffi-dir=$HOMEBREW_PREFIX/opt/libffi --with-readline-dir=$HOMEBREW_PREFIX/opt/readline --with-gmp-dir=$HOMEBREW_PREFIX/opt/gmp  --enable-yjit"
 
 export GPG_TTY=$(tty)
