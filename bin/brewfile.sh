@@ -67,7 +67,7 @@ brew install libressl
 
 # Libraries, Software Runtime Environments for installing Ruby with YJIT
 brew install sqlite
-brew install python
+brew install python@3
 brew install llvm@16
 brew install rust
 
@@ -106,7 +106,7 @@ brew install file-formula
 brew install git
 # brew install openssh # Kick out "openssh"; d911522cc87c65ecef011e3bb2d58574e97bcae7
 # brew install perl
-# brew install python
+# brew install python@3
 brew install rsync
 brew install svn
 brew install unzip
@@ -131,7 +131,7 @@ brew install rbenv
 brew install rbenv-default-gems
 brew install ruby
 brew install pyenv
-# brew install python
+# brew install python@3
 brew install plenv
 brew install perl
 brew install goenv --HEAD
