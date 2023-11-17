@@ -163,6 +163,7 @@ brew install v8
 brew install vite
 brew install esbuild
 brew install terraform-lsp
+brew install tree-sitter
 
 # Libraries used in Nokogiri gem
 brew install libxml2
