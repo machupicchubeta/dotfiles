@@ -288,6 +288,7 @@ brew install choose-rust
 brew install jless
 brew install neo-cowsay
 brew install sd
+brew install silicon
 
 # File management tools
 brew install tree
