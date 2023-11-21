@@ -390,3 +390,5 @@ nnoremap <leader>wa :wall<cr>
 nnoremap <leader>wqa :wqall<cr>
 nnoremap <leader>qa :qall!<cr>
 noremap <leader><leader> <C-W><C-w>
+nnoremap <silent> <C-j> :bprevious<CR>
+nnoremap <silent> <C-k> :bnext<CR>
