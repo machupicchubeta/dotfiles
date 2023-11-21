@@ -222,3 +222,5 @@ set helplang& helplang=en,ja
 
 " Default home directory
 let t:cwd = getcwd()
+
+cnoremap <C-x> <C-r>=expand('%:p:h')<CR>/
