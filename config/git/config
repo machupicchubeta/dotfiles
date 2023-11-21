@@ -154,3 +154,5 @@
   syntax-theme = Solarized (dark)
 [include]
   path = conf.d/private.conf
+[commit]
+  verbose = true
