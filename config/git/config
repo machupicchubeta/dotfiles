@@ -116,7 +116,8 @@
 [pull]
   rebase = true
 [push]
-  default = simple
+  default = upstream
+  autoSetupRemote = true
 [filter "media"]
   required = true
   clean = git media clean %f
