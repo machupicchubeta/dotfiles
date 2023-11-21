@@ -64,7 +64,7 @@ if has('vim_starting')
     Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'sass', 'less', 'sacs' ] }
     Plug 'junegunn/vim-emoji'
     Plug 'codota/tabnine-vim', { 'for': ['javascript', 'typescript', 'ruby', 'python', 'css', 'html', 'sass', 'go', 'rust', 'scala', 'java', 'kotlin', 'haskell', 'perl', 'c', 'cpp', 'cs'] }
-    Plug 'github/copilot.vim'
+    " Plug 'github/copilot.vim'
   endif
 
   call plug#end()
