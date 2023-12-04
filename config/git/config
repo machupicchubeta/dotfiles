@@ -80,7 +80,7 @@
   whitespace = fix
 [core]
   pager = delta
-  editor = vim
+  editor = nvim
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
   commentchar = ^
 [color "branch"]
