@@ -1,53 +1,11 @@
 format = """
 $username\
 $directory\
-$vcsh\
-$nix_shell\
-$shell\
-$shlvl\
 $hostname\
 $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-$hg_branch\
-$kubernetes\
-$docker_context\
-$package\
-$conda\
-$cmake\
-$crystal\
-$dart\
-$deno\
-$dotnet\
-$elixir\
-$elm\
-$erlang\
-$golang\
-$helm\
-$java\
-$julia\
-$kotlin\
-$lua\
-$nim\
-$nodejs\
-$ocaml\
-$perl\
-$php\
-$purescript\
-$python\
-$red\
-$ruby\
-$rust\
-$scala\
-$swift\
-$terraform\
-$vlang\
-$vagrant\
-$zig\
-$aws\
-$gcloud\
-$openstack\
 $env_var\
 $custom\
 $cmd_duration\
@@ -55,21 +13,24 @@ $jobs\
 $memory_usage\
 $battery\
 $time\
+$shell\
+$shlvl\
 $status\
 $line_break\
 $character"""
 
-# scan_timeout = 1000
-# command_timeout = 10000
-
 add_newline = true
 
+continuation_prompt = "❯❯ "
+
 [aws]
+disabled = true
 symbol = "☁️   "
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = "dimmed yellow"
 
 [battery]
+disabled = false
 full_symbol = "🔋 "
 charging_symbol = "⚡️ "
 discharging_symbol = "☠️ "
@@ -84,68 +45,89 @@ style = "yellow"
 discharging_symbol = "⚠️ "
 
 [character]
+disabled = false
 success_symbol = "[λ ➜](bold green)"
 error_symbol = "[∅ ✗](bold red)"
 vicmd_symbol = "[ ➜](bold green) "
+vimcmd_replace_one_symbol = "[ ➜](bold purple) "
+vimcmd_replace_symbol = "[ ➜](bold purple) "
+vimcmd_visual_symbol = "[ ➜](bold yellow) "
 
 [cmake]
+disabled = true
 style = "blue"
 
 [cmd_duration]
-min_time = 500
+disabled = false
+min_time = 0
 style = "yellow"
 
 [conda]
+disabled = true
 style = "green"
 
 [crystal]
+disabled = true
 style = "red"
 
 [dart]
+disabled = true
 style = "blue"
 
 [deno]
+disabled = true
 style = "green"
 
 [directory]
+disabled = false
 truncation_length = 8
 truncation_symbol = "…/"
 style = "cyan"
 
 [docker_context]
+disabled = true
 style = "blue"
 
 [dotnet]
+disabled = true
 symbol = "🥅 "
 style = "blue"
 
 [elixir]
+disabled = true
 style = "purple"
 
 [elm]
+disabled = true
 style = "cyan"
 
-[env_var]
+[env_var.HOST]
+disabled = false
 variable = 'HOST'
 default = "👑"
 style = "dimmed white"
 
 [erlang]
+disabled = true
 style = "red"
 
 [gcloud]
+disabled = true
 symbol = "☁️  🇬️ "
 style = "dimmed blue"
 
 [git_branch]
+disabled = false
 symbol = "🌱 "
 style = "purple"
 
 [git_commit]
+disabled = false
 tag_symbol = "🔖 "
 style = "green"
 
 [git_state]
+disabled = false
 format = '[\( $state ($progress_current of $progress_total)\)]($style) '
 style = "dimmed red"
 rebase = "REBASING 🏕 "
@@ -157,6 +139,7 @@ am = "AM ✉️ "
 am_or_rebase = "AM/REBASE 🏕 ✉️ "
 
 [git_status]
+disabled = false
 format = '([\[ $all_status$ahead_behind\]]($style) )'
 style = "purple"
 conflicted = "🔮 "
@@ -171,9 +154,11 @@ renamed = "📛 "
 deleted = "🗑 "
 
 [golang]
+disabled = true
 style = "cyan"
 
 [helm]
+disabled = true
 style = "white"
 
 [hostname]
@@ -182,19 +167,23 @@ style = "dimmed green"
 format = "on [$hostname]($style) "
 
 [java]
+disabled = true
 style = "dimmed red"
 
 [jobs]
+disabled = false
 style = "blue"
 
 [julia]
+disabled = true
 style = "purple"
 
 [kotlin]
+disabled = true
 style = "blue"
 
 [kubernetes]
-disabled = false
+disabled = true
 symbol = "⛵ "
 format = 'on [$symbol$context \($namespace\)]($style) '
 style = "cyan"
@@ -203,6 +192,7 @@ style = "cyan"
 disabled = false
 
 [lua]
+disabled = true
 style = "blue"
 
 [memory_usage]
@@ -210,60 +200,76 @@ disabled = false
 style = "dimmed white"
 
 [hg_branch]
+disabled = false
 symbol = "🧪 "
 style = "purple"
 
 [nim]
+disabled = true
 style = "yellow"
 
 [nix_shell]
+disabled = true
 style = "blue"
 
 [nodejs]
+disabled = true
 style = "green"
 not_capable_style = "red"
 
 [ocaml]
+disabled = true
 style = "yellow"
 
 [openstack]
+disabled = true
 symbol = "☁️ 🅾 "
 style = "dimmed yellow"
 
 [package]
+disabled = true
 symbol = "🎁 "
 style = "208"
 
 [perl]
+disabled = true
 style = "149"
 
 [php]
+disabled = true
 style = "147"
 
 [purescript]
+disabled = true
 style = "white"
 
 [python]
+disabled = true
 style = "yellow"
 
 [rlang]
+disabled = true
 style = "blue"
 
 [red]
+disabled = true
 style = "red"
 
 [ruby]
+disabled = true
 style = "red"
 
 [rust]
+disabled = true
 style = "red"
 
 [scala]
+disabled = true
 style = "dimmed red"
 
 [shell]
-format = "$indicator "
 disabled = false
+format = " $indicator "
 bash_indicator = "𝗯𝗮𝘀𝗵"
 fish_indicator = "🐠"
 zsh_indicator = "𝘇𝘀𝗵"
@@ -276,11 +282,14 @@ unknown_indicator = "❔"
 [shlvl]
 disabled = false
 symbol = "♻️ "
-format = "[$symbol $shlvl]($style) "
+format = "[$symbol]($style) "
 style = "yellow"
-threshold = 2
+repeat = true
+repeat_offset = 0
+threshold = 0
 
 [singularity]
+disabled = true
 style = "dimmed blue"
 
 [status]
@@ -292,9 +301,11 @@ map_symbol = true
 disabled = false
 
 [swift]
+disabled = true
 style = "202"
 
 [terraform]
+disabled = true
 style = "105"
 
 [time]
@@ -304,24 +315,29 @@ style = "dimmed blue"
 time_format = "%F %T %:z"
 
 [username]
-style_user = "dimmed blue"
-style_root = "dimmed white"
 disabled = false
 show_always = true
+style_user = "dimmed blue"
+style_root = "dimmed white"
 
 [vagrant]
+disabled = true
 style = "cyan"
 
 [vlang]
+disabled = true
 style = "blue"
 
 [vcsh]
+disabled = true
 symbol = "🆅"
 format = "[ $symbol $repo ]($style) "
 style = "yellow"
 
 [zig]
+disabled = true
 style = "yellow"
 
 [custom.none]
+disabled = false
 style = "green"
