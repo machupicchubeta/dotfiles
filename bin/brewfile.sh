@@ -40,7 +40,6 @@ brew tap github/gh
 brew tap mongodb/brew
 brew tap clementtsang/bottom
 brew tap spectralops/tap
-brew tap warrensbox/tap
 brew tap auth0/auth0-cli
 brew tap Code-Hex/tap
 
@@ -238,7 +237,6 @@ brew install aws-vault
 brew install gh
 brew install serverless
 brew install circleci
-brew install warrensbox/tap/tgswitch
 brew install auth0
 brew install glab
 brew install flyctl
