@@ -29,21 +29,3 @@ apply = ["source"]
 local = "~/.zsh.private"
 use = ["*.zsh"]
 apply = ["source"]
-
-[plugins.rbenv]
-inline = 'if command -v rbenv > /dev/null; then eval "$(rbenv init -)"; fi'
-
-[plugins.plenv]
-inline = 'if command -v plenv > /dev/null; then eval "$(plenv init -)"; fi'
-
-[plugins.pyenv]
-inline = 'if command -v pyenv > /dev/null; then eval "$(pyenv init --path)"; fi'
-
-[plugins.nodenv]
-inline = 'if command -v nodenv > /dev/null; then eval "$(nodenv init -)"; fi'
-
-[plugins.goenv]
-inline = 'if command -v goenv > /dev/null; then eval "$(goenv init -)"; fi'
-
-[plugins.jenv]
-inline = 'if command -v jenv > /dev/null; then eval "$(jenv init -)"; fi'

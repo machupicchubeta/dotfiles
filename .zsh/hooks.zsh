@@ -1,11 +1,13 @@
-if command -v direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
-if command -v starship > /dev/null; then eval "$(starship init zsh)"; fi
-
 if [ "$(uname -m)" = "x86_64" ]; then
   : "${HOMEBREW_PREFIX:=/usr/local}"
 elif [ "$(uname -m)" = "arm64" ]; then
   : "${HOMEBREW_PREFIX:=/opt/homebrew}"
 fi
+
+if command -v direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
+if command -v starship > /dev/null; then eval "$(starship init zsh)"; fi
+if command -v rtx > /dev/null; then eval "$(rtx activate zsh)"; fi
+if command -v asdf > /dev/null; then . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"; fi
 
 : "${REPOSITORIES_PATH:=$HOME/Repositories}"
 : "${GITHUB_REPOSITORIES_PATH=$REPOSITORIES_PATH/github.com}"

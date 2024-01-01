@@ -1,13 +1,13 @@
 #!/bin/bash
 set -eu
 
-latest_nodejs_version=$(nodenv install -l | grep --perl-regexp '^(\d+\.\d+)\.\d+$' | tail -n 1)
-nodenv install --skip-existing $latest_nodejs_version
-nodenv global $latest_nodejs_version
-nodenv rehash
+rtx plugins update node
+rtx install node@lts
+rtx upgrade node@lts
+rtx install node@latest
+rtx upgrade node@latest
+rtx use --global node@latest
+rtx prune node
+rtx reshim
 
-eval "$(nodenv init -)"
-
-npm install -g npm
-npm install -g neovim
 npm update -g

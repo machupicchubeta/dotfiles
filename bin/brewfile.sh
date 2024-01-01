@@ -42,6 +42,7 @@ brew tap clementtsang/bottom
 brew tap spectralops/tap
 brew tap auth0/auth0-cli
 brew tap Code-Hex/tap
+brew tap jdx/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -123,24 +124,19 @@ brew install gcc
 brew install cmake
 brew install gdbm
 
+brew install rtx
+brew install asdf
 brew install rustup-init
 # brew install rust
 brew install ruby-build
-brew install rbenv
-brew install rbenv-default-gems
 brew install ruby
-brew install pyenv
 # brew install python@3
-brew install plenv
 brew install perl
-brew install goenv --HEAD
 brew install go
 brew install node-build --HEAD
 brew link node-build
-brew install nodenv
 brew install node
 brew install yarn
-brew install jenv
 brew install openjdk
 brew install kotlin
 brew install luarocks
@@ -151,7 +147,6 @@ brew install elixir
 brew install erlang
 brew install coffeescript
 brew install ghostscript
-brew install tfenv
 
 brew install protobuf
 brew install mosquitto

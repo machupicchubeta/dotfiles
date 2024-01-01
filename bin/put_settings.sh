@@ -36,7 +36,7 @@ if [ -d "$SETTINGS_PATH/.vim" ]; then
   ln -s "$SETTINGS_PATH/.vim" "$XDG_CONFIG_HOME/nvim"
 fi
 
-for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "irb" "rspec" "tmux" "tig"; do
+for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "irb" "rspec" "tmux" "tig" "rtx" "asdf"; do
   if [ -L "$XDG_CONFIG_HOME/$app" ]; then
     unlink "$XDG_CONFIG_HOME/$app"
   fi
@@ -97,18 +97,6 @@ if [ -e /etc/my.cnf ]; then
 fi
 if [ -f "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" ]; then
   sudo ln -s "$SETTINGS_PATH/mysql/my-utf8mb4.cnf" /etc/my.cnf
-fi
-
-: "${RBENV_ROOT:=$XDG_DATA_HOME/rbenv}"
-
-if [ ! -d "$RBENV_ROOT" ]; then
-  mkdir --parent "$RBENV_ROOT"
-fi
-if [ -L "$RBENV_ROOT/default-gems" ]; then
-  unlink "$RBENV_ROOT/default-gems"
-fi
-if [ -f "$SETTINGS_PATH/local/share/rbenv/default-gems" ]; then
-  ln -s "$SETTINGS_PATH/local/share/rbenv/default-gems" "$RBENV_ROOT/default-gems"
 fi
 
 unset SETTINGS_PATH
