@@ -69,8 +69,6 @@ export HISTIGNORE="history:cd:pwd:exit:date:* --help"
 
 export TERM=xterm-256color
 
-export HOMEBREW_GITHUB_API_TOKEN=
-
 export AWS_PROFILE=default
 
 export DISABLE_SPRING=1
