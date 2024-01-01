@@ -144,7 +144,7 @@ disabled = false
 format = '([\[ $all_status$ahead_behind\]]($style) )'
 style = "purple"
 conflicted = "🔮 "
-ahead = "🏎 💨"
+ahead = "🏎 💨 "
 behind = "👾 "
 diverged = "🥨 "
 untracked = "🚧 "
@@ -152,7 +152,7 @@ stashed = "💭 "
 modified = "✨ "
 staged = "📦 "
 renamed = "📛 "
-deleted = "🗑 "
+deleted = "🗑  "
 
 [golang]
 disabled = true
