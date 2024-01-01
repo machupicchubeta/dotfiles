@@ -2,7 +2,17 @@ shell = "zsh"
 apply = ["source"]
 
 [plugins.compinit]
-inline = 'autoload -Uz compinit && compinit'
+inline = '''
+local now=$(date +"%s")
+local updated=$(date -r $HOME/.zcompdump +"%s")
+local threshold=$((60 * 60 * 24))
+if [ $((${now} - ${updated})) -gt ${threshold} ]; then
+  autoload -Uz compinit && compinit
+else
+  # if there are new functions can be omitted by giving the option -C.
+  autoload -Uz compinit && compinit -C
+fi
+'''
 
 [plugins.enhancd]
 github = "b4b4r07/enhancd"
