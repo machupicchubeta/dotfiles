@@ -1,5 +1,5 @@
-if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
-if which starship > /dev/null; then eval "$(starship init bash)"; fi
+if command -v direnv > /dev/null; then eval "$(direnv hook bash)"; fi
+if command -v starship > /dev/null; then eval "$(starship init bash)"; fi
 
 if [ "$(uname -m)" = "x86_64" ]; then
   : "${HOMEBREW_PREFIX:=/usr/local}"
