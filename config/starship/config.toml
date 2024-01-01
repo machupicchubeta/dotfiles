@@ -21,7 +21,7 @@ $character"""
 
 add_newline = true
 
-continuation_prompt = "❯❯ "
+continuation_prompt = '[❯❯](bright-black) '
 
 [aws]
 disabled = true
@@ -60,6 +60,7 @@ style = "blue"
 [cmd_duration]
 disabled = false
 min_time = 0
+show_milliseconds = true
 style = "yellow"
 
 [conda]
