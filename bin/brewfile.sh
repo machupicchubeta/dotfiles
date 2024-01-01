@@ -480,6 +480,11 @@ else
   brew install --cask font-anonymice-nerd-font
   brew install --cask font-agave-nerd-font
   brew install --cask font-3270-nerd-font
+  brew install --cask font-sf-mono
+  brew install --cask font-sf-pro
+  brew install --cask font-sf-compact
+  brew install --cask font-new-york
+  brew install --cask font-sf-mono-for-powerline
 
   brew cu --all --cleanup --yes
 fi
