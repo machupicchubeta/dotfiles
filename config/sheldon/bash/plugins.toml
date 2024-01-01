@@ -10,21 +10,3 @@ apply = ["source"]
 local = "~/.bash.private"
 use = ["*.sh"]
 apply = ["source"]
-
-[plugins.rbenv]
-inline = 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi'
-
-[plugins.plenv]
-inline = 'if which plenv > /dev/null; then eval "$(plenv init -)"; fi'
-
-[plugins.pyenv]
-inline = 'if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi'
-
-[plugins.nodenv]
-inline = 'if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi'
-
-[plugins.goenv]
-inline = 'if which goenv > /dev/null; then eval "$(goenv init -)"; fi'
-
-[plugins.jenv]
-inline = 'if which jenv > /dev/null; then eval "$(jenv init -)"; fi'

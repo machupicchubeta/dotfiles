@@ -1,21 +1,22 @@
 shell = "zsh"
-apply = ["defer"]
-
-[plugins.zsh-defer]
-github = "romkatv/zsh-defer"
 apply = ["source"]
 
-[templates]
-defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
-
 [plugins.compinit]
-inline = 'autoload -Uz compinit && zsh-defer compinit && compinit'
+inline = '''
+local now=$(date +"%s")
+local updated=$(date -r $HOME/.zcompdump +"%s")
+local threshold=$((60 * 60 * 24))
+if [ $((${now} - ${updated})) -gt ${threshold} ]; then
+  autoload -Uz compinit && compinit
+else
+  # if there are new functions can be omitted by giving the option -C.
+  autoload -Uz compinit && compinit -C
+fi
+'''
 
 [plugins.enhancd]
 github = "b4b4r07/enhancd"
-
-[plugins.emoji-cli]
-github = "b4b4r07/emoji-cli"
+apply = ["source"]
 
 [plugins.ohmyzsh-lib]
 github = "ohmyzsh/ohmyzsh"
@@ -29,11 +30,6 @@ dir = "plugins"
 use = ["{bundler/bundler,docker-compose/docker-compose,git/git,history/history,macos/macos,terraform/terraform,z/z}.plugin.zsh"]
 apply = ["source"]
 
-[plugins.ohmyzsh-plugin-redis-cli]
-github = "ohmyzsh/ohmyzsh"
-dir = "plugins"
-use = ["redis-cli/_redis-cli"]
-
 [plugins.dotfiles]
 local = "~/.zsh"
 use = ["*.zsh"]
@@ -43,21 +39,3 @@ apply = ["source"]
 local = "~/.zsh.private"
 use = ["*.zsh"]
 apply = ["source"]
-
-[plugins.rbenv]
-inline = 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi'
-
-[plugins.plenv]
-inline = 'if which plenv > /dev/null; then eval "$(plenv init -)"; fi'
-
-[plugins.pyenv]
-inline = 'if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi'
-
-[plugins.nodenv]
-inline = 'if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi'
-
-[plugins.goenv]
-inline = 'if which goenv > /dev/null; then eval "$(goenv init -)"; fi'
-
-[plugins.jenv]
-inline = 'if which jenv > /dev/null; then eval "$(jenv init -)"; fi'

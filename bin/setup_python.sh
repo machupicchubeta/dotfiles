@@ -1,12 +1,12 @@
 #!/bin/bash
 set -eu
 
-latest_python3_version=$(pyenv install -l | grep --perl-regexp '^\s+3\.\d+\.\d+$' | tail -n 1 | sed -e 's/^[ ]*//g')
-pyenv install --skip-existing $latest_python3_version
-pyenv global $latest_python3_version
-pyenv rehash
-
-eval "$(pyenv init --path)"
+rtx plugins update python
+rtx install python@latest
+rtx upgrade python@latest
+rtx use --global python@latest
+rtx prune python
+rtx reshim
 
 python3 -m pip install --upgrade pip
 pip3 install --upgrade setuptools wheel

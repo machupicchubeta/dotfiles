@@ -1,0 +1,8 @@
+[tools]
+go = "latest"
+java = "latest"
+node = "latest"
+perl = "latest"
+python = "latest"
+ruby = "latest"
+terraform = "latest"

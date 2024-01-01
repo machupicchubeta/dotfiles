@@ -1,16 +1,11 @@
 #!/bin/bash
 set -eu
 
-if [ "$(uname -m)" = "x86_64" ]; then
-  : "${HOMEBREW_PREFIX:=/usr/local}"
-elif [ "$(uname -m)" = "arm64" ]; then
-  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
-fi
+rtx plugins update java
+rtx install java@latest
+rtx upgrade java@latest
+rtx use --global java@latest
+rtx prune java
+rtx reshim
 
-if [ ! -L '/Library/Java/JavaVirtualMachines/openjdk.jdk' ]; then
-  sudo ln -sfn $HOMEBREW_PREFIX/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-fi
-
-eval "$(jenv init -)"
-
-jenv add $(/usr/libexec/java_home)
+sudo ln -sfn "$(rtx where java@latest)" "/Library/Java/JavaVirtualMachines/openjdk.jdk"

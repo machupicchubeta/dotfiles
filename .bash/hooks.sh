@@ -1,11 +1,13 @@
-if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
-if which starship > /dev/null; then eval "$(starship init bash)"; fi
-
 if [ "$(uname -m)" = "x86_64" ]; then
   : "${HOMEBREW_PREFIX:=/usr/local}"
 elif [ "$(uname -m)" = "arm64" ]; then
   : "${HOMEBREW_PREFIX:=/opt/homebrew}"
 fi
+
+if command -v direnv > /dev/null; then eval "$(direnv hook bash)"; fi
+if command -v starship > /dev/null; then eval "$(starship init bash)"; fi
+if command -v rtx > /dev/null; then eval "$(rtx activate bash)"; fi
+if command -v asdf > /dev/null; then . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"; fi
 
 if [ -r "$HOMEBREW_PREFIX/etc/bash_completion" ]; then source "$HOMEBREW_PREFIX/etc/bash_completion"; fi
 if [ -r "$HOMEBREW_PREFIX/opt/fzf/shell/completion.bash" ]; then source "$HOMEBREW_PREFIX/opt/fzf/shell/completion.bash"; fi
