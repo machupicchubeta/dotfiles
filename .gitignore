@@ -1,0 +1,9 @@
+.vim/.netrwhist
+.vim/autoload/*
+.vim/backups/*
+.vim/colors/*
+.vim/pack/*
+.vim/plugged/*
+.vim/swaps/*
+.vim/tags
+.vim/undo/*
