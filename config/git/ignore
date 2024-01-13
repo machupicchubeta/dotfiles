@@ -8,7 +8,6 @@ dist
 tags
 tags.lock
 temp
-vendor/bundle/**
 
 !**/.keep
 !.bundle/config
