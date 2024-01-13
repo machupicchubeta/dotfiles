@@ -170,9 +170,9 @@ alias kt='eza --tree'
 alias ktree='eza --tree'
 alias treeee='eza --tree'
 
-alias _bb_='bat -p --paging=never'
+alias _bb_='bat --style=plain --paging=never'
 alias bb='bat'
-alias bb_='bat -p'
+alias bb_='bat --style=plain'
 alias bbb='bat --show-all'
 alias bbb_="bat --show-all --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo \"Solarized (dark)\")"
 
