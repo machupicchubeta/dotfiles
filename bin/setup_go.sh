@@ -1,9 +1,9 @@
 #!/bin/bash
 set -eu
 
-rtx plugins update go
-rtx install go@latest
-rtx upgrade go@latest
-rtx use --global go@latest
-rtx prune go
-rtx reshim
+mise plugins update go
+mise install go@latest
+mise upgrade go@latest
+mise use --global go@latest
+mise prune go
+mise reshim

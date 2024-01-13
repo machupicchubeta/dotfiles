@@ -1,12 +1,12 @@
 #!/bin/bash
 set -eu
 
-rtx plugins update ruby
-rtx install ruby@latest
-rtx upgrade ruby@latest
-rtx use --global ruby@latest
-rtx prune ruby
-rtx reshim
+mise plugins update ruby
+mise install ruby@latest
+mise upgrade ruby@latest
+mise use --global ruby@latest
+mise prune ruby
+mise reshim
 
 gem update --system
 gem update

@@ -1,13 +1,13 @@
 #!/bin/bash
 set -eu
 
-rtx plugins update node
-rtx install node@lts
-rtx upgrade node@lts
-rtx install node@latest
-rtx upgrade node@latest
-rtx use --global node@latest
-rtx prune node
-rtx reshim
+mise plugins update node
+mise install node@lts
+mise upgrade node@lts
+mise install node@latest
+mise upgrade node@latest
+mise use --global node@latest
+mise prune node
+mise reshim
 
 npm update -g

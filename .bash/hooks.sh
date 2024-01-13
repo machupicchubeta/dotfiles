@@ -6,7 +6,7 @@ fi
 
 if command -v direnv > /dev/null; then eval "$(direnv hook bash)"; fi
 if command -v starship > /dev/null; then eval "$(starship init bash)"; fi
-if command -v rtx > /dev/null; then eval "$(rtx activate bash)"; fi
+if command -v mise > /dev/null; then eval "$(mise activate bash)"; fi
 if command -v asdf > /dev/null; then . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"; fi
 
 if [ -r "$HOMEBREW_PREFIX/etc/bash_completion" ]; then source "$HOMEBREW_PREFIX/etc/bash_completion"; fi
