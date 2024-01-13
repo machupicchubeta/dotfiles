@@ -17,6 +17,7 @@ tags.lock
 **/*private/**
 .bundle/*
 vendor/bundle/**
+.envrc
 
 !.bundle/config
 !**/.keep
