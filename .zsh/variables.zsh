@@ -35,6 +35,7 @@ export MANPAGER="less -X"
 
 export LESS='-R'
 export LESSOPEN="| $HOMEBREW_PREFIX/bin/src-hilite-lesspipe.sh %s"
+export LESSHISTFILE="$XDG_DATA_HOME/less/history"
 
 # Prefer US English and use UTF-8
 export LC_ALL=en_US.UTF-8
