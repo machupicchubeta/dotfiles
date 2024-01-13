@@ -47,16 +47,16 @@ export IRBRC="$XDG_CONFIG_HOME/irb/irbrc"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export _Z_DATA="$XDG_DATA_HOME/z/data"
-export RTX_CONFIG_DIR="$XDG_CONFIG_HOME/rtx"
-export RTX_DATA_DIR="$XDG_DATA_HOME/rtx"
-export RTX_CACHE_DIR="$XDG_CACHE_HOME/rtx"
-export RTX_RUBY_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/rtx/ruby/default-gems"
-export RTX_GO_SET_GOROOT=1
-export RTX_GO_SET_GOPATH=1
-export RTX_GO_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/rtx/go/default-go-packages"
-export RTX_NODE_COREPACK=1
-export RTX_NODE_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/rtx/node/default-npm-packages"
-export RTX_PYTHON_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/rtx/python/default-python-packages"
+export MISE_CONFIG_DIR="$XDG_CONFIG_HOME/mise"
+export MISE_DATA_DIR="$XDG_DATA_HOME/mise"
+export MISE_CACHE_DIR="$XDG_CACHE_HOME/mise"
+export MISE_RUBY_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/ruby/default-gems"
+export MISE_GO_SET_GOROOT=1
+export MISE_GO_SET_GOPATH=1
+export MISE_GO_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/go/default-go-packages"
+export MISE_NODE_COREPACK=1
+export MISE_NODE_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/node/default-npm-packages"
+export MISE_PYTHON_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/python/default-python-packages"
 export ASDF_CONFIG_FILE="$XDG_CONFIG_HOME/asdf/config"
 export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
 export ASDF_FORCE_PREPEND="yes"
@@ -89,7 +89,7 @@ export DISABLE_SPRING=1
 
 export GHQ_ROOT="$HOME/Repositories"
 
-export PYTHONPATH=$(if [ -d "$RTX_DATA_DIR/shims" ]; then echo "$RTX_DATA_DIR/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python@3/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python@3/bin"; else echo '/usr/bin'; fi)
+export PYTHONPATH=$(if [ -d "$MISE_DATA_DIR/shims" ]; then echo "$MISE_DATA_DIR/shims"; elif [ -d "$HOMEBREW_PREFIX/opt/python@3/bin" ]; then echo "$HOMEBREW_PREFIX/opt/python@3/bin"; else echo '/usr/bin'; fi)
 
 export ENHANCD_FILTER=fzf
 export ENHANCD_DOT_ARG='~~'

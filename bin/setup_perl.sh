@@ -1,10 +1,10 @@
 #!/bin/bash
 set -eu
 
-rtx plugins install perl
-rtx plugins update perl
-rtx install perl@latest
-rtx upgrade perl@latest
-rtx use --global perl@latest
-rtx prune perl
-rtx reshim
+mise plugins install perl
+mise plugins update perl
+mise install perl@latest
+mise upgrade perl@latest
+mise use --global perl@latest
+mise prune perl
+mise reshim

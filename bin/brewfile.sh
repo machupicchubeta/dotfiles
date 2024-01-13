@@ -42,7 +42,6 @@ brew tap clementtsang/bottom
 brew tap spectralops/tap
 brew tap auth0/auth0-cli
 brew tap Code-Hex/tap
-brew tap jdx/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -124,7 +123,7 @@ brew install gcc
 brew install cmake
 brew install gdbm
 
-brew install rtx
+brew install mise
 brew install asdf
 brew install rustup-init
 # brew install rust

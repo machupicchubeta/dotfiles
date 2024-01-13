@@ -1,10 +1,10 @@
 #!/bin/bash
 set -eu
 
-rtx plugins install terraform
-rtx plugins update terraform
-rtx install terraform@latest
-rtx upgrade terraform@latest
-rtx use --global terraform@latest
-rtx prune terraform
-rtx reshim
+mise plugins install terraform
+mise plugins update terraform
+mise install terraform@latest
+mise upgrade terraform@latest
+mise use --global terraform@latest
+mise prune terraform
+mise reshim
