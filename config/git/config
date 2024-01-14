@@ -12,7 +12,6 @@
   s = status
   d = diff
   df = diff
-  # df = diff --color --color-words --abbrev
   dc = diff --cached
   dfc = diff --cached
   pr = pull --rebase
@@ -43,7 +42,6 @@
   rt-sw = rtsw
   sh = show
   changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
-#  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
   ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
   cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
