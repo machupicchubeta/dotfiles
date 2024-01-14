@@ -59,8 +59,6 @@
   chb-origin = "!f() { git branch -r | grep origin | grep -v \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
   chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
   checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
-  ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
-  fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
   l1 = ! git log --oneline --color | emojify | less -r
   lg = ! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
   lga = ! git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
