@@ -30,7 +30,7 @@
   ps = push
   psf = push --force-with-lease
   pt = push --tags
-  pull--request = browse-remote --pr
+  pull--request = browse-remote
   rb = rebase
   rst = restore
   rsts = restore --staged
