@@ -1,77 +1,77 @@
 [alias]
-  acm = commit -am
-  ca = commit --amend
-  cm = commit -m
-  cfu = commit --fixup
-  c = commit
-  pl = pull
-  ps = push
-  psf = push --force-with-lease
-  pt = push --tags
-  ss = status -s
-  s = status
-  d = diff
-  df = diff
-  dc = diff --cached
-  dfc = diff --cached
-  pr = pull --rebase
-  prr = pull --rebase --prune
   a = add
   aa = add -A
+  acm = commit -am
   b = branch
-  delete-branch = branch -D
+  backup = "!f() { git-backup }; f"
+  bn = !git branch --show-current
+  c = commit
+  ca = commit --amend
+  cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
+  cfu = commit --fixup
   ch = checkout
+  ch- = "!f() { git checkout $(git branch | grep -v \"`git show-default-branch`\" | fzf); }; f"
+  changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
   chb = checkout -b
-  sw = switch
-  swc = switch --create
-  swcf = switch --force-create
+  chb-origin = "!f() { git branch -r | grep origin | grep -v \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
+  chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
+  checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
+  cm = commit -m
+  crp = cherry-pick
+  d = diff
+  db = !git checkout-default-branch
+  dc = diff --cached
+  delete-branch = branch -D
+  df = diff
+  dfc = diff --cached
+  fc = fetch
+  ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
+  fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
+  fixup = commit --amend -C HEAD
+  ft = fetch --tags
+  g = grep
+  l1 = ! git log --oneline --color | emojify | less -r
+  lg = ! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
+  lga = ! git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
+  merged = "!f() { git branch --no-color -r --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | sed 's/origin\\///'; }; f"
   new-branch = swc
   new-branch-force = swfc
-  crp = cherry-pick
-  fc = fetch
-  ft = fetch --tags
-  t = tag
+  pl = pull
+  pr = pull --rebase
+  prr = pull --rebase --prune
+  prr-upstream = "!f() { git checkout $(git show-default-branch) && git pull --rebase --prune upstream $(git show-default-branch); }; f"
+  ps = push
+  ps- = "!f() { git push $1 $(git bn); }; f"
+  psf = push --force-with-lease
+  psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
+  psfo = !git push --force-with-lease origin $(git bn)
+  pso = !git push origin $(git bn)
+  pt = push --tags
+  pull--request = browse-remote --pr
   rb = rebase
+  release-branch = !git checkout -b release_$(date +%Y%m%d_%H%M)
+  release-tag = !git tag RELEASE_$(date +%Y%m%d_%H%M)
   rst = restore
   rsts = restore --staged
   rstsw = restore --staged --worktree
   rt = rst
-  rts = rsts
-  rtsw = rstsw
   rt-s = rts
   rt-sw = rtsw
+  rts = rsts
+  rtsw = rstsw
+  s = status
   sh = show
-  changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
-  fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
-  ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
-  cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
-  sweep = "!f() { git branch --no-color --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | xargs -n 1 git branch -D; }; f"
-  merged = "!f() { git branch --no-color -r --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | sed 's/origin\\///'; }; f"
-  lg = ! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
-  lga = ! git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
-  l1 = ! git log --oneline --color | emojify | less -r
-  g = grep
-  fixup = commit --amend -C HEAD
-  topic-branch = "!f() { git-topic-branch }; f"
-  backup = "!f() { git-backup }; f"
-  pull--request = browse-remote --pr
-  release-branch = !git checkout -b release_$(date +%Y%m%d_%H%M)
-  release-tag = !git tag RELEASE_$(date +%Y%m%d_%H%M)
-  bn = !git branch --show-current
-  pso = !git push origin $(git bn)
-  ps- = "!f() { git push $1 $(git bn); }; f"
-  psfo = !git push --force-with-lease origin $(git bn)
-  psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
   show-default-branch = "!f() { git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'; }; f"
-  checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
-  db = !git checkout-default-branch
-  prr-upstream = "!f() { git checkout $(git show-default-branch) && git pull --rebase --prune upstream $(git show-default-branch); }; f"
-  ch- = "!f() { git checkout $(git branch | grep -v \"`git show-default-branch`\" | fzf); }; f"
+  ss = status -s
+  sw = switch
   sw- = ch-
-  chb-origin = "!f() { git branch -r | grep origin | grep -v \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
+  swc = switch --create
   swc-origin = chb-origin
-  chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
   swc-upstream = chb-upstream
+  swcf = switch --force-create
+  sweep = "!f() { git branch --no-color --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | xargs -n 1 git branch -D; }; f"
+  t = tag
+  topic-branch = "!f() { git-topic-branch }; f"
 
 [apply]
   whitespace = fix
@@ -85,11 +85,11 @@
   remote = green
 
 [color "diff"]
-  meta = 227
-  frag = magenta bold
-  old = red bold
-  new = green bold
   commit = 227 bold
+  frag = magenta bold
+  meta = 227
+  new = green bold
+  old = red bold
   whitespace = red reverse
 
 [color "status"]
@@ -101,16 +101,16 @@
   verbose = true
 
 [core]
-  pager = delta
-  editor = nvim
-  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
   commentchar = ^
+  editor = nvim
+  pager = delta
+  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 
 [filter "lfs"]
   clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  required = true
   process = git-lfs filter-process
+  required = true
+  smudge = git-lfs smudge -- %f
 
 [include]
   path = conf.d/delta.conf
@@ -124,8 +124,8 @@
   diffFilter = delta --color-only
 
 [merge]
-  log = true
   ff = false
+  log = true
 
 [pager]
   diff = delta
@@ -135,8 +135,8 @@
   rebase = true
 
 [push]
-  default = upstream
   autoSetupRemote = true
+  default = upstream
 
 [rebase]
   autosquash = true
@@ -158,5 +158,5 @@
 
 [url "git@github.com:"]
   insteadOf = "gh:"
-  pushInsteadOf = "github:"
   pushInsteadOf = "git://github.com/"
+  pushInsteadOf = "github:"
