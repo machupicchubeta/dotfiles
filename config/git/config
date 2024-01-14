@@ -75,17 +75,16 @@
   chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
   swc-upstream = chb-upstream
 
-[color]
-  ui = true
-
 [apply]
   whitespace = fix
 
-[core]
-  pager = delta
-  editor = nvim
-  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
-  commentchar = ^
+[delta]
+  line-numbers = true
+  whitespace-error-style = 22 reverse
+  syntax-theme = Solarized (dark)
+
+[color]
+  ui = true
 
 [color "branch"]
   current = yellow reverse
@@ -100,19 +99,73 @@
   commit = 227 bold
   whitespace = red reverse
 
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
 
+[commit]
+  verbose = true
+
+[core]
+  pager = delta
+  editor = nvim
+  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+  commentchar = ^
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
+
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+
+[ghq]
+  root = ~/Repositories
+
+[include]
+  path = conf.d/private.conf
+
+[init]
+  defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
+
 [merge]
   log = true
   ff = false
 
-[url "git@github.com:"]
-  insteadOf = "gh:"
-  pushInsteadOf = "github:"
-  pushInsteadOf = "git://github.com/"
+[pager]
+  diff = delta
+  show = delta
+
+[pull]
+  rebase = true
+
+[push]
+  default = upstream
+  autoSetupRemote = true
+
+[rebase]
+  autosquash = true
+
+[rerere]
+  autoupdated = 1
+  enabled = 1
+
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
 
 [url "git://github.com/"]
   insteadOf = "github:"
@@ -122,60 +175,7 @@
   pushInsteadOf = "gist:"
   pushInsteadOf = "git://gist.github.com/"
 
-[url "git://gist.github.com/"]
-  insteadOf = "gist:"
-
-[pull]
-  rebase = true
-
-[push]
-  default = upstream
-  autoSetupRemote = true
-
-[filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
-
-[rerere]
-  autoupdated = 1
-  enabled = 1
-
-[rebase]
-  autosquash = true
-
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  required = true
-  process = git-lfs filter-process
-
-[pager]
-  diff = delta
-  show = delta
-
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
-
-[ghq]
-  root = ~/Repositories
-
-[init]
-  defaultBranch = main
-
-[interactive]
-  diffFilter = delta --color-only
-
-[delta]
-  line-numbers = true
-  whitespace-error-style = 22 reverse
-  syntax-theme = Solarized (dark)
-
-[include]
-  path = conf.d/private.conf
-
-[commit]
-  verbose = true
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
