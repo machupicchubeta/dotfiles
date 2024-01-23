@@ -1,78 +1,3 @@
-[alias]
-  a = add
-  aa = add --all
-  acm = commit --all --message
-  b = branch
-  backup = git-backup
-  bn = branch --show-current
-  c = commit
-  ca = commit --amend
-  cfu = commit --fixup
-  ch = checkout
-  chb = checkout -b
-  cm = commit --message
-  crp = cherry-pick
-  d = diff
-  db = checkout-default-branch
-  dc = diff --cached
-  delete-branch = branch --delete --force
-  df = diff
-  dfc = diff --cached
-  fc = fetch
-  fixup = commit --amend --reuse-message HEAD
-  ft = fetch --tags
-  g = grep
-  new-branch = swc
-  new-branch-force = swfc
-  pl = pull
-  pr = pull --rebase
-  prr = pull --rebase --prune
-  ps = push
-  psf = push --force-with-lease
-  pt = push --tags
-  pull--request = browse-remote
-  rb = rebase
-  rst = restore
-  rsts = restore --staged
-  rstsw = restore --staged --worktree
-  rt = rst
-  rt-s = rts
-  rt-sw = rtsw
-  rts = rsts
-  rtsw = rstsw
-  s = status
-  sh = show
-  ss = status --short
-  sw = switch
-  sw- = ch-
-  swc = switch --create
-  swc-origin = chb-origin
-  swc-upstream = chb-upstream
-  swcf = switch --force-create
-  t = tag
-  topic-branch = git-topic-branch
-
-  # shell command calls
-  cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
-  ch- = "!f() { git checkout $(git branch | grep --invert-match \"`git show-default-branch`\" | fzf); }; f"
-  changelog = "!f() { git tag | grep RELEASE | tail --lines=1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
-  chb-origin = "!f() { git branch --remotes | grep origin | grep --invert-match \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
-  chb-upstream = "!f() { git branch --remotes | grep upstream | grep --invert-match \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
-  checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
-  l1 = ! git log --oneline --color | emojify | less --raw-control-chars
-  lg = ! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less --raw-control-chars
-  lga = ! git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less --raw-control-chars
-  merged = "!f() { git branch --no-color --remotes --merged | grep --invert-match \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | sed 's/origin\\///'; }; f"
-  prr-upstream = "!f() { git checkout $(git show-default-branch) && git pull --rebase --prune upstream $(git show-default-branch); }; f"
-  ps- = "!f() { git push $1 $(git bn); }; f"
-  psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
-  psfo = "!f() { git push --force-with-lease origin $(git bn); }; f"
-  pso = "!f() { git push origin $(git bn); }; f"
-  release-branch = "!f() { git checkout -b release_$(date +%Y%m%d_%H%M); }; f"
-  release-tag = "!f() { git tag RELEASE_$(date +%Y%m%d_%H%M); }; f"
-  show-default-branch = "!f() { git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'; }; f"
-  sweep = "!f() { git branch --no-color --merged | grep --invert-match \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | xargs -n 1 git branch --delete --force; }; f"
-
 [apply]
   whitespace = fix
 
@@ -113,6 +38,8 @@
   smudge = git-lfs smudge -- %f
 
 [include]
+  path = conf.d/aliases.conf
+  path = conf.d/shell_command_aliases.conf
   path = conf.d/delta.conf
   path = conf.d/ghq.conf
   path = conf.d/private.conf
