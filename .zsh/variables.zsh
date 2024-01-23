@@ -86,6 +86,8 @@ export HISTFILE=~/.zsh_history
 export TERM=xterm-256color
 
 export AWS_PROFILE=default
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 
 export DISABLE_SPRING=1
 
