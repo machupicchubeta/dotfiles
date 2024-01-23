@@ -1,156 +1,89 @@
-[alias]
-  acm = commit -am
-  ca = commit --amend
-  cm = commit -m
-  cfu = commit --fixup
-  c = commit
-  pl = pull
-  ps = push
-  psf = push --force-with-lease
-  pt = push --tags
-  ss = status -s
-  s = status
-  d = diff
-  df = diff
-  # df = diff --color --color-words --abbrev
-  dc = diff --cached
-  dfc = diff --cached
-  pr = pull --rebase
-  prr = pull --rebase --prune
-  a = add
-  aa = add -A
-  b = branch
-  delete-branch = branch -D
-  ch = checkout
-  chb = checkout -b
-  sw = switch
-  swc = switch --create
-  swcf = switch --force-create
-  new-branch = swc
-  new-branch-force = swfc
-  crp = cherry-pick
-  fc = fetch
-  ft = fetch --tags
-  t = tag
-  rb = rebase
-  rst = restore
-  rsts = restore --staged
-  rstsw = restore --staged --worktree
-  rt = rst
-  rts = rsts
-  rtsw = rstsw
-  rt-s = rts
-  rt-sw = rtsw
-  sh = show
-  changelog = "!f() { git tag | grep RELEASE | tail -n 1 | xargs -I{} git log {}...\"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" --oneline | grep 'Merge pull request' | awk '{ print $1 }' | emojify | xargs git show; }; f;"
-#  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  fhs = "!f() { git flow hotfix start `date +%Y%m%d%H%M_`$1; }; f"
-  ffs = "!f() { git flow feature start `date +%Y%m%d%H%M_`$1; }; f"
-  cb = "!f() { git checkout -b `date +%Y%m%d%H%M_`$1; }; f"
-  sweep = "!f() { git branch --no-color --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | xargs -n 1 git branch -D; }; f"
-  merged = "!f() { git branch --no-color -r --merged | grep -v \"`git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'`\" | sed 's/origin\\///'; }; f"
-  lg = ! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
-  lga = ! git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --color | emojify | less -r
-  l1 = ! git log --oneline --color | emojify | less -r
-  g = grep
-  fixup = commit --amend -C HEAD
-  topic-branch = "!f() { git-topic-branch }; f"
-  backup = "!f() { git-backup }; f"
-  pull--request = browse-remote --pr
-  release-branch = !git checkout -b release_$(date +%Y%m%d_%H%M)
-  release-tag = !git tag RELEASE_$(date +%Y%m%d_%H%M)
-  bn = !git branch --show-current
-  pso = !git push origin $(git bn)
-  ps- = "!f() { git push $1 $(git bn); }; f"
-  psfo = !git push --force-with-lease origin $(git bn)
-  psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
-  show-default-branch = "!f() { git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'; }; f"
-  checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
-  db = !git checkout-default-branch
-  prr-upstream = "!f() { git checkout $(git show-default-branch) && git pull --rebase --prune upstream $(git show-default-branch); }; f"
-  ch- = "!f() { git checkout $(git branch | grep -v \"`git show-default-branch`\" | fzf); }; f"
-  sw- = ch-
-  chb-origin = "!f() { git branch -r | grep origin | grep -v \"`git show-default-branch`\" | fzf | sed 's/origin\\///' | xargs -I {} git checkout -b {} origin/{}; }; f"
-  swc-origin = chb-origin
-  chb-upstream = "!f() { git branch -r | grep upstream | grep -v \"`git show-default-branch`\" | fzf | sed 's/upstream\\///' | xargs -I {} git checkout -b {} upstream/{}; }; f"
-  swc-upstream = chb-upstream
-[color]
-  ui = true
 [apply]
   whitespace = fix
-[core]
-  pager = delta
-  editor = nvim
-  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
-  commentchar = ^
+
+[color]
+  ui = true
+
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
+
 [color "diff"]
-  meta = 227
-  frag = magenta bold
-  old = red bold
-  new = green bold
   commit = 227 bold
+  frag = magenta bold
+  meta = 227
+  new = green bold
+  old = red bold
   whitespace = red reverse
+
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+
+[commit]
+  verbose = true
+
+[core]
+  commentchar = ^
+  editor = nvim
+  pager = delta
+  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  process = git-lfs filter-process
+  required = true
+  smudge = git-lfs smudge -- %f
+
+[include]
+  path = conf.d/aliases.conf
+  path = conf.d/shell_command_aliases.conf
+  path = conf.d/delta.conf
+  path = conf.d/ghq.conf
+  path = conf.d/private.conf
+
+[init]
+  defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
+
 [merge]
-  log = true
   ff = false
-[url "git@github.com:"]
-  insteadOf = "gh:"
-  pushInsteadOf = "github:"
-  pushInsteadOf = "git://github.com/"
+  log = true
+
+[pager]
+  diff = delta
+  show = delta
+
+[pull]
+  rebase = true
+
+[push]
+  autoSetupRemote = true
+  default = upstream
+
+[rebase]
+  autosquash = true
+
+[rerere]
+  autoupdated = 1
+  enabled = 1
+
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
+
 [url "git://github.com/"]
   insteadOf = "github:"
+
 [url "git@gist.github.com:"]
   insteadOf = "gst:"
   pushInsteadOf = "gist:"
   pushInsteadOf = "git://gist.github.com/"
-[url "git://gist.github.com/"]
-  insteadOf = "gist:"
-[pull]
-  rebase = true
-[push]
-  default = upstream
-  autoSetupRemote = true
-[filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
-[rerere]
-  autoupdated = 1
-  enabled = 1
-[rebase]
-  autosquash = true
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  required = true
-  process = git-lfs filter-process
-[pager]
-  diff = delta
-  show = delta
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
-[ghq]
-  root = ~/Repositories
-[init]
-  defaultBranch = main
-[interactive]
-  diffFilter = delta --color-only
-[delta]
-  line-numbers = true
-  whitespace-error-style = 22 reverse
-  syntax-theme = Solarized (dark)
-[include]
-  path = conf.d/private.conf
-[commit]
-  verbose = true
+
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "git://github.com/"
+  pushInsteadOf = "github:"
