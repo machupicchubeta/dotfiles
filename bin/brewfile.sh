@@ -42,6 +42,7 @@ brew tap clementtsang/bottom
 brew tap spectralops/tap
 brew tap auth0/auth0-cli
 brew tap Code-Hex/tap
+brew tap olets/tap
 
 brew unlink vim
 brew upgrade macvim
@@ -188,6 +189,7 @@ brew install terminal-notifier
 brew install bash-completion
 brew install tmux
 brew install reattach-to-user-namespace
+brew install zsh-abbr
 
 brew install sheldon
 brew install starship
