@@ -8,3 +8,4 @@
 .vim/tags
 .vim/undo/*
 config/aws/*
+config/nvim/lazy-lock.json
