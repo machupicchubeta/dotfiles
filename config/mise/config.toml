@@ -1,7 +1,7 @@
 [tools]
 go = "latest"
 java = "latest"
-node = "latest"
+node = ["latest", "lts"]
 perl = "latest"
 python = "latest"
 ruby = "latest"
