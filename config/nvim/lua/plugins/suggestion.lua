@@ -40,7 +40,6 @@ return {
           { name = 'omni' },
           { name = 'nvim_lua' },
           { name = 'spell' },
-          { name = 'treesitter' },
           { name = 'cmdline' }
         }, {
           { name = 'buffer' }
@@ -95,11 +94,6 @@ return {
       vim.opt.spell = true
       vim.opt.spelllang = { 'en_us' }
     end,
-    event = 'VeryLazy'
-  },
-  {
-    'ray-x/cmp-treesitter',
-    lazy = true,
     event = 'VeryLazy'
   },
   {
