@@ -30,6 +30,8 @@ complete -W "NSGlobalDomain" defaults
 
 complete -C aws_completer aws
 
-complete -C $HOMEBREW_PREFIX/bin/terraform terraform
+if command -v mise > /dev/null && [ -f "$(mise which terraform)" ]; then
+  complete -C "$(mise which terraform)" terraform
+fi
 
 ssh-add --apple-load-keychain &> /dev/null
