@@ -9,7 +9,7 @@ else
   local now=$(date +"%s")
   local updated=$(date -r $HOME/.zcompdump +"%s")
   local threshold=$((60 * 60 * 24))
-  if [ ! -f $HOME/.zcompdump || $((${now} - ${updated})) -gt ${threshold} ]; then
+  if [ $((${now} - ${updated})) -gt ${threshold} ]; then
     autoload -Uz compinit && compinit
   else
     # if there are new functions can be omitted by giving the option -C.
