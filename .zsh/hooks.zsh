@@ -20,7 +20,10 @@ if [ -r "$HOMEBREW_PREFIX/share/zsh/site-functions/_aws" ]; then source "$HOMEBR
 
 if [ -r "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized/dircolors.ansi-universal" ]; then eval $(gdircolors "$GITHUB_REPOSITORIES_PATH/seebi/dircolors-solarized/dircolors.ansi-universal"); fi
 
-complete -o nospace -C $HOMEBREW_PREFIX/bin/terraform terraform
+if command -v mise > /dev/null && [ -f "$(mise which terraform)" ]; then
+  autoload -U +X bashcompinit && bashcompinit
+  complete -o nospace -C "$(mise which terraform)" terraform
+fi
 
 preexec() { print '' }
 
