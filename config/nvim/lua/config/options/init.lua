@@ -38,9 +38,7 @@ vim.opt.showtabline = 0
 vim.opt.linebreak = false
 vim.opt.showbreak = '\\'
 vim.opt.breakat = ' ;:,!?\t'
-vim.opt.whichwrap = 'b,s,h,l,<,>,~,[,]'
 vim.opt.breakindent = true
-vim.opt.wrap = true
 vim.opt.shortmess = 'aTIcF'
 vim.opt.showmode = false
 vim.opt.writebackup = false
@@ -84,7 +82,6 @@ vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.incsearch = true
-vim.opt.wrapscan = true
 
 vim.opt.termguicolors = true
 
