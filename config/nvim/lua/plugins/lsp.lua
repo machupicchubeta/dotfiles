@@ -133,16 +133,6 @@ return {
     event = 'VeryLazy'
   },
   {
-    'ray-x/navigator.lua',
-    cond = (not vim.g.vscode),
-    lazy = true,
-    opts = {},
-    event = 'VeryLazy',
-    dependencies = {
-      'ray-x/guihua.lua'
-    }
-  },
-  {
     'j-hui/fidget.nvim',
     cond = (not vim.g.vscode),
     lazy = true,
