@@ -70,6 +70,7 @@ vim.keymap.set('n', 'dD', 'd0')
 vim.keymap.set('n', 'vv', 'V')
 vim.keymap.set('n', 'V', 'v$')
 vim.keymap.set('n', 'vV', 'v0')
+vim.keymap.set('n', '<S-c>', 'c$')
 
 vim.keymap.set('n', '+', '<C-a>', { remap = true })
 vim.keymap.set('n', '-', '<C-x>', { remap = true })
