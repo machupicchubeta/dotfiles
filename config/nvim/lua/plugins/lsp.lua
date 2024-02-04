@@ -124,6 +124,12 @@ return {
               root_dir = lspconfig.util.root_pattern('package.json'),
               single_file_support = false
             }))
+          elseif server == 'goplus' then
+            lspconfig.gopls.setup(vim.tbl_extend('force', opt, {
+              env = {
+                GOFLAGS = '-tags=parallel,serial,integration'
+              }
+            }))
           else
             lspconfig[server].setup(opt)
           end
