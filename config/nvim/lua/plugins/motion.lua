@@ -55,10 +55,10 @@ return {
     'gbprod/substitute.nvim',
     lazy = true,
     init = function()
-      vim.keymap.set('n', 's', require('substitute').operator)
-      vim.keymap.set('n', 'ss', require('substitute').line)
-      vim.keymap.set('n', 'S', require('substitute').eol)
-      vim.keymap.set('x', 's', require('substitute').visual)
+      vim.keymap.set('n', 'C-ss', require('substitute').operator)
+      vim.keymap.set('n', 'C-S-ss', require('substitute').line)
+      vim.keymap.set('n', 'M-S-ss', require('substitute').eol)
+      vim.keymap.set('x', 'C-ss', require('substitute').visual)
     end,
     opts = {},
     event = 'VeryLazy'
