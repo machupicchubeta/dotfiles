@@ -67,7 +67,7 @@ return {
     'stevearc/aerial.nvim',
     lazy = true,
     init = function()
-      vim.keymap.set('n', '<C-z>z', '<cmd>AerialToggle!<CR>')
+      vim.keymap.set('n', '<C-t>z', '<cmd>AerialToggle!<CR>')
     end,
     opts = {
       on_attach = function(bufnr)
