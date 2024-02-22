@@ -1,6 +1,7 @@
 return {
   {
     'L3MON4D3/LuaSnip',
+    enabled = false,
     build = 'make install_jsregexp',
     config = function()
       require('luasnip.loaders.from_vscode').lazy_load()
@@ -8,6 +9,7 @@ return {
   },
   {
     'saadparwaiz1/cmp_luasnip',
+    enabled = false,
     lazy = true,
     event = 'VeryLazy'
   },
@@ -31,25 +33,25 @@ return {
           ['<CR>'] = cmp.mapping.confirm({ select = true })
         }),
         sources = cmp.config.sources({
-          { name = 'luasnip' },
+          -- { name = 'luasnip' },
           { name = 'nvim_lsp' },
           { name = 'nvim_lsp_signature_help' },
           { name = 'nvim_lsp_document_symbol' },
-          { name = 'buffer' },
-          { name = 'path' },
-          { name = 'omni' },
-          { name = 'nvim_lua' },
-          { name = 'spell' },
-          { name = 'cmdline' }
-        }, {
-          { name = 'buffer' }
+          -- { name = 'buffer' },
+          -- { name = 'path' },
+          -- { name = 'omni' },
+          -- { name = 'nvim_lua' },
+          -- { name = 'spell' },
+          -- { name = 'cmdline' }
+        -- }, {
+        --   { name = 'buffer' }
         })
       })
     end,
     event = 'VeryLazy',
     dependencies = {
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip'
+      -- 'L3MON4D3/LuaSnip',
+      -- 'saadparwaiz1/cmp_luasnip'
     }
   },
   {
@@ -69,26 +71,31 @@ return {
   },
   {
     'hrsh7th/cmp-buffer',
+    enabled = false,
     lazy = true,
     event = 'VeryLazy'
   },
   {
     'hrsh7th/cmp-path',
+    enabled = false,
     lazy = true,
     event = 'VeryLazy'
   },
   {
     'hrsh7th/cmp-omni',
+    enabled = false,
     lazy = true,
     event = 'VeryLazy'
   },
   {
     'hrsh7th/cmp-nvim-lua',
+    enabled = false,
     lazy = true,
     event = 'VeryLazy'
   },
   {
     'f3fora/cmp-spell',
+    enabled = false,
     lazy = true,
     init = function()
       vim.opt.spell = true
@@ -98,6 +105,7 @@ return {
   },
   {
     'hrsh7th/cmp-cmdline',
+    enabled = false,
     lazy = true,
     event = 'VeryLazy'
   },
