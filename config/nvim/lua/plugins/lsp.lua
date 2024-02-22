@@ -126,8 +126,12 @@ return {
             }))
           elseif server == 'goplus' then
             lspconfig.gopls.setup(vim.tbl_extend('force', opt, {
-              env = {
-                GOFLAGS = '-tags=parallel,serial,integration'
+              settings = {
+                goplus = {
+                  env = {
+                    GOFLAGS = '-tags=parallel,serial,integration'
+                  }
+                }
               }
             }))
           else
