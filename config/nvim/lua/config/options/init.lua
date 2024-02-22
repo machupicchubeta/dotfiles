@@ -2,7 +2,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 -- vim.opt.indentkeys = { '!^F', 'o', 'O', '0<Bar>', '0=where' }
--- vim.opt.smarttab = true
+vim.opt.smarttab = true
 vim.opt.expandtab = true
 vim.opt.shiftround = true
 vim.opt.autoindent = true
