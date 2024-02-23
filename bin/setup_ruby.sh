@@ -8,6 +8,8 @@ mise use --global ruby@latest
 mise prune ruby
 mise reshim
 
-gem update --system
-gem update
-gem cleanup
+which ruby
+
+# gem update --system
+# gem update
+# gem cleanup
