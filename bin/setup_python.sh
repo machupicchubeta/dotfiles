@@ -3,8 +3,9 @@ set -eu
 
 which python3
 
-mise activate
-which python3
+# mise activate
+# which python3
+mise exec -- which python3
 
 mise plugins update python
 mise install python@latest
