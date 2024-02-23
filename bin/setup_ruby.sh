@@ -10,6 +10,7 @@ mise reshim
 
 # which ruby
 mise exec -- which ruby
+mise exec -- which ruby
 
 # gem update --system
 # gem update
