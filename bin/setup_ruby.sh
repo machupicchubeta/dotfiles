@@ -9,7 +9,7 @@ mise prune ruby
 mise reshim
 
 which ruby
-which mise exec -- which ruby
+mise exec -- which ruby
 
 # gem update --system
 # gem update
