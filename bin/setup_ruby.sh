@@ -8,7 +8,7 @@ mise use --global ruby@latest
 mise prune ruby
 mise reshim
 
-which ruby
+# which ruby
 mise exec -- which ruby
 
 # gem update --system
