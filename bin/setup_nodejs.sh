@@ -10,4 +10,4 @@ mise use --global node@latest node@lts
 mise prune node
 mise reshim
 
-npm update -g
+mise exec -- npm update -g
