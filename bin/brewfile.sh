@@ -159,6 +159,8 @@ brew install esbuild
 brew install terraform-lsp
 brew install tree-sitter
 
+brew install golang-migrate
+
 # Libraries used in Nokogiri gem
 brew install libxml2
 brew install libxslt
