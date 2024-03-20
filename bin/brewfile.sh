@@ -248,6 +248,7 @@ brew install eslint
 brew install swiftformat
 brew install cfn-lint
 brew install golangci-lint
+brew install semgrep
 
 # Command-line tools
 brew install jq
