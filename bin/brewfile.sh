@@ -247,6 +247,7 @@ brew install ansible-lint
 brew install eslint
 brew install swiftformat
 brew install cfn-lint
+brew install golangci-lint
 
 # Command-line tools
 brew install jq
