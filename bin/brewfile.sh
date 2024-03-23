@@ -451,6 +451,7 @@ else
   brew install --cask slack-cli
   brew install --cask gather
   brew install --cask arc
+  brew install --cask wezterm
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
