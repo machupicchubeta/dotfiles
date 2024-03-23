@@ -20,7 +20,18 @@ return {
   {
     'windwp/nvim-autopairs',
     lazy = true,
-    opts = {},
+    config = function()
+      require('nvim-autopairs').setup({})
+
+      local rule = require('nvim-autopairs.rule')
+      local npairs = require('nvim-autopairs')
+      local cond = require('nvim-autopairs.conds')
+      npairs.add_rules({
+        rule('`', '`')
+          :with_move(cond.none())
+          :replace_map_cr(function() return '<C-g>u<CR><C-c>O' end)
+      })
+    end,
     event = 'VeryLazy'
   },
   {
