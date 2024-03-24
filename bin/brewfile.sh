@@ -484,6 +484,8 @@ else
   brew install --cask font-sf-compact
   brew install --cask font-new-york
   brew install --cask font-sf-mono-for-powerline
+  brew install --cask font-monaspace
+  brew install --cask font-monaspace-nerd-font
 
   brew cu --all --cleanup --yes
 fi
