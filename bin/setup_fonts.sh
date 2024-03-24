@@ -9,7 +9,7 @@ curl --fail --silent --show-error --location https://github.com/adobe-fonts/sour
 SOURCE_HAN_CODE_JP_TEMP_DIR="$TEMP_DIR/source-han-code-jp-2.012R"
 if [ -d "$SOURCE_HAN_CODE_JP_TEMP_DIR" ]; then
   find "$USER_FONT_DIR" -type f -name "SourceHanCodeJP-*" | xargs rm --recursive --force
-  find "$SOURCE_HAN_CODE_JP_TEMP_DIR" -type f -name '*.ttc' -or -name '*.otf' -exec mv --target-directory="$USER_FONT_DIR" {} +
+  find "$SOURCE_HAN_CODE_JP_TEMP_DIR" -type f \( -name '*.ttc' -or -name '*.otf' \) -exec mv --target-directory="$USER_FONT_DIR" {} +
   rm --recursive --force "$SOURCE_HAN_CODE_JP_TEMP_DIR"
 fi
 
