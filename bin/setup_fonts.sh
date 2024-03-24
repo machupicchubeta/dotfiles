@@ -33,7 +33,7 @@ do
   rm -rf "$TEMP_DIR"/"$fonts".zip
   if [ -d "$TEMP_DIR"/"$fonts" ]; then
     find "$TEMP_DIR"/"$fonts" -type f -name '*.ttf' -exec mv --target-directory="$USER_FONT_DIR" {} +
-    rm --recursive --force "$TEMP_DIR"/"$fonts"
+    rm --recursive --force "${TEMP_DIR:?}"/"$fonts"
   fi
   unset fonts
   unset font_family
