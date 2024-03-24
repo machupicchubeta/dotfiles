@@ -486,6 +486,9 @@ else
   brew install --cask font-sf-mono-for-powerline
   brew install --cask font-monaspace
   brew install --cask font-monaspace-nerd-font
+  brew install --cask font-plemol-jp
+  brew install --cask font-plemol-jp-nf
+  brew install --cask font-plemol-jp-hs
 
   brew cu --all --cleanup --yes
 fi
