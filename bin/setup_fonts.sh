@@ -5,7 +5,7 @@ USER_FONT_DIR="$HOME/Library/Fonts/"
 TEMP_DIR="/tmp"
 
 echo -e "\nInstall \"Source Han Code JP\" to the user font directory"
-curl -fsSL https://github.com/adobe-fonts/source-han-code-jp/archive/refs/tags/2.012R.tar.gz | tar -xzC /tmp/
+curl --fail --silent --show-error --location https://github.com/adobe-fonts/source-han-code-jp/archive/refs/tags/2.012R.tar.gz | tar -xzC /tmp/
 SOURCE_HAN_CODE_JP_TEMP_DIR="$TEMP_DIR/source-han-code-jp-2.012R"
 if [ -d "$SOURCE_HAN_CODE_JP_TEMP_DIR" ]; then
   find "$USER_FONT_DIR" -type f -name "SourceHanCodeJP-*" | xargs rm --recursive --force
