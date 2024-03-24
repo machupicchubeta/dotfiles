@@ -30,7 +30,7 @@ do
   fonts="$font_family"_"$MORALERSPACE_VERSION"
   curl --fail --silent --show-error --location https://github.com/yuru7/moralerspace/releases/download/"$MORALERSPACE_VERSION"/"$fonts".zip --output "$TEMP_DIR"/"$fonts".zip
   unzip -q "$TEMP_DIR"/"$fonts".zip -d "$TEMP_DIR"
-  rm -rf "$TEMP_DIR"/"$fonts".zip
+  rm --force "$TEMP_DIR"/"$fonts".zip
   if [ -d "$TEMP_DIR"/"$fonts" ]; then
     find "$TEMP_DIR"/"$fonts" -type f -name '*.ttf' -exec mv --target-directory="$USER_FONT_DIR" {} +
     rm --recursive --force "${TEMP_DIR:?}"/"$fonts"
