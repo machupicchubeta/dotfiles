@@ -25,11 +25,4 @@ ghq get --update --parallel gist.github.com/4979906
 ghq get --update --parallel github.com/tony/tmux-config
 ghq get --update --parallel github.com/k0kubun/dotfiles
 
-if [ ! -x "$(command -v gh)" ]; then
-  echo "Install gh command first."
-  exit 1
-fi
-
-gh auth login --web
-
 unset REPOSITORIES_PATH
