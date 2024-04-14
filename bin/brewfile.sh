@@ -432,7 +432,6 @@ else
   brew install --cask coscreen
   brew install --cask mmhmm
   brew install --cask notion
-  brew install --cask kindle
   brew install --cask microsoft-teams
   brew install --cask alacritty
   brew install --cask session-manager-plugin
