@@ -170,7 +170,6 @@ brew install libiconv
 brew install nano
 brew install emacs
 brew install neovim
-brew install neovim-remote
 brew install neovide
 brew install macvim
 brew unlink macvim
