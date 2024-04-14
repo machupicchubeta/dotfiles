@@ -44,11 +44,6 @@ brew tap auth0/auth0-cli
 brew tap Code-Hex/tap
 brew tap olets/tap
 
-brew unlink vim
-brew upgrade macvim
-brew unlink macvim
-brew upgrade vim
-brew link vim
 brew update
 brew upgrade --fetch-HEAD
 
@@ -110,8 +105,6 @@ brew install git
 brew install rsync
 brew install subversion
 brew install unzip
-# brew install macvim
-# brew unlink macvim
 # brew install vim
 brew install zsh
 brew install curl
@@ -171,8 +164,6 @@ brew install nano
 brew install emacs
 brew install neovim
 brew install neovide
-brew install macvim
-brew unlink macvim
 brew install vim
 brew install universal-ctags --HEAD
 brew link universal-ctags
