@@ -5,6 +5,7 @@ COMMAND_LINE_TOOLS_PATH='/Library/Developer/CommandLineTools'
 
 if [ -d "$COMMAND_LINE_TOOLS_PATH/usr/bin" -a -d "$COMMAND_LINE_TOOLS_PATH/SDKs" ]; then
   echo -e "Skip the (re)installation of CommandLineTools.\nSince usr/bin and SDKs directories exist under $COMMAND_LINE_TOOLS_PATH, (re)installation is unlikely to be necessary.\nIf you are forced to re-install, remove those directories before executing the command."
+  sudo xcodebuild -license accept
   exit 0
 fi
 
@@ -31,3 +32,5 @@ tell application "System Events"
 end tell
 EOD
 xcode-select --print-path
+
+sudo xcodebuild -license accept
