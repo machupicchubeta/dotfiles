@@ -441,6 +441,8 @@ else
   brew install --cask gather
   brew install --cask arc
   brew install --cask wezterm
+  brew install --cask temurin
+  brew install --cask android-commandlinetools
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
