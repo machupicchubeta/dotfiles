@@ -30,5 +30,4 @@ tell application "System Events"
   end tell
 end tell
 EOD
-sudo xcode-select --switch "$COMMAND_LINE_TOOLS_PATH"
 xcode-select --print-path
