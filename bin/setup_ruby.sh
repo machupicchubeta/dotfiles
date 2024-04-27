@@ -5,7 +5,7 @@ mise plugins update ruby
 mise install ruby@latest
 mise upgrade ruby@latest
 mise use --global ruby@latest
-mise prune ruby
+mise prune --yes ruby
 mise reshim
 
 mise exec -- gem update --system

@@ -5,7 +5,7 @@ mise plugins update python
 mise install python@latest
 mise upgrade python@latest
 mise use --global python@latest
-mise prune python
+mise prune --yes python
 mise reshim
 
 mise exec -- python3 -m pip install --upgrade pip

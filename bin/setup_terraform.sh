@@ -6,5 +6,5 @@ mise plugins update terraform
 mise install terraform@latest
 mise upgrade terraform@latest
 mise use --global terraform@latest
-mise prune terraform
+mise prune --yes terraform
 mise reshim
