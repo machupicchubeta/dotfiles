@@ -426,7 +426,6 @@ else
   brew install --cask alacritty
   brew install --cask session-manager-plugin
   brew install --cask microsoft-edge
-  brew install --cask grammarly
   brew install --cask raycast
   brew install --cask blackhole-2ch
   brew install --cask blackhole-16ch
