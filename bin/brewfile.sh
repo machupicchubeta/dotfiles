@@ -387,7 +387,7 @@ else
   brew install --cask githubpulse
   brew install --cask github
   brew install --cask paparazzi
-  brew install --cask google-chrome-canary
+  brew install --cask google-chrome@canary
   brew install --cask vlc
   brew install --cask chrome-remote-desktop-host
   brew install --cask vivaldi
