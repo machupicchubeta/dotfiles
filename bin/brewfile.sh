@@ -49,7 +49,6 @@ brew upgrade --fetch-HEAD
 
 # Libraries that used in Ruby or so, or used to build from source code
 brew install openssl@3
-brew install openssl@1.1
 brew install readline
 brew install m4
 brew install autoconf
