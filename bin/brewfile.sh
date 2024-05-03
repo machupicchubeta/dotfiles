@@ -367,7 +367,6 @@ else
   brew install --cask geektool
   brew install --cask xquartz
   brew install --cask skype
-  brew install --cask knock
   brew install --cask licecap
   brew install --cask sublime-text
   brew install --cask encryptme
