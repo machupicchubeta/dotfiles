@@ -28,7 +28,6 @@ mas install 1284863847 # Unsplash Wallpapers
 mas install 1295203466 # Microsoft Remote Desktop
 
 brew tap thoughtbot/formulae
-brew tap homebrew/cask-versions
 brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma
