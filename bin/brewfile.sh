@@ -361,7 +361,7 @@ else
   brew install --cask dropbox
   brew install --cask vagrant
   brew install --cask firefox
-  brew install --cask firefox-developer-edition
+  brew install --cask firefox@developer-edition
   brew install --cask evernote
   brew install --cask slack
   brew install --cask skitch
