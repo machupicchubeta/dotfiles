@@ -448,11 +448,13 @@ else
   brew install --cask font-monoid
   brew install --cask font-monoid-nerd-font
   brew install --cask font-lilex
+  brew install --cask font-lilex-nerd-font
   brew install --cask font-iosevka
   brew install --cask font-iosevka-slab
   brew install --cask font-iosevka-nerd-font
   brew install --cask font-iosevka-term-nerd-font
   brew install --cask font-hasklig
+  brew install --cask font-hasklug-nerd-font
   brew install --cask font-cascadia-code
   brew install --cask font-cascadia-code-pl
   brew install --cask font-jetbrains-mono
