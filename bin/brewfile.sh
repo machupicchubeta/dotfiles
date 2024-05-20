@@ -438,6 +438,7 @@ else
   brew install --cask wezterm
   brew install --cask temurin
   brew install --cask android-commandlinetools
+  brew install --cask chatgpt
 
   brew install --cask font-fira-code
   brew install --cask font-fira-code-nerd-font
