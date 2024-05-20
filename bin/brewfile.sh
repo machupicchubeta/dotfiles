@@ -31,7 +31,6 @@ brew tap thoughtbot/formulae
 brew tap homebrew/services
 brew tap homebrew/bundle
 brew tap puma/puma
-brew tap homebrew/cask-fonts
 brew tap buo/cask-upgrade
 brew tap universal-ctags/universal-ctags
 brew tap heroku/brew
