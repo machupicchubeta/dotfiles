@@ -225,6 +225,7 @@ brew install circleci
 brew install auth0
 brew install glab
 brew install flyctl
+brew install act
 
 # Linters and Code Formatters
 brew install swiftlint
