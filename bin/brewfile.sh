@@ -458,7 +458,11 @@ else
   brew install --cask font-hasklig
   brew install --cask font-hasklug-nerd-font
   brew install --cask font-cascadia-code
+  brew install --cask font-cascadia-code-nf
   brew install --cask font-cascadia-code-pl
+  brew install --cask font-cascadia-mono
+  brew install --cask font-cascadia-mono-nf
+  brew install --cask font-cascadia-mono-pl
   brew install --cask font-jetbrains-mono
   brew install --cask font-jetbrains-mono-nerd-font
   brew install --cask font-ibm-plex
