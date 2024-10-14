@@ -5,12 +5,15 @@ USER_FONT_DIR="$HOME/Library/Fonts/"
 TEMP_DIR="/tmp"
 
 echo -e "\nInstall \"Source Han Code JP\" to the user font directory"
-curl --fail --silent --show-error --location https://github.com/adobe-fonts/source-han-code-jp/archive/refs/tags/2.012R.tar.gz | tar -xzC /tmp/
-SOURCE_HAN_CODE_JP_TEMP_DIR="$TEMP_DIR/source-han-code-jp-2.012R"
-if [ -d "$SOURCE_HAN_CODE_JP_TEMP_DIR" ]; then
+SOURCE_HAN_CODE_JP_VERSION="2.012R"
+SOURCE_HAN_CODE_JP_FONTS=source-han-code-jp-"$SOURCE_HAN_CODE_JP_VERSION"
+curl --fail --silent --show-error --location https://github.com/adobe-fonts/source-han-code-jp/archive/refs/tags/"$SOURCE_HAN_CODE_JP_VERSION".zip --output "$TEMP_DIR"/"$SOURCE_HAN_CODE_JP_FONTS".zip
+unzip -q "$TEMP_DIR"/"$SOURCE_HAN_CODE_JP_FONTS".zip -d "$TEMP_DIR"
+rm --force "$TEMP_DIR"/"$SOURCE_HAN_CODE_JP_FONTS".zip
+if [ -d "$TEMP_DIR"/"$SOURCE_HAN_CODE_JP_FONTS" ]; then
   find "$USER_FONT_DIR" -type f -name "SourceHanCodeJP-*" -exec rm --recursive --force {} +
-  find "$SOURCE_HAN_CODE_JP_TEMP_DIR" -type f \( -name '*.ttc' -or -name '*.otf' \) -exec mv --target-directory="$USER_FONT_DIR" {} +
-  rm --recursive --force "$SOURCE_HAN_CODE_JP_TEMP_DIR"
+  find "$TEMP_DIR"/"$SOURCE_HAN_CODE_JP_FONTS" -type f \( -name '*.ttc' -or -name '*.otf' \) -exec mv --target-directory="$USER_FONT_DIR" {} +
+  rm --recursive --force "$TEMP_DIR"/"$SOURCE_HAN_CODE_JP_FONTS"
 fi
 
 echo -e "\nInstall \"Moralerspace\" font families"
@@ -39,8 +42,9 @@ do
   unset font_family
 done
 
-unset SOURCE_HAN_CODE_JP_TEMP_DIR
 unset TMP_DIR
 unset USER_FONT_DIR
+unset SOURCE_HAN_CODE_JP_FONTS
+unset SOURCE_HAN_CODE_JP_VERSION
 unset MORALERSPACE_FAMILIES
 unset MORALERSPACE_VERSION
