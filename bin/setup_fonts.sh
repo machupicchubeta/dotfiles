@@ -42,7 +42,7 @@ do
   unset font_family
 done
 
-unset TMP_DIR
+unset TEMP_DIR
 unset USER_FONT_DIR
 unset SOURCE_HAN_CODE_JP_FONTS
 unset SOURCE_HAN_CODE_JP_VERSION
