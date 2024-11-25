@@ -1,6 +1,7 @@
 return {
   {
-    'folke/neodev.nvim',
+    'folke/lazydev.nvim',
+    cond = (not vim.g.vscode),
     lazy = true,
     event = 'VeryLazy',
     opts = {}
