@@ -1,7 +1,6 @@
 #!/bin/bash
 set -eu
 
-mise plugins update python
 mise install python@latest
 mise upgrade python@latest
 mise use --global python@latest
