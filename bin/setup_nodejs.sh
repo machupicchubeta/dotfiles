@@ -1,7 +1,6 @@
 #!/bin/bash
 set -eu
 
-mise plugins update node
 mise install node@lts
 mise upgrade node@lts
 mise install node@latest
