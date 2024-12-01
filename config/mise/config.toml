@@ -1,4 +1,5 @@
 [tools]
+flutter = "latest"
 go = "latest"
 java = "latest"
 node = ["latest", "lts"]
