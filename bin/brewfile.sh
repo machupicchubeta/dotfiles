@@ -398,7 +398,6 @@ else
   brew install --cask gather
   brew install --cask geektool
   brew install --cask github
-  brew install --cask githubpulse
   brew install --cask google-chrome
   brew install --cask google-chrome@canary
   brew install --cask google-earth-pro
