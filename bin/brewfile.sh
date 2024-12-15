@@ -463,7 +463,12 @@ else
   brew install --cask font-hack-nerd-font
   brew install --cask font-hasklig
   brew install --cask font-hasklug-nerd-font
-  brew install --cask font-ibm-plex
+  brew install --cask font-ibm-plex-math
+  brew install --cask font-ibm-plex-mono
+  brew install --cask font-ibm-plex-sans
+  brew install --cask font-ibm-plex-sans-condensed
+  brew install --cask font-ibm-plex-sans-jp
+  brew install --cask font-ibm-plex-serif
   brew install --cask font-inconsolata-go-nerd-font
   brew install --cask font-inconsolata-nerd-font
   brew install --cask font-iosevka
