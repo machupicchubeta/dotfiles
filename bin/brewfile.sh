@@ -429,7 +429,6 @@ else
   brew install --cask reflector
   brew install --cask session-manager-plugin
   brew install --cask sketch
-  brew install --cask skitch
   brew install --cask skype
   brew install --cask slack
   brew install --cask slack-cli
