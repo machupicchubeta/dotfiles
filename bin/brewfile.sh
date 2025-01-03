@@ -396,6 +396,7 @@ else
   brew install --cask framer
   brew install --cask gather
   brew install --cask geektool
+  brew install --cask ghostty
   brew install --cask github
   brew install --cask google-chrome
   brew install --cask google-chrome@canary
