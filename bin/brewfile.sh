@@ -231,7 +231,6 @@ brew install gh
 brew install glab
 brew install heroku
 brew install mongocli
-brew install serverless
 
 # Linters and Code Formatters
 brew install ansible-lint
