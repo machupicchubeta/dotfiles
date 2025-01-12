@@ -30,7 +30,7 @@ if [ ! -d "$XDG_DATA_HOME" ]; then
   mkdir --parents "$XDG_DATA_HOME"
 fi
 
-for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "irb" "rspec" "tmux" "tig" "mise" "asdf" "direnv" "aws" "zsh-abbr" "nvim" "wezterm"; do
+for app in "git" "starship" "lsd" "sheldon" "bundle" "readline" "gem" "irb" "rspec" "tmux" "tig" "mise" "asdf" "direnv" "aws" "zsh-abbr" "nvim" "wezterm" "bat"; do
   if [ -L "$XDG_CONFIG_HOME/$app" ]; then
     unlink "$XDG_CONFIG_HOME/$app"
   fi
