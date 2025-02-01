@@ -375,6 +375,7 @@ else
   brew install --cask clickup
   brew install --cask cloudflare-warp
   brew install --cask coscreen
+  brew install --cask cursor
   brew install --cask cyberduck
   brew install --cask dash
   brew install --cask deepl
