@@ -142,7 +142,6 @@ brew install ocaml
 brew install perl
 # brew install python@3 # This is installed in a library paragraph.
 brew install yarn
-brew unlink ocaml
 
 brew install esbuild
 brew install golang-migrate
