@@ -37,6 +37,7 @@ APPS=(
   "bundle"
   "direnv"
   "gem"
+  "ghostty"
   "git"
   "irb"
   "lsd"
