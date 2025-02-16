@@ -7,7 +7,6 @@ fi
 if command -v direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 if command -v starship > /dev/null; then eval "$(starship init zsh)"; fi
 if command -v mise > /dev/null; then eval "$(mise activate zsh)"; fi
-if command -v asdf > /dev/null; then . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"; fi
 
 : "${REPOSITORIES_PATH:=$HOME/Repositories}"
 : "${GITHUB_REPOSITORIES_PATH=$REPOSITORIES_PATH/github.com}"
