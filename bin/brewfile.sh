@@ -405,6 +405,7 @@ else
   brew install --cask hyper
   brew install --cask inssider
   brew install --cask iterm2
+  brew install --cask itermai
   brew install --cask karabiner-elements
   brew install --cask lens
   brew install --cask licecap
