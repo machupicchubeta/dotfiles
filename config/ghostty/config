@@ -1,0 +1,13 @@
+shell-integration-features = no-cursor
+
+copy-on-select = false
+cursor-style = block
+cursor-style-blink = false
+font-family = Cascadia Code NF
+font-size = 16
+font-style = Regular Regular
+macos-titlebar-style = tabs
+theme = tokyonight
+window-height = 30
+window-new-tab-position = end
+window-width = 128
