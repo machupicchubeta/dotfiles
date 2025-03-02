@@ -28,6 +28,8 @@ mas install 411213048 # LadioCast
 mas install 497799835 # Xcode
 mas install 899247664 # TestFlight
 
+sudo xcodebuild -license accept
+
 brew tap Code-Hex/tap
 brew tap auth0/auth0-cli
 brew tap buo/cask-upgrade
