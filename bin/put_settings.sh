@@ -90,6 +90,10 @@ for app in "${APPS[@]}"; do
   if [ "$app" = "irb" ] && [ ! -d "$XDG_DATA_HOME/$app" ]; then
     mkdir --parents "$XDG_DATA_HOME/$app"
   fi
+
+  if [ "$app" = "enhancd" ] && [ ! -d "$XDG_DATA_HOME/$app" ]; then
+    mkdir --parents "$XDG_DATA_HOME/$app"
+  fi
 done
 unset -v app
 unset -v APPS
