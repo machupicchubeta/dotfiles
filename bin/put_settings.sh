@@ -36,6 +36,7 @@ APPS=(
   "bat"
   "bundle"
   "direnv"
+  "enhancd"
   "gem"
   "ghostty"
   "git"
