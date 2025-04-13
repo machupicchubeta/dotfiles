@@ -108,7 +108,7 @@ return {
   },
   {
     'github/copilot.vim',
-    enabled = false,
+    enabled = true,
     lazy = true,
     event = 'VeryLazy'
   }
