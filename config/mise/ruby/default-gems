@@ -1,15 +1,15 @@
-tmuxinator
-git-browse-remote
-gem-browse
-refe2
-parser --pre
-rubocop --pre
-gem-ctags
+cocoapods
 fastri
-review
+gem-browse
+gem-ctags
+git-browse-remote
 lolcat
+neovim
+parser --pre
 powder
 reek
-neovim
+refe2
+review
+rubocop --pre
 ruby-lsp
-cocoapods
+tmuxinator
