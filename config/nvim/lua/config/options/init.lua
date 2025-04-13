@@ -13,6 +13,8 @@ vim.opt.grepprg = 'grep --ignore-case --line-number -H'
 vim.opt.helplang:append({ 'en', 'ja' })
 vim.opt.ignorecase = true
 vim.opt.keywordprg = ':help'
+vim.opt.list = true
+vim.opt.listchars = 'tab:->'
 vim.opt.matchpairs:append('<:>')
 vim.opt.matchtime = 1
 vim.opt.modeline = true
