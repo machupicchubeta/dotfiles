@@ -374,6 +374,7 @@ else
   brew install --cask chatgpt
   brew install --cask chrome-remote-desktop-host
   brew install --cask chromedriver
+  brew install --cask claude
   brew install --cask clickup
   brew install --cask cloudflare-warp
   brew install --cask coscreen
