@@ -72,6 +72,9 @@
   autoupdated = 1
   enabled = 1
 
+[submodule]
+  recurse = true
+
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
 
