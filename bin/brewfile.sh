@@ -213,6 +213,7 @@ brew install ansible
 brew install helm
 brew install lazydocker
 brew install minikube
+brew install wrkflw
 
 # XaaS tools
 brew install act
