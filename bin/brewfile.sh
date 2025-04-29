@@ -25,6 +25,7 @@ brew install mas
 mas install 1284863847 # Unsplash Wallpapers
 mas install 1295203466 # Microsoft Remote Desktop
 mas install 411213048 # LadioCast
+mas install 414298354 # ToyViewer
 mas install 497799835 # Xcode
 mas install 899247664 # TestFlight
 
