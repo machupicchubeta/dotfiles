@@ -382,6 +382,7 @@ else
   brew install --cask cyberduck
   brew install --cask dash
   brew install --cask deepl
+  brew install --cask devtoys
   brew install --cask discord
   brew install --cask disk-inventory-x
   brew install --cask docker
