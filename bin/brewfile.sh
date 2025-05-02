@@ -404,6 +404,7 @@ else
   brew install --cask github
   brew install --cask google-chrome
   brew install --cask google-chrome@canary
+  brew install --cask google-drive
   brew install --cask google-earth-pro
   brew install --cask google-japanese-ime
   brew install --cask gyazo
