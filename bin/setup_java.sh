@@ -8,5 +8,3 @@ mise prune --yes java
 mise reshim
 
 sudo ln -sfn "$(mise where java@latest)" "/Library/Java/JavaVirtualMachines/openjdk.jdk"
-
-echo
