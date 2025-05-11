@@ -51,6 +51,7 @@ export _Z_DATA="$XDG_DATA_HOME/z/data"
 export MISE_CONFIG_DIR="$XDG_CONFIG_HOME/mise"
 export MISE_DATA_DIR="$XDG_DATA_HOME/mise"
 export MISE_CACHE_DIR="$XDG_CACHE_HOME/mise"
+export MISE_ENV_FILE=.env
 export MISE_RUBY_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/ruby/default-gems"
 export MISE_GO_SET_GOROOT=1
 export MISE_GO_SET_GOPATH=1
