@@ -426,6 +426,7 @@ else
   brew install --cask ngrok
   brew install --cask notion
   brew install --cask notion-calendar
+  brew install --cask obsidian
   brew install --cask osquery
   brew install --cask packages
   brew install --cask paparazzi
