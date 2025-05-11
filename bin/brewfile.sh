@@ -371,6 +371,7 @@ else
   brew install --cask blackhole-64ch
   brew install --cask blisk
   brew install --cask brave-browser
+  brew install --cask canva
   brew install --cask chatgpt
   brew install --cask chrome-remote-desktop-host
   brew install --cask chromedriver
