@@ -386,7 +386,7 @@ else
   brew install --cask devtoys
   brew install --cask discord
   brew install --cask disk-inventory-x
-  brew install --cask docker
+  brew install --cask docker-desktop
   brew install --cask dotnet-sdk
   brew install --cask drawio
   brew install --cask dropbox
@@ -397,7 +397,7 @@ else
   brew install --cask firefox
   brew install --cask firefox@developer-edition
   brew install --cask fliqlo
-  brew install --cask fontforge
+  brew install --cask fontforge-app
   brew install --cask framer
   brew install --cask gather
   brew install --cask geektool
@@ -449,8 +449,8 @@ else
   brew install --cask vlc
   brew install --cask warp
   brew install --cask wezterm
-  brew install --cask wireshark
-  brew install --cask xcodes
+  brew install --cask wireshark-app
+  brew install --cask xcodes-app
   brew install --cask xquartz
   brew install --cask zoom
 
