@@ -80,7 +80,7 @@ return {
         'lua_ls',
         'marksman',
         'pylsp',
-        'ruby_ls',
+        'ruby_lsp',
         'rust_analyzer',
         'sqlls',
         'svelte',
@@ -89,7 +89,7 @@ return {
         'terraformls',
         'ts_ls',
         'vimls',
-        'vuels',
+        'vue_ls',
         'yamlls',
       }
     },
