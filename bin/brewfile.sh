@@ -229,6 +229,7 @@ brew install codex
 brew install doctl
 brew install firebase-cli
 brew install flyctl
+brew install gemini-cli
 brew install gh
 brew install glab
 brew install heroku
