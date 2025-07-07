@@ -231,6 +231,7 @@ brew install firebase-cli
 brew install flyctl
 brew install gemini-cli
 brew install gh
+brew install github-mcp-server
 brew install glab
 brew install heroku
 brew install mongocli
