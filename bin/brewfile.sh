@@ -380,6 +380,7 @@ else
   brew install --cask claude
   brew install --cask clickup
   brew install --cask cloudflare-warp
+  brew install --cask container
   brew install --cask coscreen
   brew install --cask cursor
   brew install --cask cyberduck
