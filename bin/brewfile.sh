@@ -24,6 +24,7 @@ fi
 brew install mas
 mas purchase 1284863847 # Unsplash Wallpapers
 mas purchase 1295203466 # Microsoft Remote Desktop
+mas purchase 1549370672 # Raindrop.io Safari extensions
 mas purchase 411213048 # LadioCast
 mas purchase 414298354 # ToyViewer
 mas purchase 497799835 # Xcode
