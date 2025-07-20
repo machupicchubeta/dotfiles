@@ -420,6 +420,7 @@ else
   brew install --cask iterm2
   brew install --cask itermai
   brew install --cask karabiner-elements
+  brew install --cask kiro
   brew install --cask lens
   brew install --cask licecap
   brew install --cask marvel
