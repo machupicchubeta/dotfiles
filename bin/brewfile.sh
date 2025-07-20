@@ -338,6 +338,7 @@ brew install gping
 brew install httpie
 brew install nmap
 brew install nss
+brew install somo
 brew install sqlmap
 brew install sslscan
 brew install stunnel
