@@ -187,6 +187,7 @@ brew install starship
 brew install terminal-notifier
 brew install tmux
 brew install z
+brew install zellij
 brew install zsh-abbr
 brew install zsh-autosuggestions
 brew install zsh-completions
