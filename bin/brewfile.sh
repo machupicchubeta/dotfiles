@@ -146,6 +146,7 @@ brew install perl
 # brew install python@3 # This is installed in a library paragraph.
 brew install yarn
 
+brew install ccusage
 brew install esbuild
 brew install golang-migrate
 brew install gradle
