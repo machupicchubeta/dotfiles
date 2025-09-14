@@ -7,3 +7,6 @@ perl = "latest"
 python = "latest"
 ruby = "latest"
 terraform = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["ruby"]
