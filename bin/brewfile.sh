@@ -489,6 +489,7 @@ else
   brew install --cask font-ibm-plex-serif
   brew install --cask font-inconsolata-go-nerd-font
   brew install --cask font-inconsolata-nerd-font
+  brew install --cask font-intel-one-mono
   brew install --cask font-iosevka
   brew install --cask font-iosevka-nerd-font
   brew install --cask font-iosevka-slab
