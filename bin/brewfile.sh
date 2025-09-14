@@ -502,6 +502,7 @@ else
   brew install --cask font-monoid
   brew install --cask font-monoid-nerd-font
   brew install --cask font-m+-nerd-font
+  brew install --cask font-moralerspace
   brew install --cask font-new-york
   brew install --cask font-noto-nerd-font
   brew install --cask font-plemol-jp
