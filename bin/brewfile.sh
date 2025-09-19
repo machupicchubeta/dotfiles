@@ -38,7 +38,6 @@ brew tap auth0/auth0-cli
 brew tap buo/cask-upgrade
 brew tap clementtsang/bottom
 brew tap github/gh
-brew tap heroku/brew
 brew tap mongodb/brew
 brew tap olets/tap
 brew tap puma/puma
