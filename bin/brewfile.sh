@@ -452,6 +452,7 @@ else
   brew install --cask sublime-text
   brew install --cask suspicious-package
   brew install --cask temurin
+  brew install --cask thebrowsercompany-dia
   brew install --cask vagrant
   brew install --cask visual-studio-code
   brew install --cask vivaldi
