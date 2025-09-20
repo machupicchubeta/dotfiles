@@ -421,6 +421,7 @@ else
   brew install --cask inssider
   brew install --cask iterm2
   brew install --cask itermai
+  brew install --cask itermbrowserplugin
   brew install --cask karabiner-elements
   brew install --cask kiro
   brew install --cask lens
