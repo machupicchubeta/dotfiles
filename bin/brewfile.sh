@@ -215,7 +215,10 @@ brew install puma-dev
 # Virtual Machines and Infrastructure tools
 brew install ansible
 brew install helm
+brew install lazycontainer
 brew install lazydocker
+brew install lazysql
+brew install lazyssh
 brew install minikube
 brew install wrkflw
 
