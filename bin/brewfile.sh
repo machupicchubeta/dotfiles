@@ -393,7 +393,6 @@ else
   brew install --cask deepl
   brew install --cask devtoys
   brew install --cask discord
-  brew install --cask disk-inventory-x
   brew install --cask docker-desktop
   brew install --cask dotnet-sdk
   brew install --cask drawio
@@ -408,7 +407,6 @@ else
   brew install --cask fontforge-app
   brew install --cask framer
   brew install --cask gather
-  brew install --cask geektool
   brew install --cask ghostty
   brew install --cask github
   brew install --cask google-chrome
@@ -418,7 +416,6 @@ else
   brew install --cask google-japanese-ime
   brew install --cask gyazo
   brew install --cask hyper
-  brew install --cask inssider
   brew install --cask iterm2
   brew install --cask itermai
   brew install --cask itermbrowserplugin
@@ -446,7 +443,6 @@ else
   brew install --cask reflector
   brew install --cask session-manager-plugin
   brew install --cask sketch
-  brew install --cask skype
   brew install --cask slack
   brew install --cask slack-cli
   brew install --cask spotify
