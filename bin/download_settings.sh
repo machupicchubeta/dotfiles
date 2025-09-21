@@ -17,7 +17,6 @@ fi
 ghq get --update --parallel github.com/machupicchubeta/laptop
 ghq get --update --parallel github.com/machupicchubeta/dotfiles
 ghq get --update --parallel github.com/machupicchubeta/diceware
-ghq get --update --parallel github.com/altercation/solarized
 ghq get --update --parallel github.com/JonathanSpeek/palenight-iterm2
 ghq get --update --parallel github.com/mbadolato/iTerm2-Color-Schemes
 ghq get --update --parallel github.com/seebi/dircolors-solarized
