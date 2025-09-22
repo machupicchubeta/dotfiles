@@ -94,10 +94,7 @@ brew install screen
 brew install watch
 brew install wdiff
 brew install wget
-
-if [ "$(uname -m)" = "x86_64" ]; then
-  brew install gdb
-fi
+brew install gdb
 
 # Use the newer version tools instead of the version shipped by macOS
 brew install curl
