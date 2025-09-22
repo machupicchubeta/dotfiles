@@ -439,7 +439,6 @@ else
   brew install --cask obsidian
   brew install --cask osquery
   brew install --cask packages
-  brew install --cask paparazzi
   brew install --cask postman
   brew install --cask raindropio
   brew install --cask raycast
