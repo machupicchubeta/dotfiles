@@ -383,7 +383,6 @@ else
   brew install --cask chrome-remote-desktop-host
   brew install --cask chromedriver
   brew install --cask claude
-  brew install --cask clickup
   brew install --cask cloudflare-warp
   brew install --cask container
   brew install --cask coscreen
@@ -396,10 +395,8 @@ else
   brew install --cask docker-desktop
   brew install --cask dotnet-sdk
   brew install --cask drawio
-  brew install --cask dropbox
   brew install --cask dynamodb-local
   brew install --cask encryptme
-  brew install --cask evernote
   brew install --cask figma
   brew install --cask firefox
   brew install --cask firefox@developer-edition
@@ -413,7 +410,6 @@ else
   brew install --cask google-chrome@canary
   brew install --cask google-drive
   brew install --cask google-earth-pro
-  brew install --cask google-japanese-ime
   brew install --cask gyazo
   brew install --cask hyper
   brew install --cask iterm2
@@ -422,15 +418,12 @@ else
   brew install --cask karabiner-elements
   brew install --cask kiro
   brew install --cask lens
-  brew install --cask licecap
   brew install --cask marvel
   brew install --cask messenger
   brew install --cask microsoft-edge
   brew install --cask microsoft-office
-  brew install --cask microsoft-teams
   brew install --cask miro
   brew install --cask mmhmm
-  brew install --cask ngrok
   brew install --cask notion
   brew install --cask notion-calendar
   brew install --cask obsidian
@@ -439,9 +432,7 @@ else
   brew install --cask postman
   brew install --cask raindropio
   brew install --cask raycast
-  brew install --cask reflector
   brew install --cask session-manager-plugin
-  brew install --cask sketch
   brew install --cask slack
   brew install --cask slack-cli
   brew install --cask spotify
