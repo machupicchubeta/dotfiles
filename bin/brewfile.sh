@@ -396,7 +396,6 @@ else
   brew install --cask dotnet-sdk
   brew install --cask drawio
   brew install --cask dynamodb-local
-  brew install --cask encryptme
   brew install --cask figma
   brew install --cask firefox
   brew install --cask firefox@developer-edition
@@ -423,7 +422,6 @@ else
   brew install --cask microsoft-edge
   brew install --cask microsoft-office
   brew install --cask miro
-  brew install --cask mmhmm
   brew install --cask notion
   brew install --cask notion-calendar
   brew install --cask obsidian
@@ -507,10 +505,8 @@ else
 fi
 
 if [ "$(uname -m)" = "x86_64" ]; then
-  brew install --cask soundflower
   brew install --cask virtualbox
 
-  brew cu soundflower --cleanup
   brew cu virtualbox --cleanup
 elif [ "$(uname -m)" = "arm64" ]; then
   brew install --cask fertigt-slate
