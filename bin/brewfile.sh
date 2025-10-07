@@ -447,6 +447,7 @@ else
   brew install --cask wireshark-app
   brew install --cask xcodes-app
   brew install --cask xquartz
+  brew install --cask zen
   brew install --cask zoom
 
   brew install --cask font-3270-nerd-font
