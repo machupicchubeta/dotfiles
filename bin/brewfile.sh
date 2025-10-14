@@ -485,7 +485,7 @@ else
   brew install --cask font-lilex
   brew install --cask font-lilex-nerd-font
   brew install --cask font-monaspace
-  brew install --cask font-monaspace-nerd-font
+  brew install --cask font-monaspice-nerd-font
   brew install --cask font-monoid
   brew install --cask font-monoid-nerd-font
   brew install --cask font-m+-nerd-font
