@@ -228,7 +228,6 @@ brew install aws-vault
 brew install awscli
 brew install azure-cli
 brew install circleci
-brew install codex
 brew install doctl
 brew install firebase-cli
 brew install flyctl
@@ -384,6 +383,7 @@ else
   brew install --cask chromedriver
   brew install --cask claude
   brew install --cask cloudflare-warp
+  brew install --cask codex
   brew install --cask container
   brew install --cask coscreen
   brew install --cask cursor
