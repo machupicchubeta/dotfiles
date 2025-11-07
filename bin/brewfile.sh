@@ -211,6 +211,7 @@ brew install puma-dev
 
 # Virtual Machines and Infrastructure tools
 brew install ansible
+brew install container
 brew install helm
 brew install lazycontainer
 brew install lazydocker
@@ -384,7 +385,6 @@ else
   brew install --cask claude
   brew install --cask cloudflare-warp
   brew install --cask codex
-  brew install --cask container
   brew install --cask coscreen
   brew install --cask cursor
   brew install --cask cyberduck
