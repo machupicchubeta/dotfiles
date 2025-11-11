@@ -7,7 +7,7 @@ vim.opt.completeopt = 'menuone,noinsert,noselect'
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.fixeol = false
-vim.opt.formatoptions = 'q'
+vim.opt.formatoptions = 'l'
 vim.opt.gdefault = true
 vim.opt.grepprg = 'grep --ignore-case --line-number -H'
 vim.opt.helplang:append({ 'en', 'ja' })
