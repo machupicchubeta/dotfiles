@@ -24,7 +24,5 @@ if command -v mise > /dev/null && [ -f "$(mise which terraform)" ]; then
   complete -o nospace -C "$(mise which terraform)" terraform
 fi
 
-preexec() { print '' }
-
 unset GITHUB_REPOSITORIES_PATH
 unset REPOSITORIES_PATH
