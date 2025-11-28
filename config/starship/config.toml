@@ -76,6 +76,8 @@ typechanged = "🧬:$count "
 
 [jobs]
 disabled = false
+format = '[$symbol(:$number)]($style) '
+symbol = "⏳"
 style = "dimmed white"
 
 [line_break]
