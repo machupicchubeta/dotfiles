@@ -1,48 +1,20 @@
 format = """
-$username\
 $directory\
-$hostname\
+$jobs\
+$shell\
+$shlvl\
 $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-$env_var\
-$custom\
-$cmd_duration\
-$jobs\
-$memory_usage\
-$battery\
 $time\
-$shell\
-$shlvl\
-$status\
 $line_break\
-$character"""
+$character\
+"""
 
 add_newline = true
 
 continuation_prompt = '[❯❯](bright-black) '
-
-[aws]
-disabled = true
-symbol = "☁️   "
-format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = "dimmed yellow"
-
-[battery]
-disabled = false
-full_symbol = "🔋 "
-charging_symbol = "⚡️ "
-discharging_symbol = "☠️ "
-
-[[battery.display]]
-threshold = 10
-style = "red"
-
-[[battery.display]]
-threshold = 30
-style = "yellow"
-discharging_symbol = "⚠️ "
 
 [character]
 disabled = false
@@ -53,69 +25,11 @@ vimcmd_replace_one_symbol = "[ ➜](bold purple) "
 vimcmd_replace_symbol = "[ ➜](bold purple) "
 vimcmd_visual_symbol = "[ ➜](bold yellow) "
 
-[cmake]
-disabled = true
-style = "blue"
-
-[cmd_duration]
-disabled = false
-min_time = 0
-show_milliseconds = true
-style = "yellow"
-
-[conda]
-disabled = true
-style = "green"
-
-[crystal]
-disabled = true
-style = "red"
-
-[dart]
-disabled = true
-style = "blue"
-
-[deno]
-disabled = true
-style = "green"
-
 [directory]
 disabled = false
 truncation_length = 8
 truncation_symbol = "…/"
 style = "cyan"
-
-[docker_context]
-disabled = true
-style = "blue"
-
-[dotnet]
-disabled = true
-symbol = "🥅 "
-style = "blue"
-
-[elixir]
-disabled = true
-style = "purple"
-
-[elm]
-disabled = true
-style = "cyan"
-
-[env_var.HOST]
-disabled = false
-variable = 'HOST'
-default = "👑"
-style = "dimmed white"
-
-[erlang]
-disabled = true
-style = "red"
-
-[gcloud]
-disabled = true
-symbol = "☁️  🇬️ "
-style = "dimmed blue"
 
 [git_branch]
 disabled = false
@@ -154,119 +68,12 @@ staged = "📦 "
 renamed = "📛 "
 deleted = "🗑  "
 
-[golang]
-disabled = true
-style = "cyan"
-
-[helm]
-disabled = true
-style = "white"
-
-[hostname]
-ssh_only = true
-style = "dimmed green"
-format = "on [$hostname]($style) "
-
-[java]
-disabled = true
-style = "dimmed red"
-
 [jobs]
 disabled = false
 style = "blue"
 
-[julia]
-disabled = true
-style = "purple"
-
-[kotlin]
-disabled = true
-style = "blue"
-
-[kubernetes]
-disabled = true
-symbol = "⛵ "
-format = 'on [$symbol$context \($namespace\)]($style) '
-style = "cyan"
-
 [line_break]
 disabled = false
-
-[lua]
-disabled = true
-style = "blue"
-
-[memory_usage]
-disabled = false
-style = "dimmed white"
-
-[hg_branch]
-disabled = false
-symbol = "🧪 "
-style = "purple"
-
-[nim]
-disabled = true
-style = "yellow"
-
-[nix_shell]
-disabled = true
-style = "blue"
-
-[nodejs]
-disabled = true
-style = "green"
-not_capable_style = "red"
-
-[ocaml]
-disabled = true
-style = "yellow"
-
-[openstack]
-disabled = true
-symbol = "☁️ 🅾 "
-style = "dimmed yellow"
-
-[package]
-disabled = true
-symbol = "🎁 "
-style = "208"
-
-[perl]
-disabled = true
-style = "149"
-
-[php]
-disabled = true
-style = "147"
-
-[purescript]
-disabled = true
-style = "white"
-
-[python]
-disabled = true
-style = "yellow"
-
-[rlang]
-disabled = true
-style = "blue"
-
-[red]
-disabled = true
-style = "red"
-
-[ruby]
-disabled = true
-style = "red"
-
-[rust]
-disabled = true
-style = "red"
-
-[scala]
-disabled = true
-style = "dimmed red"
 
 [shell]
 disabled = false
@@ -289,58 +96,8 @@ repeat = true
 repeat_offset = 0
 threshold = 0
 
-[singularity]
-disabled = true
-style = "dimmed blue"
-
-[status]
-style = "red"
-symbol = "🚒"
-signal_symbol = "⚡️"
-success_style = "green"
-success_symbol = "🍵"
-format = '[\[ $symbol ($common_meaning$signal_number(:$signal_name$maybe_int) )\]]($style) '
-map_symbol = true
-disabled = false
-
-[swift]
-disabled = true
-style = "202"
-
-[terraform]
-disabled = true
-style = "105"
-
 [time]
 disabled = false
 format = 'at 🕙 [$time]($style)'
 style = "dimmed blue"
 time_format = "%F %T %:z"
-
-[username]
-disabled = false
-show_always = true
-style_user = "dimmed blue"
-style_root = "dimmed white"
-
-[vagrant]
-disabled = true
-style = "cyan"
-
-[vlang]
-disabled = true
-style = "blue"
-
-[vcsh]
-disabled = true
-symbol = "🆅"
-format = "[ $symbol $repo ]($style) "
-style = "yellow"
-
-[zig]
-disabled = true
-style = "yellow"
-
-[custom.none]
-disabled = false
-style = "green"
