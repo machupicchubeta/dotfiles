@@ -37,8 +37,8 @@ style = "purple"
 disabled = false
 format = '[\[ $hash$tag \]]($style) '
 style = "dimmed purple"
-tag_symbol = "🔖 "
 only_detached = false
+tag_symbol = "🔖 "
 
 [git_state]
 disabled = false
@@ -89,8 +89,8 @@ style = 'dimmed white'
 
 [shlvl]
 disabled = false
-symbol = "♻️"
 format = "[$symbol:$shlvl]($style) "
+symbol = "♻️"
 style = "dimmed white"
 
 [time]
