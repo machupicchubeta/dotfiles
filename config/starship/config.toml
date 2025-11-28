@@ -44,15 +44,15 @@ style = "green"
 
 [git_state]
 disabled = false
-format = '[\( $state ($progress_current of $progress_total)\)]($style) '
+format = '[\[ $state( $progress_current of $progress_total) \]]($style) '
 style = "dimmed red"
-rebase = "REBASING 🏕 "
-merge = "MERGING 🦓 "
-revert = "REVERTING 🔙 "
-cherry_pick = "CHERRY-PICKING 🍒 "
-bisect = "BISECTING 🍪 "
-am = "AM ✉️ "
-am_or_rebase = "AM/REBASE 🏕 ✉️ "
+rebase = "🏕  REBASING"
+merge = "🦓  MERGING"
+revert = "🔙  REVERTING"
+cherry_pick = "🍒  CHERRY-PICKING"
+bisect = "🍪  BISECTING"
+am = "✉️  AM"
+am_or_rebase = "🏕 ✉️  AM/REBASE"
 
 [git_metrics]
 disabled = false
