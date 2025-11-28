@@ -297,7 +297,9 @@ style = "dimmed blue"
 style = "red"
 symbol = "🚒"
 signal_symbol = "⚡️"
-format = '[ \[ $symbol $common_meaning$signal_name$maybe_int \]]($style) '
+success_style = "green"
+success_symbol = "🍵"
+format = '[\[ $symbol ($common_meaning$signal_number(:$signal_name$maybe_int) )\]]($style) '
 map_symbol = true
 disabled = false
 
