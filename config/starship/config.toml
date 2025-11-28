@@ -38,7 +38,6 @@ disabled = false
 format = '[\[ $hash$tag \]]($style) '
 style = "dimmed purple"
 only_detached = false
-tag_symbol = "🔖 "
 
 [git_state]
 disabled = false
