@@ -497,6 +497,9 @@ else
   brew install --cask font-monoid-nerd-font
   brew install --cask font-m+-nerd-font
   brew install --cask font-moralerspace
+  brew install --cask font-moralerspace-hw
+  brew install --cask font-moralerspace-hw-jpdoc
+  brew install --cask font-moralerspace-jpdoc
   brew install --cask font-new-york
   brew install --cask font-noto-nerd-font
   brew install --cask font-plemol-jp
