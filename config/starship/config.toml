@@ -36,14 +36,14 @@ style = "purple"
 [git_commit]
 disabled = false
 format = '[\[ $hash$tag \]]($style) '
+style = "dimmed purple"
 tag_symbol = "🔖 "
-style = "green"
 only_detached = false
 
 [git_state]
 disabled = false
 format = '[\[ $state( $progress_current of $progress_total) \]]($style) '
-style = "dimmed red"
+style = "dimmed purple"
 rebase = "🏕  REBASING"
 merge = "🦓  MERGING"
 revert = "🔙  REVERTING"
@@ -54,11 +54,13 @@ am_or_rebase = "🏕 ✉️  AM/REBASE"
 
 [git_metrics]
 disabled = false
+added_style = 'dimmed green'
+deleted_style = 'dimmed red'
 
 [git_status]
 disabled = false
 format = '([\[ $all_status$ahead_behind\]]($style) )'
-style = "purple"
+style = "dimmed purple"
 conflicted = "⚔️:$count "
 ahead = "🏎 💨:$count "
 behind = "🐢:$count "
@@ -74,21 +76,22 @@ typechanged = "🧬:$count "
 
 [jobs]
 disabled = false
-style = "blue"
+style = "dimmed white"
 
 [line_break]
 disabled = false
 
 [shell]
 disabled = false
+style = 'dimmed white'
 
 [shlvl]
 disabled = false
 symbol = "♻️"
 format = "[$symbol:$shlvl]($style) "
-style = "yellow"
+style = "dimmed white"
 
 [time]
 disabled = false
-style = "dimmed blue"
 time_format = "%+"
+style = "dimmed white"
