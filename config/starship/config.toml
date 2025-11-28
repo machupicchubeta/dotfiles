@@ -7,6 +7,7 @@ $git_branch\
 $git_commit\
 $git_state\
 $git_status\
+$git_metrics\
 $time\
 $line_break\
 $character\
@@ -52,6 +53,9 @@ cherry_pick = "CHERRY-PICKING 🍒 "
 bisect = "BISECTING 🍪 "
 am = "AM ✉️ "
 am_or_rebase = "AM/REBASE 🏕 ✉️ "
+
+[git_metrics]
+disabled = false
 
 [git_status]
 disabled = false
