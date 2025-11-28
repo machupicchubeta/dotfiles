@@ -39,8 +39,10 @@ style = "purple"
 
 [git_commit]
 disabled = false
+format = '[\[ $hash$tag \]]($style) '
 tag_symbol = "🔖 "
 style = "green"
+only_detached = false
 
 [git_state]
 disabled = false
