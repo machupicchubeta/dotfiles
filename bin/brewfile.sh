@@ -265,6 +265,7 @@ brew install grc
 brew install grex
 brew install gti
 brew install hyperfine
+brew install install-nothing
 brew install ios-sim
 brew install iso-codes
 brew install jless
