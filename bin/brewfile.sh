@@ -383,6 +383,7 @@ else
   brew install --cask chrome-remote-desktop-host
   brew install --cask chromedriver
   brew install --cask claude
+  brew install --cask claude-code
   brew install --cask cloudflare-warp
   brew install --cask codex
   brew install --cask coscreen
