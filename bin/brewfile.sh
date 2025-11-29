@@ -259,6 +259,7 @@ brew install direnv
 brew install emojify
 brew install figlet
 brew install fortune
+brew install gitlogue
 brew install gnupg
 brew install grc
 brew install grex
