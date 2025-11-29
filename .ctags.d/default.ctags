@@ -5,6 +5,7 @@
 --exclude=tmp
 --exclude=vendor
 --extras=+q
+--fields=+l
 --languages=all
 --recurse=yes
 --tag-relative=yes
