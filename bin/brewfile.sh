@@ -321,6 +321,7 @@ brew install teller
 brew install tig
 brew install tokei
 brew install tree
+brew install treemd
 brew install watchexec
 brew install watchman
 brew install xcodegen
