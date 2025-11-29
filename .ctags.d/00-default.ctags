@@ -1,8 +1,0 @@
---exclude=*.log
---exclude=.*
---extras=+q
---fields=+l
---languages=all
---recurse=yes
---sort=yes
---tag-relative=yes

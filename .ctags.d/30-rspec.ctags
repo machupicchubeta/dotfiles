@@ -1,5 +1,0 @@
---exclude=coverage
---regex-ruby=/^[ \t]*context[ \t]+['"](.*)['"]/\1/x/
---regex-ruby=/^[ \t]*describe[ \t]+['"](.*)['"]/\1/d/
---regex-ruby=/^[ \t]*it[ \t]+['"](.*)['"]/\1/i/
---regex-ruby=/^[ \t]*specify[ \t]+['"](.*)['"]/\1/e/
