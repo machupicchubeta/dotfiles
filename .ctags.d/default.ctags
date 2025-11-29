@@ -6,3 +6,4 @@
 --exclude=vendor
 --languages=all
 --recurse=yes
+--tag-relative=yes
