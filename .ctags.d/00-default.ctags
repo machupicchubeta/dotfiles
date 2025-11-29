@@ -1,9 +1,5 @@
 --exclude=*.log
 --exclude=.*
---exclude=log
---exclude=node_modules
---exclude=tmp
---exclude=vendor
 --extras=+q
 --fields=+l
 --languages=all

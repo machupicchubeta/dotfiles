@@ -1,0 +1,13 @@
+--exclude=db
+--exclude=log
+--exclude=node_modules
+--exclude=storage
+--exclude=tmp
+--exclude=vendor
+--regex-ruby=/^[ \t]*(before|after)_[a-z_]+[ \t]+:([A-Za-z0-9_]+)/\2/callback/
+--regex-ruby=/^[ \t]*belongs_to[ \t]+:([A-Za-z0-9_]+)/\1/belongs/
+--regex-ruby=/^[ \t]*has_and_belongs_to_many[ \t]+:([A-Za-z0-9_]+)/\1/habtm/
+--regex-ruby=/^[ \t]*has_many[ \t]+:([A-Za-z0-9_]+)/\1/hasmany/
+--regex-ruby=/^[ \t]*has_one[ \t]+:([A-Za-z0-9_]+)/\1/hasone/
+--regex-ruby=/^[ \t]*scope[ \t]+:([A-Za-z0-9_]+)/\1/scope/
+--regex-ruby=/^[ \t]*validates[ \t]+:([A-Za-z0-9_]+)/\1/validation/
