@@ -4,6 +4,7 @@
 --exclude=node_modules
 --exclude=tmp
 --exclude=vendor
+--extras=+q
 --languages=all
 --recurse=yes
 --tag-relative=yes
