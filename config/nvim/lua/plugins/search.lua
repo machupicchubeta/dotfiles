@@ -3,8 +3,26 @@ return {
     'nvim-telescope/telescope.nvim',
     cond = (not vim.g.vscode),
     lazy = true,
+    init = function()
+      vim.keymap.set('n', '<C-t>tt', '<cmd>Telescope tags<cr>')
+    end,
     config = function()
       require('telescope').setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<C-j>"] = "move_selection_next",
+              ["<C-k>"] = "move_selection_previous",
+            },
+          },
+        },
+        pickers = {
+          tags = {
+            theme = "dropdown",
+            layout_config = { width = 0.6, height = 0.6 },
+            previewer = false
+          },
+        },
         extensions = {
           file_browser = {
             hijack_netrw = true
