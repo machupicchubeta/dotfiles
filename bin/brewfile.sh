@@ -488,6 +488,7 @@ else
   brew install --cask font-jetbrains-mono-nerd-font
   brew install --cask font-lilex
   brew install --cask font-lilex-nerd-font
+  brew install --cask font-m+-nerd-font
   brew install --cask font-monaspace
   brew install --cask font-monaspace-frozen
   brew install --cask font-monaspace-nf
@@ -495,7 +496,6 @@ else
   brew install --cask font-monaspice-nerd-font
   brew install --cask font-monoid
   brew install --cask font-monoid-nerd-font
-  brew install --cask font-m+-nerd-font
   brew install --cask font-moralerspace
   brew install --cask font-moralerspace-hw
   brew install --cask font-moralerspace-hw-jpdoc
