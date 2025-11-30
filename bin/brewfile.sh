@@ -169,12 +169,12 @@ brew install neovide
 brew install cscope
 brew install emacs
 brew install nano
-brew install robotsandpencils/made/xcodes
 brew install source-highlight
 brew install swift
 brew install universal-ctags --HEAD
 brew link universal-ctags
 brew install vim
+brew install xcodesorg/made/xcodes
 
 # Shell extensions
 brew install bash-completion
