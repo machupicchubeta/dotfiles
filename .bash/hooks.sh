@@ -1,8 +1,4 @@
-if [ "$(uname -m)" = "x86_64" ]; then
-  : "${HOMEBREW_PREFIX:=/usr/local}"
-elif [ "$(uname -m)" = "arm64" ]; then
-  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
-fi
+: "${HOMEBREW_PREFIX:=/opt/homebrew}"
 
 if command -v direnv > /dev/null; then eval "$(direnv hook bash)"; fi
 if command -v starship > /dev/null; then eval "$(starship init bash)"; fi

@@ -125,15 +125,3 @@ function rga-fzf() {
   echo "opening $file" &&
   $EDITOR "$file"
 }
-
-: "${CPU_BRAND:=$(/usr/sbin/sysctl -n machdep.cpu.brand_string)}"
-if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a -x "$(command -v arch)" ]; then
-  function switch-arch() {
-    if [ "$(uname -m)" = "arm64" ]; then
-      arch="x86_64"
-    elif [ "$(uname -m)" = "x86_64" ]; then
-      arch="arm64e"
-    fi
-    exec arch -arch $arch "$SHELL"
-  }
-fi

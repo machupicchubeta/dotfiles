@@ -1,11 +1,9 @@
 : "${XDG_CONFIG_HOME:=$HOME/.config}"
 : "${XDG_DATA_HOME:=$HOME/.local/share}"
 
-if [ "$(uname -m)" = "arm64" ]; then
-  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
-  if [ -z "$(echo $PATH | grep -o $HOMEBREW_PREFIX/bin)" ]; then
-    export PATH="$HOMEBREW_PREFIX/bin:$PATH"
-  fi
+: "${HOMEBREW_PREFIX:=/opt/homebrew}"
+if [ -z "$(echo $PATH | grep -o $HOMEBREW_PREFIX/bin)" ]; then
+  export PATH="$HOMEBREW_PREFIX/bin:$PATH"
 fi
 
 if command -v sheldon > /dev/null; then

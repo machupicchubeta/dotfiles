@@ -73,20 +73,6 @@ for app in "${APPS[@]}"; do
     done
   fi
 
-  if [ "$app" = "bundle" ]; then
-    for arch in "x86_64" "arm64"; do
-      if [ ! -d "$XDG_DATA_HOME/$app/$arch" ]; then
-        mkdir --parents "$XDG_DATA_HOME/$app/$arch"
-      fi
-      if [ ! -d "$XDG_DATA_HOME/$app/$arch/plugin" ]; then
-        mkdir --parents "$XDG_DATA_HOME/$app/$arch/plugin"
-      fi
-      if [ ! -d "$XDG_CACHE_HOME/$app/$arch" ]; then
-        mkdir --parents "$XDG_CACHE_HOME/$app/$arch"
-      fi
-    done
-  fi
-
   if [ "$app" = "irb" ] && [ ! -d "$XDG_DATA_HOME/$app" ]; then
     mkdir --parents "$XDG_DATA_HOME/$app"
   fi
@@ -98,7 +84,6 @@ done
 unset -v app
 unset -v APPS
 unset -v shell
-unset -v arch
 
 find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
     dot_file=$1
