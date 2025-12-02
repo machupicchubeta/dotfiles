@@ -1,8 +1,4 @@
-if [ "$(uname -m)" = "x86_64" ]; then
-  : "${HOMEBREW_PREFIX:=/usr/local}"
-elif [ "$(uname -m)" = "arm64" ]; then
-  : "${HOMEBREW_PREFIX:=/opt/homebrew}"
-fi
+: "${HOMEBREW_PREFIX:=/opt/homebrew}"
 
 : "${XDG_DATA_HOME:=$HOME/.local/share}"
 : "${RUSTUP_HOME:=$XDG_DATA_HOME/rustup}"

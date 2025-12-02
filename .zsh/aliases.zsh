@@ -49,17 +49,3 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
-
-: "${CPU_BRAND:=$(/usr/sbin/sysctl -n machdep.cpu.brand_string)}"
-if [ -n "$(echo $CPU_BRAND | grep -o 'Apple')" -a -x "$(command -v arch)" ]; then
-  alias x86_64='exec arch -arch x86_64 "$SHELL"'
-  alias x64='x86_64'
-  alias arm64='exec arch -arch arm64e "$SHELL"'
-  alias a64='arm64'
-
-: "${X86_64_HOMEBREW_PATH:=/usr/local/bin/brew}"
-  if [ "$(uname -m)" = "arm64" -a -x "$X86_64_HOMEBREW_PATH" ]; then
-    alias x86_64_brew="arch -arch x86_64 $X86_64_HOMEBREW_PATH"
-    alias x64_brew='x86_64_brew'
-  fi
-fi

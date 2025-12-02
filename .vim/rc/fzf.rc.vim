@@ -141,8 +141,4 @@ function! s:fzf_statusline()
 endfunction
 
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
-if trim(system("uname -m")) == "arm64"
-  set rtp+=/opt/homebrew/opt/fzf
-else
-  set rtp+=/usr/local/opt/fzf
-endif
+set rtp+=/opt/homebrew/opt/fzf

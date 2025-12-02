@@ -32,11 +32,7 @@
 "   autocmd FileType html
 "        \ setlocal includeexpr=substitute(v:fname,'^\\/','','') |
 "        \ setlocal path+=./;/
-"   if trim(system("uname -m")) == "arm64"
-"     autocmd FileType php setlocal path+=/opt/homebrew/share/pear
-"   else
-"     autocmd FileType php setlocal path+=/usr/local/share/pear
-"   endif
+"   autocmd FileType php setlocal path+=/opt/homebrew/share/pear
 "   autocmd FileType apache setlocal path+=./;/
 "
 "   autocmd FileType go highlight default link goErr WarningMsg |
