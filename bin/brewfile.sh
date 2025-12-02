@@ -443,6 +443,7 @@ else
   brew install --cask temurin
   brew install --cask thebrowsercompany-dia
   brew install --cask vagrant
+  brew install --cask virtualbox
   brew install --cask visual-studio-code
   brew install --cask vivaldi
   brew install --cask vlc
@@ -515,11 +516,7 @@ else
   brew cu --all --cleanup --yes
 fi
 
-if [ "$(uname -m)" = "x86_64" ]; then
-  brew install --cask virtualbox
-
-  brew cu virtualbox --cleanup
-elif [ "$(uname -m)" = "arm64" ]; then
+if [ "$(uname -m)" = "arm64" ]; then
   brew install --cask fertigt-slate
 fi
 
