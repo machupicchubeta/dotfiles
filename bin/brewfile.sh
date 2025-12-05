@@ -349,7 +349,7 @@ brew install xh
 # Documentation tools
 brew install cheat
 brew install docutils
-brew install tldr
+brew install tlrc
 
 # Audio and Video tools
 brew install ffmpeg
