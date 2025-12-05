@@ -274,7 +274,6 @@ brew install pv
 brew install screenfetch
 brew install sd
 brew install shared-mime-info
-brew install shyaml
 brew install silicon
 brew install slackcat
 brew install spark
