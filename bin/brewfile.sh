@@ -399,6 +399,7 @@ brew install --cask framer
 brew install --cask gather
 brew install --cask ghostty
 brew install --cask github
+brew install --cask github-copilot-for-xcode
 brew install --cask google-chrome
 brew install --cask google-chrome@canary
 brew install --cask google-drive
