@@ -145,6 +145,7 @@ brew install mosquitto
 brew install protobuf
 brew install terraform-lsp
 brew install tree-sitter
+brew install uv
 brew install v8
 brew install vite
 brew install wasmtime
