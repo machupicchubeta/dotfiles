@@ -45,7 +45,6 @@ export MISE_NODE_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/node/default-npm-p
 export MISE_PYTHON_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/python/default-python-packages"
 export ASDF_CONFIG_FILE="$XDG_CONFIG_HOME/asdf/config"
 export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
-export ASDF_FORCE_PREPEND="yes"
 export ASDF_PERL_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/asdf/perl/default-perl-modules"
 export ASDF_HASHICORP_TERRAFORM_VERSION_FILE=".terraform-version"
 export ENHANCD_DIR="$XDG_DATA_HOME/enhancd"
