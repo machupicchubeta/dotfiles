@@ -359,7 +359,6 @@ brew install x265
 brew install --cask 1password
 brew install --cask 1password-cli
 brew install --cask aerial
-brew install --cask alacritty
 brew install --cask alfred
 brew install --cask amazon-chime
 brew install --cask android-commandlinetools
@@ -405,7 +404,6 @@ brew install --cask google-chrome@canary
 brew install --cask google-drive
 brew install --cask google-earth-pro
 brew install --cask gyazo
-brew install --cask hyper
 brew install --cask iterm2
 brew install --cask itermai
 brew install --cask itermbrowserplugin
@@ -438,7 +436,6 @@ brew install --cask virtualbox
 brew install --cask visual-studio-code
 brew install --cask vivaldi
 brew install --cask vlc
-brew install --cask warp
 brew install --cask wezterm
 brew install --cask wireshark-app
 brew install --cask xcodes-app
