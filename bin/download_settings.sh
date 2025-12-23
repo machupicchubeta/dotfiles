@@ -22,6 +22,5 @@ ghq get --update --parallel github.com/mbadolato/iTerm2-Color-Schemes
 ghq get --update --parallel github.com/seebi/dircolors-solarized
 ghq get --update --parallel gist.github.com/4979906
 ghq get --update --parallel github.com/tony/tmux-config
-ghq get --update --parallel github.com/k0kubun/dotfiles
 
 unset REPOSITORIES_PATH
