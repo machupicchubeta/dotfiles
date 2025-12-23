@@ -129,7 +129,6 @@ brew install luarocks
 brew install erlang
 brew install elixir
 
-brew install coffeescript
 brew install ghostscript
 brew install go
 brew install ocaml
