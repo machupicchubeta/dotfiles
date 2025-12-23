@@ -44,6 +44,7 @@ APPS=(
   "lsd"
   "mise"
   "nvim"
+  "pip"
   "readline"
   "rspec"
   "sheldon"
