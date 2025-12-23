@@ -39,7 +39,6 @@ export MISE_CACHE_DIR="$XDG_CACHE_HOME/mise"
 export MISE_ENV_FILE=.env
 export MISE_RUBY_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/ruby/default-gems"
 export MISE_GO_SET_GOROOT=1
-export MISE_GO_SET_GOPATH=1
 export MISE_GO_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/go/default-go-packages"
 export MISE_NODE_COREPACK=1
 export MISE_NODE_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/mise/node/default-npm-packages"
