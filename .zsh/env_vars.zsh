@@ -88,5 +88,6 @@ export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3 --with-libyaml-dir=$HOMEBREW_PREFIX/opt/libyaml --with-libffi-dir=$HOMEBREW_PREFIX/opt/libffi --with-readline-dir=$HOMEBREW_PREFIX/opt/readline --with-gmp-dir=$HOMEBREW_PREFIX/opt/gmp  --enable-yjit --enable-zjit"
 # export RUBY_YJIT_ENABLE=1
 export RUBY_ZJIT_ENABLE=1
+# export RUBY_BOX=1
 
 export GPG_TTY=$(tty)
