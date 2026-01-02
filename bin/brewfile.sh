@@ -9,7 +9,7 @@ if [ ! -x "$(command -v git)" ]; then
   exit 1
 fi
 sudo chown -R $(whoami):admin "$HOMEBREW_PREFIX"/*
-cd "$HOMEBREW_REPOSITORY" && git checkout master
+cd "$HOMEBREW_REPOSITORY" && git switch $(git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@')
 
 if [ ! -x "$(command -v brew)" ]; then
   echo "Install brew command first."
