@@ -1,20 +1,16 @@
 #!/bin/bash
 set -u
 
-: "${HOMEBREW_PREFIX:=/opt/homebrew}"
-: "${HOMEBREW_REPOSITORY:=/opt/homebrew}"
-
 if [ ! -x "$(command -v git)" ]; then
   echo "Install git command first."
   exit 1
 fi
-sudo chown -R $(whoami):admin "$HOMEBREW_PREFIX"/*
-cd "$HOMEBREW_REPOSITORY" && git checkout master
-
 if [ ! -x "$(command -v brew)" ]; then
   echo "Install brew command first."
   exit 1
 fi
+
+brew update
 
 brew install mas
 mas purchase 1284863847 # Unsplash Wallpapers
@@ -40,7 +36,6 @@ brew tap spectralops/tap
 brew tap thoughtbot/formulae
 brew tap universal-ctags/universal-ctags
 
-brew update
 brew upgrade --fetch-HEAD
 
 # Libraries that used in Ruby or so, or used to build from source code
