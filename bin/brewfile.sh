@@ -10,6 +10,8 @@ if [ ! -x "$(command -v brew)" ]; then
   exit 1
 fi
 
+brew update
+
 brew install mas
 mas purchase 1284863847 # Unsplash Wallpapers
 mas purchase 1295203466 # Microsoft Remote Desktop
@@ -34,7 +36,6 @@ brew tap spectralops/tap
 brew tap thoughtbot/formulae
 brew tap universal-ctags/universal-ctags
 
-brew update
 brew upgrade --fetch-HEAD
 
 # Libraries that used in Ruby or so, or used to build from source code
