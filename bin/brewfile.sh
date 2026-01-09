@@ -123,6 +123,7 @@ brew install lua
 brew install luarocks
 brew install erlang
 brew install elixir
+brew install python-build
 
 brew install ghostscript
 brew install go
@@ -150,6 +151,18 @@ brew install webpack
 brew install libxml2
 brew install libxslt
 brew install libiconv
+
+# Libraries that used in Python or so, or used to build from source code
+## This paragraph is arranged in the order in which they need to be installed.
+# brew install openssl@3 # This is installed in a library paragraph.
+# brew install readline # This is installed in a library paragraph.
+# brew install sqlite # This is installed in a library paragraph.
+brew install xz
+brew install tcl-tk@8
+brew install libb2
+brew install zstd
+# brew install zlib # This is installed in the newer version tools paragraph.
+brew install pkgconfig
 
 # Text Editor and its extensions
 ## This paragraph is arranged in the order in which they need to be installed.
