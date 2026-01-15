@@ -419,7 +419,6 @@ brew install --cask karabiner-elements
 brew install --cask kiro
 brew install --cask lens
 brew install --cask marvel
-brew install --cask messenger
 brew install --cask microsoft-edge
 brew install --cask microsoft-office
 brew install --cask miro
