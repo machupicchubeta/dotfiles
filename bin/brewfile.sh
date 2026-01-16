@@ -225,13 +225,13 @@ brew install wrkflw
 
 # XaaS tools
 brew install act
-brew install amazon-ecs-cli
 brew install auth0
 brew install aws-shell
 brew install aws-vault
 brew install awscli
 brew install azure-cli
 brew install circleci
+brew install copilot
 brew install doctl
 brew install firebase-cli
 brew install flyctl
