@@ -10,6 +10,7 @@ if [ ! -x "$(command -v brew)" ]; then
   exit 1
 fi
 
+sudo xcodebuild -license accept
 brew update
 
 brew install mas
@@ -21,8 +22,6 @@ mas purchase 411213048 # LadioCast
 mas purchase 414298354 # ToyViewer
 mas purchase 497799835 # Xcode
 mas purchase 899247664 # TestFlight
-
-sudo xcodebuild -license accept
 
 brew tap Code-Hex/tap
 brew tap auth0/auth0-cli
