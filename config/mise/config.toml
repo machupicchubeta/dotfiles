@@ -5,6 +5,7 @@ java = "latest"
 node = ["latest", "lts"]
 perl = "latest"
 python = "latest"
+uv = "latest"
 ruby = "latest"
 terraform = "latest"
 
