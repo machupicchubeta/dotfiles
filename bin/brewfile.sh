@@ -343,6 +343,7 @@ brew install gping
 brew install httpie
 brew install nmap
 brew install nss
+brew install portless
 brew install somo
 brew install sqlmap
 brew install sslscan
