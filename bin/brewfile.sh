@@ -419,7 +419,7 @@ brew install --cask itermbrowserplugin
 brew install --cask karabiner-elements
 brew install --cask kiro
 brew install --cask lens
-brew install --cask linear-linear
+brew install --cask linear
 brew install --cask marvel
 brew install --cask microsoft-edge
 brew install --cask microsoft-office
