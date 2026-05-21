@@ -92,5 +92,6 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$HOMEBREW_PREFIX/opt/openssl@3 --
 # export RUBY_YJIT_ENABLE=1
 export RUBY_ZJIT_ENABLE=1
 # export RUBY_BOX=1
+export RUBYOPT='--enable=frozen-string-literal'
 
 export GPG_TTY=$(tty)
