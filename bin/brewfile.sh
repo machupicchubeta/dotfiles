@@ -370,6 +370,9 @@ brew install --cask aerial
 brew install --cask alfred
 brew install --cask amazon-chime
 brew install --cask android-commandlinetools
+brew install --cask antigravity
+brew install --cask antigravity-cli
+brew install --cask antigravity-ide
 brew install --cask arc
 brew install --cask betterzip
 brew install --cask blackhole-16ch
