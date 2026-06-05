@@ -23,12 +23,8 @@ mas purchase 414298354 # ToyViewer
 mas purchase 497799835 # Xcode
 mas purchase 899247664 # TestFlight
 
-brew tap Code-Hex/tap
-brew tap auth0/auth0-cli
 brew tap buo/cask-upgrade
-brew tap mongodb/brew
-brew tap olets/tap
-brew tap puma/puma
+brew trust --command buo/cask-upgrade/cu
 
 brew upgrade --fetch-HEAD
 
@@ -175,6 +171,7 @@ brew install xcodesorg/made/xcodes
 
 # Shell extensions
 brew install bash-completion
+brew install olets/tap/zsh-abbr
 brew install reattach-to-user-namespace
 brew install sheldon
 brew install starship
@@ -182,7 +179,6 @@ brew install terminal-notifier
 brew install tmux
 brew install z
 brew install zellij
-brew install zsh-abbr
 brew install zsh-autosuggestions
 brew install zsh-completions
 brew install zsh-syntax-highlighting
@@ -198,13 +194,13 @@ brew install the_silver_searcher
 
 # Data stores
 brew install memcached
-brew install mongodb-community
+brew install mongodb/brew/mongodb-community
 brew install mysql
 brew install postgresql@16
 brew install redis
 
 # Web Application Servers
-brew install puma-dev
+brew install puma/puma/puma-dev
 
 # Virtual Machines and Infrastructure tools
 brew install ansible
@@ -219,7 +215,7 @@ brew install wrkflw
 
 # XaaS tools
 brew install act
-brew install auth0
+brew install auth0/auth0-cli/auth0
 brew install aws-shell
 brew install aws-vault
 brew install awscli
@@ -248,6 +244,7 @@ brew install swiftformat
 brew install swiftlint
 
 # Command-line tools
+brew install Code-Hex/tap/neo-cowsay
 brew install asciiquarium
 brew install choose-rust
 brew install chrome-cli
@@ -268,7 +265,6 @@ brew install iso-codes
 brew install jless
 brew install jq
 brew install jsonpp
-brew install neo-cowsay
 brew install nkf
 brew install parallel
 brew install pinentry-mac
