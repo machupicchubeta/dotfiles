@@ -26,7 +26,6 @@ mas purchase 899247664 # TestFlight
 brew tap Code-Hex/tap
 brew tap auth0/auth0-cli
 brew tap buo/cask-upgrade
-brew tap clementtsang/bottom
 brew tap github/gh
 brew tap mongodb/brew
 brew tap olets/tap
