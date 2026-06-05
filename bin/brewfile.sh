@@ -29,7 +29,6 @@ brew tap buo/cask-upgrade
 brew tap mongodb/brew
 brew tap olets/tap
 brew tap puma/puma
-brew tap spectralops/tap
 brew tap thoughtbot/formulae
 brew tap universal-ctags/universal-ctags
 
