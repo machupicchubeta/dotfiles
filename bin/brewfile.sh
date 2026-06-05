@@ -29,7 +29,6 @@ brew tap buo/cask-upgrade
 brew tap mongodb/brew
 brew tap olets/tap
 brew tap puma/puma
-brew tap universal-ctags/universal-ctags
 
 brew upgrade --fetch-HEAD
 
