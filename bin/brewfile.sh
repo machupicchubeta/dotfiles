@@ -26,8 +26,6 @@ mas purchase 899247664 # TestFlight
 brew tap buo/cask-upgrade
 brew trust --command buo/cask-upgrade/cu
 
-brew upgrade --fetch-HEAD
-
 # Libraries that used in Ruby or so, or used to build from source code
 ## This paragraph is arranged in the order in which they need to be installed.
 brew install openssl@3
@@ -163,8 +161,7 @@ brew install emacs
 brew install nano
 brew install source-highlight
 brew install swift
-brew install universal-ctags --HEAD
-brew link universal-ctags
+brew install universal-ctags
 brew install vim
 brew install xcodesorg/made/xcodes
 
