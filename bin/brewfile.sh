@@ -104,8 +104,7 @@ brew install rustup-init
 # brew install rust # This is installed in a library paragraph.
 brew install ruby-build
 brew install ruby
-brew install node-build --HEAD
-brew link node-build
+brew install node-build
 brew install node
 brew install openjdk
 brew install kotlin
