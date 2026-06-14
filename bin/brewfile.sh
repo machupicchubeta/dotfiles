@@ -191,6 +191,7 @@ brew install the_silver_searcher
 # Data stores
 brew install memcached
 brew install mongodb/brew/mongodb-community
+brew install mongodb/brew/mongodb-database-tools
 brew install mysql
 brew install postgresql@16
 brew install redis
