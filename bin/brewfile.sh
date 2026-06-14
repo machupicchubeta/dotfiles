@@ -500,6 +500,8 @@ brew install --cask font-sf-mono-for-powerline
 brew install --cask font-sf-pro
 brew install --cask font-victor-mono
 brew install --cask font-victor-mono-nerd-font
+brew install --cask font-yuyu
+brew install --cask font-yuyu-short
 
 brew cu --all --cleanup --yes
 brew cleanup --prune=0 -s
