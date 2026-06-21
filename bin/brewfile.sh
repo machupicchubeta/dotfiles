@@ -440,6 +440,7 @@ brew install --cask wezterm
 brew install --cask wireshark-app
 brew install --cask xcodes-app
 brew install --cask xquartz
+brew install --cask zed
 brew install --cask zen
 brew install --cask zoom
 
