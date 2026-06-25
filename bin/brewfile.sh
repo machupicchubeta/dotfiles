@@ -269,7 +269,6 @@ brew install screenfetch
 brew install sd
 brew install shared-mime-info
 brew install silicon
-brew install slackcat
 brew install spark
 brew install ssh-copy-id
 brew install terraform_landscape
@@ -424,7 +423,6 @@ brew install --cask raindropio
 brew install --cask raycast
 brew install --cask session-manager-plugin
 brew install --cask slack
-brew install --cask slack-cli
 brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask suspicious-package
