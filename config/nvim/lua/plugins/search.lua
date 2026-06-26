@@ -38,7 +38,6 @@ return {
       require('telescope').load_extension('file_browser')
       require('telescope').load_extension('lazy')
       require('telescope').load_extension('fzf')
-      require('telescope').load_extension('ag')
       require('telescope').load_extension('dir')
       require('telescope').load_extension('dap')
       require('telescope').load_extension('git_grep')
@@ -72,18 +71,6 @@ return {
     lazy = true,
     build = 'make',
     event = 'VeryLazy'
-  },
-  {
-    'kelly-lin/telescope-ag',
-    cond = (not vim.g.vscode),
-    lazy = true,
-    config = function()
-      local telescope_ag = require('telescope-ag')
-      telescope_ag.setup({
-        cmd = telescope_ag.cmds.ag
-      })
-    end,
-    cmd = 'Ag'
   },
   {
     'princejoogie/dir-telescope.nvim',
