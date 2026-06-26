@@ -186,7 +186,6 @@ brew install peco
 brew install pick
 brew install ripgrep
 brew install ripgrep-all
-brew install the_silver_searcher
 
 # Data stores
 brew install memcached
