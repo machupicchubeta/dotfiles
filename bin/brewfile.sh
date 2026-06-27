@@ -159,7 +159,6 @@ brew install neovide
 brew install cscope
 brew install emacs
 brew install nano
-brew install source-highlight
 brew install swift
 brew install universal-ctags
 brew install vim
@@ -255,7 +254,6 @@ brew install grex
 brew install gti
 brew install hyperfine
 brew install install-nothing
-brew install ios-sim
 brew install iso-codes
 brew install jless
 brew install jq
@@ -267,7 +265,6 @@ brew install pv
 brew install screenfetch
 brew install sd
 brew install shared-mime-info
-brew install silicon
 brew install spark
 brew install ssh-copy-id
 brew install terraform_landscape
