@@ -94,5 +94,5 @@ style = "dimmed white"
 
 [time]
 disabled = false
-time_format = "%+"
+time_format = "%F%T%.f%:z"
 style = "dimmed white"
