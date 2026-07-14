@@ -364,6 +364,7 @@ brew install --cask blisk
 brew install --cask brave-browser
 brew install --cask canva
 brew install --cask chatgpt
+brew install --cask chatgpt-classic
 brew install --cask chrome-remote-desktop-host
 brew install --cask chromedriver
 brew install --cask claude
