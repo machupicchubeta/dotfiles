@@ -371,7 +371,6 @@ brew install --cask claude-code
 brew install --cask cloudflare-warp
 brew install --cask cmux
 brew install --cask codex
-brew install --cask codex-app
 brew install --cask coscreen
 brew install --cask cursor
 brew install --cask cyberduck
