@@ -387,7 +387,6 @@ brew install --cask figma
 brew install --cask firefox
 brew install --cask firefox@developer-edition
 brew install --cask fliqlo
-brew install --cask fontforge-app
 brew install --cask framer
 brew install --cask gather
 brew install --cask ghostty
