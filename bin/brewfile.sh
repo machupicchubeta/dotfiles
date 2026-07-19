@@ -216,7 +216,6 @@ brew install aws-vault
 brew install awscli
 brew install azure-cli
 brew install circleci
-brew install copilot
 brew install doctl
 brew install firebase-cli
 brew install flyctl
