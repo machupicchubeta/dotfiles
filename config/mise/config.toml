@@ -8,6 +8,7 @@ python = "latest"
 uv = "latest"
 ruby = "latest"
 terraform = "latest"
+rust = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["ruby"]
