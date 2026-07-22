@@ -342,7 +342,6 @@ brew install tlrc
 # Audio and Video tools
 brew install ffmpeg
 brew install lame
-brew install ttyrec
 brew install x265
 
 brew install --cask 1password
