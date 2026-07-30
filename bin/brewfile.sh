@@ -379,7 +379,6 @@ brew install --cask docker-desktop
 brew install --cask dotnet-sdk
 brew install --cask drawio
 brew install --cask dynamodb-local
-brew install --cask fertigt-slate
 brew install --cask figma
 brew install --cask firefox
 brew install --cask firefox@developer-edition
@@ -413,6 +412,7 @@ brew install --cask packages
 brew install --cask postman
 brew install --cask raindropio
 brew install --cask raycast
+brew install --cask rectangle
 brew install --cask session-manager-plugin
 brew install --cask slack
 brew install --cask spotify
