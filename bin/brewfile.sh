@@ -131,7 +131,6 @@ brew install uv
 brew install v8
 brew install vite
 brew install wasmtime
-brew install webpack
 
 # Libraries used in Nokogiri gem
 ## This paragraph is arranged in the order in which they need to be installed.
