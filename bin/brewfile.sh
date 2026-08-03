@@ -194,9 +194,6 @@ brew install mysql
 brew install postgresql@16
 brew install redis
 
-# Web Application Servers
-brew install puma/puma/puma-dev
-
 # Virtual Machines and Infrastructure tools
 brew install ansible
 brew install container
