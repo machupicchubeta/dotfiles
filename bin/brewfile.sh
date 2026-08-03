@@ -431,6 +431,7 @@ brew install --cask zoom
 
 brew install --cask font-3270-nerd-font
 brew install --cask font-agave-nerd-font
+brew install --cask font-annotationmono-nerd-font
 brew install --cask font-anonymice-nerd-font
 brew install --cask font-blex-mono-nerd-font
 brew install --cask font-cascadia-code
