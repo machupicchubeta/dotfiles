@@ -111,6 +111,7 @@ brew install luarocks
 brew install erlang
 brew install elixir
 brew install python-build
+brew install swift
 
 brew install ghostscript
 brew install go
@@ -158,7 +159,6 @@ brew install neovide
 brew install cscope
 brew install emacs
 brew install nano
-brew install swift
 brew install universal-ctags
 brew install vim
 brew install xcodesorg/made/xcodes
