@@ -190,7 +190,7 @@ brew install memcached
 brew install mongodb/brew/mongodb-community
 brew install mongodb/brew/mongodb-database-tools
 brew install mysql
-brew install postgresql@16
+brew install postgresql@18
 brew install redis
 
 # Virtual Machines and Infrastructure tools
