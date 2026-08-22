@@ -421,7 +421,6 @@ brew install --cask virtualbox
 brew install --cask visual-studio-code
 brew install --cask vivaldi
 brew install --cask vlc
-brew install --cask wezterm
 brew install --cask wireshark-app
 brew install --cask xcodes-app
 brew install --cask xquartz

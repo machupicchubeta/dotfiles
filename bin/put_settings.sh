@@ -51,7 +51,6 @@ APPS=(
   "starship"
   "tig"
   "tmux"
-  "wezterm"
   "zsh-abbr"
   )
 
