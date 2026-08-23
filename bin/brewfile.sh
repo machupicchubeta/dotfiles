@@ -225,7 +225,7 @@ brew install swiftformat
 brew install swiftlint
 
 # Language Servers
-brew install terraform-lsp
+brew install terraform-ls
 
 # Command-line tools
 brew install Code-Hex/tap/neo-cowsay
