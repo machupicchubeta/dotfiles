@@ -162,7 +162,6 @@ brew install xcodesorg/made/xcodes
 # Shell extensions
 brew install bash-completion
 brew install olets/tap/zsh-abbr
-brew install reattach-to-user-namespace
 brew install sheldon
 brew install starship
 brew install terminal-notifier
