@@ -118,19 +118,15 @@ brew install go
 brew install ocaml
 brew install perl
 # brew install python@3 # This is installed in a library paragraph.
-brew install yarn
 
 brew install ccusage
-brew install esbuild
 brew install golang-migrate
 brew install gradle
 brew install mosquitto
 brew install protobuf
 brew install terraform-lsp
 brew install tree-sitter
-brew install uv
 brew install v8
-brew install vite
 brew install wasmtime
 
 # Libraries used in Nokogiri gem
