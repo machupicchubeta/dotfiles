@@ -203,7 +203,6 @@ brew install wrkflw
 # XaaS tools
 brew install act
 brew install auth0/auth0-cli/auth0
-brew install aws-shell
 brew install aws-vault
 brew install awscli
 brew install azure-cli
