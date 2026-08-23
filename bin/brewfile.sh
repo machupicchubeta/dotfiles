@@ -43,7 +43,6 @@ brew install libressl
 ## This paragraph is arranged in the order in which they need to be installed.
 brew install sqlite
 brew install python@3
-brew install llvm@16
 brew install rust
 
 # GNU command line tools
