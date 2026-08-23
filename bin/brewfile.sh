@@ -119,12 +119,10 @@ brew install ocaml
 brew install perl
 # brew install python@3 # This is installed in a library paragraph.
 
-brew install ccusage
 brew install golang-migrate
 brew install gradle
 brew install mosquitto
 brew install protobuf
-brew install terraform-lsp
 brew install tree-sitter
 brew install v8
 brew install wasmtime
@@ -226,9 +224,13 @@ brew install shellcheck
 brew install swiftformat
 brew install swiftlint
 
+# Language Servers
+brew install terraform-lsp
+
 # Command-line tools
 brew install Code-Hex/tap/neo-cowsay
 brew install asciiquarium
+brew install ccusage
 brew install choose-rust
 brew install chrome-cli
 brew install cmatrix
