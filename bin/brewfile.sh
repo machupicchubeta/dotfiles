@@ -392,7 +392,6 @@ brew install --cask lens
 brew install --cask linear
 brew install --cask marvel
 brew install --cask microsoft-edge
-brew install --cask microsoft-office
 brew install --cask miro
 brew install --cask notion
 brew install --cask notion-calendar
