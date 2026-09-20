@@ -384,8 +384,6 @@ brew install --cask google-drive
 brew install --cask google-earth-pro
 brew install --cask gyazo
 brew install --cask iterm2
-brew install --cask itermai
-brew install --cask itermbrowserplugin
 brew install --cask karabiner-elements
 brew install --cask kiro
 brew install --cask lens
