@@ -408,6 +408,7 @@ brew install --cask suspicious-package
 brew install --cask temurin
 brew install --cask thebrowsercompany-dia
 brew install --cask vagrant
+brew install --cask vcamapp
 brew install --cask virtualbox
 brew install --cask visual-studio-code
 brew install --cask vivaldi
