@@ -381,7 +381,6 @@ brew install --cask github-copilot-for-xcode
 brew install --cask google-chrome
 brew install --cask google-chrome@canary
 brew install --cask google-drive
-brew install --cask google-earth-pro
 brew install --cask gyazo
 brew install --cask iterm2
 brew install --cask karabiner-elements
