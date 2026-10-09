@@ -433,6 +433,7 @@ brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
 brew install --cask font-fira-mono-nerd-font
 brew install --cask font-go-mono-nerd-font
+brew install --cask font-google-sans
 brew install --cask font-hack-nerd-font
 brew install --cask font-hasklig
 brew install --cask font-hasklug-nerd-font
