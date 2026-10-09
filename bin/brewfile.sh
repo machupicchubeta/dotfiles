@@ -437,6 +437,7 @@ brew install --cask font-google-sans
 brew install --cask font-google-sans-code
 brew install --cask font-google-sans-flex
 brew install --cask font-googlesanscode-nerd-font
+brew install --cask font-guguru-sans-code
 brew install --cask font-hack-nerd-font
 brew install --cask font-hasklig
 brew install --cask font-hasklug-nerd-font
