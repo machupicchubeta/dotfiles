@@ -85,7 +85,7 @@ unset -v app
 unset -v APPS
 unset -v shell
 
-find "$SETTINGS_PATH"/.* -maxdepth 0 -type f -exec sh -c '
+find "$SETTINGS_PATH"/.* -maxdepth 0 -type f ! -path "$SETTINGS_PATH/.DS_Store" ! -path "$SETTINGS_PATH/.gitignore" -exec sh -c '
     dot_file=$1
     dot_filename=$(basename "$dot_file")
     if [ -L "$HOME/$dot_filename" ]; then
