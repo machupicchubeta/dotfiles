@@ -200,7 +200,6 @@ brew install act
 brew install auth0/auth0-cli/auth0
 brew install aws-vault
 brew install awscli
-brew install azure-cli
 brew install circleci
 brew install doctl
 brew install firebase-cli
