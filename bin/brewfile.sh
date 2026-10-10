@@ -457,6 +457,7 @@ brew install --cask font-iosevka-slab
 brew install --cask font-iosevka-term-nerd-font
 brew install --cask font-jetbrains-mono
 brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-lexica-ultralegible
 brew install --cask font-lilex
 brew install --cask font-lilex-nerd-font
 brew install --cask font-m+-nerd-font
