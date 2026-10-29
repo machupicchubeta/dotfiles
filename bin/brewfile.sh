@@ -373,6 +373,7 @@ brew install --cask firefox@developer-edition
 brew install --cask fliqlo
 brew install --cask framer
 brew install --cask gather
+brew install --cask gcloud-cli
 brew install --cask ghostty
 brew install --cask github
 brew install --cask github-copilot-for-xcode
