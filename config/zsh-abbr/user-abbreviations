@@ -237,7 +237,7 @@ abbr --regular '_r'='cd $(ghq root)/$(ghq list | fzf)'
 abbr --regular 'tmp'='cd ~/tmp'
 abbr --regular '~'='cd ~'
 
-abbr --regular 'start_postgres'='pg_ctl --pgdata=$(brew --prefix)/var/postgresql@16 --log logfile start'
+abbr --regular 'start_postgres'='pg_ctl --pgdata=$(brew --prefix)/var/postgresql@18 --log logfile start'
 
 abbr --global 'docker e'='docker exec --interactive --tty'
 abbr --global 'docker ps'='docker ps'
