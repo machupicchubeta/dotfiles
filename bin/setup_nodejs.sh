@@ -9,4 +9,5 @@ mise use --global node@lts node@latest
 mise prune --yes node
 mise reshim
 
+mise exec -- npm install --global neovim
 mise exec -- npm update --global
