@@ -9,4 +9,4 @@ mise use --global node@lts node@latest
 mise prune --yes node
 mise reshim
 
-mise exec -- npm update -g
+mise exec -- npm update --global
