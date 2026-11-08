@@ -356,6 +356,7 @@ brew install --cask claude-code
 brew install --cask cloudflare-warp
 brew install --cask cmux
 brew install --cask codex
+brew install --cask copilot-cli
 brew install --cask coscreen
 brew install --cask cursor
 brew install --cask cyberduck
@@ -376,6 +377,7 @@ brew install --cask gather
 brew install --cask gcloud-cli
 brew install --cask ghostty
 brew install --cask github
+brew install --cask github-copilot-app
 brew install --cask github-copilot-for-xcode
 brew install --cask google-chrome
 brew install --cask google-chrome@canary
