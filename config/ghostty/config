@@ -1,5 +1,7 @@
 shell-integration-features = no-cursor
 
+background-blur = macos-glass-regular
+background-opacity = 0.9
 copy-on-select = false
 cursor-style = block
 cursor-style-blink = true
