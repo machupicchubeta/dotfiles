@@ -153,7 +153,7 @@ brew install emacs
 brew install nano
 brew install universal-ctags
 brew install vim
-brew install xcodesorg/made/xcodes
+brew install xcodes
 
 # Shell extensions
 brew install bash-completion
