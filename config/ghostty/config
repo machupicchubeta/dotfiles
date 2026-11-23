@@ -6,6 +6,7 @@ copy-on-select = false
 cursor-style = block
 cursor-style-blink = true
 font-family = Cascadia Code NF
+font-family = Moralerspace Radon HWJPDOC
 font-size = 16
 font-style = Regular
 macos-titlebar-style = tabs
