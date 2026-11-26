@@ -122,6 +122,7 @@ brew install gradle
 brew install mosquitto
 brew install protobuf
 brew install tree-sitter
+brew install tree-sitter-cli
 brew install v8
 brew install wasmtime
 
